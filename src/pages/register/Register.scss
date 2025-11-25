@@ -1,0 +1,385 @@
+/* Trang đăng ký - chia 2 cột */
+.register-page {
+  min-height: 40vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-top: 40px;
+  padding-bottom: 0;
+}
+
+/* Cột bên trái - Form đăng ký */
+.register-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px 60px;
+  background: #ffffff;
+  overflow-y: auto;
+}
+
+/* Tiêu đề */
+.register-header {
+  margin-bottom: 28px;
+}
+
+.register-header .logo-link {
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.register-header h1 {
+  font-size: 28px;
+  font-weight: 800;
+  margin: 0;
+  color: #1f2937;
+}
+
+.register-header h2 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #1f2937;
+  margin: 0 0 8px;
+}
+
+.register-header p {
+  font-size: 15px;
+  color: #6b7280;
+  margin: 0;
+}
+
+/* Cột bên phải - Hình ảnh */
+.register-side {
+  background: url('https://imgs.search.brave.com/r-GuUUB2m1cdBmDuTcEgKjqyFdqtNb3kkiOfN0zQOBM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudW5zcGxhc2gu/Y29tL3Bob3RvLTE1/MTYzMjEzMTg0MjMt/ZjA2Zjg1ZTUwNGIz/P2l4bGliPXJiLTQu/MS4wJml4aWQ9TTN3/eE1qQTNmREI4TUh4/elpXRnlZMmg4TVRs/OGZIZHZjbXRwYm1j/bE1qQnZiaVV5TUd4/aGNIUnZjSHhsYm53/d2ZId3dmSHg4TUE9/PSZmbT1qcGcmcT02/MCZ3PTMwMDA') center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px;
+  position: relative;
+  max-height: 600px;
+}
+
+.register-side .side-content {
+  position: relative;
+  z-index: 1;
+  color: white;
+  text-align: center;
+  max-width: 500px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.side-content h2 {
+  font-size: 36px;
+  font-weight: 800;
+  margin: 0 0 20px;
+}
+
+.side-content p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* Form đăng ký */
+.register-form {
+  max-width: 480px;
+}
+
+/* Mỗi ô nhập */
+.register-form .form-group {
+  margin-bottom: 16px;
+}
+
+/* Nhãn (label) */
+.register-form label {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 8px;
+  text-align: left;
+}
+
+/* Ô nhập liệu */
+.register-form input {
+  width: 100%;
+  padding: 11px 14px;
+  background: #ffffff;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  color: #1f2937;
+  font-size: 15px;
+  transition: all 0.2s;
+  box-sizing: border-box;
+}
+
+.register-form input:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+/* Gợi ý mật khẩu */
+.password-hint {
+  font-size: 13px;
+  color: #6b7280;
+  margin: 6px 0 0;
+  text-align: left;
+}
+
+/* Ô điều khoản */
+.terms {
+  margin-bottom: 16px;
+  padding: 10px 14px;
+  background: #f9fafb;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+}
+
+.terms p {
+  font-size: 13px;
+  color: #6b7280;
+  line-height: 1.5;
+  margin: 0;
+  text-align: left;
+}
+
+.terms a {
+  color: #667eea;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.terms a:hover {
+  text-decoration: underline;
+}
+
+/* Nút submit */
+.register-form .btn-submit {
+  width: 100%;
+  padding: 12px;
+  background: #1f2937;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.register-form .btn-submit:hover {
+  background: #111827;
+}
+
+/* OAuth divider */
+.oauth-divider {
+  margin: 24px 0;
+  text-align: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.oauth-divider::before,
+.oauth-divider::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: #e5e7eb;
+}
+
+.oauth-divider span {
+  font-size: 13px;
+  color: #6b7280;
+  white-space: nowrap;
+}
+
+/* OAuth buttons */
+.oauth-buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.btn-oauth {
+  padding: 11px 16px;
+  background: #ffffff;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #1f2937;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.btn-oauth:hover {
+  border-color: #667eea;
+  background: #f9fafb;
+}
+
+.oauth-icon {
+  font-size: 18px;
+}
+
+/* Footer form */
+.register-footer {
+  margin-top: 0;
+  text-align: center;
+}
+
+.register-footer p {
+  font-size: 15px;
+  color: #6b7280;
+  margin: 0;
+}
+
+.register-footer a {
+  color: #667eea;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.register-footer a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive cho màn hình lớn */
+@media (max-width: 1200px) {
+  .register-container {
+    padding: 40px 40px;
+  }
+
+  .register-side {
+    padding: 40px;
+  }
+
+  .side-content h2 {
+    font-size: 32px;
+  }
+
+  .side-content p {
+    font-size: 16px;
+  }
+}
+
+/* Responsive cho tablet */
+@media (max-width: 968px) {
+  .register-page {
+    grid-template-columns: 1fr;
+  }
+
+  .register-container {
+    padding: 40px 40px;
+    min-height: 100vh;
+  }
+
+  /* Ẩn panel bên phải */
+  .register-side {
+    display: none;
+  }
+
+  .register-header h2 {
+    font-size: 28px;
+  }
+}
+
+/* Responsive cho mobile */
+@media (max-width: 640px) {
+  .register-container {
+    padding: 30px 24px;
+  }
+
+  .register-header {
+    margin-bottom: 24px;
+  }
+
+  .register-header .logo-link {
+    margin-bottom: 16px;
+  }
+
+  .register-header h1 {
+    font-size: 24px;
+  }
+
+  .register-header h2 {
+    font-size: 24px;
+  }
+
+  .register-header p {
+    font-size: 15px;
+  }
+
+  .register-form {
+    max-width: 100%;
+  }
+
+  .register-form .form-group {
+    margin-bottom: 18px;
+  }
+
+  .register-form input {
+    padding: 11px 14px;
+    font-size: 14px;
+  }
+
+  .password-hint {
+    font-size: 12px;
+  }
+
+  .terms {
+    padding: 10px 14px;
+  }
+
+  .terms p {
+    font-size: 12px;
+  }
+
+  .register-form .btn-submit {
+    padding: 13px;
+    font-size: 15px;
+  }
+
+  .register-footer {
+    margin-top: 28px;
+  }
+}
+
+/* Responsive cho mobile nhỏ */
+@media (max-width: 480px) {
+  .register-container {
+    padding: 24px 20px;
+  }
+
+  .register-header h2 {
+    font-size: 22px;
+  }
+
+  .register-form label {
+    font-size: 13px;
+  }
+
+  .register-form input {
+    padding: 10px 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .register-container {
+    padding: 24px;
+  }
+
+  .register-header h1 {
+    font-size: 28px;
+  }
+
+  .register-header h2 {
+    font-size: 20px;
+  }
+}
