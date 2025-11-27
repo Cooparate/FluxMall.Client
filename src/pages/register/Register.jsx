@@ -1,16 +1,16 @@
-import { useState } from 'react';
-import { Link } from 'react-router-dom';
-import './Register.scss';
-import { NavbarIntro } from '../../components';
-import { FcGoogle } from 'react-icons/fc';
-import { GrGithub } from 'react-icons/gr';
+import { useState } from "react";
+import { Link } from "react-router-dom";
+import "./Register.scss";
+import { NavbarIntro } from "../../components";
+import { GrGithub } from "react-icons/gr";
+import { FcGoogle } from "react-icons/fc";
 
 const Register = () => {
   const [formData, setFormData] = useState({
-    username: '',
-    email: '',
-    password: '',
-    confirmPassword: '',
+    username: "",
+    email: "",
+    password: "",
+    confirmPassword: "",
   });
 
   const handleChange = (e) => {
@@ -23,26 +23,24 @@ const Register = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     // TODO: API call will be here
-    console.log('Register submitted:', formData);
+    console.log("Register submitted:", formData);
   };
 
   return (
     <div>
       <NavbarIntro />
-
       <div className="register-page">
         <div className="register-container">
           <div className="register-header">
             <Link to="/" className="logo-link">
-              <h1>FluxMall</h1>
+              <h1>Đăng ký</h1>
             </Link>
-            <h2>Create an account</h2>
-            <p>Please enter your details to sign up</p>
+            <p>Vui lòng nhập thông tin của bạn để đăng ký</p>
           </div>
-  
+
           <form className="register-form" onSubmit={handleSubmit}>
             <div className="form-group">
-              <label htmlFor="username">Username</label>
+              <label htmlFor="username">Tên đăng nhập</label>
               <input
                 type="text"
                 id="username"
@@ -53,9 +51,9 @@ const Register = () => {
                 autoComplete="username"
               />
             </div>
-  
+
             <div className="form-group">
-              <label htmlFor="email">Email address</label>
+              <label htmlFor="email">Email</label>
               <input
                 type="email"
                 id="email"
@@ -66,9 +64,9 @@ const Register = () => {
                 autoComplete="email"
               />
             </div>
-  
+
             <div className="form-group">
-              <label htmlFor="password">Password</label>
+              <label htmlFor="password">Mật khẩu</label>
               <input
                 type="password"
                 id="password"
@@ -78,11 +76,10 @@ const Register = () => {
                 required
                 autoComplete="new-password"
               />
-              <p className="password-hint">Make sure it's at least 8 characters.</p>
             </div>
-  
+
             <div className="form-group">
-              <label htmlFor="confirmPassword">Confirm password</label>
+              <label htmlFor="confirmPassword">Nhập lại mật khẩu</label>
               <input
                 type="password"
                 id="confirmPassword"
@@ -93,45 +90,50 @@ const Register = () => {
                 autoComplete="new-password"
               />
             </div>
-  
+
             <div className="terms">
               <p>
-                By creating an account, you agree to the <a href="#">Terms of Service</a>.
-                We'll occasionally send you account-related emails.
+                Bằng cách tạo tài khoản, bạn đồng ý với{" "}
+                <a href="#">Điều khoản Dịch vụ</a> &{" "}
+                <a href="#">Chính sách bảo mật</a> của Fluxmall
               </p>
             </div>
-  
+
             <button type="submit" className="btn-submit">
-              Create account
+              Tạo tài khoản
             </button>
+
+            <div className="oauth-divider">
+              <span>hoặc tiếp tục với</span>
+            </div>
+
+            <div className="oauth-buttons">
+              <button type="button" className="btn-oauth">
+                <span className="oauth-icon"><FcGoogle /></span>
+                Google
+              </button>
+              <button type="button" className="btn-oauth">
+                <span className="oauth-icon"><GrGithub /></span>
+                GitHub
+              </button>
+            </div>
+
+            <div className="register-footer">
+              <p>
+                Bạn đã có tài khoản? <Link to="/login">Đăng nhập ngay</Link>
+              </p>
+            </div>
           </form>
-
-          <div className="oauth-divider">
-            <span>or continue with</span>
-          </div>
-
-          <div className="oauth-buttons">
-            <button type="button" className="btn-oauth">
-              <span className="oauth-icon"><FcGoogle /></span>
-              Google
-            </button>
-            <button type="button" className="btn-oauth">
-              <span className="oauth-icon"><GrGithub /></span>
-              GitHub
-            </button>
-          </div>
-  
-          <div className="register-footer">
-            <p>
-              Already have an account? <Link to="/login">Sign in</Link>
-            </p>
-          </div>
         </div>
-        
+
         <div className="register-side">
           <div className="side-content">
-            <h2>Join our community</h2>
-            <p>Experience seamless shopping and discover amazing products from trusted sellers worldwide.</p>
+            <h2>Fluxmall dẫn lối phong cách sống của bạn</h2>
+            <p>
+              Tham gia cộng đồng mua sắm thông minh với Fluxmall <br />
+              Khám phá sản phẩm tuyệt vời từ các nhà bán hàng <br />
+              uy tín trên toàn thế giới
+            </p>
           </div>
         </div>
       </div>

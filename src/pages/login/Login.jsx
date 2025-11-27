@@ -31,15 +31,14 @@ const Login = () => {
         <div className="login-container">
           <div className="login-header">
             <Link to="/" className="logo-link">
-              <h1>FluxMall</h1>
+              <h1>Đăng nhập</h1>
             </Link>
-            <h2>Welcome back</h2>
-            <p>Please enter your details to sign in</p>
+            <p>Vui lòng nhập thông tin của bạn để đăng nhập</p>
           </div>
 
           <form className="login-form" onSubmit={handleSubmit}>
             <div className="form-group">
-              <label htmlFor="email">Email address</label>
+              <label htmlFor="email">Email/Tên đăng nhập</label>
               <input
                 type="email"
                 id="email"
@@ -53,9 +52,9 @@ const Login = () => {
 
             <div className="form-group">
               <div className="label-row">
-                <label htmlFor="password">Password</label>
+                <label htmlFor="password">Mật khẩu</label>
                 <a href="#" className="forgot-link">
-                  Forgot password?
+                  Quên mật khẩu?
                 </a>
               </div>
               <input
@@ -70,38 +69,39 @@ const Login = () => {
             </div>
 
             <button type="submit" className="btn-submit">
-              Sign in
+              Đăng nhập
             </button>
+
+            <div className="oauth-divider">
+              <span>hoặc đăng nhập với</span>
+            </div>
+            
+            <div className="oauth-buttons">
+              <button type="button" className="btn-oauth">
+                <span className="oauth-icon"><FcGoogle /></span>
+                Google
+              </button>
+              <button type="button" className="btn-oauth">
+                <span className="oauth-icon"><GrGithub /></span>
+                GitHub
+              </button>
+            </div>
+
+            <div className="login-footer">
+              <p>
+                Bạn mới biết đến FluxMall? <Link to="/register">Đăng ký ngay</Link>
+              </p>
+            </div>
           </form>
-
-          <div className="oauth-divider">
-            <span>or continue with</span>
-          </div>
-          
-          <div className="oauth-buttons">
-            <button type="button" className="btn-oauth">
-              <span className="oauth-icon"><FcGoogle /></span>
-              Google
-            </button>
-            <button type="button" className="btn-oauth">
-              <span className="oauth-icon"><GrGithub /></span>
-              GitHub
-            </button>
-          </div>
-
-          <div className="login-footer">
-            <p>
-              New to FluxMall? <Link to="/register">Create an account</Link>
-            </p>
-          </div>
         </div>
 
         <div className="login-side">
           <div className="side-content">
-            <h2>Start your journey with us</h2>
+            <h2>Fluxmall dẫn lối phong cách sống của bạn</h2>
             <p>
-              Discover the world's best platform for managing your business and
-              achieving your goals.
+              Khởi đầu hành trình mua sắm thông minh với Fluxmall <br />
+              Nền tảng tốt nhất thế giới trải nghiệm không ngừng nghỉ, <br />
+              giá trị không giới hạn
             </p>
           </div>
         </div>

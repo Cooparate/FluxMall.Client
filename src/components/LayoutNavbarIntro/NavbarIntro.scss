@@ -26,9 +26,10 @@
 
 .nav-logo h2 {
   font-size: 26px;
-  font-weight: 700;
+  font-weight: bold;
   margin: 0;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #ffc250 0%, #ff9634 100%);
+    //  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -61,7 +62,8 @@
   padding: 10px 20px;
   border-radius: 8px;
   font-weight: 600;
-  color: #667eea !important;
+  //color: #667eea !important;
+  color: #ffc250 !important;
   transition: all 0.3s;
 }
 
@@ -72,7 +74,8 @@
 /* Nút Sign up */
 .btn-register {
   padding: 10px 24px;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  // background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #ffc250 0%, #ff9634 100%);
   border-radius: 8px;
   color: #fff !important;
   font-weight: 600;

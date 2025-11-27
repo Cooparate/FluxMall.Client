@@ -10,8 +10,8 @@ const NavbarIntro = () => {
         </Link>
         <div className="nav-links">
           <div className="nav-auth">
-            <Link to="/login" className="btn-login">Sign in</Link>
-            <Link to="/register" className="btn-register">Sign up</Link>
+            <Link to="/login" className="btn-login">Đăng nhập</Link>
+            <Link to="/register" className="btn-register">Đăng ký</Link>
           </div>
         </div>
       </div>

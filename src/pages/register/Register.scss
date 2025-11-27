@@ -12,34 +12,30 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 40px 60px;
+  padding: 30px 50px;
   background: #ffffff;
   overflow-y: auto;
 }
 
 /* Tiêu đề */
 .register-header {
-  margin-bottom: 28px;
-}
-
-.register-header .logo-link {
-  text-decoration: none;
-  display: inline-block;
   margin-bottom: 20px;
 }
 
-.register-header h1 {
-  font-size: 28px;
-  font-weight: 800;
-  margin: 0;
-  color: #1f2937;
-}
+.logo-link {
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: 20px;
 
-.register-header h2 {
-  font-size: 28px;
-  font-weight: 700;
-  color: #1f2937;
-  margin: 0 0 8px;
+  h1 {
+    font-size: 26px;
+    font-weight: 700;
+    margin: 0;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
 }
 
 .register-header p {
@@ -50,16 +46,18 @@
 
 /* Cột bên phải - Hình ảnh */
 .register-side {
-  background: url('https://imgs.search.brave.com/r-GuUUB2m1cdBmDuTcEgKjqyFdqtNb3kkiOfN0zQOBM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudW5zcGxhc2gu/Y29tL3Bob3RvLTE1/MTYzMjEzMTg0MjMt/ZjA2Zjg1ZTUwNGIz/P2l4bGliPXJiLTQu/MS4wJml4aWQ9TTN3/eE1qQTNmREI4TUh4/elpXRnlZMmg4TVRs/OGZIZHZjbXRwYm1j/bE1qQnZiaVV5TUd4/aGNIUnZjSHhsYm53/d2ZId3dmSHg4TUE9/PSZmbT1qcGcmcT02/MCZ3PTMwMDA') center/cover;
+  background-image: url("https://cdn.hoanghamobile.vn/Uploads/2024/04/16/laptop-40.jpg");
+  background-position: 0px -110px;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 60px;
   position: relative;
-  max-height: 600px;
+  max-height: 500px;
+  height: 85%;
 }
 
-.register-side .side-content {
+.side-content {
   position: relative;
   z-index: 1;
   color: white;
@@ -85,12 +83,12 @@
 }
 
 /* Mỗi ô nhập */
-.register-form .form-group {
-  margin-bottom: 16px;
+.form-group {
+  margin-bottom: 20px;
 }
 
 /* Nhãn (label) */
-.register-form label {
+.form-group label {
   display: block;
   font-size: 14px;
   font-weight: 600;
@@ -100,7 +98,7 @@
 }
 
 /* Ô nhập liệu */
-.register-form input {
+.form-group input {
   width: 100%;
   padding: 11px 14px;
   background: #ffffff;
@@ -112,27 +110,16 @@
   box-sizing: border-box;
 }
 
-.register-form input:focus {
+.form-group input:focus {
   outline: none;
-  border-color: #667eea;
+  border-color: #0048acd5;
   box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
-}
-
-/* Gợi ý mật khẩu */
-.password-hint {
-  font-size: 13px;
-  color: #6b7280;
-  margin: 6px 0 0;
-  text-align: left;
 }
 
 /* Ô điều khoản */
 .terms {
   margin-bottom: 16px;
-  padding: 10px 14px;
-  background: #f9fafb;
-  border-radius: 8px;
-  border: 1px solid #e5e7eb;
+  margin-top: 4px;
 }
 
 .terms p {
@@ -144,7 +131,7 @@
 }
 
 .terms a {
-  color: #667eea;
+  color: #0048acd5;
   text-decoration: none;
   font-weight: 600;
 }
@@ -154,10 +141,10 @@
 }
 
 /* Nút submit */
-.register-form .btn-submit {
+.btn-submit {
   width: 100%;
   padding: 12px;
-  background: #1f2937;
+  background: #0048acb6;
   color: #fff;
   border: none;
   border-radius: 8px;
@@ -165,10 +152,11 @@
   font-weight: 600;
   cursor: pointer;
   transition: all 0.2s;
+  margin-top: 4px;
 }
 
-.register-form .btn-submit:hover {
-  background: #111827;
+.btn-submit:hover {
+  background: #0048acd5;
 }
 
 /* OAuth divider */
@@ -241,7 +229,7 @@
 }
 
 .register-footer a {
-  color: #667eea;
+  color: #0048acd5;
   text-decoration: none;
   font-weight: 600;
 }
@@ -297,7 +285,7 @@
   }
 
   .register-header {
-    margin-bottom: 24px;
+    margin-bottom: 28px;
   }
 
   .register-header .logo-link {
@@ -320,34 +308,18 @@
     max-width: 100%;
   }
 
-  .register-form .form-group {
-    margin-bottom: 18px;
+  .form-group {
+    margin-bottom: 20px;
   }
 
-  .register-form input {
+  .form-group input {
     padding: 11px 14px;
     font-size: 14px;
   }
 
-  .password-hint {
-    font-size: 12px;
-  }
-
-  .terms {
-    padding: 10px 14px;
-  }
-
-  .terms p {
-    font-size: 12px;
-  }
-
-  .register-form .btn-submit {
+  .btn-submit {
     padding: 13px;
     font-size: 15px;
-  }
-
-  .register-footer {
-    margin-top: 28px;
   }
 }
 
@@ -361,11 +333,11 @@
     font-size: 22px;
   }
 
-  .register-form label {
+  .form-group label {
     font-size: 13px;
   }
 
-  .register-form input {
+  .form-group input {
     padding: 10px 12px;
   }
 }
