@@ -1,21 +1,10 @@
 import React, { useState } from "react";
 import "./home.scss";
 
-import banner from "../../assets/images/tttt.png";
-
-import slide1 from "../../assets/images/iphone-16-pro-max.webp";
-import slide2 from "../../assets/images/tui-chong-soc-laptop-14-inch.webp";
-import slide3 from "../../assets/images/msi-modern-15-f13mg.webp";
-
-import Img1 from "../../assets/images/acer-nitro-v-15-anv15.webp";
-import Img2 from "../../assets/images/acer-aspire-go-ag15-31p.webp";
-import Img3 from "../../assets/images/may-chieu-wanbo-full-hd.webp";
-import Img4 from "../../assets/images/de-do-laptop-baseus-ultrastable.webp";
-import Img5 from "../../assets/images/iphone_17_pro_512gb.webp";
-
 import { FaFacebookSquare, FaChevronLeft, FaChevronRight, FaInstagramSquare, FaYoutube } from "react-icons/fa";
 import { IoLogoGithub } from "react-icons/io";
 import { FiShoppingBag } from "react-icons/fi";
+import { banner, slide1, slide2, slide3, Img1, Img2, Img3, Img4, Img5 } from "../../assets";
 
 const mockProducts = [
   { 
