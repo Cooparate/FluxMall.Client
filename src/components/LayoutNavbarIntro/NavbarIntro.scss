@@ -1,0 +1,146 @@
+/* Thanh menu cố định trên đầu */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: rgba(255, 255, 255, 0.95);
+  border-bottom: 1px solid #e5e7eb;
+  z-index: 100;
+  padding: 16px 0;
+}
+
+.nav-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo */
+.nav-logo {
+  text-decoration: none;
+}
+
+.nav-logo h2 {
+  font-size: 26px;
+  font-weight: bold;
+  margin: 0;
+    background: linear-gradient(135deg, #ffc250 0%, #ff9634 100%);
+    //  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Các liên kết menu */
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.nav-links a {
+  color: #4b5563;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+/* Nhóm nút đăng nhập/đăng ký */
+.nav-auth {
+  display: flex;
+  gap: 12px;
+  margin-left: 12px;
+}
+
+/* Nút Sign in */
+.btn-login {
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  //color: #667eea !important;
+  color: #ffc250 !important;
+  transition: all 0.3s;
+}
+
+.btn-login:hover {
+  background: #f3f4f6;
+}
+
+/* Nút Sign up */
+.btn-register {
+  padding: 10px 24px;
+  // background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #ffc250 0%, #ff9634 100%);
+  border-radius: 8px;
+  color: #fff !important;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+.btn-register:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(102, 126, 234, 0.4);
+}
+
+/* Responsive cho tablet */
+@media (max-width: 1024px) {
+  .nav-container {
+    padding: 0 24px;
+  }
+
+  .nav-links {
+    gap: 24px;
+  }
+}
+
+/* Responsive cho mobile */
+@media (max-width: 768px) {
+  .nav-container {
+    padding: 0 20px;
+  }
+
+  .navbar {
+    padding: 12px 0;
+  }
+
+  .nav-logo h2 {
+    font-size: 22px;
+  }
+
+  .nav-links {
+    gap: 8px;
+  }
+
+  /* Ẩn các link menu, chỉ giữ nút */
+  .nav-links a:not(.btn-login):not(.btn-register) {
+    display: none;
+  }
+
+  .btn-login,
+  .btn-register {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+
+  .nav-auth {
+    margin-left: 0;
+  }
+}
+
+/* Responsive cho mobile nhỏ */
+@media (max-width: 480px) {
+  .nav-logo h2 {
+    font-size: 20px;
+  }
+
+  .btn-login,
+  .btn-register {
+    padding: 7px 14px;
+    font-size: 13px;
+  }
+}
