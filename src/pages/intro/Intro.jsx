@@ -68,15 +68,15 @@ const Intro = () => {
           <p className="section-subtitle">Những người đúng sau FluxMall</p>
           <div className="team-grid">
             <div className="team-card">
-              {/* <img src="/path/to/image" alt="Backend Developer" className="team-image" /> */}
-              <div className="team-placeholder">👨‍💻</div>
+              <img src="/src/assets/images/consauhayngu.jpg" alt="Backend Developer" className="team-image" />
+              {/* <div className="team-placeholder">👨‍💻</div> */}
               <h3>Backend Developer</h3>
               <p className="team-role">Architecture & API</p>
               <p className="team-description">Xây dựng các hệ thống phụ trợ mạnh mẽ và có khả năng mở rộng</p>
             </div>
             <div className="team-card">
-              {/* <img src="/path/to/image" alt="Frontend Developer" className="team-image" /> */}
-              <div className="team-placeholder">👩‍💻</div>
+              <img src="/src/assets/images/rian_pham.jpg" alt="Frontend Developer" className="team-image" />
+              {/* <div className="team-placeholder">👩‍💻</div> */}
               <h3>Frontend Developer</h3>
               <p className="team-role">UI/UX & Design</p>
               <p className="team-description">Tạo ra trải nghiệm người dùng đẹp và trực quan</p>

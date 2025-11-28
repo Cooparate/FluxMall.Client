@@ -9,42 +9,42 @@ import { banner, slide1, slide2, slide3, Img1, Img2, Img3, Img4, Img5 } from "..
 const mockProducts = [
   { 
     id: 1, 
-    name: "Moto G 06 POWER", 
+    name: "Acer Nitro V 15", 
     image: Img1, 
-    price: "3.290.000", 
-    old_price: "4.990.000", 
+    price: "20.290.000", 
+    old_price: "21.990.000", 
     tag: "Mẫu mới" 
   },
   { 
     id: 2, 
-    name: "Moto G 35 5G", 
+    name: "Acer Aspire GO", 
     image: Img2, 
-    price: "5.490.000", 
-    old_price: "7.990.000", 
+    price: "23.490.000", 
+    old_price: "24.990.000", 
     tag: "Mẫu mới" 
   },
   { 
     id: 3, 
-    name: "iPhone 15 Pro", 
+    name: "Máy chiếu Wanbo", 
     image: Img3, 
-    price: "28.990.000", 
-    old_price: "29.990.000", 
+    price: "2.990.000", 
+    old_price: "3.990.000", 
     tag: "Giảm 20%" 
   },
   { 
     id: 4, 
-    name: "Samsung Galaxy S24", 
+    name: "Giá đỡ laptop baseus", 
     image: Img4, 
-    price: "22.490.000", 
-    old_price: "23.990.000", 
+    price: "390.000", 
+    old_price: "490.000", 
     tag: "Khuyến mãi" 
   },
   { 
     id: 5, 
-    name: "iPad Air", 
+    name: "IPhone 17 Pro", 
     image: Img5, 
-    price: "15.990.000", 
-    old_price: "17.490.000", 
+    price: "30.990.000", 
+    old_price: "32.490.000", 
     tag: "Sale" },
 ];
 

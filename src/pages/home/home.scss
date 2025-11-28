@@ -1,20 +1,22 @@
+@use '../../scss/_globals' as globals;
+
 // --------------GLOBAL VARIABLES--------------
-$background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-$color-primary: #0066cc;      // Màu xanh chính
-$color-secondary: #ffc300;    // Màu vàng phụ
-$color-error: #e53935;        // Màu đỏ - giá
-$color-text: #333;            // Màu text chính
-$color-text-light: #999;      // Màu text nhạt
-$color-bg-light: #f5f5f5;     // Màu nền nhạt
-$color-border: #ddd;          // Màu border
-$border-radius: 8px;          // Border radius chuẩn
-$transition-speed: 0.2s;      // Tốc độ animation
+// $background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+// $color-primary: #0066cc;      // Màu xanh chính
+// $color-secondary: #ffc300;    // Màu vàng phụ
+// $color-error: #e53935;        // Màu đỏ - giá
+// $color-text: #333;            // Màu text chính
+// $color-text-light: #999;      // Màu text nhạt
+// $color-bg-light: #f5f5f5;     // Màu nền nhạt
+// $color-border: #ddd;          // Màu border
+// $border-radius: 8px;          // Border radius chuẩn
+// $transition-speed: 0.2s;      // Tốc độ animation
 
 
 .home {
   font-family: system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  color: $color-text;
-  background-color: $color-bg-light;
+  color: globals.$color-text;
+  background-color: globals.$color-bg-light;
 
   /* --------------CONTAINER--------------*/
   .container {
@@ -25,11 +27,11 @@ $transition-speed: 0.2s;      // Tốc độ animation
 
   /* --------------HEADER SECTION--------------*/
   .header {
-    border-bottom: 1px solid $color-border;
+    border-bottom: 1px solid globals.$color-border;
 
     // header-top - img banner
     .header-top {
-      background-color: $color-bg-light;
+      background-color: globals.$color-bg-light;
       padding: 5px 0;
       font-size: 14px;
 
@@ -42,7 +44,7 @@ $transition-speed: 0.2s;      // Tốc độ animation
     // Header main - Logo, tìm kiếm, giỏ hàng
     .header-main {
       padding: 8px 0;
-      background: $color-secondary;
+      background: globals.$color-secondary;
 
       .container {
         display: flex;
@@ -73,30 +75,30 @@ $transition-speed: 0.2s;      // Tốc độ animation
         input {
           flex: 1;
           padding: 10px 15px;
-          border: 1px solid $color-border;
-          border-radius: $border-radius;
+          border: 1px solid globals.$color-border;
+          border-radius: globals.$border-radius;
           font-size: 12px;
-          transition: border-color $transition-speed;
+          transition: border-color globals.$transition-speed;
 
           &:focus {
             outline: none;
-            border-color: $color-primary;
-            box-shadow: 0 0 0 3px rgba($color-primary, 0.1);
+            border-color: globals.$color-primary;
+            box-shadow: 0 0 0 3px rgba(globals.$color-primary, 0.1);
           }
         }
 
         button {
           padding: 10px 22px;
-          background-color: $color-primary;
+          background-color: globals.$color-primary;
           color: white;
           border: none;
-          border-radius: $border-radius;
+          border-radius: globals.$border-radius;
           cursor: pointer;
           font-weight: 600;
-          transition: background-color $transition-speed;
+          transition: background-color globals.$transition-speed;
 
           &:hover {
-            background-color: $color-primary;
+            background-color: globals.$color-primary;
           }
 
           &:active {
@@ -113,14 +115,14 @@ $transition-speed: 0.2s;      // Tốc độ animation
           padding: 8px 15px;
           font-size: 20px;
           color: black;
-          border-radius: $border-radius;
-          transition: all $transition-speed;
+          border-radius: globals.$border-radius;
+          transition: all globals.$transition-speed;
           display: inline-block;
 
           &:hover {
             border: none;
             background-color: #ff6b6b;
-            color: $color-bg-light;
+            color: globals.$color-bg-light;
           }
         }
       }
@@ -130,7 +132,7 @@ $transition-speed: 0.2s;      // Tốc độ animation
   /* --------------NAVIGATION MENU--------------*/
   .nav {
     background-color: #fff;
-    border-top: 1px solid $color-border;
+    border-top: 1px solid globals.$color-border;
     padding: 10px 0;
     position: sticky;
     top: 0;
@@ -171,28 +173,28 @@ $transition-speed: 0.2s;      // Tốc độ animation
         a {
           display: block;
           padding: 8px 15px;
-          color: $color-text;
+          color: globals.$color-text;
           text-decoration: none;
-          transition: all $transition-speed;
+          transition: all globals.$transition-speed;
           border-bottom: 3px solid transparent;
           position: relative;
 
           // Hover effect - Underline animation
           &:hover {
-            color: $color-primary;
-            border-bottom-color: $color-primary;
-            background-color: rgba($color-primary, 0.02);
+            color: globals.$color-primary;
+            border-bottom-color: globals.$color-primary;
+            background-color: rgba(globals.$color-primary, 0.02);
           }
 
           &:focus {
-            color: $color-bg-light;
-            background-color: $color-primary;
+            color: globals.$color-bg-light;
+            background-color: globals.$color-primary;
           }
 
           // Active state
           &.active {
-            color: $color-bg-light;
-            border-bottom-color: $color-primary;
+            color: globals.$color-bg-light;
+            border-bottom-color: globals.$color-primary;
             font-weight: 600;
           }
         }
@@ -214,7 +216,7 @@ $transition-speed: 0.2s;      // Tốc độ animation
       // Slide content
       .carousel-slide {
         flex: 1;
-        border-radius: $border-radius;
+        border-radius: globals.$border-radius;
         overflow: hidden;
         box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 
@@ -279,7 +281,7 @@ $transition-speed: 0.2s;      // Tốc độ animation
         align-items: center;
         justify-content: center;
         font-size: 20px;
-        transition: all $transition-speed;
+        transition: all globals.$transition-speed;
         flex-shrink: 0;
 
         &:hover {
@@ -304,16 +306,16 @@ $transition-speed: 0.2s;      // Tốc độ animation
         width: 5px;
         height: 5px;
         border-radius: 50%;
-        background-color: $color-border;
+        background-color: globals.$color-border;
         cursor: pointer;
-        transition: all $transition-speed;
+        transition: all globals.$transition-speed;
 
         &:hover {
-          background-color: $color-text-light;
+          background-color: globals.$color-text-light;
         }
 
         &.active {
-          background-color: $color-primary;
+          background-color: globals.$color-primary;
           width: 30px;
           border-radius: 5px;
         }
@@ -350,7 +352,7 @@ $transition-speed: 0.2s;      // Tốc độ animation
   .category-filters {
     background-color: #fff;
     padding: 10px 0;
-    border-bottom: 1px solid $color-border;
+    border-bottom: 1px solid globals.$color-border;
     overflow-x: auto;
 
     .container {
@@ -374,24 +376,24 @@ $transition-speed: 0.2s;      // Tốc độ animation
 
     .filter-btn {
       padding: 10px 15px;
-      border: 1px solid $color-border;
+      border: 1px solid globals.$color-border;
       background-color: #fff;
       border-radius: 10px;
       cursor: pointer;
       font-size: 13px;
       white-space: nowrap;
-      transition: all $transition-speed;
+      transition: all globals.$transition-speed;
       flex-shrink: 0;
 
       &:hover {
-        border-color: $color-primary;
-        color: $color-primary;
+        border-color: globals.$color-primary;
+        color: globals.$color-primary;
       }
 
       &.active {
-        background-color: $color-primary;
+        background-color: globals.$color-primary;
         color: white;
-        border-color: $color-primary;
+        border-color: globals.$color-primary;
       }
     }
   }
@@ -407,7 +409,7 @@ $transition-speed: 0.2s;      // Tốc độ animation
       font-size: 30px;
       font-weight: bold;
       margin-bottom: 20px;
-      color: $color-secondary;
+      color: globals.$color-secondary;
     }
 
     // Sort options buttons
@@ -419,17 +421,17 @@ $transition-speed: 0.2s;      // Tốc độ animation
 
       .sort-btn {
         padding: 8px 12px;
-        border: 1px solid $color-border;
+        border: 1px solid globals.$color-border;
         background-color: #fff;
-        border-radius: $border-radius;
+        border-radius: globals.$border-radius;
         cursor: pointer;
-        transition: all $transition-speed;
+        transition: all globals.$transition-speed;
 
         &:hover,
         &.active {
-          background-color: $color-primary;
+          background-color: globals.$color-primary;
           color: white;
-          border-color: $color-primary;
+          border-color: globals.$color-primary;
         }
       }
     }
@@ -444,16 +446,16 @@ $transition-speed: 0.2s;      // Tốc độ animation
       // Product card
       .card {
         background: #fff;
-        border: 1px solid $color-border;
-        border-radius: $border-radius;
+        border: 1px solid globals.$color-border;
+        border-radius: globals.$border-radius;
         overflow: hidden;
-        transition: all $transition-speed;
+        transition: all globals.$transition-speed;
         position: relative;
         box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 
         &:hover {
           box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-          border-color: $color-text-light;
+          border-color: globals.$color-text-light;
           transform: translateY(-5px) scale(1.02);
 
           .card-actions {
@@ -490,7 +492,7 @@ $transition-speed: 0.2s;      // Tốc độ animation
             width: 100%;
             height: 100%;
             object-fit: contain;
-            transition: transform $transition-speed;
+            transition: transform globals.$transition-speed;
           }
 
           &:hover img {
@@ -509,7 +511,7 @@ $transition-speed: 0.2s;      // Tốc độ animation
             min-height: 20px;
             line-height: 1.3;
             text-align: left;
-            color: $color-text;
+            color: globals.$color-text;
           }
 
           // Price section
@@ -522,12 +524,12 @@ $transition-speed: 0.2s;      // Tốc độ animation
             .price {
               font-size: 15px;
               font-weight: bold;
-              color: $color-error;
+              color: globals.$color-error;
             }
 
             .old-price {
               font-size: 12px;
-              color: $color-text-light;
+              color: globals.$color-text-light;
               text-decoration: line-through;
             }
           }
@@ -537,7 +539,7 @@ $transition-speed: 0.2s;      // Tốc độ animation
             display: flex;
             gap: 10px;
             opacity: 1;
-            transition: opacity $transition-speed;
+            transition: opacity globals.$transition-speed;
 
             .btn-add {
               flex: 1;
@@ -546,13 +548,13 @@ $transition-speed: 0.2s;      // Tốc độ animation
               font-size: 15px;
               cursor: pointer;
               background-color: #fff;
-              color: $color-primary;
-              border: 1px solid $color-primary;
-              border-radius: $border-radius;
-              transition: background-color $transition-speed;
+              color: globals.$color-primary;
+              border: 1px solid globals.$color-primary;
+              border-radius: globals.$border-radius;
+              transition: background-color globals.$transition-speed;
 
               &:hover {
-                background-color: $color-primary;
+                background-color: globals.$color-primary;
                 color: white;
               }
             }
@@ -561,17 +563,17 @@ $transition-speed: 0.2s;      // Tốc độ animation
               width: 60px;
               padding: 8px;
               border: none;
-              border-radius: $border-radius;
+              border-radius: globals.$border-radius;
               cursor: pointer;
               font-size: 16px;
               border: none;
-              color: $color-bg-light;
+              color: globals.$color-bg-light;
               background-color: #ff6b6b;
 
               &:hover {
               border: none;
               color: #e53935;
-              background-color: $color-secondary;
+              background-color: globals.$color-secondary;
 
               }
             }
@@ -588,16 +590,16 @@ $transition-speed: 0.2s;      // Tốc độ animation
       .btn-load {
         padding: 12px 40px;
         background-color: #fff;
-        color: $color-primary;
-        border: 2px solid $color-primary;
-        border-radius: $border-radius;
+        color: globals.$color-primary;
+        border: 2px solid globals.$color-primary;
+        border-radius: globals.$border-radius;
         font-size: 16px;
         font-weight: 600;
         cursor: pointer;
-        transition: all $transition-speed;
+        transition: all globals.$transition-speed;
 
         &:hover {
-          background-color: $color-primary;
+          background-color: globals.$color-primary;
           color: white;
         }
       }
@@ -607,7 +609,7 @@ $transition-speed: 0.2s;      // Tốc độ animation
 
   /* --------------FOOTER SECTION-------------- */
   .footer {
-    color: $color-primary;
+    color: globals.$color-primary;
     margin-top: 40px;
     background-image: 
     linear-gradient(rgba(255, 255, 255, 0.8)),
@@ -624,7 +626,7 @@ $transition-speed: 0.2s;      // Tốc độ animation
         text-decoration: none;
 
         &:hover {
-            color: $color-primary;
+            color: globals.$color-primary;
         }
       }
 
@@ -663,11 +665,11 @@ $transition-speed: 0.2s;      // Tốc độ animation
             a {
               display: inline-block;
               padding: 5px;
-              border-radius: $border-radius;
+              border-radius: globals.$border-radius;
               font-size: 20px;
             }
             &:hover {
-              color: $color-primary;
+              color: globals.$color-primary;
               animation: bounce 0.4s ease;
             }            
           }
