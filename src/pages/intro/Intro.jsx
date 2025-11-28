@@ -88,7 +88,7 @@ const Intro = () => {
       {/* Footer */}
       <footer className="intro-footer">
         <div className="footer-container">
-          <p>© 2025 FluxMall. All rights reserved.</p>
+          <p>&copy; 2025 FluxMall. Tất cả quyền được bảo lưu.</p>
         </div>
       </footer>
     </div>
