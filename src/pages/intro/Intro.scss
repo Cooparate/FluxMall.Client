@@ -6,7 +6,7 @@
 
 /* Phần Hero - Banner chính */
 .hero-section {
-  padding: 80px 32px 60px;
+  padding: 100px 32px 60px;
   text-align: center;
   //background: linear-gradient(135deg, #f0f9ff 0%, #e0e7ff 50%, #fce7f3 100%);
   background: linear-gradient(135deg, #fffef0 0%, #fff2e0 50%, #fbfce7 100%);
@@ -262,7 +262,7 @@
 /* Responsive cho tablet */
 @media (max-width: 1024px) {
   .hero-section {
-    padding: 70px 24px 50px;
+    padding: 100px 24px 50px;
   }
 
   .hero-title {
@@ -286,7 +286,7 @@
 /* Responsive cho mobile */
 @media (max-width: 768px) {
   .hero-section {
-    padding: 60px 20px 40px;
+    padding: 80px 20px 40px;
   }
 
   .hero-title {
@@ -300,15 +300,11 @@
   }
 
   .hero-buttons {
-    flex-direction: column;
     width: 100%;
     gap: 10px;
-  }
-
-  .hero-buttons a {
-    width: 100%;
-    padding: 12px 24px;
-    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .features-section,
@@ -353,7 +349,7 @@
 /* Responsive cho mobile nhỏ */
 @media (max-width: 480px) {
   .hero-section {
-    padding: 50px 20px 35px;
+    padding: 80px 20px 35px;
   }
 
   .hero-title {
@@ -368,6 +364,10 @@
   .hero-buttons a {
     padding: 11px 20px;
     font-size: 14px;
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    align-items: center;
   }
 
   .team-section {

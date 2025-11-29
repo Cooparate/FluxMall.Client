@@ -43,11 +43,11 @@
 }
 
 .nav-links a {
-  color: #4b5563;
+  color: #62634b;
   text-decoration: none;
   font-size: 15px;
   font-weight: 500;
-  transition: color 0.3s;
+  transition: all 0.3s;
 }
 
 /* Nhóm nút đăng nhập/đăng ký */
@@ -84,7 +84,7 @@
 
 .btn-register:hover {
   transform: translateY(-3px);
-  box-shadow: 0 8px 24px rgba(102, 126, 234, 0.4);
+  box-shadow: 0 8px 24px rgba(232, 234, 102, 0.4);
 }
 
 /* Responsive cho tablet */
@@ -118,7 +118,7 @@
 
   /* Ẩn các link menu, chỉ giữ nút */
   .nav-links a:not(.btn-login):not(.btn-register) {
-    display: none;
+    display: flex;
   }
 
   .btn-login,
