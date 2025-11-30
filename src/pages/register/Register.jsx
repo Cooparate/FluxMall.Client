@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Register.scss";
-import { NavbarIntro } from "../../components";
+import LayoutIntro  from "../../components/LayoutIntro/LayoutIntro";
+
 import { GrGithub } from "react-icons/gr";
 import { FcGoogle } from "react-icons/fc";
 
@@ -28,7 +29,7 @@ const Register = () => {
 
   return (
     <div>
-      <NavbarIntro />
+      <LayoutIntro />
       <div className="register-page">
         <div className="register-container">
           <div className="register-header">

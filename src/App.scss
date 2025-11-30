@@ -1,42 +1,42 @@
 #root {
   max-width: 1280px;
   margin: 0 auto;
-  // padding: 2rem;
   text-align: center;
 }
 
-// .logo {
-//   height: 6em;
-//   padding: 1.5em;
-//   will-change: filter;
-//   transition: filter 300ms;
-// }
-// .logo:hover {
-//   filter: drop-shadow(0 0 2em #646cffaa);
-// }
-// .logo.react:hover {
-//   filter: drop-shadow(0 0 2em #61dafbaa);
-// }
 
-// @keyframes logo-spin {
-//   from {
-//     transform: rotate(0deg);
-//   }
-//   to {
-//     transform: rotate(360deg);
-//   }
-// }
+  
+  $background-light: #f5f5f5;                                           // màu nền nhạt
+  $box-shadow: rgba(0, 0, 0, 0.15);                               // màu bóng đổ 
+  $text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);                         // bóng đổ text
+  $blue-border: 1px solid #0066cc;                                      // màu border xanh
+  $light-border: 1px solid rgba(0, 0, 0, 0.2);                          // màu border nhạt
+  $transition-speed: all 0.25s ease;                                      // tốc độ animation
+  $transform: translateY(2px);                                           // nổi khi hover theo trục y
+  $border-radius: 8px;                                                    // border radius chuẩn
+  $color-error: #e53935;                                                // màu err
+  $color-red: #ff6b6b;                                                  // màu sale, khuyến mãi...
+  $color-ogrance: #ffc300;                                              // màu text logo...
+  $color-blue: #0066cc;                                                 // màu text phụ
+  $ogrance-text: linear-gradient(135deg, #ffc250 0%, #ff9634 100%);   // màu loang chính
+  $blue-text: linear-gradient(135deg, #667eea 0%, #764ba2 100%);      // màu loang phụ
 
-// @media (prefers-reduced-motion: no-preference) {
-//   a:nth-of-type(2) .logo {
-//     animation: logo-spin infinite 20s linear;
-//   }
-// }
 
-// .card {
-//   padding: 2em;
-// }
 
-// .read-the-docs {
-//   color: #888;
-// }
+/*
+  background 
+
+  background: linear-gradient(135deg, #ffc250 0%, #ff9634 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+*/
+
+
+
+
+
+
+
+
+  

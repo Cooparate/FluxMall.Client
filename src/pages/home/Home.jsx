@@ -1,10 +1,13 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import LayoutHome from '../../components/LayoutHome/LayoutHome';
+
 import "./home.scss";
 
+import { banner, slide1, slide2, slide3, Img1, Img2, Img3, Img4, Img5 } from "../../assets";
 import { FaFacebookSquare, FaChevronLeft, FaChevronRight, FaInstagramSquare, FaYoutube } from "react-icons/fa";
+import { HiMagnifyingGlass } from "react-icons/hi2";
 import { IoLogoGithub } from "react-icons/io";
 import { FiShoppingBag } from "react-icons/fi";
-import { banner, slide1, slide2, slide3, Img1, Img2, Img3, Img4, Img5 } from "../../assets";
 
 const mockProducts = [
   { 
@@ -72,8 +75,20 @@ const bannerSlides = [
   }
 ];
 
+
 export default function Home() {
   const [bannerIndex, setBannerIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setBannerIndex((prevIndex) => 
+        prevIndex === bannerSlides.length - 1 ? 0 : prevIndex + 1
+      );
+    }, 3000); // 5000ms = 5 giây
+
+    // Cleanup khi component unmount
+    return () => clearInterval(interval);
+  }, [bannerSlides.length]);
 
   const handlePrevBanner = () => {
     setBannerIndex((prev) => (
@@ -97,45 +112,60 @@ export default function Home() {
 
   return (
     <div className="home">
-      {/* Header */}
-      <header className="header">
-        <div className="header-top">
-          <img src={banner} alt=""/>
-        </div>
-        <div className="header-main">
-          <div className="container">
-            <div className="logo">
-              <h1>FluxMall</h1>
-            </div>
-            <div className="search-bar">
-              <input type="text" placeholder="Tìm kiếm sản phẩm..." />
-              <button>Tìm</button>
-            </div>
-            <div className="header-right">
-              <a href="#cart">
-                <FiShoppingBag className="icon"/>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <nav className="nav">
-          <div className="container">
-            <ul className="nav-menu">
-              <li><a href="#">Điện thoại</a></li>
-              <li><a href="#">Laptop</a></li>
-              <li><a href="#">Phụ kiện</a></li>
-              <li><a href="#">Smartwatch</a></li>
-              <li><a href="#">Đồng hồ</a></li>
-              <li><a href="#">Tablet</a></li>
-              <li><a href="#">Máy ảnh</a></li>
-            </ul>
-          </div>
-        </nav>
-      </header>
+      <LayoutHome />
 
       {/* Banner Carousel */}
       <section className="banner-carousel">
+        <div className="sidebar">
+          <div className="menu-header">
+            <h2>Danh mục sản phẩm</h2>
+          </div>
+
+          <ul className="menu-list">
+            <li className="menu-item">
+              <a href="#" className="menu-link">
+                <span className="menu-text">Điện thoại thông minh</span>
+                <span className="menu-arrow">›</span>
+              </a>
+            </li>
+
+
+            <li className="menu-item">
+              <a href="#" className="menu-link">
+                <span className="menu-text">Laptop</span>
+                <span className="menu-arrow">›</span>
+              </a>
+            </li>
+
+            <li className="menu-item">
+              <a href="#" className="menu-link">
+                <span className="menu-text">Bàn phím cơ</span>
+                <span className="menu-arrow">›</span>
+              </a>
+            </li>
+
+            <li className="menu-item">
+              <a href="#" className="menu-link">
+                <span className="menu-text">Chuột không dây</span>
+                <span className="menu-arrow">›</span>
+              </a>
+
+            </li>
+            <li className="menu-item">
+              <a href="#" className="menu-link">
+                <span className="menu-text">Tai nghe bluetooth</span>
+              </a>
+            </li>
+
+            <li className="menu-item">
+              <a href="#" className="menu-link">
+                <span className="menu-text">Máy chiếu</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+
         <div className="container">
           <div className="carousel-wrapper">
             <button className="carousel-btn prev" onClick={handlePrevBanner}>
@@ -147,16 +177,8 @@ export default function Home() {
                 className="slide-item" 
                 style={{   
                   backgroundImage: `url(${bannerSlides[bannerIndex].image})`, 
-                  backgroundSize: "contain",
-                  backgroundPosition: "center",
-                  backgroundRepeat: "no-repeat",
                 }}
               >
-                <div className="slide-content">
-                  <h2>{bannerSlides[bannerIndex].title}</h2>
-                  <p>{bannerSlides[bannerIndex].subtitle}</p>
-                  <span className="discount-tag">{bannerSlides[bannerIndex].discount}</span>
-                </div>
               </div>
             </div>
 
@@ -175,6 +197,24 @@ export default function Home() {
             ))}
           </div>
         </div>
+
+
+        <div class="marquee-container">
+          <marquee direction="up" scrollamount="3" behavior="scroll" loop="infinite">
+            <div class="marquee-item">
+              <img src="src/assets/images/acer-aspire-go-ag15-31p.webp" alt="Image 1"/>
+              <img src="src/assets/images/acer-nitro-v-15-anv15.webp" alt="" />
+              <img src="src/assets/images/laptop_acernitro5_anv15_51_57b2.webp" alt="" />
+              <img src="src/assets/images/laptop_lenovo_loq_15arp983jc00m3vn.webp" alt="" />
+              <img src="src/assets/images/laptop_lenovo_ideapad_slim_3_14irh10_83k008vn.webp" alt="" />
+              <img src="src/assets/images/acer-aspire-go-ag15-31p.webp" alt="Image 1"/>
+              <img src="src/assets/images/acer-nitro-v-15-anv15.webp" alt="" />
+              <img src="src/assets/images/laptop_acernitro5_anv15_51_57b2.webp" alt="" />
+              <img src="src/assets/images/laptop_lenovo_loq_15arp983jc00m3vn.webp" alt="" />
+              <img src="src/assets/images/laptop_lenovo_ideapad_slim_3_14irh10_83k008vn.webp" alt="" />
+            </div>
+          </marquee>
+        </div>    
       </section>
 
       {/* Sale Banner */}
@@ -190,7 +230,7 @@ export default function Home() {
       </section>
 
       {/* Category Filters */}
-      <section className="category-filters">
+      {/* <section className="category-filters">
         <div className="container">
           <button className="filter-btn active"> Lọc</button>
           <button className="filter-btn"> Motorola</button>
@@ -204,19 +244,19 @@ export default function Home() {
           <button className="filter-btn"> Honor</button>
           <button className="filter-btn"> Tecno</button>
         </div>
-      </section>
+      </section> */}
 
       {/* Products Section */}
       <section className="products">
         <div className="container">
           <h2>SẢN PHẨM NỔI BẬT</h2>
-          <div className="sort-options">
+          {/* <div className="sort-options">
             <button className="sort-btn active">Nổi bật</button>
             <button className="sort-btn">Bán chạy</button>
             <button className="sort-btn">Giảm giá</button>
             <button className="sort-btn">Mới</button>
             <button className="sort-btn">Giá</button>
-          </div>
+          </div> */}
 
           <div className="grid">
             {mockProducts.map((product) => (
@@ -323,3 +363,37 @@ export default function Home() {
     </div>
   );
 } 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  <script>
+    function toggleSubmenu(event, element) {
+      event.preventDefault();
+      const menuItem = element.closest('.menu-item');
+      const isOpen = menuItem.classList.contains('open');
+      
+      // Close all other submenus
+      document.querySelectorAll('.menu-item.has-submenu').forEach(item => {
+        item.classList.remove('open');
+      });
+      
+      // Toggle current submenu
+      if (!isOpen) {
+        menuItem.classList.add('open');
+      }
+    }
+  </script>*/

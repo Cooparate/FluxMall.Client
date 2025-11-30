@@ -1,9 +1,10 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-// import Intro from './pages/intro/Intro';
-// import Login from './pages/login/Login';
-// import Register from './pages/register/Register';
+import Intro from './pages/intro/Intro';
+import Login from './pages/login/Login';
+import Register from './pages/register/Register';
+import Home from './pages/home/Home';
+
 import './App.scss';
-import { Intro, Login, Register, Home } from './pages';
 
 function App() {
   return (

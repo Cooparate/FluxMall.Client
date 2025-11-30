@@ -1,6 +1,4 @@
-// ============================================
-// IMAGE ASSETS EXPORT
-// ============================================
+/* --------------------IMAGE ASSETS EXPORT -------------------*/
 
 // Banner images
 import banner from "./images/tttt.png";
@@ -17,7 +15,7 @@ import Img3 from "./images/may-chieu-wanbo-full-hd.webp";
 import Img4 from "./images/de-do-laptop-baseus-ultrastable.webp";
 import Img5 from "./images/iphone_17_pro_512gb.webp";
 
-// Export all images
+//Export all images
 export {
   banner,
   slide1,
@@ -29,3 +27,10 @@ export {
   Img4,
   Img5
 };
+
+
+
+
+
+
+

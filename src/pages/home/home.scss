@@ -1,22 +1,9 @@
-@use '../../scss/_globals' as globals;
-
-// --------------GLOBAL VARIABLES--------------
-// $background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-// $color-primary: #0066cc;      // Màu xanh chính
-// $color-secondary: #ffc300;    // Màu vàng phụ
-// $color-error: #e53935;        // Màu đỏ - giá
-// $color-text: #333;            // Màu text chính
-// $color-text-light: #999;      // Màu text nhạt
-// $color-bg-light: #f5f5f5;     // Màu nền nhạt
-// $color-border: #ddd;          // Màu border
-// $border-radius: 8px;          // Border radius chuẩn
-// $transition-speed: 0.2s;      // Tốc độ animation
-
+@use "../../App.scss" as *;
 
 .home {
   font-family: system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  color: globals.$color-text;
-  background-color: globals.$color-bg-light;
+  // background-color: $background-light;
+  background-color: rgba($color-ogrance, 0.15);
 
   /* --------------CONTAINER--------------*/
   .container {
@@ -27,12 +14,11 @@
 
   /* --------------HEADER SECTION--------------*/
   .header {
-    border-bottom: 1px solid globals.$color-border;
+    border-bottom: $light-border; 
 
     // header-top - img banner
     .header-top {
-      background-color: globals.$color-bg-light;
-      padding: 5px 0;
+      max-height: 88px;
       font-size: 14px;
 
       img {
@@ -41,10 +27,9 @@
       }
     }
 
-    // Header main - Logo, tìm kiếm, giỏ hàng
+    // Header main
     .header-main {
-      padding: 8px 0;
-      background: globals.$color-secondary;
+      padding: 20px 0 8px;
 
       .container {
         display: flex;
@@ -54,275 +39,426 @@
 
       // Logo Fluxmall
       .logo {
-        flex-shrink: 0;
+        flex-shrink: 0;   // giữ icon không co nhỏ lại
 
         h1 {
           font-size: 28px;
           font-weight: bold;
-          // color: $color-secondary;
-          color: #ff6b6b;
+          color: $color-red;
           margin: 0;
-          text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
         }
       }
 
       // Thanh tìm kiếm
       .search-bar {
-        flex: 1;
+        position: relative;
+        width: 100%;
         display: flex;
-        gap: 10px;
+        align-items: center;
 
         input {
-          flex: 1;
-          padding: 10px 15px;
-          border: 1px solid globals.$color-border;
-          border-radius: globals.$border-radius;
+          width: 100%;
+          padding: 10px 40px;   // padding placeholder
           font-size: 12px;
-          transition: border-color globals.$transition-speed;
+          border: 1px solid black;
+          border-radius: $border-radius;
+          transition: all $transition-speed;
+
+          &:hover {
+            border-color: $color-blue;
+            box-shadow: 0 0 4px 2px rgba($color-blue, 0.25); // độ trong 25%
+          }
 
           &:focus {
             outline: none;
-            border-color: globals.$color-primary;
-            box-shadow: 0 0 0 3px rgba(globals.$color-primary, 0.1);
+            border-color: $color-blue;
+            box-shadow: 0 0 8px 4px rgba($color-blue, 0.25);
           }
         }
 
-        button {
-          padding: 10px 22px;
-          background-color: globals.$color-primary;
-          color: white;
-          border: none;
-          border-radius: globals.$border-radius;
-          cursor: pointer;
-          font-weight: 600;
-          transition: background-color globals.$transition-speed;
-
-          &:hover {
-            background-color: globals.$color-primary;
-          }
-
-          &:active {
-            transform: scale(0.98);
-          }
+        .icon {
+          position: absolute;
+          left: 15px;      // icon nằm phía trong input
+          font-size: 18px;
+          color: #777;
+          pointer-events: none; // không vướng gõ
         }
       }
 
       // Giỏ hàng link
       .header-right {
-        flex-shrink: 0;
-
         a {
-          padding: 8px 15px;
+          padding: 10px;
           font-size: 20px;
-          color: black;
-          border-radius: globals.$border-radius;
-          transition: all globals.$transition-speed;
-          display: inline-block;
+          color: #333;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          transition: all 0.25s ease;
+          border: 1px solid transparent;    //màu trong suốt
+
+          .icon {
+            font-size: 22px;
+          }
 
           &:hover {
-            border: none;
-            background-color: #ff6b6b;
-            color: globals.$color-bg-light;
+            background: $color-red;
+            color: white;
+            box-shadow: 0 0 10px rgba($color-red, 0.4);
+            transform: $transform;    // nổi lên
+          }
+
+          &:active {
+            transform: scale(0.95);
           }
         }
       }
     }
   }
 
-  /* --------------NAVIGATION MENU--------------*/
+
+/* --------------NAVIGATION MENU--------------*/
   .nav {
-    background-color: #fff;
-    border-top: 1px solid globals.$color-border;
-    padding: 10px 0;
-    position: sticky;
+    background-color: white;
+    position: relative;
     top: 0;
-    z-index: 100;
+    z-index: 100;   // cao hơn header, banner
 
     .nav-menu {
       display: flex;
+      justify-content: center;
       list-style: none;
       margin: 0;
       padding: 0;
       gap: 0;
       font-size: 14px;
-      overflow-x: auto;
 
-      // Scroll bar style cho mobile
-      // &::-webkit-scrollbar {
-      //   height: 4px;
-      // }
-
-      // &::-webkit-scrollbar-track {
-      //   background: transparent;
-      // }
-
-      // &::-webkit-scrollbar-thumb {
-      //   background: $color-border;
-      //   border-radius: 2px;
-
-      //   &:hover {
-      //     background: $color-text-light;
-      //   }
-      // }
+      /* QUAN TRỌNG: Cho phép dropdown thoát ra khỏi menu */
+      // overflow: visible; 
 
       li {
-        white-space: nowrap;
-        flex-shrink: 0;
+        white-space: nowrap;    // không xuống dòng
+        flex-shrink: 0;         // không thu nhỏ lại
+        position: relative;     // dropdown định vị theo li
 
-        // Menu link styling
         a {
           display: block;
-          padding: 8px 15px;
-          color: globals.$color-text;
+          padding: 8px 20px;
+          color: black;
           text-decoration: none;
-          transition: all globals.$transition-speed;
+          transition: $transition-speed;
           border-bottom: 3px solid transparent;
           position: relative;
 
-          // Hover effect - Underline animation
           &:hover {
-            color: globals.$color-primary;
-            border-bottom-color: globals.$color-primary;
-            background-color: rgba(globals.$color-primary, 0.02);
+            color: $color-ogrance;
+            border-bottom-color: $color-ogrance;
+            background-color: rgba($color-ogrance, 0.025);
           }
 
           &:focus {
-            color: globals.$color-bg-light;
-            background-color: globals.$color-primary;
+            color: $background-light;
+            background-color: $color-ogrance;
           }
 
-          // Active state
           &.active {
-            color: globals.$color-bg-light;
-            border-bottom-color: globals.$color-primary;
+            color: $background-light;
+            border-bottom-color: $color-ogrance;
             font-weight: 600;
           }
         }
       }
+
+      /* DROPDOWN */
+      .dropdown-menu {
+        position: absolute;
+        top: calc(100% + 4px);    // dưới cách menu 4px
+        left: 0;
+        background: white;
+        min-width: 200px;
+        border-radius: 8px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+
+        opacity: 0;               // ptử trong suốt hoàn toàn, không nhìn thấy
+        visibility: hidden;       // Ptử vẫn chiếm không gian layout, nhưng không hiển thị
+        transform: $transform;
+        transition: $transition-speed;
+        list-style: none;
+        overflow: hidden;     // ẩn text tràn
+        margin: 0;
+        padding: 0;
+        border: 1px solid $background-light;
+        z-index: 200;
+
+        li {
+          border-bottom: 1px solid $background-light;
+
+          a {
+            display: block;
+            padding: 8px 20px;
+            color: black;
+            text-decoration: none;
+            font-size: 14px;
+            transition: $transition-speed; // chuyển all + easing mượt
+            position: relative;
+
+            &:hover {
+              color: $color-ogrance;
+              border-bottom-color: $color-ogrance;
+              background-color: rgba($color-ogrance, 0.025);
+              padding-left: 25px;           // nhích nhẹ sang phải
+              transform: translateX(2px);   // hiệu ứng nhỏ giúp mượt hơn
+            }
+          }
+        }
+      }
+
+      /* Hover vào li để hiện dropdown */
+      li:hover .dropdown-menu {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+      }
+
+      /* Icon tam giác chỉ dropdown */
+      .has-dropdown > a::after {
+        content: "▼";
+        font-size: 10px;
+        margin-left: 6px;
+        transition: transform 0.3s ease;
+      }
+
+      .has-dropdown:hover > a::after {
+        transform: rotate(180deg);
+      }
     }
   }
-
   /* --------------BANNER CAROUSEL--------------*/
   .banner-carousel {
     margin: 20px 0;
     padding: 0 15px;
+    display: flex;
+    
+    .sidebar {
+      width: 400px;
+      max-height: 350px;
+      background: white;
+      border-radius: 4px;
+      overflow: hidden;
+      white-space: nowrap;
+      box-shadow: $box-shadow;
 
-    .carousel-wrapper {
-      position: relative;
-      display: flex;
-      align-items: center;
-      gap: 15px;
+      .menu-header {
+        display: flex;
+        justify-content: center;
+        background: $ogrance-text;
+        color: white;
+        display: flex;
+        align-items: center;
+        gap: 12px;
 
-      // Slide content
-      .carousel-slide {
-        flex: 1;
-        border-radius: globals.$border-radius;
-        overflow: hidden;
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-
-        .slide-item {
-          padding: 40px;
-          min-height: 300px;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          color: #fff;
-          position: relative;
-
-          // Overlay gradient
-          &::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: linear-gradient(135deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3));
-            z-index: 1;
-          }
-
-          .slide-content {
-            position: relative;
-            z-index: 2;
-            text-align: center;
-
-            h2 {
-              font-size: 32px;
-              font-weight: bold;
-              margin: 0 0 10px 0;
-            }
-
-            p {
-              font-size: 16px;
-              margin: 0 0 20px 0;
-            }
-
-            .discount-tag {
-              display: inline-block;
-              background-color: rgba(255, 255, 255, 0.2);
-              padding: 10px 20px;
-              border-radius: 4px;
-              font-weight: bold;
-            }
-          }
+        h2 {
+          font-size: 16px;
+          font-weight: bold;
         }
       }
 
-      // Navigation buttons
-      .carousel-btn {
-        background-color: rgba(0, 0, 0, 0.3);
-        color: white;
-        border: none;
-        width: 45px;
-        height: 45px;
-        border-radius: 10%;
-        cursor: pointer;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 20px;
-        transition: all globals.$transition-speed;
-        flex-shrink: 0;
+      .menu-list {
+        list-style: none;
 
-        &:hover {
-          background-color: rgba(0, 0, 0, 0.5);
-          transform: scale(1.1);
-        }
+        .menu-item {
+          border-bottom: 1px solid #f0f0f0;
 
-        &:active {
-          transform: scale(0.95);
+          .menu-link {
+            display: flex;
+            text-align: left;
+            padding: 8px 10px;
+            text-decoration: none;
+            color: black;
+            transition: $transition-speed;
+            position: relative;
+
+              .menu-text {
+                flex: 1;
+                font-size: 15px;
+              }
+
+              .menu-arrow {
+                font-size: 20px;
+                transition: $transition-speed;
+              }
+              
+            &:hover {
+              background-color: rgba($color-ogrance, 0.05);
+              padding-left: 25px;
+
+              .menu-arrow {
+              transform: translateX(5px);
+              }
+            }
+
+            &:active {
+              background-color: rgba($color-ogrance, 0.05)
+            }
+          }
         }
       }
     }
 
-    // Carousel indicator dots
-    .carousel-dots {
-      display: flex;
-      justify-content: center;
-      gap: 10px;
-      margin-top: 20px;
+    .container {
+      width: 100%;
+      
+      .carousel-wrapper {
+        min-height: 420px;
+        position: relative;
+        overflow: hidden;
+        box-shadow: 0 2px 8px $box-shadow;
+        
+        // Slide content - chiếm toàn bộ không gian
+        .carousel-slide {
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          
+          .slide-item {
+            width: 100%;
+            height: 100%;
+            min-height: 420px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            background-color: rgba(0, 0, 0, 0.1);
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            transition: $transition-speed;            
 
-      .dot {
-        width: 5px;
-        height: 5px;
-        border-radius: 50%;
-        background-color: globals.$color-border;
-        cursor: pointer;
-        transition: all globals.$transition-speed;
-
-        &:hover {
-          background-color: globals.$color-text-light;
+          }
         }
-
-        &.active {
-          background-color: globals.$color-primary;
-          width: 30px;
-          border-radius: 5px;
+        
+        // Navigation buttons - position trên ảnh
+        .carousel-btn {
+          position: absolute;
+          top: 50%;
+          width: 50px;
+          height: 50px;
+          color: white;
+          cursor: pointer;
+          border: none;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 20px;
+          border-radius: 50%;
+          background-color: rgba(0, 0, 0, 0.1);
+          z-index: 10;
+          transform: translateY(-50%);
+          transition: $transition-speed;
+          backdrop-filter: blur(10px);    //làm mờ nền phía sau phần tử
+          
+          &.prev {
+            left: 20px;
+          }
+          
+          &.next {
+            right: 20px;
+          }
+          
+          &:hover {
+            transform: translateY(-50%) scale(1.15);
+            opacity: 1;
+          }
+          
+          &:active {
+            transform: translateY(-50%) scale(0.95);
+          }
+        }
+      }
+      
+      // Carousel indicator dots
+      .carousel-dots {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 7px;
+        margin-top: 12px;
+        
+        .dot {
+          width: 6px;
+          height: 6px;
+          border-radius: 50%;
+          cursor: pointer;
+          position: relative;
+          background-color: rgba(0, 0, 0, 0.3);
+          transition: $transition-speed;
+          
+          &::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 50%;
+            background-color: transparent;
+            transition: all 0.3s ease;
+          }
+          
+          &:hover {
+            background-color: rgba(0, 0, 0, 0.5);
+            transform: scale(1.15);
+            
+            &::before {
+              background-color: rgba(0, 0, 0, 0.08);
+            }
+          }
+          
+          &.active {
+            background-color: $color-blue;
+            width: 25px;
+            border-radius: 5px;
+            box-shadow: 0 2px 8px $blue-border;
+          }
         }
       }
     }
   }
 
+  //---------------------------------
+
+  .marquee-container {
+    width: 400px;
+    height: 420px;
+    overflow: hidden;
+    // background: #fff;
+    // border-radius: 8px;
+    // box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    position: relative;
+
+    marquee {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+
+      .marquee-item {
+        margin: 0;
+        padding: 0;
+
+        img {
+          width: 100%;
+          height: 100%;
+          padding: 5px 5px;
+          display: block;
+        }
+      }
+    }
+  }    
+  
   /* --------------SALE BANNER --------------*/
   .sale-banner {
     background: linear-gradient(135deg, #ff6b6b 0%, #ff8787 100%);
@@ -352,7 +488,7 @@
   .category-filters {
     background-color: #fff;
     padding: 10px 0;
-    border-bottom: 1px solid globals.$color-border;
+    border-bottom: 1px solid $blue-border;
     overflow-x: auto;
 
     .container {
@@ -376,24 +512,24 @@
 
     .filter-btn {
       padding: 10px 15px;
-      border: 1px solid globals.$color-border;
+      border: 1px solid $blue-border;
       background-color: #fff;
       border-radius: 10px;
       cursor: pointer;
       font-size: 13px;
       white-space: nowrap;
-      transition: all globals.$transition-speed;
+      transition: all $transition-speed;
       flex-shrink: 0;
 
       &:hover {
-        border-color: globals.$color-primary;
-        color: globals.$color-primary;
+        border-color: $color-blue;
+        color: $color-blue;
       }
 
       &.active {
-        background-color: globals.$color-primary;
+        background-color: $color-blue;
         color: white;
-        border-color: globals.$color-primary;
+        border-color: $color-blue;
       }
     }
   }
@@ -409,7 +545,7 @@
       font-size: 30px;
       font-weight: bold;
       margin-bottom: 20px;
-      color: globals.$color-secondary;
+      color: $color-ogrance;
     }
 
     // Sort options buttons
@@ -421,17 +557,17 @@
 
       .sort-btn {
         padding: 8px 12px;
-        border: 1px solid globals.$color-border;
+        border: 1px solid $blue-border;
         background-color: #fff;
-        border-radius: globals.$border-radius;
+        border-radius: $border-radius;
         cursor: pointer;
-        transition: all globals.$transition-speed;
+        transition: all $transition-speed;
 
         &:hover,
         &.active {
-          background-color: globals.$color-primary;
+          background-color: $color-blue;
           color: white;
-          border-color: globals.$color-primary;
+          border-color: $color-blue;
         }
       }
     }
@@ -446,17 +582,16 @@
       // Product card
       .card {
         background: #fff;
-        border: 1px solid globals.$color-border;
-        border-radius: globals.$border-radius;
+        border: 1px solid $blue-border;
+        border-radius: $border-radius;
         overflow: hidden;
-        transition: all globals.$transition-speed;
+        transition: $transition-speed;
         position: relative;
         box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 
         &:hover {
           box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-          border-color: globals.$color-text-light;
-          transform: translateY(-5px) scale(1.02);
+          transform: translateY(-2px) scale(1.025);
 
           .card-actions {
             opacity: 1;
@@ -492,7 +627,7 @@
             width: 100%;
             height: 100%;
             object-fit: contain;
-            transition: transform globals.$transition-speed;
+            transition: transform $transition-speed;
           }
 
           &:hover img {
@@ -511,7 +646,7 @@
             min-height: 20px;
             line-height: 1.3;
             text-align: left;
-            color: globals.$color-text;
+            // color: $color-ogrance;
           }
 
           // Price section
@@ -524,12 +659,12 @@
             .price {
               font-size: 15px;
               font-weight: bold;
-              color: globals.$color-error;
+              color: $color-error;
             }
 
             .old-price {
               font-size: 12px;
-              color: globals.$color-text-light;
+              color: rgba(0, 0, 0, 0.5);
               text-decoration: line-through;
             }
           }
@@ -539,7 +674,7 @@
             display: flex;
             gap: 10px;
             opacity: 1;
-            transition: opacity globals.$transition-speed;
+            transition: opacity $transition-speed;
 
             .btn-add {
               flex: 1;
@@ -548,13 +683,13 @@
               font-size: 15px;
               cursor: pointer;
               background-color: #fff;
-              color: globals.$color-primary;
-              border: 1px solid globals.$color-primary;
-              border-radius: globals.$border-radius;
-              transition: background-color globals.$transition-speed;
+              color: $color-blue;
+              border: 1px solid $color-blue;
+              border-radius: $border-radius;
+              transition: background-color $transition-speed;
 
               &:hover {
-                background-color: globals.$color-primary;
+                background-color: $color-blue;
                 color: white;
               }
             }
@@ -563,17 +698,17 @@
               width: 60px;
               padding: 8px;
               border: none;
-              border-radius: globals.$border-radius;
+              border-radius: $border-radius;
               cursor: pointer;
               font-size: 16px;
               border: none;
-              color: globals.$color-bg-light;
+              color: $background-light;
               background-color: #ff6b6b;
 
               &:hover {
               border: none;
               color: #e53935;
-              background-color: globals.$color-secondary;
+              background-color: $color-ogrance;
 
               }
             }
@@ -590,16 +725,16 @@
       .btn-load {
         padding: 12px 40px;
         background-color: #fff;
-        color: globals.$color-primary;
-        border: 2px solid globals.$color-primary;
-        border-radius: globals.$border-radius;
+        color: $color-blue;
+        border: 2px solid $color-blue;
+        border-radius: $border-radius;
         font-size: 16px;
         font-weight: 600;
         cursor: pointer;
-        transition: all globals.$transition-speed;
+        transition: all $transition-speed;
 
         &:hover {
-          background-color: globals.$color-primary;
+          background-color: $color-blue;
           color: white;
         }
       }
@@ -609,7 +744,7 @@
 
   /* --------------FOOTER SECTION-------------- */
   .footer {
-    color: globals.$color-primary;
+    color: $color-blue;
     margin-top: 40px;
     background-image: 
     linear-gradient(rgba(255, 255, 255, 0.8)),
@@ -626,7 +761,7 @@
         text-decoration: none;
 
         &:hover {
-            color: globals.$color-primary;
+            color: $color-blue;
         }
       }
 
@@ -665,11 +800,11 @@
             a {
               display: inline-block;
               padding: 5px;
-              border-radius: globals.$border-radius;
+              border-radius: $border-radius;
               font-size: 20px;
             }
             &:hover {
-              color: globals.$color-primary;
+              color: $color-blue;
               animation: bounce 0.4s ease;
             }            
           }
@@ -797,10 +932,6 @@
   //   }
   // }
 }
-
-
-
-
 
 
 

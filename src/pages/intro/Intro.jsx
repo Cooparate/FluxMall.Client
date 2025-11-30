@@ -1,11 +1,11 @@
 import { Link } from 'react-router-dom';
-import Navbar from '../../components/LayoutNavbarIntro/NavbarIntro';
+import LayoutIntro from '../../components/LayoutIntro/LayoutIntro';
 import './Intro.scss';
 
 const Intro = () => {
   return (
     <div className="intro-page">
-      <Navbar />
+      <LayoutIntro />
 
       <section className="hero-section">
         <div className="hero-container">

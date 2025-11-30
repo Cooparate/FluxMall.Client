@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Login.scss";
-import { NavbarIntro } from "../../components";
+import LayoutIntro from '../../components/LayoutIntro/LayoutIntro';
 import { GrGithub } from "react-icons/gr";
 import { FcGoogle } from "react-icons/fc";
 
@@ -26,7 +26,7 @@ const Login = () => {
 
   return (
     <div>
-      <NavbarIntro />
+      <LayoutIntro />
       <div className="login-page">
         <div className="login-container">
           <div className="login-header">
