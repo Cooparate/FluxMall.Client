@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import LayoutIntro from '../../components/LayoutIntro/LayoutIntro';
+import LayoutIntro from '../../layouts/LayoutIntro';
 import './Intro.scss';
 
 const Intro = () => {

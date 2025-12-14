@@ -1,15 +1,31 @@
-import React, { useState} from "react";
+import { useState} from "react";
 import { Link } from 'react-router-dom';
 import "./layoutHome.scss";
 
-import { banner} from "../../assets";
+
+import { banner} from "../assets";
 import { HiMagnifyingGlass } from "react-icons/hi2";
 import { FiShoppingBag } from "react-icons/fi";
 
 
+import { Outlet, useNavigate } from "react-router-dom";
+
+
 export default function layoutHome() {
+
+  const [open, setOpen] = useState(false);
+  const navigate = useNavigate();
+
+  const goCategory = (type) => {
+  navigate(`/category/${type}`);
+  setOpen(false);
+  };
+
+
+
+
   return(
-          <header className="header">
+      <header className="header">
         <div className="header-top">
           <img src={banner} alt="img"/>
         </div>
@@ -36,18 +52,15 @@ export default function layoutHome() {
               <li><Link to="/home">Trang chủ</Link></li> 
               <li><Link to="/">Giới thiệu</Link></li> 
               
-              {/* --Sản phẩm bán chạy-- */}
-              <li className="has-dropdown">
-                <a href="#">Sản phẩm</a>
+              {/* --Sản phẩm-- */}
+              <li className={`has-dropdown ${open ? 'open' : ''}`}>
+                <a href="#" onClick={(e) => {e.preventDefault(); setOpen(!open);}}>Sản phẩm</a>
                 <ul className="dropdown-menu">
-                  <li><a href="#">Laptop</a></li>
-                  <li><a href="#">Điện thoại</a></li>
-                  <li><a href="#">Bàn phím cơ</a></li>
-                  <li><a href="#">Chuột không dây</a></li>
-                  <li><a href="#">Tai nghe bluetooth</a></li>
-                  <li><a href="#">Máy chiếu</a></li>
-
+                  <li><a href="" onClick={() => goCategory("laptop")}>Laptop</a></li>
+                  <li><a href="" onClick={() => goCategory("keyboard")}>Keyboard</a></li>
+                  <li><a href="" onClick={() => goCategory("mouse")}>Mouse</a></li>
                 </ul>
+
               </li>
 
               {/* --Sản phẩm bán chạy-- */}
@@ -90,6 +103,7 @@ export default function layoutHome() {
             </ul> 
           </div> 
         </nav>
+        < Outlet/>
       </header>
-  )
+  );
 }

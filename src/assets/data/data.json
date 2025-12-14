@@ -1,0 +1,294 @@
+
+
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Acer Nitro V 15",
+      "category": "Laptop",
+      "price": "20290000",
+      "old_price": "21990000",
+      "tag": "Mẫu mới",
+      "image": "acer-nitro-v-15-anv15.webp",
+      "description": "Laptop gaming Acer Nitro V 15 với hiệu năng cao, trang bị Intel Core i7 và RTX 3060, màn hình 144Hz cho trải nghiệm gaming mượt mà.",
+      "specifications": {
+        "cpu": "Intel Core i7-11800H",
+        "ram": "16GB DDR4",
+        "storage": "512GB SSD NVMe",
+        "gpu": "NVIDIA RTX 3060",
+        "display": "15.6 inch FHD 144Hz",
+        "weight": "2.4 kg",
+        "battery": "60Wh"
+      },
+      "features": [
+        "Hiệu năng gaming vượt trội",
+        "Tản nhiệt Acer CoolBoost",
+        "Bàn phím cơ chuyên game",
+        "Thiết kế hiện đại",
+        "Kết nối Thunderbolt 4"
+      ],
+      "warranty": "12 tháng",
+      "inStock": true
+    },
+    {
+      "id": 2,
+      "name": "Acer Aspire GO",
+      "category": "Laptop",
+      "price": "23490000",
+      "old_price": "24990000",
+      "tag": "Mẫu mới",
+      "image": "acer-aspire-go-ag15-31p.webp",
+      "description": "Laptop Acer Aspire GO dành cho công việc và học tập, nhẹ nhàng, pin lâu, hiệu năng ổn định.",
+      "specifications": {
+        "cpu": "Intel Core i5-12450H",
+        "ram": "8GB DDR4",
+        "storage": "256GB SSD",
+        "gpu": "Intel Iris Xe",
+        "display": "14 inch FHD IPS",
+        "weight": "1.6 kg",
+        "battery": "50Wh"
+      },
+      "features": [
+        "Nhẹ nhàng, dễ mang theo",
+        "Pin 10+ giờ sử dụng",
+        "Hiệu năng ổn định cho công việc",
+        "Thiết kế thanh lịch",
+        "Âm thanh Dolby Atmos"
+      ],
+      "warranty": "12 tháng",
+      "inStock": true
+    },
+    {
+      "id": 3,
+      "name": "Máy chiếu Wanbo",
+      "category": "Điện tử",
+      "price": "2990000",
+      "old_price": "3990000",
+      "tag": "Giảm 20%",
+      "image": "Img3",
+      "description": "Máy chiếu Wanbo với độ sáng 450 ANSI lumens, hỗ trợ 4K, kết nối không dây dễ dàng.",
+      "specifications": {
+        "brightness": "450 ANSI lumens",
+        "resolution": "1080p native / 4K support",
+        "contrast": "10000:1",
+        "lamp_life": "30000 giờ",
+        "weight": "0.8 kg",
+        "connectivity": "WiFi, Bluetooth, USB, HDMI"
+      },
+      "features": [
+        "Độ sáng cao 450 lumens",
+        "Hỗ trợ chiếu 4K",
+        "Kết nối không dây",
+        "Nhỏ gọn, dễ di chuyển",
+        "Thời lapse chiếu dài"
+      ],
+      "warranty": "24 tháng",
+      "inStock": true
+    },
+    {
+      "id": 4,
+      "name": "Giá đỡ laptop Baseus",
+      "category": "Phụ kiện",
+      "price": "390000",
+      "old_price": "490000",
+      "tag": "Khuyến mãi",
+      "image": "Img4",
+      "description": "Giá đỡ laptop Baseus nhôm nguyên khối, tăng góc nhìn, thoát khí tốt hơn, tương thích với mọi laptop.",
+      "specifications": {
+        "material": "Nhôm nguyên khối",
+        "weight_capacity": "10 kg",
+        "compatibility": "11-17 inch laptops",
+        "height_adjustment": "Có thể điều chỉnh",
+        "weight": "0.5 kg"
+      },
+      "features": [
+        "Vật liệu nhôm chắc chắn",
+        "Thiết kế gập gọn",
+        "Hỗ trợ thoát khí tốt",
+        "Tương thích nhiều kích thước",
+        "Chân cao su chống trượt"
+      ],
+      "warranty": "12 tháng",
+      "inStock": true
+    },
+    {
+      "id": 5,
+      "name": "iPhone 17 Pro",
+      "category": "Điện thoại",
+      "price": "30990000",
+      "old_price": "32490000",
+      "tag": "Mẫu mới",
+      "image": "Img5",
+      "description": "iPhone 17 Pro với chip A18, camera 48MP, màn hình Super Retina XDR, thiết kế titanium hàng đầu.",
+      "specifications": {
+        "chip": "Apple A18 Pro",
+        "storage": "256GB",
+        "display": "6.1 inch Super Retina XDR",
+        "camera": "48MP + 12MP",
+        "battery": "3000 mAh",
+        "ram": "8GB",
+        "os": "iOS 18"
+      },
+      "features": [
+        "Camera system 48MP",
+        "Chip A18 Pro mạnh mẽ",
+        "Titanium grade thiết kế",
+        "Chống nước IP69",
+        "Sạc nhanh 25W"
+      ],
+      "warranty": "12 tháng",
+      "inStock": true
+    },
+    {
+      "id": 6,
+      "name": "Samsung Galaxy S24",
+      "category": "Điện thoại",
+      "price": "28990000",
+      "old_price": "29990000",
+      "tag": "Khuyến mãi",
+      "image": "Img1",
+      "description": "Samsung Galaxy S24 flagship với màn hình AMOLED 6.2 inch, camera 50MP, pin 4000mAh.",
+      "specifications": {
+        "chip": "Snapdragon 8 Gen 3",
+        "storage": "256GB",
+        "display": "6.2 inch AMOLED",
+        "camera": "50MP + 10MP + 12MP",
+        "battery": "4000 mAh",
+        "ram": "12GB",
+        "os": "Android 14"
+      },
+      "features": [
+        "Màn hình AMOLED 120Hz",
+        "Camera flagship 50MP",
+        "Snapdragon 8 Gen 3",
+        "Bền bỉ Gorilla Glass Armor",
+        "Sạc nhanh 25W"
+      ],
+      "warranty": "12 tháng",
+      "inStock": true
+    },
+    {
+      "id": 7,
+      "name": "Keychron K8 Pro",
+      "category": "Keyboard",
+      "price": "2490000",
+      "old_price": "2890000",
+      "tag": "Bán chạy",
+      "image": "akko_5075b_plus_blackgold.webp",
+      "description": "Bàn phím cơ Keychron K8 Pro layout TKL, hỗ trợ hot-swap, kết nối Bluetooth & USB-C.",
+      "specifications": {
+        "switch": "Gateron Pro",
+        "layout": "TKL (87 keys)",
+        "connection": "Bluetooth / USB-C",
+        "keycap": "PBT Double-shot",
+        "battery": "4000 mAh"
+      },
+      "features": [
+        "Hot-swap switch",
+        "Kết nối đa thiết bị",
+        "Keycap PBT cao cấp",
+        "Hỗ trợ Windows / macOS"
+      ],
+      "warranty": "12 tháng",
+      "inStock": true
+    },
+    {
+      "id": 8,
+      "name": "Logitech G Pro X",
+      "category": "Keyboard",
+      "price": "3190000",
+      "old_price": "3490000",
+      "tag": "Gaming",
+      "image": "aula_f75.webp",
+      "description": "Bàn phím cơ Logitech G Pro X thiết kế dành cho eSports, switch có thể thay thế.",
+      "specifications": {
+        "switch": "GX Blue Clicky",
+        "layout": "TKL",
+        "connection": "USB",
+        "lighting": "RGB Lightsync",
+        "weight": "980 g"
+      },
+      "features": [
+        "Thiết kế cho eSports",
+        "RGB Lightsync",
+        "Switch tháo lắp được",
+        "Độ bền cao"
+      ],
+      "warranty": "24 tháng",
+      "inStock": true
+    },
+    {
+      "id": 9,
+      "name": "Logitech G Pro X Superlight",
+      "category": "Mouse",
+      "price": "2890000",
+      "old_price": "3290000",
+      "tag": "Best seller",
+      "image": "chuot-choi-game-co-day-logitech-g502-hero.webp",
+      "description": "Chuột gaming không dây siêu nhẹ, cảm biến HERO 25K cho độ chính xác cao.",
+      "specifications": {
+        "sensor": "HERO 25K",
+        "weight": "63 g",
+        "connection": "Wireless Lightspeed",
+        "dpi": "25600 DPI",
+        "battery": "70 giờ"
+      },
+      "features": [
+        "Siêu nhẹ 63g",
+        "Độ chính xác cao",
+        "Không độ trễ",
+        "Pin lâu"
+      ],
+      "warranty": "24 tháng",
+      "inStock": true
+    },
+    {
+      "id": 10,
+      "name": "Razer DeathAdder V3",
+      "category": "Mouse",
+      "price": "1790000",
+      "old_price": "2090000",
+      "tag": "Gaming",
+      "image": "chuot-gaming-khong-day-razer-cobra-pro-rz01-04660100-r3a1.webp",
+      "description": "Chuột gaming Razer DeathAdder V3 thiết kế công thái học, cảm biến Focus Pro 30K.",
+      "specifications": {
+        "sensor": "Focus Pro 30K",
+        "weight": "59 g",
+        "connection": "Wired",
+        "dpi": "30000 DPI",
+        "switch": "Optical Gen-3"
+      },
+      "features": [
+        "Công thái học",
+        "Cảm biến 30K DPI",
+        "Click quang học",
+        "Tracking chính xác"
+      ],
+      "warranty": "24 tháng",
+      "inStock": true
+    }
+
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "Laptop",
+      "description": "Máy tính xách tay"
+    },
+    {
+      "id": 2,
+      "name": "Điện thoại",
+      "description": "Điện thoại thông minh"
+    },
+    {
+      "id": 3,
+      "name": "Phụ kiện",
+      "description": "Các loại phụ kiện công nghệ"
+    },
+    {
+      "id": 4,
+      "name": "Điện tử",
+      "description": "Các sản phẩm điện tử khác"
+    }
+  ]
+}

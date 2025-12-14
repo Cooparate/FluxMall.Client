@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import LayoutHome from '../../components/LayoutHome/LayoutHome';
+import LayoutHome from '../../layouts/LayoutHome';
 
 import "./home.scss";
 
@@ -112,7 +112,6 @@ export default function Home() {
 
   return (
     <div className="home">
-      <LayoutHome />
 
       {/* Banner Carousel */}
       <section className="banner-carousel">
@@ -148,12 +147,6 @@ export default function Home() {
               <a href="#" className="menu-link">
                 <span className="menu-text">Chuột không dây</span>
                 <span className="menu-arrow">›</span>
-              </a>
-
-            </li>
-            <li className="menu-item">
-              <a href="#" className="menu-link">
-                <span className="menu-text">Tai nghe bluetooth</span>
               </a>
             </li>
 
@@ -199,9 +192,9 @@ export default function Home() {
         </div>
 
 
-        <div class="marquee-container">
+        <div className="marquee-container">
           <marquee direction="up" scrollamount="3" behavior="scroll" loop="infinite">
-            <div class="marquee-item">
+            <div className="marquee-item">
               <img src="src/assets/images/acer-aspire-go-ag15-31p.webp" alt="Image 1"/>
               <img src="src/assets/images/acer-nitro-v-15-anv15.webp" alt="" />
               <img src="src/assets/images/laptop_acernitro5_anv15_51_57b2.webp" alt="" />
@@ -295,7 +288,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Footer */}
+      Footer
       <footer className="footer">
         <div className="container">
           <div className="footer-content">

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Login.scss";
-import LayoutIntro from '../../components/LayoutIntro/LayoutIntro';
+import LayoutIntro from '../../layouts/LayoutIntro';
 import { GrGithub } from "react-icons/gr";
 import { FcGoogle } from "react-icons/fc";
 
