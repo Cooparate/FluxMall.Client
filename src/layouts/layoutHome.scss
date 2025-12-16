@@ -189,7 +189,144 @@
 
     // Giỏ hàng link
     .header-right {
-      a {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+
+      // User menu
+      .user-menu {
+        position: relative;
+
+        .user-button {
+          display: flex;
+          align-items: center;
+          gap: 8px;
+          padding: 8px 12px;
+          background: none;
+          //border: 0px solid #ddd;
+          border-radius: 20px;
+          cursor: pointer;
+          transition: all 0.25s ease;
+          color: #333;
+          white-space: nowrap;
+
+          .icon {
+            font-size: 18px;
+            flex-shrink: 0;
+          }
+
+          .username {
+            font-size: 14px;
+            font-weight: 600;
+          }
+
+          &:hover {
+            border-color: $color-blue;
+            background: rgba($color-blue, 0.05);
+            color: $color-blue;
+          }
+        }
+
+        .user-dropdown {
+          position: absolute;
+          top: calc(100% + 8px);
+          right: 0;
+          background: white;
+          border-radius: $border-radius;
+          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+          min-width: 220px;
+          z-index: 1000;
+          overflow: hidden;
+
+          .user-info {
+            padding: 15px;
+            border-bottom: 1px solid #eee;
+
+            .user-name {
+              font-size: 15px;
+              font-weight: 600;
+              color: #333;
+              margin: 0 0 4px 0;
+            }
+
+            .user-email {
+              font-size: 13px;
+              color: #666;
+              margin: 0;
+            }
+          }
+
+          .logout-btn {
+            width: 100%;
+            padding: 12px 15px;
+            background: none;
+            border: none;
+            text-align: left;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            cursor: pointer;
+            transition: all 0.2s;
+            color: #333;
+            font-size: 14px;
+            font-weight: 500;
+
+            .icon {
+              font-size: 18px;
+            }
+
+            &:hover {
+              background: #f9fafb;
+              color: $color-red;
+            }
+          }
+        }
+      }
+
+      // Login link
+      .login-link {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        padding: 8px 12px;
+        color: #333;
+        text-decoration: none;
+        border-radius: 20px;
+        transition: all 0.25s ease;
+        font-size: 14px;
+        font-weight: 600;
+        white-space: nowrap;
+
+        .icon {
+          font-size: 18px;
+          flex-shrink: 0;
+        }
+
+        &:hover {
+          border-color: $color-blue;
+          background: rgba($color-blue, 0.05);
+          color: $color-blue;
+        }
+      }
+        text-decoration: none;
+        border: 1px solid #ddd;
+        border-radius: 20px;
+        transition: all 0.25s ease;
+        font-size: 14px;
+        font-weight: 600;
+
+        .icon {
+          font-size: 18px;
+        }
+
+        &:hover {
+          border-color: $color-blue;
+          background: rgba($color-blue, 0.05);
+          color: $color-blue;
+        }
+      }
+
+      .cart-link {
         padding: 10px;
         font-size: 20px;
         color: #333;
@@ -199,9 +336,28 @@
         justify-content: center;
         transition: all 0.25s ease;
         border: 1px solid transparent;
+        position: relative;
 
         .icon {
           font-size: 22px;
+        }
+
+        // Cart badge - hiển thị số lượng
+        .cart-badge {
+          position: absolute;
+          top: 2px;
+          right: 2px;
+          background: $color-red;
+          color: white;
+          font-size: 11px;
+          font-weight: bold;
+          width: 18px;
+          height: 18px;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border: 2px solid white;
         }
 
         &:hover {
@@ -217,7 +373,7 @@
       }
     }
   }
-}
+
 
 /* --------------NAVIGATION MENU--------------*/
 .nav {

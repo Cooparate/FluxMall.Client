@@ -854,6 +854,298 @@
     }
   }
 
+  /* --------------MODAL THÊM VÀO GIỎ HÀNG-------------- */
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    padding: 20px;
+
+    .modal-content {
+      background: white;
+      border-radius: $border-radius;
+      max-width: 800px;
+      width: 100%;
+      max-height: 90vh;
+      overflow-y: auto;
+      position: relative;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+
+      .modal-close {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        background: none;
+        border: none;
+        font-size: 24px;
+        cursor: pointer;
+        color: #666;
+        transition: $transition-speed;
+        z-index: 10;
+
+        &:hover {
+          color: $color-red;
+          transform: rotate(90deg);
+        }
+      }
+
+      .modal-body {
+        display: flex;
+        gap: 30px;
+        padding: 30px;
+
+        @media (max-width: 768px) {
+          flex-direction: column;
+        }
+
+        .modal-image {
+          flex: 1;
+          min-width: 300px;
+
+          img {
+            width: 100%;
+            height: auto;
+            border-radius: $border-radius;
+            object-fit: cover;
+          }
+
+          @media (max-width: 768px) {
+            min-width: 100%;
+          }
+        }
+
+        .modal-info {
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+
+          h3 {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+            margin: 0;
+          }
+
+          .modal-price {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            .price {
+              font-size: 24px;
+              font-weight: bold;
+              color: $color-red;
+            }
+
+            .old-price {
+              font-size: 16px;
+              text-decoration: line-through;
+              color: #999;
+            }
+          }
+
+          .modal-option {
+            label {
+              display: block;
+              font-weight: 600;
+              margin-bottom: 10px;
+              color: #333;
+            }
+
+            .option-buttons {
+              display: flex;
+              flex-wrap: wrap;
+              gap: 10px;
+
+              .option-btn {
+                padding: 8px 16px;
+                border: 2px solid #ddd;
+                background: white;
+                border-radius: $border-radius;
+                cursor: pointer;
+                transition: $transition-speed;
+                font-size: 14px;
+
+                &:hover {
+                  border-color: $color-blue;
+                  color: $color-blue;
+                }
+
+                &.active {
+                  border-color: $color-blue;
+                  background: $color-blue;
+                  color: white;
+                }
+              }
+            }
+
+            .quantity-control {
+              display: flex;
+              align-items: center;
+              gap: 10px;
+
+              .quantity-btn {
+                width: 36px;
+                height: 36px;
+                border: 1px solid #ddd;
+                background: white;
+                border-radius: $border-radius;
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                transition: $transition-speed;
+
+                &:hover:not(:disabled) {
+                  border-color: $color-blue;
+                  color: $color-blue;
+                }
+
+                &:disabled {
+                  opacity: 0.3;
+                  cursor: not-allowed;
+                }
+              }
+
+              input[type="number"] {
+                width: 60px;
+                height: 36px;
+                text-align: center;
+                border: 1px solid #ddd;
+                border-radius: $border-radius;
+                font-size: 16px;
+                font-weight: 600;
+
+                &::-webkit-inner-spin-button,
+                &::-webkit-outer-spin-button {
+                  -webkit-appearance: none;
+                  margin: 0;
+                }
+              }
+            }
+          }
+
+          .modal-total {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px;
+            background: $background-light;
+            border-radius: $border-radius;
+            margin-top: 10px;
+
+            span {
+              font-size: 18px;
+              font-weight: 600;
+            }
+
+            .total-price {
+              font-size: 24px;
+              color: $color-red;
+            }
+          }
+
+          .modal-add-btn {
+            width: 100%;
+            padding: 15px;
+            background: $color-blue;
+            color: white;
+            border: none;
+            border-radius: $border-radius;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: $transition-speed;
+
+            &:hover {
+              background: darken($color-blue, 10%);
+              transform: translateY(-2px);
+              box-shadow: 0 4px 12px rgba($color-blue, 0.3);
+            }
+
+            &:active {
+              transform: translateY(0);
+            }
+          }
+        }
+      }
+    }
+
+    // Modal yêu cầu đăng nhập
+    .modal-content.login-alert {
+      max-width: 450px;
+      padding: 0;
+
+      .login-alert-body {
+        padding: 40px 30px;
+        text-align: center;
+
+        .alert-icon {
+          font-size: 64px;
+          margin-bottom: 20px;
+        }
+
+        h3 {
+          font-size: 24px;
+          font-weight: bold;
+          color: #333;
+          margin: 0 0 15px 0;
+        }
+
+        p {
+          font-size: 16px;
+          color: #666;
+          margin-bottom: 30px;
+          line-height: 1.5;
+        }
+
+        .alert-actions {
+          display: flex;
+          gap: 15px;
+          justify-content: center;
+
+          button {
+            padding: 12px 30px;
+            border: none;
+            border-radius: $border-radius;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: $transition-speed;
+
+            &.btn-login {
+              background: $color-blue;
+              color: white;
+
+              &:hover {
+                background: darken($color-blue, 10%);
+                transform: translateY(-2px);
+                box-shadow: 0 4px 12px rgba($color-blue, 0.3);
+              }
+            }
+
+            &.btn-cancel {
+              background: #f0f0f0;
+              color: #666;
+
+              &:hover {
+                background: #e0e0e0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
   // // ============================================
   // // RESPONSIVE DESIGN - Tablet
   // // ============================================

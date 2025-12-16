@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
+import { useNavigate } from 'react-router-dom';
 import LayoutHome from '../../layouts/LayoutHome';
+import { useCart } from '../../contexts/CartContext';
 
 import "./home.scss";
 
@@ -8,6 +10,7 @@ import { FaFacebookSquare, FaChevronLeft, FaChevronRight, FaInstagramSquare, FaY
 import { HiMagnifyingGlass } from "react-icons/hi2";
 import { IoLogoGithub } from "react-icons/io";
 import { FiShoppingBag } from "react-icons/fi";
+import { AiOutlinePlus, AiOutlineMinus, AiOutlineClose } from "react-icons/ai";
 
 const mockProducts = [
   { 
@@ -16,7 +19,10 @@ const mockProducts = [
     image: Img1, 
     price: "20.290.000", 
     old_price: "21.990.000", 
-    tag: "Mẫu mới" 
+    tag: "Mẫu mới",
+    hasColors: true,
+    colors: ["Đen", "Xám", "Bạc"],
+    hasSizes: false,
   },
   { 
     id: 2, 
@@ -24,7 +30,10 @@ const mockProducts = [
     image: Img2, 
     price: "23.490.000", 
     old_price: "24.990.000", 
-    tag: "Mẫu mới" 
+    tag: "Mẫu mới",
+    hasColors: true,
+    colors: ["Xanh", "Đen"],
+    hasSizes: false,
   },
   { 
     id: 3, 
@@ -32,7 +41,9 @@ const mockProducts = [
     image: Img3, 
     price: "2.990.000", 
     old_price: "3.990.000", 
-    tag: "Giảm 20%" 
+    tag: "Giảm 20%",
+    hasColors: false,
+    hasSizes: false,
   },
   { 
     id: 4, 
@@ -40,7 +51,10 @@ const mockProducts = [
     image: Img4, 
     price: "390.000", 
     old_price: "490.000", 
-    tag: "Khuyến mãi" 
+    tag: "Khuyến mãi",
+    hasColors: true,
+    colors: ["Đen", "Trắng", "Xám"],
+    hasSizes: false,
   },
   { 
     id: 5, 
@@ -48,7 +62,12 @@ const mockProducts = [
     image: Img5, 
     price: "30.990.000", 
     old_price: "32.490.000", 
-    tag: "Sale" },
+    tag: "Sale",
+    hasColors: true,
+    colors: ["Đen Titan", "Trắng Titan", "Tự nhiên", "Xanh Titan"],
+    hasSizes: true,
+    sizes: ["128GB", "256GB", "512GB", "1TB"],
+  },
 ];
 
 const bannerSlides = [
@@ -78,6 +97,29 @@ const bannerSlides = [
 
 export default function Home() {
   const [bannerIndex, setBannerIndex] = useState(0);
+  const { addToCart } = useCart();
+  const navigate = useNavigate();
+  
+  // Kiểm tra đăng nhập
+  const [currentUser, setCurrentUser] = useState(null);
+  const [showLoginAlert, setShowLoginAlert] = useState(false);
+  
+  // Modal state
+  const [showModal, setShowModal] = useState(false);
+  const [selectedProduct, setSelectedProduct] = useState(null);
+  const [modalOptions, setModalOptions] = useState({
+    color: '',
+    size: '',
+    quantity: 1,
+  });
+
+  // Kiểm tra đăng nhập khi component mount
+  useEffect(() => {
+    const user = localStorage.getItem('fluxmall_current_user');
+    if (user) {
+      setCurrentUser(JSON.parse(user));
+    }
+  }, []);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -100,6 +142,73 @@ export default function Home() {
     setBannerIndex((prev) => (
       prev === bannerSlides.length - 1 ? 0 : prev + 1
     ));
+  };
+
+  // Kiểm tra đăng nhập trước khi thực hiện thao tác
+  const checkLoginBeforeAction = () => {
+    if (!currentUser) {
+      setShowLoginAlert(true);
+      return false;
+    }
+    return true;
+  };
+
+  // Modal handlers
+  const openModal = (product) => {
+    // Kiểm tra đăng nhập trước khi mở modal
+    if (!checkLoginBeforeAction()) {
+      return;
+    }
+    
+    setSelectedProduct(product);
+    setModalOptions({
+      color: product.hasColors ? product.colors[0] : '',
+      size: product.hasSizes ? product.sizes[0] : '',
+      quantity: 1,
+    });
+    setShowModal(true);
+  };
+
+  const closeModal = () => {
+    setShowModal(false);
+    setSelectedProduct(null);
+    setModalOptions({
+      color: '',
+      size: '',
+      quantity: 1,
+    });
+  };
+
+  const handleQuantityChange = (change) => {
+    setModalOptions(prev => ({
+      ...prev,
+      quantity: Math.max(1, prev.quantity + change)
+    }));
+  };
+
+  const handleAddToCart = () => {
+    if (selectedProduct) {
+      // Kiểm tra xem có cần chọn màu/size không
+      if (selectedProduct.hasColors && !modalOptions.color) {
+        alert('Vui lòng chọn màu sắc');
+        return;
+      }
+      if (selectedProduct.hasSizes && !modalOptions.size) {
+        alert('Vui lòng chọn kích cỡ');
+        return;
+      }
+
+      addToCart(selectedProduct, modalOptions);
+      alert('Đã thêm sản phẩm vào giỏ hàng!');
+      closeModal();
+    }
+  };
+
+  // Tính tổng giá trong modal
+  const calculateModalPrice = () => {
+    if (!selectedProduct) return 0;
+    const basePrice = parseFloat(selectedProduct.price.replace(/\./g, ''));
+    return (basePrice * modalOptions.quantity).toLocaleString('vi-VN');
   };
 
   // TODO: API - Fetch products from backend
@@ -265,8 +374,21 @@ export default function Home() {
                     <span className="old-price">{product.old_price}</span>
                   </div>
                   <div className="card-actions">
-                    <button className="btn-add">Thêm vào giỏ</button>
-                    <button className="btn-buy">Mua</button>
+                    <button className="btn-add" onClick={() => openModal(product)}>
+                      Thêm vào giỏ
+                    </button>
+                    <button 
+                      className="btn-buy"
+                      onClick={() => {
+                        if (!checkLoginBeforeAction()) {
+                          return;
+                        }
+                        // TODO: Xử lý mua hàng
+                        alert('Chức năng mua hàng đang phát triển');
+                      }}
+                    >
+                      Mua
+                    </button>
                   </div>
                 </div>
               </div>
@@ -287,6 +409,139 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Modal yêu cầu đăng nhập */}
+      {showLoginAlert && (
+        <div className="modal-overlay" onClick={() => setShowLoginAlert(false)}>
+          <div className="modal-content login-alert" onClick={(e) => e.stopPropagation()}>
+            <button className="modal-close" onClick={() => setShowLoginAlert(false)}>
+              <AiOutlineClose />
+            </button>
+            
+            <div className="login-alert-body">
+              <div className="alert-icon">🔒</div>
+              <h3>Yêu cầu đăng nhập</h3>
+              <p>Bạn cần đăng nhập để thực hiện thao tác này</p>
+              
+              <div className="alert-actions">
+                <button 
+                  className="btn-login"
+                  onClick={() => navigate('/login')}
+                >
+                  Đăng nhập ngay
+                </button>
+                <button 
+                  className="btn-cancel"
+                  onClick={() => setShowLoginAlert(false)}
+                >
+                  Để sau
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* Modal thêm vào giỏ hàng */}
+      {showModal && selectedProduct && (
+        <div className="modal-overlay" onClick={closeModal}>
+          <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+            <button className="modal-close" onClick={closeModal}>
+              <AiOutlineClose />
+            </button>
+
+            <div className="modal-body">
+              <div className="modal-image">
+                <img src={selectedProduct.image} alt={selectedProduct.name} />
+              </div>
+
+              <div className="modal-info">
+                <h3>{selectedProduct.name}</h3>
+                <div className="modal-price">
+                  <span className="price">{selectedProduct.price} ₫</span>
+                  <span className="old-price">{selectedProduct.old_price} ₫</span>
+                </div>
+
+                {/* Chọn màu sắc */}
+                {selectedProduct.hasColors && (
+                  <div className="modal-option">
+                    <label>Màu sắc:</label>
+                    <div className="option-buttons">
+                      {selectedProduct.colors.map((color) => (
+                        <button
+                          key={color}
+                          className={`option-btn ${modalOptions.color === color ? 'active' : ''}`}
+                          onClick={() => setModalOptions(prev => ({ ...prev, color }))}
+                        >
+                          {color}
+                        </button>
+                      ))}
+                    </div>
+                  </div>
+                )}
+
+                {/* Chọn kích cỡ */}
+                {selectedProduct.hasSizes && (
+                  <div className="modal-option">
+                    <label>Dung lượng:</label>
+                    <div className="option-buttons">
+                      {selectedProduct.sizes.map((size) => (
+                        <button
+                          key={size}
+                          className={`option-btn ${modalOptions.size === size ? 'active' : ''}`}
+                          onClick={() => setModalOptions(prev => ({ ...prev, size }))}
+                        >
+                          {size}
+                        </button>
+                      ))}
+                    </div>
+                  </div>
+                )}
+
+                {/* Chọn số lượng */}
+                <div className="modal-option">
+                  <label>Số lượng:</label>
+                  <div className="quantity-control">
+                    <button 
+                      className="quantity-btn"
+                      onClick={() => handleQuantityChange(-1)}
+                      disabled={modalOptions.quantity <= 1}
+                    >
+                      <AiOutlineMinus />
+                    </button>
+                    <input 
+                      type="number" 
+                      value={modalOptions.quantity}
+                      onChange={(e) => {
+                        const val = parseInt(e.target.value) || 1;
+                        setModalOptions(prev => ({ ...prev, quantity: Math.max(1, val) }));
+                      }}
+                      min="1"
+                    />
+                    <button 
+                      className="quantity-btn"
+                      onClick={() => handleQuantityChange(1)}
+                    >
+                      <AiOutlinePlus />
+                    </button>
+                  </div>
+                </div>
+
+                {/* Tổng tiền */}
+                <div className="modal-total">
+                  <span>Tổng tiền:</span>
+                  <span className="total-price">{calculateModalPrice()} ₫</span>
+                </div>
+
+                {/* Nút thêm vào giỏ */}
+                <button className="modal-add-btn" onClick={handleAddToCart}>
+                  Thêm vào giỏ hàng
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
 
       Footer
       <footer className="footer">

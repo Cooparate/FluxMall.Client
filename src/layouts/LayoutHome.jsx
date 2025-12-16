@@ -1,11 +1,12 @@
-import { useState} from "react";
+import { useState, useEffect} from "react";
 import { Link } from 'react-router-dom';
+import { useCart } from '../contexts/CartContext';
 import "./layoutHome.scss";
 
 
 import { banner} from "../assets";
 import { HiMagnifyingGlass } from "react-icons/hi2";
-import { FiShoppingBag } from "react-icons/fi";
+import { FiShoppingBag, FiUser, FiLogOut } from "react-icons/fi";
 
 
 import { Outlet, useNavigate } from "react-router-dom";
@@ -14,11 +15,29 @@ import { Outlet, useNavigate } from "react-router-dom";
 export default function layoutHome() {
 
   const [open, setOpen] = useState(false);
+  const [userDropdown, setUserDropdown] = useState(false);
+  const [currentUser, setCurrentUser] = useState(null);
   const navigate = useNavigate();
+  const { getCartCount } = useCart();
+
+  // Lấy thông tin user hiện tại
+  useEffect(() => {
+    const user = localStorage.getItem('fluxmall_current_user');
+    if (user) {
+      setCurrentUser(JSON.parse(user));
+    }
+  }, []);
 
   const goCategory = (type) => {
-  navigate(`/category/${type}`);
-  setOpen(false);
+    navigate(`/category/${type}`);
+    setOpen(false);
+  };
+
+  const handleLogout = () => {
+    localStorage.removeItem('fluxmall_current_user');
+    setCurrentUser(null);
+    setUserDropdown(false);
+    navigate('/login');
   };
 
 
@@ -39,9 +58,44 @@ export default function layoutHome() {
                 <HiMagnifyingGlass className="icon"/>
             </div>            
             <div className="header-right">
-              <a href="#cart">
+              {/* User dropdown */}
+              {currentUser ? (
+                <div className="user-menu">
+                  <button 
+                    className="user-button"
+                    onClick={() => setUserDropdown(!userDropdown)}
+                  >
+                    <FiUser className="icon"/>
+                    <span className="username">{currentUser.username}</span>
+                  </button>
+                  
+                  {userDropdown && (
+                    <div className="user-dropdown">
+                      <div className="user-info">
+                        <p className="user-name">{currentUser.username}</p>
+                        <p className="user-email">{currentUser.email}</p>
+                      </div>
+                      <button className="logout-btn" onClick={handleLogout}>
+                        <FiLogOut className="icon"/>
+                        Đăng xuất
+                      </button>
+                    </div>
+                  )}
+                </div>
+              ) : (
+                <Link to="/login" className="login-link">
+                  <FiUser className="icon"/>
+                  Đăng nhập
+                </Link>
+              )}
+
+              {/* Cart icon */}
+              <Link to="/cart" className="cart-link">
                 <FiShoppingBag className="icon"/>
-              </a>
+                {getCartCount() > 0 && (
+                  <span className="cart-badge">{getCartCount()}</span>
+                )}
+              </Link>
             </div>
           </div>
         </div>
