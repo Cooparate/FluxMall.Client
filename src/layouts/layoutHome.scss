@@ -2,7 +2,7 @@
 
 //   /* --------------HEADER SECTION--------------*/
 //   .header {
-//     border-bottom: $light-border; 
+//     border-bottom: $light-border;
 
 //     // header-top - img banner
 //     .header-top {
@@ -155,15 +155,17 @@
     .search-bar {
       position: relative;
       width: 100%;
+      max-width: 650px;
       display: flex;
       align-items: center;
+      margin: 0 auto;
 
       input {
         width: 100%;
-        padding: 10px 40px;
-        font-size: 12px;
-        border: 1px solid black;
-        border-radius: $border-radius;
+        padding: 12px 45px;
+        font-size: 14px;
+        border: 1px solid #d1d5db;
+        border-radius: 10px;
         transition: all $transition-speed;
 
         &:hover {
@@ -180,8 +182,8 @@
 
       .icon {
         position: absolute;
-        left: 15px;
-        font-size: 18px;
+        left: 16px;
+        font-size: 20px;
         color: #777;
         pointer-events: none;
       }
@@ -191,7 +193,7 @@
     .header-right {
       display: flex;
       align-items: center;
-      gap: 15px;
+      gap: 10px;
 
       // User menu
       .user-menu {
@@ -201,14 +203,15 @@
           display: flex;
           align-items: center;
           gap: 8px;
-          padding: 8px 12px;
-          background: none;
-          border: 0px solid #ddd;
-          border-radius: 20px;
+          padding: 10px 16px;
+          background: #f8f9fa;
+          border: 1px solid #e0e0e0;
+          border-radius: 10px;
           cursor: pointer;
           transition: all 0.25s ease;
           color: #333;
           white-space: nowrap;
+          height: 40px;
 
           .icon {
             font-size: 18px;
@@ -222,7 +225,7 @@
 
           &:hover {
             border-color: $color-blue;
-            background: rgba($color-blue, 0.05);
+            background: rgba($color-blue, 0.1);
             color: $color-blue;
           }
         }
@@ -288,14 +291,17 @@
         display: flex;
         align-items: center;
         gap: 6px;
-        padding: 8px 12px;
+        padding: 10px 16px;
         color: #333;
         text-decoration: none;
-        border-radius: 20px;
+        background: #f8f9fa;
+        border: 1px solid #e0e0e0;
+        border-radius: 10px;
         transition: all 0.25s ease;
         font-size: 14px;
         font-weight: 600;
         white-space: nowrap;
+        height: 20px;
 
         .icon {
           font-size: 18px;
@@ -304,56 +310,51 @@
 
         &:hover {
           border-color: $color-blue;
-          background: rgba($color-blue, 0.05);
-          color: $color-blue;
-        }
-      }
-        text-decoration: none;
-        border: 1px solid #ddd;
-        border-radius: 20px;
-        transition: all 0.25s ease;
-        font-size: 14px;
-        font-weight: 600;
-
-        .icon {
-          font-size: 18px;
-        }
-
-        &:hover {
-          border-color: $color-blue;
-          background: rgba($color-blue, 0.05);
+          background: rgba($color-blue, 0.1);
           color: $color-blue;
         }
       }
 
       .cart-link {
-        padding: 10px;
-        font-size: 20px;
-        color: #333;
-        border-radius: 50%;
         display: flex;
         align-items: center;
-        justify-content: center;
+        gap: 6px;
+        padding: 10px 16px;
+        color: #333;
+        text-decoration: none;
+        background: #f8f9fa;
+        border: 1px solid #e0e0e0;
+        border-radius: 10px;
         transition: all 0.25s ease;
-        border: 1px solid transparent;
+        font-size: 14px;
+        font-weight: 600;
+        white-space: nowrap;
+        height: 20px;
         position: relative;
 
         .icon {
-          font-size: 22px;
+          font-size: 18px;
+          flex-shrink: 0;
+        }
+
+        .cart-text {
+          font-size: 14px;
+          font-weight: 600;
         }
 
         // Cart badge - hiển thị số lượng
         .cart-badge {
           position: absolute;
-          top: 2px;
-          right: 2px;
+          top: -4px;
+          right: -4px;
           background: $color-red;
           color: white;
           font-size: 11px;
           font-weight: bold;
-          width: 18px;
+          min-width: 18px;
           height: 18px;
-          border-radius: 50%;
+          padding: 0 4px;
+          border-radius: 10px;
           display: flex;
           align-items: center;
           justify-content: center;
@@ -361,10 +362,9 @@
         }
 
         &:hover {
-          background: $color-red;
-          color: white;
-          box-shadow: 0 0 10px rgba($color-red, 0.4);
-          transform: $transform;
+          border-color: $color-blue;
+          background: rgba($color-blue, 0.1);
+          color: $color-blue;
         }
 
         &:active {
@@ -374,79 +374,26 @@
     }
   }
 
+  /* --------------NAVIGATION MENU--------------*/
+  .nav {
+    background-color: white;
+    position: relative;
+    top: 0;
+    z-index: 100;
 
-/* --------------NAVIGATION MENU--------------*/
-.nav {
-  background-color: white;
-  position: relative;
-  top: 0;
-  z-index: 100;
-
-  .nav-menu {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    gap: 0;
-    font-size: 14px;
-
-    li {
-      white-space: nowrap;
-      flex-shrink: 0;
-      position: relative;
-
-      a {
-        display: block;
-        padding: 8px 20px;
-        color: black;
-        text-decoration: none;
-        transition: $transition-speed;
-        border-bottom: 3px solid transparent;
-        position: relative;
-
-        &:hover {
-          color: $color-ogrance;
-          border-bottom-color: $color-ogrance;
-          background-color: rgba($color-ogrance, 0.025);
-        }
-
-        &:focus {
-          color: $background-light;
-          background-color: $color-ogrance;
-        }
-
-        &.active {
-          color: $background-light;
-          border-bottom-color: $color-ogrance;
-          font-weight: 600;
-        }
-      }
-    }
-
-    /* DROPDOWN */
-    .dropdown-menu {
-      position: absolute;
-      top: calc(100% + 4px);
-      left: 0;
-      background: white;
-      min-width: 200px;
-      border-radius: 8px;
-      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
-
-      opacity: 0;
-      visibility: hidden;
-      transform: translateY(-10px);
-      transition: $transition-speed;
+    .nav-menu {
+      display: flex;
+      justify-content: center;
       list-style: none;
-      overflow: hidden;
       margin: 0;
       padding: 0;
-      border: 1px solid $background-light;
-      z-index: 200;
+      gap: 0;
+      font-size: 14px;
 
       li {
-        border-bottom: 1px solid $background-light;
+        white-space: nowrap;
+        flex-shrink: 0;
+        position: relative;
 
         a {
           display: block;
@@ -454,31 +401,84 @@
           color: black;
           text-decoration: none;
           transition: $transition-speed;
+          border-bottom: 3px solid transparent;
+          position: relative;
 
           &:hover {
-            background-color: rgba($color-ogrance, 0.1);
             color: $color-ogrance;
+            border-bottom-color: $color-ogrance;
+            background-color: rgba($color-ogrance, 0.025);
+          }
+
+          &:focus {
+            color: $background-light;
+            background-color: $color-ogrance;
+          }
+
+          &.active {
+            color: $background-light;
+            border-bottom-color: $color-ogrance;
+            font-weight: 600;
           }
         }
+      }
 
-        &:last-child {
-          border-bottom: none;
+      /* DROPDOWN */
+      .dropdown-menu {
+        position: absolute;
+        top: calc(100% + 4px);
+        left: 0;
+        background: white;
+        min-width: 200px;
+        border-radius: 8px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-10px);
+        transition: $transition-speed;
+        list-style: none;
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+        border: 1px solid $background-light;
+        z-index: 200;
+
+        li {
+          border-bottom: 1px solid $background-light;
+
+          a {
+            display: block;
+            padding: 8px 20px;
+            color: black;
+            text-decoration: none;
+            transition: $transition-speed;
+
+            &:hover {
+              background-color: rgba($color-ogrance, 0.1);
+              color: $color-ogrance;
+            }
+          }
+
+          &:last-child {
+            border-bottom: none;
+          }
         }
       }
-    }
 
-    /* Show dropdown on hover */
-    .has-dropdown:hover .dropdown-menu {
-      opacity: 1;
-      visibility: visible;
-      transform: translateY(0);
-    }
+      /* Show dropdown on hover */
+      .has-dropdown:hover .dropdown-menu {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+      }
 
-    /* Show dropdown on click (for mobile/toggle) */
-    .has-dropdown.open .dropdown-menu {
-      opacity: 1;
-      visibility: visible;
-      transform: translateY(0);
+      /* Show dropdown on click (for mobile/toggle) */
+      .has-dropdown.open .dropdown-menu {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+      }
     }
   }
 }

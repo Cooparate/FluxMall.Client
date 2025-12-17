@@ -92,6 +92,7 @@ export default function layoutHome() {
               {/* Cart icon */}
               <Link to="/cart" className="cart-link">
                 <FiShoppingBag className="icon"/>
+                <span className="cart-text">Giỏ hàng</span>
                 {getCartCount() > 0 && (
                   <span className="cart-badge">{getCartCount()}</span>
                 )}

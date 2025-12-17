@@ -4,6 +4,7 @@ import "./Login.scss";
 import LayoutIntro from '../../layouts/LayoutIntro';
 import { GrGithub } from "react-icons/gr";
 import { FcGoogle } from "react-icons/fc";
+import { FiEye, FiEyeOff } from "react-icons/fi";
 
 const Login = () => {
   const navigate = useNavigate();
@@ -12,6 +13,7 @@ const Login = () => {
     password: "",
   });
   const [error, setError] = useState("");
+  const [showPassword, setShowPassword] = useState(false);
 
   const handleChange = (e) => {
     setFormData({
@@ -23,6 +25,27 @@ const Login = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    
+    // Validation đầu vào
+    if (!formData.email.trim()) {
+      setError('Vui lòng nhập email/tên đăng nhập!');
+      return;
+    }
+    
+    if (formData.email.trim().length < 3) {
+      setError('Email/Tên đăng nhập phải có ít nhất 3 ký tự!');
+      return;
+    }
+    
+    if (!formData.password) {
+      setError('Vui lòng nhập mật khẩu!');
+      return;
+    }
+    
+    if (formData.password.length < 6) {
+      setError('Mật khẩu phải có ít nhất 6 ký tự!');
+      return;
+    }
     
     // Kiểm tra thông tin đăng nhập
     const validEmail = "admin@demo.com";
@@ -111,16 +134,26 @@ const Login = () => {
                   Quên mật khẩu?
                 </a>
               </div>
-              <input
-                type="password"
-                id="password"
-                name="password"
-                value={formData.password}
-                onChange={handleChange}
-                placeholder="Ít nhất 6 ký tự"
-                required
-                autoComplete="current-password"
-              />
+              <div className="password-input-wrapper">
+                <input
+                  type={showPassword ? "text" : "password"}
+                  id="password"
+                  name="password"
+                  value={formData.password}
+                  onChange={handleChange}
+                  placeholder="Ít nhất 6 ký tự"
+                  required
+                  autoComplete="current-password"
+                />
+                <button
+                  type="button"
+                  className="toggle-password"
+                  onClick={() => setShowPassword(!showPassword)}
+                  aria-label={showPassword ? "Ẩn mật khẩu" : "Hiện mật khẩu"}
+                >
+                  {showPassword ? <FiEyeOff /> : <FiEye />}
+                </button>
+              </div>
             </div>
 
             <button type="submit" className="btn-submit">
