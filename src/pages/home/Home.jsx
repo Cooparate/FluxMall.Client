@@ -1,9 +1,8 @@
-import React, { useState, useEffect } from "react";
-import LayoutHome from '../../layouts/LayoutHome';
+import { useState, useEffect } from "react";
 
 import "./home.scss";
 
-import { banner, slide1, slide2, slide3, Img1, Img2, Img3, Img4, Img5 } from "../../assets";
+import { slide1, slide2, slide3, Img1, Img2, Img3, Img4, Img5 } from "../../assets";
 import { FaFacebookSquare, FaChevronLeft, FaChevronRight, FaInstagramSquare, FaYoutube } from "react-icons/fa";
 import { HiMagnifyingGlass } from "react-icons/hi2";
 import { IoLogoGithub } from "react-icons/io";
@@ -288,8 +287,9 @@ export default function Home() {
         </div>
       </section>
 
-      Footer
-      <footer className="footer">
+
+      {/* <footer> */}
+      {/* <footer className="footer">
         <div className="container">
           <div className="footer-content">
             <div className="footer-section">
@@ -352,7 +352,7 @@ export default function Home() {
             <p>&copy; 2025 FluxMall. Tất cả quyền được bảo lưu.</p>
           </div>
         </div>
-      </footer>
+      </footer> */}
     </div>
   );
 } 

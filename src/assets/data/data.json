@@ -266,7 +266,490 @@
       ],
       "warranty": "24 tháng",
       "inStock": true
-    }
+    },
+    {
+  "id": 11,
+  "name": "Asus VivoBook 15",
+  "category": "Laptop",
+  "price": "18990000",
+  "old_price": "20990000",
+  "tag": "Bán chạy",
+  "image": "ce142a7e57be1d77c7bfac375f7abe8c.png",
+  "description": "Laptop Asus VivoBook 15 phù hợp cho học tập và làm việc văn phòng, thiết kế gọn nhẹ, hiệu năng ổn định.",
+  "specifications": {
+    "cpu": "Intel Core i5-1135G7",
+    "ram": "8GB DDR4",
+    "storage": "512GB SSD",
+    "gpu": "Intel Iris Xe",
+    "display": "15.6 inch FHD",
+    "weight": "1.8 kg",
+    "battery": "42Wh"
+  },
+  "features": [
+    "Thiết kế mỏng nhẹ",
+    "Màn hình lớn dễ làm việc",
+    "Hiệu năng ổn định",
+    "Bàn phím thoải mái",
+    "Pin dùng cả ngày"
+  ],
+  "warranty": "12 tháng",
+  "inStock": true
+},
+{
+  "id": 12,
+  "name": "Dell Inspiron 14",
+  "category": "Laptop",
+  "price": "21490000",
+  "old_price": "22990000",
+  "tag": "Khuyến mãi",
+  "image": "may-chieu-wanbo-full-hd-vali.webp",
+  "description": "Dell Inspiron 14 mang đến hiệu năng mạnh mẽ cho công việc và học tập, thiết kế bền bỉ, sang trọng.",
+  "specifications": {
+    "cpu": "Intel Core i5-1235U",
+    "ram": "8GB DDR4",
+    "storage": "512GB SSD",
+    "gpu": "Intel Iris Xe",
+    "display": "14 inch FHD",
+    "weight": "1.7 kg",
+    "battery": "54Wh"
+  },
+  "features": [
+    "Thiết kế bền bỉ",
+    "Hiệu năng mạnh",
+    "Màn hình sắc nét",
+    "Âm thanh rõ ràng",
+    "Pin lâu"
+  ],
+  "warranty": "12 tháng",
+  "inStock": true
+},
+{
+  "id": 13,
+  "name": "HP Pavilion 15",
+  "category": "Laptop",
+  "price": "22990000",
+  "old_price": "24990000",
+  "tag": "Mới về",
+  "image": "de-do-laptop-baseus-ultrastable.webp",
+  "description": "HP Pavilion 15 phù hợp cho người dùng văn phòng và sinh viên, hiệu năng tốt và thiết kế hiện đại.",
+  "specifications": {
+    "cpu": "Intel Core i5-12450H",
+    "ram": "8GB DDR4",
+    "storage": "512GB SSD",
+    "gpu": "Intel UHD Graphics",
+    "display": "15.6 inch FHD IPS",
+    "weight": "1.75 kg",
+    "battery": "52Wh"
+  },
+  "features": [
+    "Thiết kế hiện đại",
+    "Màn hình IPS đẹp",
+    "Hiệu năng ổn định",
+    "Bàn phím dễ gõ",
+    "Pin bền bỉ"
+  ],
+  "warranty": "12 tháng",
+  "inStock": true
+},
+{
+  "id": 14,
+  "name": "Lenovo IdeaPad 3",
+  "category": "Laptop",
+  "price": "17490000",
+  "old_price": "19490000",
+  "tag": "Giá tốt",
+  "image": "msi-modern-15-f13mg.webp",
+  "description": "Lenovo IdeaPad 3 là lựa chọn kinh tế cho học sinh sinh viên với hiệu năng ổn định và giá hợp lý.",
+  "specifications": {
+    "cpu": "Intel Core i3-1215U",
+    "ram": "8GB DDR4",
+    "storage": "256GB SSD",
+    "gpu": "Intel UHD Graphics",
+    "display": "15.6 inch FHD",
+    "weight": "1.65 kg",
+    "battery": "45Wh"
+  },
+  "features": [
+    "Giá thành hợp lý",
+    "Thiết kế đơn giản",
+    "Đủ dùng học tập",
+    "Màn hình lớn",
+    "Pin ổn định"
+  ],
+  "warranty": "12 tháng",
+  "inStock": true
+},
+{
+  "id": 15,
+  "name": "Acer Swift 3",
+  "category": "Laptop",
+  "price": "24990000",
+  "old_price": "26990000",
+  "tag": "Cao cấp",
+  "image": "laptop_lenovo_loq_15arp983jc00m3vn.webp",
+  "description": "Acer Swift 3 nổi bật với thiết kế mỏng nhẹ, hiệu năng cao, phù hợp cho người thường xuyên di chuyển.",
+  "specifications": {
+    "cpu": "Intel Core i7-1260P",
+    "ram": "16GB LPDDR4X",
+    "storage": "512GB SSD",
+    "gpu": "Intel Iris Xe",
+    "display": "14 inch FHD IPS",
+    "weight": "1.2 kg",
+    "battery": "56Wh"
+  },
+  "features": [
+    "Siêu mỏng nhẹ",
+    "Hiệu năng mạnh",
+    "RAM lớn",
+    "Pin lâu",
+    "Thiết kế cao cấp"
+  ],
+  "warranty": "12 tháng",
+  "inStock": true
+},
+{
+  "id": 16,
+  "name": "MSI Modern 14",
+  "category": "Laptop",
+  "price": "21990000",
+  "old_price": "23990000",
+  "tag": "Sinh viên",
+  "image": "laptop_lenovo_ideapad_slim_3_14irh10_83k008vn.webp",
+  "description": "MSI Modern 14 hướng tới sinh viên và dân văn phòng với hiệu năng ổn định và thiết kế trẻ trung.",
+  "specifications": {
+    "cpu": "Intel Core i5-1240P",
+    "ram": "8GB DDR4",
+    "storage": "512GB SSD",
+    "gpu": "Intel Iris Xe",
+    "display": "14 inch FHD IPS",
+    "weight": "1.4 kg",
+    "battery": "53Wh"
+  },
+  "features": [
+    "Thiết kế trẻ trung",
+    "Hiệu năng tốt",
+    "Màn hình đẹp",
+    "Dễ mang theo",
+    "Pin ổn"
+  ],
+  "warranty": "12 tháng",
+  "inStock": true
+},
+{
+  "id": 21,
+  "name": "Logitech G Pro X",
+  "category": "Keyboard",
+  "price": "3290000",
+  "old_price": "3590000",
+  "tag": "Gaming",
+  "image": "logitech-g-pro-x.webp",
+  "description": "Bàn phím cơ Logitech G Pro X thiết kế nhỏ gọn, switch thay nóng, tối ưu cho game thủ chuyên nghiệp.",
+  "specifications": {
+    "type": "Mechanical",
+    "switch": "GX Blue",
+    "layout": "TKL",
+    "connection": "USB",
+    "led": "RGB"
+  },
+  "features": [
+    "Switch thay nóng",
+    "Thiết kế TKL gọn nhẹ",
+    "Đèn RGB Lightsync",
+    "Độ bền cao",
+    "Phù hợp eSports"
+  ],
+  "warranty": "24 tháng",
+  "inStock": true
+},
+{
+  "id": 22,
+  "name": "Keychron K6",
+  "category": "Keyboard",
+  "price": "2190000",
+  "old_price": "2490000",
+  "tag": "Bán chạy",
+  "image": "keychron-k6.webp",
+  "description": "Keychron K6 là bàn phím cơ không dây, nhỏ gọn, phù hợp cho coder và dân văn phòng.",
+  "specifications": {
+    "type": "Mechanical",
+    "switch": "Gateron Brown",
+    "layout": "65%",
+    "connection": "Bluetooth / USB",
+    "led": "White LED"
+  },
+  "features": [
+    "Không dây tiện lợi",
+    "Gõ êm",
+    "Thiết kế nhỏ gọn",
+    "Pin lâu",
+    "Tương thích Mac & Windows"
+  ],
+  "warranty": "12 tháng",
+  "inStock": true
+},
+{
+  "id": 23,
+  "name": "Akko 3068B",
+  "category": "Keyboard",
+  "price": "1890000",
+  "old_price": "2090000",
+  "tag": "Hot",
+  "image": "akko-3068b.webp",
+  "description": "Akko 3068B sở hữu thiết kế trẻ trung, switch Akko cho trải nghiệm gõ tốt và ổn định.",
+  "specifications": {
+    "type": "Mechanical",
+    "switch": "Akko CS Red",
+    "layout": "65%",
+    "connection": "Bluetooth / USB",
+    "led": "RGB"
+  },
+  "features": [
+    "Thiết kế đẹp",
+    "Switch Akko chất lượng",
+    "Không dây tiện lợi",
+    "RGB nổi bật",
+    "Giá tốt"
+  ],
+  "warranty": "12 tháng",
+  "inStock": true
+},
+{
+  "id": 24,
+  "name": "Razer BlackWidow V3",
+  "category": "Keyboard",
+  "price": "3490000",
+  "old_price": "3890000",
+  "tag": "Cao cấp",
+  "image": "razer-blackwidow-v3.webp",
+  "description": "Razer BlackWidow V3 mang đến trải nghiệm gaming cao cấp với switch độc quyền của Razer.",
+  "specifications": {
+    "type": "Mechanical",
+    "switch": "Razer Green",
+    "layout": "Full size",
+    "connection": "USB",
+    "led": "RGB Chroma"
+  },
+  "features": [
+    "Switch Razer độc quyền",
+    "Đèn RGB Chroma",
+    "Thiết kế chắc chắn",
+    "Độ bền cao",
+    "Gaming chuyên nghiệp"
+  ],
+  "warranty": "24 tháng",
+  "inStock": true
+},
+{
+  "id": 25,
+  "name": "Royal Kludge RK84",
+  "category": "Keyboard",
+  "price": "1590000",
+  "old_price": "1790000",
+  "tag": "Giá tốt",
+  "image": "rk84.webp",
+  "description": "RK84 là bàn phím cơ giá tốt, hỗ trợ nhiều chế độ kết nối, phù hợp người mới chơi phím cơ.",
+  "specifications": {
+    "type": "Mechanical",
+    "switch": "RK Brown",
+    "layout": "75%",
+    "connection": "Bluetooth / 2.4G / USB",
+    "led": "RGB"
+  },
+  "features": [
+    "3 chế độ kết nối",
+    "Giá hợp lý",
+    "Gõ êm",
+    "RGB đẹp",
+    "Dễ dùng"
+  ],
+  "warranty": "12 tháng",
+  "inStock": true
+},
+{
+  "id": 26,
+  "name": "DareU EK87",
+  "category": "Keyboard",
+  "price": "990000",
+  "old_price": "1190000",
+  "tag": "Sinh viên",
+  "image": "dareu-ek87.webp",
+  "description": "DareU EK87 là bàn phím cơ giá rẻ, phù hợp cho sinh viên và người mới bắt đầu.",
+  "specifications": {
+    "type": "Mechanical",
+    "switch": "DareU Blue",
+    "layout": "TKL",
+    "connection": "USB",
+    "led": "Rainbow"
+  },
+  "features": [
+    "Giá rẻ",
+    "Độ bền tốt",
+    "Gõ sướng",
+    "Thiết kế gọn",
+    "Phù hợp sinh viên"
+  ],
+  "warranty": "12 tháng",
+  "inStock": true
+},
+{
+  "id": 31,
+  "name": "Logitech G102 Lightsync",
+  "category": "Mouse",
+  "price": "490000",
+  "old_price": "590000",
+  "tag": "Bán chạy",
+  "image": "logitech-g102.webp",
+  "description": "Logitech G102 Lightsync là chuột gaming giá tốt, cảm biến chính xác, phù hợp học tập và chơi game.",
+  "specifications": {
+    "sensor": "Optical",
+    "dpi": "8000 DPI",
+    "connection": "USB",
+    "buttons": "6",
+    "weight": "85g"
+  },
+  "features": [
+    "Giá tốt",
+    "Cảm biến chính xác",
+    "Đèn RGB Lightsync",
+    "Thiết kế nhẹ",
+    "Phù hợp game thủ mới"
+  ],
+  "warranty": "24 tháng",
+  "inStock": true
+},
+{
+  "id": 32,
+  "name": "Razer DeathAdder Essential",
+  "category": "Mouse",
+  "price": "690000",
+  "old_price": "790000",
+  "tag": "Gaming",
+  "image": "razer-deathadder-essential.webp",
+  "description": "Razer DeathAdder Essential nổi tiếng với thiết kế công thái học và độ bền cao.",
+  "specifications": {
+    "sensor": "Optical",
+    "dpi": "6400 DPI",
+    "connection": "USB",
+    "buttons": "5",
+    "weight": "96g"
+  },
+  "features": [
+    "Thiết kế ôm tay",
+    "Độ bền cao",
+    "Tracking tốt",
+    "Phù hợp FPS",
+    "Thương hiệu uy tín"
+  ],
+  "warranty": "24 tháng",
+  "inStock": true
+},
+{
+  "id": 33,
+  "name": "Logitech G Pro Wireless",
+  "category": "Mouse",
+  "price": "2790000",
+  "old_price": "3090000",
+  "tag": "Cao cấp",
+  "image": "logitech-g-pro-wireless.webp",
+  "description": "Logitech G Pro Wireless là chuột gaming không dây cao cấp, trọng lượng siêu nhẹ.",
+  "specifications": {
+    "sensor": "HERO 25K",
+    "dpi": "25600 DPI",
+    "connection": "Wireless",
+    "buttons": "6",
+    "weight": "80g"
+  },
+  "features": [
+    "Không dây độ trễ thấp",
+    "Cảm biến cao cấp",
+    "Siêu nhẹ",
+    "Pin lâu",
+    "Dành cho eSports"
+  ],
+  "warranty": "24 tháng",
+  "inStock": true
+},
+{
+  "id": 34,
+  "name": "SteelSeries Rival 3",
+  "category": "Mouse",
+  "price": "890000",
+  "old_price": "990000",
+  "tag": "Hot",
+  "image": "steelseries-rival-3.webp",
+  "description": "SteelSeries Rival 3 mang đến hiệu năng ổn định, thiết kế đơn giản và bền bỉ.",
+  "specifications": {
+    "sensor": "TrueMove Core",
+    "dpi": "8500 DPI",
+    "connection": "USB",
+    "buttons": "6",
+    "weight": "77g"
+  },
+  "features": [
+    "Tracking chính xác",
+    "Thiết kế gọn nhẹ",
+    "Độ bền cao",
+    "Giá hợp lý",
+    "RGB đẹp"
+  ],
+  "warranty": "24 tháng",
+  "inStock": true
+},
+{
+  "id": 35,
+  "name": "DareU EM908",
+  "category": "Mouse",
+  "price": "390000",
+  "old_price": "490000",
+  "tag": "Sinh viên",
+  "image": "dareu-em908.webp",
+  "description": "DareU EM908 là chuột gaming giá rẻ, phù hợp sinh viên và người mới chơi game.",
+  "specifications": {
+    "sensor": "Optical",
+    "dpi": "6000 DPI",
+    "connection": "USB",
+    "buttons": "6",
+    "weight": "90g"
+  },
+  "features": [
+    "Giá rẻ",
+    "Dễ sử dụng",
+    "Đèn RGB",
+    "Thiết kế gọn",
+    "Đủ dùng gaming"
+  ],
+  "warranty": "12 tháng",
+  "inStock": true
+},
+{
+  "id": 36,
+  "name": "Logitech MX Master 3S",
+  "category": "Mouse",
+  "price": "2390000",
+  "old_price": "2590000",
+  "tag": "Văn phòng",
+  "image": "logitech-mx-master-3s.webp",
+  "description": "Logitech MX Master 3S là chuột cao cấp cho công việc văn phòng, thiết kế công thái học và cuộn siêu mượt.",
+  "specifications": {
+    "sensor": "Darkfield",
+    "dpi": "8000 DPI",
+    "connection": "Bluetooth / USB Receiver",
+    "buttons": "7",
+    "weight": "141g"
+  },
+  "features": [
+    "Công thái học",
+    "Cuộn siêu mượt",
+    "Hoạt động trên mọi bề mặt",
+    "Pin lâu",
+    "Dành cho dân văn phòng"
+  ],
+  "warranty": "24 tháng",
+  "inStock": true
+}
+
+
+
 
   ],
   "categories": [

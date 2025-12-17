@@ -3,7 +3,7 @@ import Intro from './pages/intro/Intro';
 import Login from './pages/auth/Login';
 import Register from './pages/auth/Register';
 import Home from './pages/home/Home';
-// import Category from './pages/category/Category'
+import Category from './pages/category/Category'
 import LayoutHome from './layouts/LayoutHome';
 
 import './App.scss';
@@ -19,8 +19,14 @@ function App() {
 
         <Route element={<LayoutHome />}>
           <Route path="home" element={<Home />} />
-          {/* <Route path="category/:type" element={<Category />} />
-          <Route path="product" element={<ProductDetail />} /> */}
+          <Route path="category/:type" element={<Category />} />
+          {/* <Route path="product" element={<ProductDetail />} /> */}
+
+
+
+
+
+          
         </Route>
       </Routes>
     </BrowserRouter>
