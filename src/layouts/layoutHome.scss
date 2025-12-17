@@ -1,4 +1,5 @@
-// @use "../App.scss" as *;
+@use "sass:color";
+@use "../App.scss" as *;
 
 //   /* --------------HEADER SECTION--------------*/
 //   .header {
@@ -331,6 +332,7 @@
         white-space: nowrap;
         height: 20px;
         position: relative;
+        cursor: pointer;
 
         .icon {
           font-size: 18px;
@@ -478,6 +480,109 @@
         opacity: 1;
         visibility: visible;
         transform: translateY(0);
+      }
+    }
+  }
+
+  /* --------------MODAL LOGIN ALERT-------------- */
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    padding: 20px;
+
+    .modal-content.login-alert {
+      background: white;
+      border-radius: $border-radius;
+      max-width: 450px;
+      width: 100%;
+      position: relative;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+      padding: 0;
+
+      .modal-close {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        background: none;
+        border: none;
+        font-size: 24px;
+        cursor: pointer;
+        color: #666;
+        transition: $transition-speed;
+        z-index: 10;
+
+        &:hover {
+          color: $color-red;
+          transform: rotate(90deg);
+        }
+      }
+
+      .login-alert-body {
+        padding: 40px 30px;
+        text-align: center;
+
+        .alert-icon {
+          font-size: 64px;
+          margin-bottom: 20px;
+        }
+
+        h3 {
+          font-size: 24px;
+          font-weight: bold;
+          color: #333;
+          margin: 0 0 15px 0;
+        }
+
+        p {
+          font-size: 16px;
+          color: #666;
+          margin-bottom: 30px;
+          line-height: 1.5;
+        }
+
+        .alert-actions {
+          display: flex;
+          gap: 15px;
+          justify-content: center;
+
+          button {
+            padding: 12px 30px;
+            border: none;
+            border-radius: $border-radius;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: $transition-speed;
+
+            &.btn-login {
+              background: $color-blue;
+              color: white;
+
+              &:hover {
+                background: color.adjust($color-blue, $lightness: -10%);
+                transform: translateY(-2px);
+                box-shadow: 0 4px 12px rgba($color-blue, 0.3);
+              }
+            }
+
+            &.btn-cancel {
+              background: #f0f0f0;
+              color: #666;
+
+              &:hover {
+                background: #e0e0e0;
+              }
+            }
+          }
+        }
       }
     }
   }

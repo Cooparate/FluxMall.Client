@@ -7,6 +7,7 @@ import "./layoutHome.scss";
 import { banner} from "../assets";
 import { HiMagnifyingGlass } from "react-icons/hi2";
 import { FiShoppingBag, FiUser, FiLogOut } from "react-icons/fi";
+import { AiOutlineClose } from "react-icons/ai";
 
 
 import { Outlet, useNavigate } from "react-router-dom";
@@ -17,6 +18,7 @@ export default function layoutHome() {
   const [open, setOpen] = useState(false);
   const [userDropdown, setUserDropdown] = useState(false);
   const [currentUser, setCurrentUser] = useState(null);
+  const [showLoginAlert, setShowLoginAlert] = useState(false);
   const navigate = useNavigate();
   const { getCartCount } = useCart();
 
@@ -40,7 +42,13 @@ export default function layoutHome() {
     navigate('/login');
   };
 
-
+  const checkLoginBeforeAction = () => {
+    if (!currentUser) {
+      setShowLoginAlert(true);
+      return false;
+    }
+    return true;
+  };
 
 
   return(
@@ -90,16 +98,90 @@ export default function layoutHome() {
               )}
 
               {/* Cart icon */}
-              <Link to="/cart" className="cart-link">
+              <div 
+                className="cart-link" 
+                onClick={(e) => {
+                  if (!checkLoginBeforeAction()) {
+                    e.preventDefault();
+                    return;
+                  }
+                  navigate('/cart');
+                }}
+              >
                 <FiShoppingBag className="icon"/>
                 <span className="cart-text">Giỏ hàng</span>
                 {getCartCount() > 0 && (
                   <span className="cart-badge">{getCartCount()}</span>
                 )}
-              </Link>
+              </div>
+
             </div>
           </div>
         </div>
+
+        {/* Modal yêu cầu đăng nhập */}
+        {showLoginAlert && (
+          <div className="modal-overlay" onClick={() => setShowLoginAlert(false)}>
+            <div className="modal-content login-alert" onClick={(e) => e.stopPropagation()}>
+              <button className="modal-close" onClick={() => setShowLoginAlert(false)}>
+                <AiOutlineClose />
+              </button>
+              
+              <div className="login-alert-body">
+                <div className="alert-icon">🔒</div>
+                <h3>Yêu cầu đăng nhập</h3>
+                <p>Bạn cần đăng nhập để truy cập giỏ hàng</p>
+                
+                <div className="alert-actions">
+                  <button 
+                    className="btn-login"
+                    onClick={() => navigate('/login')}
+                  >
+                    Đăng nhập ngay
+                  </button>
+                  <button 
+                    className="btn-cancel"
+                    onClick={() => setShowLoginAlert(false)}
+                  >
+                    Để sau
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
+
+        {/* Modal yêu cầu đăng nhập */}
+        {showLoginAlert && (
+          <div className="modal-overlay" onClick={() => setShowLoginAlert(false)}>
+            <div className="modal-content login-alert" onClick={(e) => e.stopPropagation()}>
+              <button className="modal-close" onClick={() => setShowLoginAlert(false)}>
+                <AiOutlineClose />
+              </button>
+              
+              <div className="login-alert-body">
+                <div className="alert-icon">🔒</div>
+                <h3>Yêu cầu đăng nhập</h3>
+                <p>Bạn cần đăng nhập để truy cập giỏ hàng</p>
+                
+                <div className="alert-actions">
+                  <button 
+                    className="btn-login"
+                    onClick={() => navigate('/login')}
+                  >
+                    Đăng nhập ngay
+                  </button>
+                  <button 
+                    className="btn-cancel"
+                    onClick={() => setShowLoginAlert(false)}
+                  >
+                    Để sau
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
 
         <nav className="nav"> 
           <div className="container"> 
