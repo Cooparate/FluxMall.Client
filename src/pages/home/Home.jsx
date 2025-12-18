@@ -4,7 +4,7 @@ import { useCart } from '../../contexts/CartContext';
 
 import "./home.scss";
 
-import { slide1, slide2, slide3, Img1, Img2, Img3, Img4, Img5 } from "../../assets";
+import { slide1, slide2, slide3, Img1, Img2, Img3, Img4, Img5, acerAspireImg, acerNitroImg, acerNitro5Img, lenovoLoqImg, lenovoIdeapadImg } from "../../assets";
 import { 
   FaFacebookSquare, FaChevronLeft, FaChevronRight, FaInstagramSquare, FaYoutube,
   IoLogoGithub,
@@ -303,16 +303,16 @@ export default function Home() {
         <div className="marquee-container">
           <marquee direction="up" scrollamount="3" behavior="scroll" loop="infinite">
             <div className="marquee-item">
-              <img src="src/assets/images/acer-aspire-go-ag15-31p.webp" alt="Image 1"/>
-              <img src="src/assets/images/acer-nitro-v-15-anv15.webp" alt="" />
-              <img src="src/assets/images/laptop_acernitro5_anv15_51_57b2.webp" alt="" />
-              <img src="src/assets/images/laptop_lenovo_loq_15arp983jc00m3vn.webp" alt="" />
-              <img src="src/assets/images/laptop_lenovo_ideapad_slim_3_14irh10_83k008vn.webp" alt="" />
-              <img src="src/assets/images/acer-aspire-go-ag15-31p.webp" alt="Image 1"/>
-              <img src="src/assets/images/acer-nitro-v-15-anv15.webp" alt="" />
-              <img src="src/assets/images/laptop_acernitro5_anv15_51_57b2.webp" alt="" />
-              <img src="src/assets/images/laptop_lenovo_loq_15arp983jc00m3vn.webp" alt="" />
-              <img src="src/assets/images/laptop_lenovo_ideapad_slim_3_14irh10_83k008vn.webp" alt="" />
+              <img src={acerAspireImg} alt="Acer Aspire Laptop" loading="lazy" />
+              <img src={acerNitroImg} alt="Acer Nitro V15 Laptop" loading="lazy" />
+              <img src={acerNitro5Img} alt="Acer Nitro 5 Laptop" loading="lazy" />
+              <img src={lenovoLoqImg} alt="Lenovo LOQ Laptop" loading="lazy" />
+              <img src={lenovoIdeapadImg} alt="Lenovo IdeaPad Slim Laptop" loading="lazy" />
+              <img src={acerAspireImg} alt="Acer Aspire Laptop" loading="lazy" />
+              <img src={acerNitroImg} alt="Acer Nitro V15 Laptop" loading="lazy" />
+              <img src={acerNitro5Img} alt="Acer Nitro 5 Laptop" loading="lazy" />
+              <img src={lenovoLoqImg} alt="Lenovo LOQ Laptop" loading="lazy" />
+              <img src={lenovoIdeapadImg} alt="Lenovo IdeaPad Slim Laptop" loading="lazy" />
             </div>
           </marquee>
         </div>    

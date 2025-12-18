@@ -15,6 +15,17 @@ import Img3 from "./images/may-chieu-wanbo-full-hd.webp";
 import Img4 from "./images/de-do-laptop-baseus-ultrastable.webp";
 import Img5 from "./images/iphone_17_pro_512gb.webp";
 
+// Team member images
+import backendDevImg from "./images/consauhayngu.webp";
+import frontendDevImg from "./images/rian_pham.webp";
+
+// Laptop marquee images
+import acerAspireImg from "./images/acer-aspire-go-ag15-31p.webp";
+import acerNitroImg from "./images/acer-nitro-v-15-anv15.webp";
+import acerNitro5Img from "./images/laptop_acernitro5_anv15_51_57b2.webp";
+import lenovoLoqImg from "./images/laptop_lenovo_loq_15arp983jc00m3vn.webp";
+import lenovoIdeapadImg from "./images/laptop_lenovo_ideapad_slim_3_14irh10_83k008vn.webp";
+
 //Export all images
 export {
   banner,
@@ -25,7 +36,14 @@ export {
   Img2,
   Img3,
   Img4,
-  Img5
+  Img5,
+  backendDevImg,
+  frontendDevImg,
+  acerAspireImg,
+  acerNitroImg,
+  acerNitro5Img,
+  lenovoLoqImg,
+  lenovoIdeapadImg
 };
 
 

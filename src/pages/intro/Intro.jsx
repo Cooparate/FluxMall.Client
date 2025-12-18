@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import LayoutIntro from '../../layouts/LayoutIntro';
+import { backendDevImg, frontendDevImg } from '../../assets';
 import './Intro.scss';
 
 const Intro = () => {
@@ -68,14 +69,14 @@ const Intro = () => {
           <p className="section-subtitle">Những người đúng sau FluxMall</p>
           <div className="team-grid">
             <div className="team-card">
-              <img src="/src/assets/images/consauhayngu.webp" alt="Backend Developer" className="team-image" loading="lazy" />
+              <img src={backendDevImg} alt="Backend Developer" className="team-image" loading="lazy" />
               {/* <div className="team-placeholder">👨‍💻</div> */}
               <h3>Backend Developer</h3>
               <p className="team-role">Architecture & API</p>
               <p className="team-description">Xây dựng các hệ thống phụ trợ mạnh mẽ và có khả năng mở rộng</p>
             </div>
             <div className="team-card">
-              <img src="/src/assets/images/rian_pham.webp" alt="Frontend Developer" className="team-image" loading="lazy" />
+              <img src={frontendDevImg} alt="Frontend Developer" className="team-image" loading="lazy" />
               {/* <div className="team-placeholder">👩‍💻</div> */}
               <h3>Frontend Developer</h3>
               <p className="team-role">UI/UX & Design</p>
