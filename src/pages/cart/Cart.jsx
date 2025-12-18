@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import { useCart } from '../../contexts/CartContext';
-import { AiOutlinePlus, AiOutlineMinus, AiOutlineDelete, AiOutlineShoppingCart } from 'react-icons/ai';
-import { MdClose } from 'react-icons/md';
-import { RiCouponLine } from 'react-icons/ri';
+import { 
+  AiOutlinePlus, AiOutlineMinus, AiOutlineDelete, AiOutlineShoppingCart,
+  MdClose, RiCouponLine 
+} from '../../components/icons';
 import './Cart.scss';
 
 // Mock data cho vouchers (sau này sẽ fetch từ API)

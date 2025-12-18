@@ -1,7 +1,7 @@
 /* --------------------IMAGE ASSETS EXPORT -------------------*/
 
 // Banner images
-import banner from "./images/tttt.png";
+import banner from "./images/tttt.webp";
 
 // Slide carousel images
 import slide1 from "./images/iphone-16-pro-max.webp";

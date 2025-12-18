@@ -2,10 +2,7 @@ import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import "./Register.scss";
 import LayoutIntro  from "../../layouts/LayoutIntro";
-
-import { GrGithub } from "react-icons/gr";
-import { FcGoogle } from "react-icons/fc";
-import { FiEye, FiEyeOff } from "react-icons/fi";
+import { GrGithub, FcGoogle, FiEye, FiEyeOff } from "../../components/icons";
 
 const Register = () => {
   const navigate = useNavigate();

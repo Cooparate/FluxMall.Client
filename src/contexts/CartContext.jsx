@@ -1,10 +1,12 @@
 import React, { createContext, useContext, useState, useEffect } from 'react';
 
-// Tạo Context cho Cart
+// Tạo Context cho Cart (Kho chứa data chung)
+// Chứa data giỏ hàng + các thao tác khác
 const CartContext = createContext();
 
 // Hook để sử dụng CartContext
 export const useCart = () => {
+  // (useContext) Hook để lấy data từ context
   const context = useContext(CartContext);
   if (!context) {
     throw new Error('useCart phải được sử dụng trong CartProvider');
@@ -40,15 +42,15 @@ export const CartProvider = ({ children }) => {
         // Nếu đã tồn tại, tăng số lượng
         return prevItems.map(item =>
           item.itemId === itemId
-            ? { ...item, quantity: item.quantity + quantity }
-            : item
+            ? { ...item, quantity: item.quantity + quantity } // Tăng số lượng
+            : item // Giữ nguyên item khác
         );
       } else {
         // Nếu chưa tồn tại, thêm mới
         return [
-          ...prevItems,
-          {
-            ...product,
+          ...prevItems,     // Giữ nguyên item cũ
+          {                 // Thêm item mới
+            ...product,     // Copy tất cả thông tin product
             itemId,
             color,
             size,
@@ -73,8 +75,8 @@ export const CartProvider = ({ children }) => {
     setCartItems(prevItems =>
       prevItems.map(item =>
         item.itemId === itemId
-          ? { ...item, quantity: newQuantity }
-          : item
+          ? { ...item, quantity: newQuantity }    // Cập nhật Quantity mới
+          : item          // Item khác thì giữ nguyên
       )
     );
   };
@@ -84,8 +86,8 @@ export const CartProvider = ({ children }) => {
     setCartItems(prevItems =>
       prevItems.map(item =>
         item.itemId === itemId
-          ? { ...item, selected: !item.selected }
-          : item
+          ? { ...item, selected: !item.selected }   // Đảo ngược trạng thái
+          : item        // Item khác giữ nguyênn
       )
     );
   };

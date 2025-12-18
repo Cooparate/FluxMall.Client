@@ -1,16 +1,15 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { useNavigate } from 'react-router-dom';
-import LayoutHome from '../../layouts/LayoutHome';
 import { useCart } from '../../contexts/CartContext';
 
 import "./home.scss";
 
-import { banner, slide1, slide2, slide3, Img1, Img2, Img3, Img4, Img5 } from "../../assets";
-import { FaFacebookSquare, FaChevronLeft, FaChevronRight, FaInstagramSquare, FaYoutube } from "react-icons/fa";
-import { HiMagnifyingGlass } from "react-icons/hi2";
-import { IoLogoGithub } from "react-icons/io";
-import { FiShoppingBag } from "react-icons/fi";
-import { AiOutlinePlus, AiOutlineMinus, AiOutlineClose } from "react-icons/ai";
+import { slide1, slide2, slide3, Img1, Img2, Img3, Img4, Img5 } from "../../assets";
+import { 
+  FaFacebookSquare, FaChevronLeft, FaChevronRight, FaInstagramSquare, FaYoutube,
+  IoLogoGithub,
+  AiOutlinePlus, AiOutlineMinus, AiOutlineClose 
+} from "../../components/icons";
 
 const mockProducts = [
   { 

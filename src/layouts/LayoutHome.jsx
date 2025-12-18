@@ -5,9 +5,11 @@ import "./layoutHome.scss";
 
 
 import { banner} from "../assets";
-import { HiMagnifyingGlass } from "react-icons/hi2";
-import { FiShoppingBag, FiUser, FiLogOut } from "react-icons/fi";
-import { AiOutlineClose } from "react-icons/ai";
+import { 
+  HiMagnifyingGlass, 
+  FiShoppingBag, FiUser, FiLogOut,
+  AiOutlineClose 
+} from "../components/icons";
 
 
 import { Outlet, useNavigate } from "react-router-dom";

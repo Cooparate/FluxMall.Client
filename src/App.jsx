@@ -1,12 +1,29 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { lazy, Suspense } from 'react';
 import { CartProvider } from './contexts/CartContext';
-import Intro from './pages/intro/Intro';
-import Login from './pages/auth/Login';
-import Register from './pages/auth/Register';
-import Home from './pages/home/Home';
-import Cart from './pages/cart/Cart';
-// import Category from './pages/category/Category'
-import LayoutHome from './layouts/LayoutHome';
+
+// Lazy load components cho performance tốt hơn
+const Intro = lazy(() => import('./pages/intro/Intro'));
+const Login = lazy(() => import('./pages/auth/Login'));
+const Register = lazy(() => import('./pages/auth/Register'));
+const Home = lazy(() => import('./pages/home/Home'));
+const Cart = lazy(() => import('./pages/cart/Cart'));
+const LayoutHome = lazy(() => import('./layouts/LayoutHome'));
+
+// Loading component
+const LoadingFallback = () => (
+  <div style={{
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    height: '100vh',
+    fontSize: '18px',
+    color: '#0066cc',
+    fontWeight: '600'
+  }}>
+    ⚡ Đang tải...
+  </div>
+);
 
 import './App.scss';
 
@@ -15,18 +32,20 @@ function App() {
   return (
     <CartProvider>
       <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Intro />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/register" element={<Register />} />
+        <Suspense fallback={<LoadingFallback />}>
+          <Routes>
+            <Route path="/" element={<Intro />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/register" element={<Register />} />
 
-          <Route element={<LayoutHome />}>
-            <Route path="home" element={<Home />} />
-            <Route path="cart" element={<Cart />} />
-            {/* <Route path="category/:type" element={<Category />} />
-            <Route path="product" element={<ProductDetail />} /> */}
-          </Route>
-        </Routes>
+            <Route element={<LayoutHome />}>
+              <Route path="/home" element={<Home />} />
+              <Route path="/cart" element={<Cart />} />
+              {/* <Route path="/category/:type" element={<Category />} />
+              <Route path="/product" element={<ProductDetail />} /> */}
+            </Route>
+          </Routes>
+        </Suspense>
       </BrowserRouter>
     </CartProvider>
 
