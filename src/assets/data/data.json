@@ -744,6 +744,15 @@
     "Pin lâu",
     "Dành cho dân văn phòng"
   ],
+  "promotion": {
+    "shockSale": true,
+    "studentDiscount": true,
+    "gift": "Lót chuột cao cấp"
+  },
+  "badge": {
+    "bestSeller": true,
+    "newArrival": false
+  },
   "warranty": "24 tháng",
   "inStock": true
 }

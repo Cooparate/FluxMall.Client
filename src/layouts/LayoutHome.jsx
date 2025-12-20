@@ -53,15 +53,16 @@ export default function layoutHome() {
           <div className="container"> 
             <ul className="nav-menu"> 
               <li><Link to="/home">Trang chủ</Link></li> 
-              <li><Link to="/">Giới thiệu</Link></li> 
               
               {/* --Sản phẩm-- */}
               <li className={`has-dropdown ${open ? 'open' : ''}`}>
                 <a href="#" onClick={(e) => {e.preventDefault(); setOpen(!open);}}>Sản phẩm</a>
                 <ul className="dropdown-menu">
                   <li><a href="" onClick={() => goCategory("laptop")}>Laptop</a></li>
-                  <li><a href="" onClick={() => goCategory("keyboard")}>Keyboard</a></li>
-                  <li><a href="" onClick={() => goCategory("mouse")}>Mouse</a></li>
+                  <li><a href="" onClick={() => goCategory("keyboard")}>Bàn phím</a></li>
+                  <li><a href="" onClick={() => goCategory("mouse")}>Chuột</a></li>
+                  <li><a href="" onClick={() => goCategory("mouse")}>Tai nghe</a></li>
+
                 </ul>
 
               </li>
@@ -70,39 +71,27 @@ export default function layoutHome() {
               <li className="has-dropdown">
                 <a href="#">Sản phẩm bán chạy</a>
                 <ul className="dropdown-menu">
-                  <li><a href="#">Mới ra mắt</a></li>
                   <li><a href="#">Bán chạy nhất</a></li>
-                  <li><a href="#">Cao cấp</a></li>
-                  <li><a href="#">Giá tốt nhất</a></li>
+                  <li><a href="#">Mới ra mắt</a></li>
                 </ul>
-              </li>
+              </li>             
               
+              <li><a href="#">Giảm giá sốc</a></li>
+              <li><a href="#">Dành cho sinh viên</a></li>
+  
               {/* -- Phụ kiện -- */}
               <li className="has-dropdown">
                 <a href="#">Phụ kiện</a>
                 <ul className="dropdown-menu">
                   <li><a href="#">Túi chống sốc</a></li>
-                  <li><a href="#">Ba lô laptop</a></li>
-                  <li><a href="#">Lót chuột</a></li>
                   <li><a href="#">Bộ vệ sinh laptop</a></li>
                   <li><a href="#">Đế tảng nhiệt</a></li>
+                </ul>
+              </li>
 
-                </ul>
-              </li>
-              
-              {/* -- Ưu đãi -- */}
-              <li className="has-dropdown">
-                <a href="#">Ưu đãi</a>
-                <ul className="dropdown-menu">
-                  <li><a href="#">Dành cho sinh viên</a></li>
-                  <li><a href="#">Khuyến mãi</a></li>
-                  <li><a href="#">Giảm giá sốc</a></li>
-                  <li><a href="#">Quà tặng kèm</a></li>
-                </ul>
-              </li>
-              
               <li><a href="#">Trung tâm bảo hành</a></li> 
               <li><a href="#">Liên hệ</a></li> 
+
             </ul> 
           </div> 
         </nav>
