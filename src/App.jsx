@@ -8,6 +8,8 @@ const Login = lazy(() => import('./pages/auth/Login'));
 const Register = lazy(() => import('./pages/auth/Register'));
 const Home = lazy(() => import('./pages/home/Home'));
 const Cart = lazy(() => import('./pages/cart/Cart'));
+const Category = lazy(() => import('./pages/category/Category'));
+const ProductDetail = lazy(() => import('./components/product/ProductDetail'));
 const LayoutHome = lazy(() => import('./layouts/LayoutHome'));
 
 // Loading component
@@ -41,8 +43,8 @@ function App() {
             <Route element={<LayoutHome />}>
               <Route path="/home" element={<Home />} />
               <Route path="/cart" element={<Cart />} />
-              {/* <Route path="/category/:type" element={<Category />} />
-              <Route path="/product" element={<ProductDetail />} /> */}
+              <Route path="/category/:type" element={<Category />} />
+              <Route path="/product" element={<ProductDetail />} />
             </Route>
           </Routes>
         </Suspense>

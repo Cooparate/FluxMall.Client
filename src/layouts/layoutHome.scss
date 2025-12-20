@@ -1,4 +1,5 @@
 @use "../App.scss" as *;
+@use "sass:color";
 
 /* Container chung */
 .container {
@@ -48,17 +49,15 @@
     .search-bar {
       position: relative;
       width: 100%;
-      max-width: 650px;
       display: flex;
       align-items: center;
-      margin: 0 auto;
 
       input {
         width: 100%;
-        padding: 12px 45px;
-        font-size: 14px;
-        border: 1px solid #d1d5db;
-        border-radius: 10px;
+        padding: 10px 40px;
+        font-size: 12px;
+        border: 1px solid black;
+        border-radius: $border-radius;
         transition: all $transition-speed;
 
         &:hover {
@@ -75,18 +74,18 @@
 
       .icon {
         position: absolute;
-        left: 16px;
-        font-size: 20px;
+        left: 15px;
+        font-size: 18px;
         color: #777;
         pointer-events: none;
       }
     }
 
-    // Giỏ hàng link
+    // Header right - User & Cart
     .header-right {
       display: flex;
       align-items: center;
-      gap: 10px;
+      gap: 15px;
 
       // User menu
       .user-menu {
@@ -97,14 +96,14 @@
           align-items: center;
           gap: 8px;
           padding: 10px 16px;
+          color: #333;
           background: #f8f9fa;
           border: 1px solid #e0e0e0;
           border-radius: 10px;
           cursor: pointer;
           transition: all 0.25s ease;
-          color: #333;
-          white-space: nowrap;
-          height: 40px;
+          font-size: 14px;
+          font-weight: 600;
 
           .icon {
             font-size: 18px;
@@ -114,6 +113,7 @@
           .username {
             font-size: 14px;
             font-weight: 600;
+            white-space: nowrap;
           }
 
           &:hover {
@@ -123,26 +123,29 @@
           }
         }
 
+        // User dropdown menu
         .user-dropdown {
           position: absolute;
           top: calc(100% + 8px);
           right: 0;
           background: white;
-          border-radius: $border-radius;
-          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
           min-width: 220px;
+          border-radius: 10px;
+          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+          border: 1px solid #e0e0e0;
           z-index: 1000;
           overflow: hidden;
 
           .user-info {
             padding: 15px;
-            border-bottom: 1px solid #eee;
+            border-bottom: 1px solid #e0e0e0;
+            background: #f8f9fa;
 
             .user-name {
               font-size: 15px;
               font-weight: 600;
               color: #333;
-              margin: 0 0 4px 0;
+              margin: 0 0 5px 0;
             }
 
             .user-email {
@@ -154,26 +157,24 @@
 
           .logout-btn {
             width: 100%;
-            padding: 12px 15px;
-            background: none;
-            border: none;
-            text-align: left;
             display: flex;
             align-items: center;
-            gap: 10px;
-            cursor: pointer;
-            transition: all 0.2s;
-            color: #333;
+            gap: 8px;
+            padding: 12px 15px;
+            background: white;
+            border: none;
+            color: $color-red;
             font-size: 14px;
-            font-weight: 500;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.25s ease;
 
             .icon {
-              font-size: 18px;
+              font-size: 16px;
             }
 
             &:hover {
-              background: #f9fafb;
-              color: $color-red;
+              background: rgba($color-red, 0.1);
             }
           }
         }
@@ -194,7 +195,6 @@
         font-size: 14px;
         font-weight: 600;
         white-space: nowrap;
-        height: 20px;
 
         .icon {
           font-size: 18px;
@@ -208,6 +208,7 @@
         }
       }
 
+      // Cart link
       .cart-link {
         display: flex;
         align-items: center;
@@ -222,7 +223,6 @@
         font-size: 14px;
         font-weight: 600;
         white-space: nowrap;
-        height: 20px;
         position: relative;
         cursor: pointer;
 
@@ -267,27 +267,80 @@
       }
     }
   }
+}
 
-  /* --------------NAVIGATION MENU--------------*/
-  .nav {
-    background-color: white;
-    position: relative;
-    top: 0;
-    z-index: 100;
+/* --------------NAVIGATION MENU--------------*/
+.nav {
+  background-color: white;
+  position: relative;
+  top: 0;
+  z-index: 100;
 
-    .nav-menu {
-      display: flex;
-      justify-content: center;
+  .nav-menu {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 0;
+    font-size: 14px;
+
+    li {
+      white-space: nowrap;
+      flex-shrink: 0;
+      position: relative;
+
+      a {
+        display: block;
+        padding: 8px 20px;
+        color: black;
+        text-decoration: none;
+        transition: $transition-speed;
+        border-bottom: 3px solid transparent;
+        position: relative;
+
+        &:hover {
+          color: $color-ogrance;
+          border-bottom-color: $color-ogrance;
+          background-color: rgba($color-ogrance, 0.025);
+        }
+
+        &:focus {
+          color: $background-light;
+          background-color: $color-ogrance;
+        }
+
+        &.active {
+          color: $background-light;
+          border-bottom-color: $color-ogrance;
+          font-weight: 600;
+        }
+      }
+    }
+
+    /* DROPDOWN */
+    .dropdown-menu {
+      position: absolute;
+      top: calc(100% + 4px);
+      left: 0;
+      background: white;
+      min-width: 200px;
+      border-radius: 8px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(-10px);
+      transition: $transition-speed;
       list-style: none;
+      overflow: hidden;
       margin: 0;
       padding: 0;
-      gap: 0;
-      font-size: 14px;
+      border: 1px solid $background-light;
+      z-index: 200;
 
       li {
-        white-space: nowrap;
-        flex-shrink: 0;
-        position: relative;
+        border-bottom: 1px solid $background-light;
 
         a {
           display: block;
@@ -295,77 +348,25 @@
           color: black;
           text-decoration: none;
           transition: $transition-speed;
-          border-bottom: 3px solid transparent;
-          position: relative;
 
           &:hover {
+            background-color: rgba($color-ogrance, 0.1);
             color: $color-ogrance;
-            border-bottom-color: $color-ogrance;
-            background-color: rgba($color-ogrance, 0.025);
-          }
-
-          &:focus {
-            color: $background-light;
-            background-color: $color-ogrance;
-          }
-
-          &.active {
-            color: $background-light;
-            border-bottom-color: $color-ogrance;
-            font-weight: 600;
           }
         }
-      }
 
-      /* DROPDOWN */
-      .dropdown-menu {
-        position: absolute;
-        top: calc(100% + 4px);
-        left: 0;
-        background: white;
-        min-width: 200px;
-        border-radius: 8px;
-        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
-
-        opacity: 0;
-        visibility: hidden;
-        transform: translateY(-10px);
-        transition: $transition-speed;
-        list-style: none;
-        overflow: hidden;
-        margin: 0;
-        padding: 0;
-        border: 1px solid $background-light;
-        z-index: 200;
-
-        li {
-          border-bottom: 1px solid $background-light;
-
-          a {
-            display: block;
-            padding: 8px 20px;
-            color: black;
-            text-decoration: none;
-            transition: $transition-speed;
-
-            &:hover {
-              background-color: rgba($color-ogrance, 0.1);
-              color: $color-ogrance;
-            }
-          }
-
-          &:last-child {
-            border-bottom: none;
-          }
+        &:last-child {
+          border-bottom: none;
         }
       }
+    }
 
-      /* Show dropdown on hover */
-      .has-dropdown:hover .dropdown-menu {
-        opacity: 1;
-        visibility: visible;
-        transform: translateY(0);
-      }
+    /* Show dropdown on hover */
+    .has-dropdown:hover .dropdown-menu {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
 
     /* Show dropdown on click (for mobile/toggle) */
     .has-dropdown.open .dropdown-menu {
@@ -387,7 +388,7 @@
   margin-top: 10px;
   background-image: 
   linear-gradient(rgba(255, 255, 255, 0.8)),
-  url("../assets/images/ce142a7e57be1d77c7bfac375f7abe8c.png");
+  url("../assets/images/ce142a7e57be1d77c7bfac375f7abe8c.webp");
   background-size: over;
   background-position: center;
   background-repeat: no-repeat;
@@ -496,6 +497,108 @@
 
       p {
         margin: 0;
+      }
+    }
+  }
+}
+
+/* --------------MODAL YÊU CẦU ĐĂNG NHẬP-------------- */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  padding: 20px;
+
+  .modal-content.login-alert {
+    background: white;
+    border-radius: $border-radius;
+    max-width: 450px;
+    width: 100%;
+    position: relative;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+
+    .modal-close {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      background: none;
+      border: none;
+      font-size: 24px;
+      cursor: pointer;
+      color: #666;
+      transition: $transition-speed;
+      z-index: 10;
+
+      &:hover {
+        color: $color-red;
+        transform: rotate(90deg);
+      }
+    }
+
+    .login-alert-body {
+      padding: 40px 30px;
+      text-align: center;
+
+      .alert-icon {
+        font-size: 64px;
+        margin-bottom: 20px;
+      }
+
+      h3 {
+        font-size: 24px;
+        font-weight: bold;
+        color: #333;
+        margin: 0 0 15px 0;
+      }
+
+      p {
+        font-size: 16px;
+        color: #666;
+        margin-bottom: 30px;
+        line-height: 1.5;
+      }
+
+      .alert-actions {
+        display: flex;
+        gap: 15px;
+        justify-content: center;
+
+        button {
+          padding: 12px 30px;
+          border: none;
+          border-radius: $border-radius;
+          font-size: 16px;
+          font-weight: 600;
+          cursor: pointer;
+          transition: $transition-speed;
+
+          &.btn-login {
+            background: $color-blue;
+            color: white;
+
+            &:hover {
+              background: color.adjust($color-blue, $lightness: -10%);
+              transform: translateY(-2px);
+              box-shadow: 0 4px 12px rgba($color-blue, 0.3);
+            }
+          }
+
+          &.btn-cancel {
+            background: #f0f0f0;
+            color: #666;
+
+            &:hover {
+              background: #e0e0e0;
+            }
+          }
+        }
       }
     }
   }

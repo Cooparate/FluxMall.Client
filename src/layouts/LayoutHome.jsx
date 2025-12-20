@@ -8,7 +8,11 @@ import { banner} from "../assets";
 import { 
   HiMagnifyingGlass, 
   FiShoppingBag, FiUser, FiLogOut,
-  AiOutlineClose 
+  AiOutlineClose,
+  FaFacebookSquare,
+  FaInstagramSquare,
+  FaYoutube,
+  IoLogoGithub
 } from "../components/icons";
 
 
