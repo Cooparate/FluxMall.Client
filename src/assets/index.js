@@ -1,7 +1,7 @@
 /* --------------------IMAGE ASSETS EXPORT -------------------*/
 
 // Banner images
-import banner from "./images/tttt.webp";
+import banner from "./images/s-edu-2-0-special-desk.gif";
 
 // Slide carousel images
 import slide1 from "./images/iphone-16-pro-max.webp";

@@ -223,7 +223,8 @@ export default function Home() {
 
       {/* Banner Carousel */}
       <section className="banner-carousel">
-        <div className="sidebar">
+        
+        {/* <div className="sidebar">
           <div className="menu-header">
             <h2>Danh mục sản phẩm</h2>
           </div>
@@ -264,7 +265,7 @@ export default function Home() {
               </a>
             </li>
           </ul>
-        </div>
+        </div> */}
 
 
         <div className="container">
