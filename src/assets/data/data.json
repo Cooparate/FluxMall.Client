@@ -1,767 +1,855 @@
-
-
 {
   "products": [
     {
       "id": 1,
-      "name": "Acer Nitro V 15",
+      "name": "Laptop Acer Gaming Nitro V 15 ANV15-41-R1JY",
+      "brand": "Acer",
       "category": "Laptop",
-      "price": "20290000",
-      "old_price": "21990000",
-      "tag": "Mẫu mới",
-      "image": "acer-nitro-v-15-anv15.webp",
-      "description": "Laptop gaming Acer Nitro V 15 với hiệu năng cao, trang bị Intel Core i7 và RTX 3060, màn hình 144Hz cho trải nghiệm gaming mượt mà.",
+      "price": "14580000",
+      "old_price": "21700000",
+      "discount": "-5%",
+      "tag": "Giảm 5%",
+      "image": {
+        "img0": "Acer-Gaming-Nitro-v15.webp",
+        "img1": "Acer-detail-11.webp",
+        "img2": "Acer-detail-12.webp",
+        "img3": "Acer-detail-13.webp"
+      },
+      "description": "Laptop Acer Gaming Nitro V 15 trang bị AMD Ryzen 5 6600H và RTX 3050 6GB, màn hình 15.6 inch Full HD 165Hz, phù hợp gaming và đồ họa.",
       "specifications": {
-        "cpu": "Intel Core i7-11800H",
-        "ram": "16GB DDR4",
-        "storage": "512GB SSD NVMe",
-        "gpu": "NVIDIA RTX 3060",
-        "display": "15.6 inch FHD 144Hz",
-        "weight": "2.4 kg",
-        "battery": "60Wh"
+        "cpu": "AMD Ryzen 5 6600H",
+        "cores": "6",
+        "threads": "12",
+        "cpu_speed": "3.30 GHz (Up to 4.50 GHz)",
+        "gpu": "NVIDIA GeForce RTX 3050 6GB",
+        "ram": "16GB DDR5",
+        "ram_bus": "4800 MHz",
+        "ram_max": "96 GB",
+        "storage": "512GB SSD NVMe PCIe (nâng cấp tối đa 4TB)",
+        "display": "15.6 inch Full HD (1920 x 1080), IPS, 165Hz",
+        "color_gamut": "45% NTSC",
+        "screen_tech": "Acer ComfyView",
+        "ports": [
+          "Jack tai nghe 3.5mm",
+          "3 x USB 3.2",
+          "HDMI",
+          "USB Type-C USB 4 (DisplayPort)",
+          "LAN RJ45"
+        ],
+        "wireless": "Bluetooth 5",
+        "webcam": "HD Webcam",
+        "keyboard": "Đèn nền đơn sắc (trắng)",
+        "audio": [
+          "Spatial Audio",
+          "Acer Purified Voice",
+          "Acer TrueHarmony",
+          "DTS:X ULTRA"
+        ],
+        "battery": "4-cell 57Wh",
+        "os": "Windows 11 Home SL",
+        "release_year": "2024",
+        "size_weight": "362.3 x 239.9 x 23.5 mm - 2.1 kg",
+        "material": "Vỏ nhựa"
       },
       "features": [
-        "Hiệu năng gaming vượt trội",
-        "Tản nhiệt Acer CoolBoost",
-        "Bàn phím cơ chuyên game",
-        "Thiết kế hiện đại",
-        "Kết nối Thunderbolt 4"
+        "Hiệu năng gaming mạnh mẽ với RTX 3050",
+        "Màn hình 165Hz mượt mà",
+        "RAM DDR5 nâng cấp tối đa 96GB",
+        "Cổng USB 4 hỗ trợ DisplayPort",
+        "Âm thanh DTS:X ULTRA",
+        "Bàn phím có đèn nền"
       ],
-      "warranty": "12 tháng",
+      "store": [
+        {
+          "storeId": 1,
+          "city": "TP. Hồ Chí Minh",
+          "province": "TP. Hồ Chí Minh",
+          "address": "888 Tây Sơn, Đống Đa, Hà Nội",
+          "phone": "02445678901",
+          "hours": "T2-T7: 8:30 - 18:00",
+          "status": "Chính hãng"
+        },
+        {
+          "storeId": 2,
+          "city": "TP. Hồ Chí Minh",
+          "province": "TP. Hồ Chí Minh",
+          "address": "222 Nguyễn Thị Minh Khai, Quận 3, TP. Hồ Chí Minh",
+          "phone": "02878901234",
+          "hours": "T2-T7: 8:00 - 17:30",
+          "status": "Chính hãng"
+        }
+      ],
+      "warranty": {
+        "laptop": "2 năm chính hãng 3S1",
+        "battery": "1 năm",
+        "exchange_policy": "Hư gì đổi nấy 12 tháng (miễn phí tháng đầu)",
+        "warranty_until": "29/09/2027",
+        "included_items": [
+          "Sách hướng dẫn",
+          "Thùng máy",
+          "Sạc Laptop Acer 135W"
+        ]
+      },
+      "promotion": {
+        "shockSale": true,
+        "studentDiscount": true,
+        "gift": "Túi chống sốc"
+      },
+      "badge": {
+        "bestSeller": true,
+        "newArrival": true
+      },
       "inStock": true
+    },
+
+    {
+      "id": 2,
+      "name": "Laptop Dell 15 DC15250 - DC5I7748W1",
+      "brand": "Dell",
+      "category": "Laptop",
+      "price": "21990000",
+      "old_price": "25990000",
+      "discount": "-15%",
+      "tag": "Giảm 15%",
+      "image": {
+        "img0": "Dell-15-DC15250.webp",
+        "img1": "Dell-detail-11.webp",
+        "img2": "Dell-detail-11.webp",
+        "img3": "Dell-detail-11.webp"
+      },
+      "description": "Laptop Dell 15 DC15250 sử dụng Intel Core i7 1355U, thiết kế mỏng nhẹ, màn hình Full HD 120Hz, phù hợp học tập và làm việc văn phòng chuyên nghiệp.",
+      "specifications": {
+        "cpu": "Intel Core i7 1355U",
+        "cores": "10",
+        "threads": "12",
+        "cpu_speed": "1.70 GHz (Up to 5.00 GHz)",
+        "gpu": "Intel UHD Graphics",
+        "ram": "16GB DDR4",
+        "ram_bus": "2666 MHz",
+        "ram_max": "16 GB",
+        "storage": "512GB SSD NVMe PCIe",
+        "display": "15.6 inch Full HD (1920 x 1080), IPS, 120Hz",
+        "screen_tech": "Anti Glare, 250 nits",
+        "ports": [
+          "USB 2.0",
+          "USB 3.2",
+          "HDMI",
+          "USB Type-C (data only)",
+          "Jack tai nghe 3.5mm"
+        ],
+        "wireless": "Wi-Fi 6, Bluetooth 5.2",
+        "card_reader": "SD Card",
+        "webcam": "Full HD Webcam",
+        "keyboard": "Không đèn nền",
+        "audio": "Realtek Audio",
+        "battery": "4-cell 54Wh",
+        "os": "Windows 11 Home SL + Office Home 2024 + Microsoft 365 Basic",
+        "release_year": "2025",
+        "size_weight": "358.5 x 235 x 17.5 mm - 1.65 kg",
+        "material": "Vỏ nhựa"
+      },
+      "features": [
+        "CPU Intel Core i7 thế hệ 13",
+        "Màn hình 120Hz mượt mà",
+        "Thiết kế mỏng nhẹ 1.65kg",
+        "Phù hợp văn phòng & học tập",
+        "Cài sẵn Office bản quyền"
+      ],
+      "store": [
+        {
+          "storeId": 1,
+          "city": "TP. Hồ Chí Minh",
+          "province": "TP. Hồ Chí Minh",
+          "address": "222 Nguyễn Thị Minh Khai, Quận 3, TP. Hồ Chí Minh",
+          "phone": "02878901234",
+          "hours": "T2-T7: 8:00 - 17:30",
+          "status": "Chính hãng"
+        }
+      ],
+      "warranty": {
+        "laptop": "2 năm chính hãng",
+        "battery": "1 năm",
+        "exchange_policy": "Hư gì đổi nấy 12 tháng (miễn phí tháng đầu)",
+        "included_items": ["Sách hướng dẫn", "Thùng máy", "Sạc Laptop 45W"]
+      },
+      "promotion": {
+        "shockSale": true,
+        "studentDiscount": true,
+        "gift": "Túi chống sốc"
+      },
+      "badge": {
+        "bestSeller": true,
+        "newArrival": true
+      },
+      "inStock": false
+    },
+
+    {
+      "id": 3,
+      "name": "Laptop Asus Vivobook 15 X1504VA - NJ1634W",
+      "brand": "Asus",
+      "category": "Laptop",
+      "price": "12990000",
+      "old_price": "14990000",
+      "discount": "-13%",
+      "tag": "Giảm 13%",
+      "image": {
+        "img0": "Asus-Vivobook-15-X1504VA.webp",
+        "img1": "Asus-detail-12.webp",
+        "img2": "Asus-detail-13.webp",
+        "img3": "Asus-detail-14.webp"
+      },
+      "description": "Laptop Asus Vivobook 15 trang bị Intel Core i3 1315U, thiết kế gọn nhẹ, độ bền chuẩn quân đội MIL-STD-810H, phù hợp học sinh sinh viên.",
+      "specifications": {
+        "cpu": "Intel Core i3 1315U",
+        "cores": "6",
+        "threads": "8",
+        "cpu_speed": "1.20 GHz (Up to 4.50 GHz)",
+        "gpu": "Intel UHD Graphics",
+        "ram": "8GB DDR4",
+        "ram_bus": "3200 MHz",
+        "ram_max": "16 GB",
+        "storage": "512GB SSD NVMe PCIe",
+        "display": "15.6 inch Full HD (1920 x 1080), 60Hz",
+        "color_gamut": "45% NTSC",
+        "screen_tech": "Anti Glare, LED Backlit, 250 nits",
+        "ports": [
+          "USB 2.0",
+          "2 x USB 3.2",
+          "HDMI",
+          "USB Type-C",
+          "Jack tai nghe 3.5mm"
+        ],
+        "wireless": "Wi-Fi 6E, Bluetooth 5.3",
+        "webcam": "HD Webcam",
+        "keyboard": "Không đèn nền",
+        "security": ["Công tắc khoá camera", "Vân tay"],
+        "audio": "SonicMaster Audio",
+        "battery": "3-cell Li-ion 42Wh",
+        "os": "Windows 11 Home SL",
+        "release_year": "2025",
+        "size_weight": "359.7 x 232.5 x 17.9 mm - 1.7 kg",
+        "material": "Vỏ nhựa"
+      },
+      "features": [
+        "CPU Intel Core i3 Gen 13",
+        "Thiết kế mỏng nhẹ",
+        "Bản lề mở 180 độ",
+        "Độ bền chuẩn quân đội MIL-STD-810H",
+        "Phù hợp học sinh sinh viên"
+      ],
+      "store": [
+        {
+          "storeId": 2,
+          "city": "TP. Hồ Chí Minh",
+          "province": "TP. Hồ Chí Minh",
+          "address": "222 Nguyễn Thị Minh Khai, Quận 3, TP. Hồ Chí Minh",
+          "phone": "02878901234",
+          "hours": "T2-T7: 8:00 - 17:30",
+          "status": "Chính hãng"
+        }
+      ],
+      "warranty": {
+        "laptop": "2 năm chính hãng",
+        "battery": "1 năm",
+        "exchange_policy": "Hư gì đổi nấy 12 tháng (miễn phí tháng đầu)"
+      },
+      "promotion": {
+        "shockSale": true,
+        "studentDiscount": true,
+        "gift": "Balo laptop"
+      },
+      "badge": {
+        "bestSeller": true,
+        "newArrival": true
+      },
+      "inStock": true
+    },
+
+    {
+      "id": 4,
+      "name": "Laptop HP 240 G10 - B73TJAT",
+      "brand": "HP",
+      "category": "Laptop",
+      "price": "10990000",
+      "old_price": "12990000",
+      "discount": "-15%",
+      "tag": "Giảm 15%",
+      "image": {
+        "img0": "HP-240-G10.webp",
+        "img1": "HP-detail-11.webp",
+        "img2": "HP-detail-12.webp",
+        "img3": "HP-detail-13.webp"
+      },
+      "description": "Laptop HP 240 G10 sở hữu Intel Core i3 1315U, thiết kế nhỏ gọn 14 inch, độ bền chuẩn quân đội MIL-STD-810H, phù hợp học tập và làm việc văn phòng.",
+      "specifications": {
+        "cpu": "Intel Core i3 1315U",
+        "cores": "6",
+        "threads": "8",
+        "cpu_speed": "1.20 GHz (Up to 4.50 GHz)",
+        "gpu": "Intel UHD Graphics",
+        "ram": "8GB DDR4",
+        "ram_bus": "3200 MHz",
+        "ram_max": "16 GB",
+        "storage": "512GB SSD NVMe PCIe (nâng cấp tối đa 2TB)",
+        "display": "14 inch Full HD (1920 x 1080), IPS, 60Hz",
+        "color_gamut": "45% NTSC",
+        "screen_tech": "Anti Glare, 250 nits",
+        "ports": ["2 x USB 3.2", "HDMI", "USB Type-C", "Jack tai nghe 3.5mm"],
+        "wireless": "Wi-Fi 6, Bluetooth 5.3",
+        "webcam": "HD Webcam",
+        "keyboard": "Không đèn nền",
+        "security": ["Công tắc khoá camera"],
+        "audio": "Realtek High Definition Audio",
+        "battery": "3-cell Li-ion 41Wh",
+        "os": "Windows 11 Home SL",
+        "release_year": "2024",
+        "size_weight": "324 x 215 x 17.9 mm - 1.36 kg",
+        "material": "Vỏ nhựa"
+      },
+      "features": [
+        "CPU Intel Core i3 Gen 13 tiết kiệm điện",
+        "Thiết kế nhỏ gọn chỉ 1.36kg",
+        "Độ bền chuẩn quân đội MIL-STD-810H",
+        "Màn hình IPS chống chói",
+        "Phù hợp học sinh sinh viên & văn phòng"
+      ],
+      "store": [
+        {
+          "storeId": 1,
+          "city": "TP. Hồ Chí Minh",
+          "province": "TP. Hồ Chí Minh",
+          "address": "222 Nguyễn Thị Minh Khai, Quận 3, TP. Hồ Chí Minh",
+          "phone": "02878901234",
+          "hours": "T2-T7: 8:00 - 17:30",
+          "status": "Chính hãng"
+        }
+      ],
+      "warranty": {
+        "laptop": "2 năm chính hãng",
+        "battery": "1 năm",
+        "exchange_policy": "Hư gì đổi nấy 12 tháng (miễn phí tháng đầu)"
+      },
+      "promotion": {
+        "shockSale": true,
+        "studentDiscount": true,
+        "gift": "Túi chống sốc"
+      },
+      "badge": {
+        "bestSeller": true,
+        "newArrival": true
+      },
+      "inStock": false
+    },
+
+    {
+      "id": 9,
+      "name": "Chuột Có Dây Gaming Logitech G502 HERO",
+      "brand": "Logitech",
+      "category": "Mouse",
+      "price": "1290000",
+      "old_price": "1590000",
+      "discount": "-19%",
+      "tag": "Gaming",
+      "image": {
+        "img0": "Chuot-co-day-Gaming-Logitech-G502-Hero.webp",
+        "img1": "Chuot-detail-11.webp"
+      },
+      "description": "Logitech G502 HERO là chuột gaming có dây nổi tiếng với cảm biến HERO 25K, thiết kế công thái học, nhiều nút bấm và đèn RGB, phù hợp game thủ FPS và MOBA.",
+      "specifications": {
+        "mouse_type": "Có dây - Gaming",
+        "connection": "Dây USB",
+        "cable_length": "183 cm",
+        "dpi": "25600 DPI",
+        "sensor": "HERO",
+        "polling_rate": "N/A",
+        "switch": "N/A",
+        "feet": "N/A",
+        "buttons": "11",
+        "led": "RGB",
+        "software": "Logitech G HUB",
+        "weight": "121 g",
+        "compatibility": ["Windows", "macOS", "ChromeOS"],
+        "origin_brand": "Thụy Sĩ",
+        "manufactured": "Trung Quốc"
+      },
+      "features": [
+        "Cảm biến HERO 25K siêu chính xác",
+        "11 nút bấm lập trình linh hoạt",
+        "Đèn RGB tùy chỉnh qua G HUB",
+        "Thiết kế công thái học cho game thủ",
+        "Dây USB dài 1.83m chắc chắn"
+      ],
+      "warranty": "24 tháng chính hãng",
+      "promotion": {
+        "shockSale": true,
+        "studentDiscount": true,
+        "gift": "Lót chuột gaming"
+      },
+      "badge": {
+        "bestSeller": true,
+        "newArrival": true
+      },
+      "inStock": true
+    },
+
+    {
+      "id": 10,
+      "name": "Chuột Sạc Bluetooth Gaming Razer Basilisk V3 Pro 35K",
+      "brand": "Razer",
+      "category": "Mouse",
+      "price": "4490000",
+      "old_price": "4990000",
+      "discount": "-10%",
+      "tag": "Cao cấp",
+      "image": {
+        "img0": "Chuot-sac-Blutooth-Gaming-Razer.webp",
+        "img1": "Chuot-detail-21.webp"
+      },
+      "description": "Razer Basilisk V3 Pro 35K là chuột gaming không dây cao cấp với cảm biến Focus Pro 35K, polling rate lên đến 8000Hz, HyperScroll wheel và Razer Chroma RGB.",
+      "specifications": {
+        "mouse_type": "Không dây - Gaming - Bluetooth",
+        "connection": ["Bluetooth", "USB Receiver", "Dây USB"],
+        "cable_length": "180 cm",
+        "dpi": "35000 DPI",
+        "sensor": "Focus Pro 35K",
+        "polling_rate": "Up to 8000 Hz",
+        "switch": "Optical Mouse Switches Gen-3",
+        "feet": "PTFE",
+        "buttons": "11",
+        "led": "RGB",
+        "software": "Razer Synapse",
+        "battery_type": "Pin sạc",
+        "battery_life": "210 giờ (Bluetooth)",
+        "charging": "USB Type-C (Sạc đầy ~4 giờ)",
+        "special_features": [
+          "Sạc nhanh",
+          "HyperScroll Tilt Wheel",
+          "On-board Memory (5 profiles)",
+          "Razer Chroma RGB"
+        ],
+        "weight": "112 g",
+        "compatibility": ["Windows", "macOS", "Linux"],
+        "ergonomic": "Form tay phải",
+        "origin_brand": "Mỹ",
+        "manufactured": "Trung Quốc"
+      },
+      "features": [
+        "Cảm biến Focus Pro 35K siêu chính xác",
+        "Polling rate lên đến 8000Hz",
+        "HyperScroll wheel cao cấp",
+        "Kết nối 3 chế độ linh hoạt",
+        "RGB Razer Chroma đẹp mắt"
+      ],
+      "warranty": "24 tháng chính hãng",
+      "promotion": {
+        "shockSale": true,
+        "studentDiscount": true,
+        "gift": "Lót chuột Razer"
+      },
+      "badge": {
+        "bestSeller": true,
+        "newArrival": true
+      },
+      "inStock": true
+    },
+
+    {
+      "id": 11,
+      "name": "Chuột Không Dây DareU LM106G",
+      "brand": "DareU",
+      "category": "Mouse",
+      "price": "199000",
+      "old_price": "249000",
+      "discount": "-20%",
+      "tag": "Giá rẻ",
+      "image": {
+        "img0": "Chuot-khong-day-DareU.webp",
+        "img1": "Chuot-detail-31.webp"
+      },
+      "description": "DareU LM106G là chuột không dây nhỏ gọn, nhẹ chỉ 65g, phù hợp học tập và văn phòng với cảm biến ổn định, pin AA tiện lợi.",
+      "specifications": {
+        "mouse_type": "Không dây",
+        "connection": "USB Receiver",
+        "dpi": "1200 DPI",
+        "sensor": "FCT3605",
+        "polling_rate": "125 Hz",
+        "switch": "HUANO Switch (3M clicks)",
+        "feet": "PTFE",
+        "buttons": "3",
+        "led": "Không có",
+        "software": "N/A",
+        "battery_type": "1 viên pin AA",
+        "battery_life": "N/A",
+        "special_features": "N/A",
+        "weight": "65 g",
+        "compatibility": ["Windows", "macOS"],
+        "ergonomic": "Form Ambi - Claw Grip",
+        "origin_brand": "Trung Quốc",
+        "manufactured": "Trung Quốc",
+        "wireless_range": "10 m"
+      },
+      "features": [
+        "Thiết kế nhỏ gọn, nhẹ 65g",
+        "Chuột không dây tiện lợi",
+        "Phù hợp học tập và văn phòng",
+        "Giá rẻ dễ tiếp cận",
+        "Sử dụng pin AA dễ thay"
+      ],
+      "warranty": "12 tháng chính hãng",
+      "promotion": {
+        "shockSale": true,
+        "studentDiscount": false,
+        "gift": "Pin AA"
+      },
+      "badge": {
+        "bestSeller": true,
+        "newArrival": true
+      },
+      "inStock": true
+    },
+
+    {
+      "id": 15,
+      "name": "Bàn Phím Cơ Bluetooth Akko 5075B Plus Black & Gold",
+      "brand": "Akko",
+      "category": "Keyboard",
+      "price": "2890000",
+      "old_price": "3190000",
+      "discount": "-9%",
+      "tag": "Cao cấp",
+      "image": {
+        "img0": "Ban-phim-co-Akko-5075Plus.webp",
+        "img1": "Ban-phim-detail-11.webp"
+      },
+      "description": "Akko 5075B Plus Black & Gold là bàn phím cơ layout 75%, switch Cream Yellow Pro mượt mà, kết nối đa chế độ và keycaps PBT Double-Shot cao cấp.",
+      "specifications": {
+        "keyboard_type": "Bàn phím cơ",
+        "layout": "75%",
+        "keys": "83 phím",
+        "switch": "Cream Yellow Pro",
+        "keycaps": "PBT Double-Shot",
+        "connection": ["Bluetooth", "USB Receiver", "Dây USB"],
+        "wireless_range": "10 m",
+        "led": "RGB",
+        "special_keys": "Con lăn âm lượng",
+        "software": "Akko Cloud Driver",
+        "charging_port": "USB Type-C",
+        "charge_time": "3 giờ",
+        "battery_life": "Tối thiểu 7 ngày",
+        "compatibility": ["Windows", "macOS", "Linux"],
+        "size_weight": "33.5 x 14.6 x 5.5 cm - 1100 g",
+        "origin_brand": "Trung Quốc",
+        "manufactured": "Trung Quốc"
+      },
+      "features": [
+        "Layout 75% gọn gàng",
+        "Switch Cream Yellow Pro mượt",
+        "Keycaps PBT Double-Shot bền",
+        "Kết nối 3 chế độ",
+        "RGB đẹp mắt"
+      ],
+      "warranty": "12 tháng chính hãng",
+            "promotion": {
+        "shockSale": true,
+        "studentDiscount": true,
+        "gift": "Pin AA"
+      },
+      "badge": {
+        "bestSeller": true,
+        "newArrival": true
+      },
+      "inStock": true
+    },
+
+    {
+      "id": 16,
+      "name": "Bàn Phím Bluetooth DareU LK160D",
+      "brand": "DareU",
+      "category": "Keyboard",
+      "price": "690000",
+      "old_price": "790000",
+      "discount": "-13%",
+      "tag": "Văn phòng",
+      "image": {
+        "img0": "Ban-phim-DareU-LK160D.webp",
+        "img1": "Ban-phim-detail-21.jpg"
+      },
+      "description": "DareU LK160D là bàn phím Bluetooth nhỏ gọn Tenkeyless, switch Scissor êm ái, pin bền lên đến 175 giờ, phù hợp học tập và văn phòng.",
+      "specifications": {
+        "keyboard_type": "Bàn phím thường",
+        "layout": "Tenkeyless",
+        "keys": "86 phím",
+        "switch": "Scissor",
+        "keycaps": "ABS",
+        "connection": ["Bluetooth", "USB Receiver"],
+        "wireless_range": "10 m",
+        "led": "Không có",
+        "software": "DareU",
+        "charging_port": "USB Type-C",
+        "charge_time": "2 giờ",
+        "battery_life": "175 giờ",
+        "compatibility": ["Windows", "macOS", "Mobile"],
+        "size_weight": "31.3 x 11.8 x 2.6 cm - 398 ± 50 g",
+        "origin_brand": "Trung Quốc",
+        "manufactured": "Trung Quốc"
+      },
+      "features": [
+        "Thiết kế mỏng nhẹ",
+        "Switch Scissor gõ êm",
+        "Pin lâu 175 giờ",
+        "Kết nối Bluetooth ổn định",
+        "Giá dễ tiếp cận"
+      ],
+      "warranty": "12 tháng chính hãng",
+            "promotion": {
+        "shockSale": true,
+        "studentDiscount": false,
+        "gift": "Pin AA"
+      },
+      "badge": {
+        "bestSeller": true,
+        "newArrival": true
+      },
+      "inStock": true
+    },
+
+    {
+      "id": 203,
+      "name": "Bàn Phím Cơ Bluetooth Rapoo V700DIY 75",
+      "brand": "Rapoo",
+      "category": "Keyboard",
+      "price": "1990000",
+      "old_price": "2290000",
+      "discount": "-13%",
+      "tag": "DIY",
+      "image": {
+        "img0": "Ban-phim-Rapoo-V700DIY.webp",
+        "img1": "Ban-phim-detail-31.webp"
+      },
+      "description": "Rapoo V700DIY 75 là bàn phím cơ layout 75%, hỗ trợ DIY switch, pin cực trâu lên đến 800 giờ khi tắt RGB.",
+      "specifications": {
+        "keyboard_type": "Bàn phím cơ",
+        "layout": "75%",
+        "keys": "79 phím",
+        "switch": "Linear",
+        "keycaps": "PBT",
+        "connection": ["Bluetooth", "USB Receiver", "Dây USB"],
+        "wireless_range": "10 m",
+        "led": "Có",
+        "special_keys": "N/A",
+        "software": "N/A",
+        "charging_port": "USB Type-C",
+        "charge_time": "N/A",
+        "battery_life": "60 giờ (bật RGB) / 800 giờ (tắt RGB)",
+        "compatibility": ["Windows", "macOS"],
+        "size_weight": "32.5 x 14.3 x 4.8 cm - 850 g",
+        "origin_brand": "Trung Quốc",
+        "manufactured": "Trung Quốc"
+      },
+      "features": [
+        "Layout 75% gọn",
+        "Hỗ trợ DIY switch",
+        "Pin cực trâu",
+        "Keycaps PBT bền",
+        "Kết nối đa chế độ"
+      ],
+      "warranty": "12 tháng chính hãng",
+            "promotion": {
+        "shockSale": true,
+        "studentDiscount": false,
+        "gift": "Pin AA"
+      },
+      "badge": {
+        "bestSeller": true,
+        "newArrival": true
+      },
+      "inStock": true
+    },
+
+    {
+      "id": 21,
+      "name": "Tai nghe Bluetooth Chụp Tai JBL Tune 520BT",
+      "brand": "JBL",
+      "category": "HeadPhone",
+      "price": "1490000",
+      "old_price": "1690000",
+      "discount": "-12%",
+      "tag": "Phổ thông",
+      "image": {
+        "img0": "Tai-ngheJBL-Tune-520BT.webp",
+        "img1": "Tai-nghe-detail-11.webp"
+      },
+      "description": "JBL Tune 520BT là tai nghe Bluetooth chụp tai với âm thanh JBL Pure Bass mạnh mẽ, pin cực trâu lên đến 57 giờ, hỗ trợ kết nối 2 thiết bị cùng lúc.",
+      "specifications": {
+        "headphone_type": "Chụp tai",
+        "battery_life": "57 giờ",
+        "charge_time": "2 giờ",
+        "charging_port": "USB Type-C",
+        "audio_technology": "JBL Pure Bass Sound",
+        "driver_size": "33 mm",
+        "connection": "Bluetooth 5.3",
+        "multi_device": "2 thiết bị",
+        "controls": "Phím nhấn",
+        "microphone": "Có",
+        "app": "JBL Headphones",
+        "compatibility": ["Windows", "macOS", "Android", "iOS"],
+        "size_weight": "7.34 x 7.34 x 1.78 cm - 157 g",
+        "origin_brand": "Mỹ",
+        "manufactured": "Trung Quốc"
+      },
+      "features": [
+        "Âm bass mạnh",
+        "Pin 57 giờ",
+        "Sạc nhanh",
+        "Kết nối 2 thiết bị",
+        "Hỗ trợ trợ lý ảo"
+      ],
+      "warranty": "12 tháng chính hãng",
+            "promotion": {
+        "shockSale": true,
+        "studentDiscount": false,
+        "gift": "Pin AA"
+      },
+      "badge": {
+        "bestSeller": true,
+        "newArrival": true
+      },
+      "inStock": true
+    },
+
+    {
+      "id": 22,
+      "name": "Tai nghe Bluetooth Chụp Tai Sony WH-CH520",
+      "brand": "Sony",
+      "category": "HeadPhone",
+      "price": "1590000",
+      "old_price": "1790000",
+      "discount": "-11%",
+      "tag": "Bán chạy",
+      "image": {
+        "img0": "Tai-nghe-Sony-WH-CH520.webp",
+        "img1": "Tai-nghe-detail-21.webp"
+      },
+      "description": "Sony WH-CH520 là tai nghe Bluetooth chụp tai với pin 50 giờ, hỗ trợ codec AAC, DSEE, 360 Reality Audio và kết nối đa điểm tiện lợi.",
+      "specifications": {
+        "headphone_type": "Chụp tai",
+        "battery_life": "50 giờ",
+        "charge_time": "3 giờ",
+        "charging_port": "USB Type-C",
+        "audio_technology": ["SBC", "AAC", "DSEE", "360 Reality Audio", "ENC"],
+        "connection": "Bluetooth 5.2",
+        "multi_device": "2 thiết bị",
+        "controls": "Phím nhấn",
+        "microphone": "Chống ồn, lọc gió",
+        "app": "Sony Headphones Connect",
+        "compatibility": [
+          "Windows",
+          "macOS",
+          "ChromeOS",
+          "Android",
+          "iOS",
+          "PS5"
+        ],
+        "size_weight": "7.5 x 7.5 x 4.3 cm - 147 g",
+        "origin_brand": "Nhật Bản",
+        "manufactured": "Việt Nam"
+      },
+      "features": [
+        "Pin 50 giờ",
+        "Âm thanh Sony chi tiết",
+        "Hỗ trợ Fast Pair",
+        "Kết nối đa điểm",
+        "Nhẹ, đeo thoải mái"
+      ],
+      "warranty": "12 tháng chính hãng",
+            "promotion": {
+        "shockSale": true,
+        "studentDiscount": false,
+        "gift": "Pin AA"
+      },
+      "badge": {
+        "bestSeller": true,
+        "newArrival": true
+      },
+      "inStock": true
+    },
+
+    {
+      "id": 23,
+      "name": "Tai nghe Bluetooth Chụp Tai Soundcore Space One Pro A3062",
+      "brand": "Soundcore",
+      "category": "HeadPhone",
+      "price": "3490000",
+      "old_price": "3990000",
+      "discount": "-13%",
+      "tag": "Chống ồn",
+      "image": {
+        "img0": "Tai-nghe-Soundcore-Space-One-ProA3062.webp",
+        "img1": "Tai-nghe-detail-31.webp"
+      },
+      "description": "Soundcore Space One Pro là tai nghe chụp tai cao cấp với chống ồn chủ động ANC, pin 60 giờ, 4 micro AI và khả năng tùy chỉnh EQ chuyên sâu.",
+      "specifications": {
+        "headphone_type": "Chụp tai",
+        "battery_life": "60 giờ (tắt ANC)",
+        "charge_time": "1.5 giờ",
+        "charging_port": "USB Type-C",
+        "audio_technology": "Active Noise Cancellation (ANC)",
+        "microphone": "4 Micro AI khử ồn",
+        "connection": "Bluetooth 5.3",
+        "multi_device": "2 thiết bị",
+        "controls": "Phím nhấn",
+        "app": "Soundcore",
+        "compatibility": ["Windows", "macOS", "Android", "iOS"],
+        "size_weight": "19 x 16.3 x 8.9 cm - 286 g",
+        "origin_brand": "Trung Quốc",
+        "manufactured": "Trung Quốc"
+      },
+      "features": [
+        "Chống ồn ANC",
+        "Pin 60 giờ",
+        "4 micro AI",
+        "Kết nối đa điểm",
+        "Tùy chỉnh EQ qua app"
+      ],
+      "warranty": "12 tháng chính hãng",
+            "promotion": {
+        "shockSale": true,
+        "studentDiscount": true,
+        "gift": "Pin AA"
+      },
+      "badge": {
+        "bestSeller": true,
+        "newArrival": true
+      },
+      "inStock": true
+    }
+  ],
+
+  "categories": [
+    {
+      "id": 1,
+      "name": "Laptop",
+      "label": "Laptop"
     },
     {
       "id": 2,
-      "name": "Acer Aspire GO",
-      "category": "Laptop",
-      "price": "23490000",
-      "old_price": "24990000",
-      "tag": "Mẫu mới",
-      "image": "acer-aspire-go-ag15-31p.webp",
-      "description": "Laptop Acer Aspire GO dành cho công việc và học tập, nhẹ nhàng, pin lâu, hiệu năng ổn định.",
-      "specifications": {
-        "cpu": "Intel Core i5-12450H",
-        "ram": "8GB DDR4",
-        "storage": "256GB SSD",
-        "gpu": "Intel Iris Xe",
-        "display": "14 inch FHD IPS",
-        "weight": "1.6 kg",
-        "battery": "50Wh"
-      },
-      "features": [
-        "Nhẹ nhàng, dễ mang theo",
-        "Pin 10+ giờ sử dụng",
-        "Hiệu năng ổn định cho công việc",
-        "Thiết kế thanh lịch",
-        "Âm thanh Dolby Atmos"
-      ],
-      "warranty": "12 tháng",
-      "inStock": true
+      "name": "Chuột",
+      "label": "Chuột"
     },
     {
       "id": 3,
-      "name": "Máy chiếu Wanbo",
-      "category": "Điện tử",
-      "price": "2990000",
-      "old_price": "3990000",
-      "tag": "Giảm 20%",
-      "image": "Img3",
-      "description": "Máy chiếu Wanbo với độ sáng 450 ANSI lumens, hỗ trợ 4K, kết nối không dây dễ dàng.",
-      "specifications": {
-        "brightness": "450 ANSI lumens",
-        "resolution": "1080p native / 4K support",
-        "contrast": "10000:1",
-        "lamp_life": "30000 giờ",
-        "weight": "0.8 kg",
-        "connectivity": "WiFi, Bluetooth, USB, HDMI"
-      },
-      "features": [
-        "Độ sáng cao 450 lumens",
-        "Hỗ trợ chiếu 4K",
-        "Kết nối không dây",
-        "Nhỏ gọn, dễ di chuyển",
-        "Thời lapse chiếu dài"
-      ],
-      "warranty": "24 tháng",
-      "inStock": true
+      "name": "Bàn phím",
+      "label": "Bàn phím"
     },
     {
       "id": 4,
-      "name": "Giá đỡ laptop Baseus",
-      "category": "Phụ kiện",
-      "price": "390000",
-      "old_price": "490000",
-      "tag": "Khuyến mãi",
-      "image": "Img4",
-      "description": "Giá đỡ laptop Baseus nhôm nguyên khối, tăng góc nhìn, thoát khí tốt hơn, tương thích với mọi laptop.",
-      "specifications": {
-        "material": "Nhôm nguyên khối",
-        "weight_capacity": "10 kg",
-        "compatibility": "11-17 inch laptops",
-        "height_adjustment": "Có thể điều chỉnh",
-        "weight": "0.5 kg"
-      },
-      "features": [
-        "Vật liệu nhôm chắc chắn",
-        "Thiết kế gập gọn",
-        "Hỗ trợ thoát khí tốt",
-        "Tương thích nhiều kích thước",
-        "Chân cao su chống trượt"
-      ],
-      "warranty": "12 tháng",
-      "inStock": true
-    },
-    {
-      "id": 5,
-      "name": "iPhone 17 Pro",
-      "category": "Điện thoại",
-      "price": "30990000",
-      "old_price": "32490000",
-      "tag": "Mẫu mới",
-      "image": "Img5",
-      "description": "iPhone 17 Pro với chip A18, camera 48MP, màn hình Super Retina XDR, thiết kế titanium hàng đầu.",
-      "specifications": {
-        "chip": "Apple A18 Pro",
-        "storage": "256GB",
-        "display": "6.1 inch Super Retina XDR",
-        "camera": "48MP + 12MP",
-        "battery": "3000 mAh",
-        "ram": "8GB",
-        "os": "iOS 18"
-      },
-      "features": [
-        "Camera system 48MP",
-        "Chip A18 Pro mạnh mẽ",
-        "Titanium grade thiết kế",
-        "Chống nước IP69",
-        "Sạc nhanh 25W"
-      ],
-      "warranty": "12 tháng",
-      "inStock": true
-    },
-    {
-      "id": 6,
-      "name": "Samsung Galaxy S24",
-      "category": "Điện thoại",
-      "price": "28990000",
-      "old_price": "29990000",
-      "tag": "Khuyến mãi",
-      "image": "Img1",
-      "description": "Samsung Galaxy S24 flagship với màn hình AMOLED 6.2 inch, camera 50MP, pin 4000mAh.",
-      "specifications": {
-        "chip": "Snapdragon 8 Gen 3",
-        "storage": "256GB",
-        "display": "6.2 inch AMOLED",
-        "camera": "50MP + 10MP + 12MP",
-        "battery": "4000 mAh",
-        "ram": "12GB",
-        "os": "Android 14"
-      },
-      "features": [
-        "Màn hình AMOLED 120Hz",
-        "Camera flagship 50MP",
-        "Snapdragon 8 Gen 3",
-        "Bền bỉ Gorilla Glass Armor",
-        "Sạc nhanh 25W"
-      ],
-      "warranty": "12 tháng",
-      "inStock": true
-    },
-    {
-      "id": 7,
-      "name": "Keychron K8 Pro",
-      "category": "Keyboard",
-      "price": "2490000",
-      "old_price": "2890000",
-      "tag": "Bán chạy",
-      "image": "akko_5075b_plus_blackgold.webp",
-      "description": "Bàn phím cơ Keychron K8 Pro layout TKL, hỗ trợ hot-swap, kết nối Bluetooth & USB-C.",
-      "specifications": {
-        "switch": "Gateron Pro",
-        "layout": "TKL (87 keys)",
-        "connection": "Bluetooth / USB-C",
-        "keycap": "PBT Double-shot",
-        "battery": "4000 mAh"
-      },
-      "features": [
-        "Hot-swap switch",
-        "Kết nối đa thiết bị",
-        "Keycap PBT cao cấp",
-        "Hỗ trợ Windows / macOS"
-      ],
-      "warranty": "12 tháng",
-      "inStock": true
-    },
-    {
-      "id": 8,
-      "name": "Logitech G Pro X",
-      "category": "Keyboard",
-      "price": "3190000",
-      "old_price": "3490000",
-      "tag": "Gaming",
-      "image": "aula_f75.webp",
-      "description": "Bàn phím cơ Logitech G Pro X thiết kế dành cho eSports, switch có thể thay thế.",
-      "specifications": {
-        "switch": "GX Blue Clicky",
-        "layout": "TKL",
-        "connection": "USB",
-        "lighting": "RGB Lightsync",
-        "weight": "980 g"
-      },
-      "features": [
-        "Thiết kế cho eSports",
-        "RGB Lightsync",
-        "Switch tháo lắp được",
-        "Độ bền cao"
-      ],
-      "warranty": "24 tháng",
-      "inStock": true
-    },
-    {
-      "id": 9,
-      "name": "Logitech G Pro X Superlight",
-      "category": "Mouse",
-      "price": "2890000",
-      "old_price": "3290000",
-      "tag": "Best seller",
-      "image": "chuot-choi-game-co-day-logitech-g502-hero.webp",
-      "description": "Chuột gaming không dây siêu nhẹ, cảm biến HERO 25K cho độ chính xác cao.",
-      "specifications": {
-        "sensor": "HERO 25K",
-        "weight": "63 g",
-        "connection": "Wireless Lightspeed",
-        "dpi": "25600 DPI",
-        "battery": "70 giờ"
-      },
-      "features": [
-        "Siêu nhẹ 63g",
-        "Độ chính xác cao",
-        "Không độ trễ",
-        "Pin lâu"
-      ],
-      "warranty": "24 tháng",
-      "inStock": true
-    },
-    {
-      "id": 10,
-      "name": "Razer DeathAdder V3",
-      "category": "Mouse",
-      "price": "1790000",
-      "old_price": "2090000",
-      "tag": "Gaming",
-      "image": "chuot-gaming-khong-day-razer-cobra-pro-rz01-04660100-r3a1.webp",
-      "description": "Chuột gaming Razer DeathAdder V3 thiết kế công thái học, cảm biến Focus Pro 30K.",
-      "specifications": {
-        "sensor": "Focus Pro 30K",
-        "weight": "59 g",
-        "connection": "Wired",
-        "dpi": "30000 DPI",
-        "switch": "Optical Gen-3"
-      },
-      "features": [
-        "Công thái học",
-        "Cảm biến 30K DPI",
-        "Click quang học",
-        "Tracking chính xác"
-      ],
-      "warranty": "24 tháng",
-      "inStock": true
-    },
-    {
-  "id": 11,
-  "name": "Asus VivoBook 15",
-  "category": "Laptop",
-  "price": "18990000",
-  "old_price": "20990000",
-  "tag": "Bán chạy",
-  "image": "ce142a7e57be1d77c7bfac375f7abe8c.png",
-  "description": "Laptop Asus VivoBook 15 phù hợp cho học tập và làm việc văn phòng, thiết kế gọn nhẹ, hiệu năng ổn định.",
-  "specifications": {
-    "cpu": "Intel Core i5-1135G7",
-    "ram": "8GB DDR4",
-    "storage": "512GB SSD",
-    "gpu": "Intel Iris Xe",
-    "display": "15.6 inch FHD",
-    "weight": "1.8 kg",
-    "battery": "42Wh"
-  },
-  "features": [
-    "Thiết kế mỏng nhẹ",
-    "Màn hình lớn dễ làm việc",
-    "Hiệu năng ổn định",
-    "Bàn phím thoải mái",
-    "Pin dùng cả ngày"
+      "name": "Tai nghe",
+      "label": "Tai nghe"
+    }
   ],
-  "warranty": "12 tháng",
-  "inStock": true
-},
-{
-  "id": 12,
-  "name": "Dell Inspiron 14",
-  "category": "Laptop",
-  "price": "21490000",
-  "old_price": "22990000",
-  "tag": "Khuyến mãi",
-  "image": "may-chieu-wanbo-full-hd-vali.webp",
-  "description": "Dell Inspiron 14 mang đến hiệu năng mạnh mẽ cho công việc và học tập, thiết kế bền bỉ, sang trọng.",
-  "specifications": {
-    "cpu": "Intel Core i5-1235U",
-    "ram": "8GB DDR4",
-    "storage": "512GB SSD",
-    "gpu": "Intel Iris Xe",
-    "display": "14 inch FHD",
-    "weight": "1.7 kg",
-    "battery": "54Wh"
-  },
-  "features": [
-    "Thiết kế bền bỉ",
-    "Hiệu năng mạnh",
-    "Màn hình sắc nét",
-    "Âm thanh rõ ràng",
-    "Pin lâu"
-  ],
-  "warranty": "12 tháng",
-  "inStock": true
-},
-{
-  "id": 13,
-  "name": "HP Pavilion 15",
-  "category": "Laptop",
-  "price": "22990000",
-  "old_price": "24990000",
-  "tag": "Mới về",
-  "image": "de-do-laptop-baseus-ultrastable.webp",
-  "description": "HP Pavilion 15 phù hợp cho người dùng văn phòng và sinh viên, hiệu năng tốt và thiết kế hiện đại.",
-  "specifications": {
-    "cpu": "Intel Core i5-12450H",
-    "ram": "8GB DDR4",
-    "storage": "512GB SSD",
-    "gpu": "Intel UHD Graphics",
-    "display": "15.6 inch FHD IPS",
-    "weight": "1.75 kg",
-    "battery": "52Wh"
-  },
-  "features": [
-    "Thiết kế hiện đại",
-    "Màn hình IPS đẹp",
-    "Hiệu năng ổn định",
-    "Bàn phím dễ gõ",
-    "Pin bền bỉ"
-  ],
-  "warranty": "12 tháng",
-  "inStock": true
-},
-{
-  "id": 14,
-  "name": "Lenovo IdeaPad 3",
-  "category": "Laptop",
-  "price": "17490000",
-  "old_price": "19490000",
-  "tag": "Giá tốt",
-  "image": "msi-modern-15-f13mg.webp",
-  "description": "Lenovo IdeaPad 3 là lựa chọn kinh tế cho học sinh sinh viên với hiệu năng ổn định và giá hợp lý.",
-  "specifications": {
-    "cpu": "Intel Core i3-1215U",
-    "ram": "8GB DDR4",
-    "storage": "256GB SSD",
-    "gpu": "Intel UHD Graphics",
-    "display": "15.6 inch FHD",
-    "weight": "1.65 kg",
-    "battery": "45Wh"
-  },
-  "features": [
-    "Giá thành hợp lý",
-    "Thiết kế đơn giản",
-    "Đủ dùng học tập",
-    "Màn hình lớn",
-    "Pin ổn định"
-  ],
-  "warranty": "12 tháng",
-  "inStock": true
-},
-{
-  "id": 15,
-  "name": "Acer Swift 3",
-  "category": "Laptop",
-  "price": "24990000",
-  "old_price": "26990000",
-  "tag": "Cao cấp",
-  "image": "laptop_lenovo_loq_15arp983jc00m3vn.webp",
-  "description": "Acer Swift 3 nổi bật với thiết kế mỏng nhẹ, hiệu năng cao, phù hợp cho người thường xuyên di chuyển.",
-  "specifications": {
-    "cpu": "Intel Core i7-1260P",
-    "ram": "16GB LPDDR4X",
-    "storage": "512GB SSD",
-    "gpu": "Intel Iris Xe",
-    "display": "14 inch FHD IPS",
-    "weight": "1.2 kg",
-    "battery": "56Wh"
-  },
-  "features": [
-    "Siêu mỏng nhẹ",
-    "Hiệu năng mạnh",
-    "RAM lớn",
-    "Pin lâu",
-    "Thiết kế cao cấp"
-  ],
-  "warranty": "12 tháng",
-  "inStock": true
-},
-{
-  "id": 16,
-  "name": "MSI Modern 14",
-  "category": "Laptop",
-  "price": "21990000",
-  "old_price": "23990000",
-  "tag": "Sinh viên",
-  "image": "laptop_lenovo_ideapad_slim_3_14irh10_83k008vn.webp",
-  "description": "MSI Modern 14 hướng tới sinh viên và dân văn phòng với hiệu năng ổn định và thiết kế trẻ trung.",
-  "specifications": {
-    "cpu": "Intel Core i5-1240P",
-    "ram": "8GB DDR4",
-    "storage": "512GB SSD",
-    "gpu": "Intel Iris Xe",
-    "display": "14 inch FHD IPS",
-    "weight": "1.4 kg",
-    "battery": "53Wh"
-  },
-  "features": [
-    "Thiết kế trẻ trung",
-    "Hiệu năng tốt",
-    "Màn hình đẹp",
-    "Dễ mang theo",
-    "Pin ổn"
-  ],
-  "warranty": "12 tháng",
-  "inStock": true
-},
-{
-  "id": 21,
-  "name": "Logitech G Pro X",
-  "category": "Keyboard",
-  "price": "3290000",
-  "old_price": "3590000",
-  "tag": "Gaming",
-  "image": "logitech-g-pro-x.webp",
-  "description": "Bàn phím cơ Logitech G Pro X thiết kế nhỏ gọn, switch thay nóng, tối ưu cho game thủ chuyên nghiệp.",
-  "specifications": {
-    "type": "Mechanical",
-    "switch": "GX Blue",
-    "layout": "TKL",
-    "connection": "USB",
-    "led": "RGB"
-  },
-  "features": [
-    "Switch thay nóng",
-    "Thiết kế TKL gọn nhẹ",
-    "Đèn RGB Lightsync",
-    "Độ bền cao",
-    "Phù hợp eSports"
-  ],
-  "warranty": "24 tháng",
-  "inStock": true
-},
-{
-  "id": 22,
-  "name": "Keychron K6",
-  "category": "Keyboard",
-  "price": "2190000",
-  "old_price": "2490000",
-  "tag": "Bán chạy",
-  "image": "keychron-k6.webp",
-  "description": "Keychron K6 là bàn phím cơ không dây, nhỏ gọn, phù hợp cho coder và dân văn phòng.",
-  "specifications": {
-    "type": "Mechanical",
-    "switch": "Gateron Brown",
-    "layout": "65%",
-    "connection": "Bluetooth / USB",
-    "led": "White LED"
-  },
-  "features": [
-    "Không dây tiện lợi",
-    "Gõ êm",
-    "Thiết kế nhỏ gọn",
-    "Pin lâu",
-    "Tương thích Mac & Windows"
-  ],
-  "warranty": "12 tháng",
-  "inStock": true
-},
-{
-  "id": 23,
-  "name": "Akko 3068B",
-  "category": "Keyboard",
-  "price": "1890000",
-  "old_price": "2090000",
-  "tag": "Hot",
-  "image": "akko-3068b.webp",
-  "description": "Akko 3068B sở hữu thiết kế trẻ trung, switch Akko cho trải nghiệm gõ tốt và ổn định.",
-  "specifications": {
-    "type": "Mechanical",
-    "switch": "Akko CS Red",
-    "layout": "65%",
-    "connection": "Bluetooth / USB",
-    "led": "RGB"
-  },
-  "features": [
-    "Thiết kế đẹp",
-    "Switch Akko chất lượng",
-    "Không dây tiện lợi",
-    "RGB nổi bật",
-    "Giá tốt"
-  ],
-  "warranty": "12 tháng",
-  "inStock": true
-},
-{
-  "id": 24,
-  "name": "Razer BlackWidow V3",
-  "category": "Keyboard",
-  "price": "3490000",
-  "old_price": "3890000",
-  "tag": "Cao cấp",
-  "image": "razer-blackwidow-v3.webp",
-  "description": "Razer BlackWidow V3 mang đến trải nghiệm gaming cao cấp với switch độc quyền của Razer.",
-  "specifications": {
-    "type": "Mechanical",
-    "switch": "Razer Green",
-    "layout": "Full size",
-    "connection": "USB",
-    "led": "RGB Chroma"
-  },
-  "features": [
-    "Switch Razer độc quyền",
-    "Đèn RGB Chroma",
-    "Thiết kế chắc chắn",
-    "Độ bền cao",
-    "Gaming chuyên nghiệp"
-  ],
-  "warranty": "24 tháng",
-  "inStock": true
-},
-{
-  "id": 25,
-  "name": "Royal Kludge RK84",
-  "category": "Keyboard",
-  "price": "1590000",
-  "old_price": "1790000",
-  "tag": "Giá tốt",
-  "image": "rk84.webp",
-  "description": "RK84 là bàn phím cơ giá tốt, hỗ trợ nhiều chế độ kết nối, phù hợp người mới chơi phím cơ.",
-  "specifications": {
-    "type": "Mechanical",
-    "switch": "RK Brown",
-    "layout": "75%",
-    "connection": "Bluetooth / 2.4G / USB",
-    "led": "RGB"
-  },
-  "features": [
-    "3 chế độ kết nối",
-    "Giá hợp lý",
-    "Gõ êm",
-    "RGB đẹp",
-    "Dễ dùng"
-  ],
-  "warranty": "12 tháng",
-  "inStock": true
-},
-{
-  "id": 26,
-  "name": "DareU EK87",
-  "category": "Keyboard",
-  "price": "990000",
-  "old_price": "1190000",
-  "tag": "Sinh viên",
-  "image": "dareu-ek87.webp",
-  "description": "DareU EK87 là bàn phím cơ giá rẻ, phù hợp cho sinh viên và người mới bắt đầu.",
-  "specifications": {
-    "type": "Mechanical",
-    "switch": "DareU Blue",
-    "layout": "TKL",
-    "connection": "USB",
-    "led": "Rainbow"
-  },
-  "features": [
-    "Giá rẻ",
-    "Độ bền tốt",
-    "Gõ sướng",
-    "Thiết kế gọn",
-    "Phù hợp sinh viên"
-  ],
-  "warranty": "12 tháng",
-  "inStock": true
-},
-{
-  "id": 31,
-  "name": "Logitech G102 Lightsync",
-  "category": "Mouse",
-  "price": "490000",
-  "old_price": "590000",
-  "tag": "Bán chạy",
-  "image": "logitech-g102.webp",
-  "description": "Logitech G102 Lightsync là chuột gaming giá tốt, cảm biến chính xác, phù hợp học tập và chơi game.",
-  "specifications": {
-    "sensor": "Optical",
-    "dpi": "8000 DPI",
-    "connection": "USB",
-    "buttons": "6",
-    "weight": "85g"
-  },
-  "features": [
-    "Giá tốt",
-    "Cảm biến chính xác",
-    "Đèn RGB Lightsync",
-    "Thiết kế nhẹ",
-    "Phù hợp game thủ mới"
-  ],
-  "warranty": "24 tháng",
-  "inStock": true
-},
-{
-  "id": 32,
-  "name": "Razer DeathAdder Essential",
-  "category": "Mouse",
-  "price": "690000",
-  "old_price": "790000",
-  "tag": "Gaming",
-  "image": "razer-deathadder-essential.webp",
-  "description": "Razer DeathAdder Essential nổi tiếng với thiết kế công thái học và độ bền cao.",
-  "specifications": {
-    "sensor": "Optical",
-    "dpi": "6400 DPI",
-    "connection": "USB",
-    "buttons": "5",
-    "weight": "96g"
-  },
-  "features": [
-    "Thiết kế ôm tay",
-    "Độ bền cao",
-    "Tracking tốt",
-    "Phù hợp FPS",
-    "Thương hiệu uy tín"
-  ],
-  "warranty": "24 tháng",
-  "inStock": true
-},
-{
-  "id": 33,
-  "name": "Logitech G Pro Wireless",
-  "category": "Mouse",
-  "price": "2790000",
-  "old_price": "3090000",
-  "tag": "Cao cấp",
-  "image": "logitech-g-pro-wireless.webp",
-  "description": "Logitech G Pro Wireless là chuột gaming không dây cao cấp, trọng lượng siêu nhẹ.",
-  "specifications": {
-    "sensor": "HERO 25K",
-    "dpi": "25600 DPI",
-    "connection": "Wireless",
-    "buttons": "6",
-    "weight": "80g"
-  },
-  "features": [
-    "Không dây độ trễ thấp",
-    "Cảm biến cao cấp",
-    "Siêu nhẹ",
-    "Pin lâu",
-    "Dành cho eSports"
-  ],
-  "warranty": "24 tháng",
-  "inStock": true
-},
-{
-  "id": 34,
-  "name": "SteelSeries Rival 3",
-  "category": "Mouse",
-  "price": "890000",
-  "old_price": "990000",
-  "tag": "Hot",
-  "image": "steelseries-rival-3.webp",
-  "description": "SteelSeries Rival 3 mang đến hiệu năng ổn định, thiết kế đơn giản và bền bỉ.",
-  "specifications": {
-    "sensor": "TrueMove Core",
-    "dpi": "8500 DPI",
-    "connection": "USB",
-    "buttons": "6",
-    "weight": "77g"
-  },
-  "features": [
-    "Tracking chính xác",
-    "Thiết kế gọn nhẹ",
-    "Độ bền cao",
-    "Giá hợp lý",
-    "RGB đẹp"
-  ],
-  "warranty": "24 tháng",
-  "inStock": true
-},
-{
-  "id": 35,
-  "name": "DareU EM908",
-  "category": "Mouse",
-  "price": "390000",
-  "old_price": "490000",
-  "tag": "Sinh viên",
-  "image": "dareu-em908.webp",
-  "description": "DareU EM908 là chuột gaming giá rẻ, phù hợp sinh viên và người mới chơi game.",
-  "specifications": {
-    "sensor": "Optical",
-    "dpi": "6000 DPI",
-    "connection": "USB",
-    "buttons": "6",
-    "weight": "90g"
-  },
-  "features": [
-    "Giá rẻ",
-    "Dễ sử dụng",
-    "Đèn RGB",
-    "Thiết kế gọn",
-    "Đủ dùng gaming"
-  ],
-  "warranty": "12 tháng",
-  "inStock": true
-},
-{
-  "id": 36,
-  "name": "Logitech MX Master 3S",
-  "category": "Mouse",
-  "price": "2390000",
-  "old_price": "2590000",
-  "tag": "Văn phòng",
-  "image": "logitech-mx-master-3s.webp",
-  "description": "Logitech MX Master 3S là chuột cao cấp cho công việc văn phòng, thiết kế công thái học và cuộn siêu mượt.",
-  "specifications": {
-    "sensor": "Darkfield",
-    "dpi": "8000 DPI",
-    "connection": "Bluetooth / USB Receiver",
-    "buttons": "7",
-    "weight": "141g"
-  },
-  "features": [
-    "Công thái học",
-    "Cuộn siêu mượt",
-    "Hoạt động trên mọi bề mặt",
-    "Pin lâu",
-    "Dành cho dân văn phòng"
-  ],
-  "promotion": {
-    "shockSale": true,
-    "studentDiscount": true,
-    "gift": "Lót chuột cao cấp"
-  },
-  "badge": {
-    "bestSeller": true,
-    "newArrival": false
-  },
-  "warranty": "24 tháng",
-  "inStock": true
-}
 
-
-
-
-  ],
-  "categories": [
+  "categorie": [
     {
       "id": 1,
       "name": "Laptop",

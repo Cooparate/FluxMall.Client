@@ -9,6 +9,10 @@ const Register = lazy(() => import('./pages/auth/Register'));
 const Home = lazy(() => import('./pages/home/Home'));
 const Cart = lazy(() => import('./pages/cart/Cart'));
 const Category = lazy(() => import('./pages/category/Category'));
+const Warranty = lazy(() => import('./pages/warranty/Warranty'));
+const Contact = lazy(() => import('./pages/contact/Contact'));
+const Bestseller = lazy(() => import('./pages/bestseller/Bestseller'));
+const NewArrivals = lazy(() => import('./pages/bestseller/NewArrivals'));
 const ProductDetail = lazy(() => import('./components/product/ProductDetail'));
 const LayoutHome = lazy(() => import('./layouts/LayoutHome'));
 
@@ -44,7 +48,11 @@ function App() {
               <Route path="/home" element={<Home />} />
               <Route path="/cart" element={<Cart />} />
               <Route path="/category/:type" element={<Category />} />
-              <Route path="/product" element={<ProductDetail />} />
+              <Route path="/product/:id" element={<ProductDetail />} />
+              <Route path="/bestseller" element={<Bestseller />} />
+              <Route path="/newarrivals" element={<NewArrivals />} />
+              <Route path="/warranty" element={<Warranty />} />
+              <Route path="/contact" element={<Contact />} />
             </Route>
           </Routes>
         </Suspense>
