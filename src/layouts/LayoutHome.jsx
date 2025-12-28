@@ -5,10 +5,15 @@ import "./layoutHome.scss";
 
 
 import { banner} from "../assets";
-import { FaFacebookSquare, FaInstagramSquare, FaYoutube } from "react-icons/fa";
-import { HiMagnifyingGlass } from "react-icons/hi2";
-import { IoLogoGithub } from "react-icons/io";
-import { FiShoppingBag } from "react-icons/fi";
+import { 
+  HiMagnifyingGlass, 
+  FiShoppingBag, FiUser, FiLogOut,
+  AiOutlineClose,
+  FaFacebookSquare,
+  FaInstagramSquare,
+  FaYoutube,
+  IoLogoGithub
+} from "../components/icons";
 
 
 import { Outlet, useNavigate } from "react-router-dom";
@@ -197,8 +202,7 @@ export default function layoutHome() {
                   <li><a href="" onClick={() => goCategory("laptop")}>Laptop</a></li>
                   <li><a href="" onClick={() => goCategory("keyboard")}>Bàn phím</a></li>
                   <li><a href="" onClick={() => goCategory("mouse")}>Chuột</a></li>
-                  <li><a href="" onClick={() => goCategory("mouse")}>Tai nghe</a></li>
-
+                  <li><a href="" onClick={() => goCategory("headphone")}>Tai nghe</a></li>
                 </ul>
 
               </li>
@@ -207,8 +211,8 @@ export default function layoutHome() {
               <li className="has-dropdown">
                 <a href="#">Sản phẩm bán chạy</a>
                 <ul className="dropdown-menu">
-                  <li><a href="#">Bán chạy nhất</a></li>
-                  <li><a href="#">Mới ra mắt</a></li>
+                  <li><Link to="/bestseller">Bán chạy nhất</Link></li>
+                  <li><Link to="/newarrivals">Mới ra mắt</Link></li>
                 </ul>
               </li>             
               
@@ -225,8 +229,8 @@ export default function layoutHome() {
                 </ul>
               </li>
 
-              <li><a href="#">Trung tâm bảo hành</a></li> 
-              <li><a href="#">Liên hệ</a></li> 
+              <li><Link to="/warranty">Trung tâm bảo hành</Link></li> 
+              <li><Link to="/contact">Liên hệ</Link></li> 
 
             </ul> 
           </div> 

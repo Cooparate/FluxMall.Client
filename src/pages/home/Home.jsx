@@ -4,11 +4,12 @@ import { useCart } from '../../contexts/CartContext';
 
 import "./home.scss";
 
-import { slide1, slide2, slide3, Img1, Img2, Img3, Img4, Img5 } from "../../assets";
-import { FaFacebookSquare, FaChevronLeft, FaChevronRight, FaInstagramSquare, FaYoutube } from "react-icons/fa";
-import { HiMagnifyingGlass } from "react-icons/hi2";
-import { IoLogoGithub } from "react-icons/io";
-import { FiShoppingBag } from "react-icons/fi";
+import { slide1, slide2, slide3, Img1, Img2, Img3, Img4, Img5, acerAspireImg, acerNitroImg, acerNitro5Img, lenovoLoqImg, lenovoIdeapadImg } from "../../assets";
+import { 
+  FaFacebookSquare, FaChevronLeft, FaChevronRight, FaInstagramSquare, FaYoutube,
+  IoLogoGithub,
+  AiOutlinePlus, AiOutlineMinus, AiOutlineClose 
+} from "../../components/icons";
 
 const mockProducts = [
   { 
@@ -541,72 +542,6 @@ export default function Home() {
           </div>
         </div>
       )}
-
-      Footer
-      <footer className="footer">
-        <div className="container">
-          <div className="footer-content">
-            <div className="footer-section">
-              <h4>Về FluxMall</h4>
-              <ul>
-                <li><a href="#about">Giới thiệu</a></li>
-                <li><a href="#careers">Tuyển dụng</a></li>
-                <li><a href="#news">Tin tức</a></li>
-                <li><a href="#press">Nhà báo</a></li>
-              </ul>
-            </div>
-
-            <div className="footer-section">
-              <h4>Chính sách & Quyền lợi</h4>
-              <ul>
-                <li><a href="#policy">Chính sách bảo hành</a></li>
-                <li><a href="#delivery">Giao hàng miễn phí</a></li>
-                <li><a href="#returns">Chính sách đổi trả</a></li>
-                <li><a href="#privacy">Bảo mật thông tin</a></li>
-              </ul>
-            </div>
-
-            <div className="footer-section">
-              <h4>Hỗ trợ khách hàng</h4>
-              <ul>
-                <li><a href="#contact">Liên hệ chúng tôi</a></li>
-                <li><a href="#faq">Câu hỏi thường gặp</a></li>
-                <li><a href="#tracking">Theo dõi đơn hàng</a></li>
-                <li><a href="#warranty">Kiểm tra bảo hành</a></li>
-              </ul>
-            </div>
-
-            <div className="footer-section">
-              <h4>Kết nối với chúng tôi</h4>
-              <div className="social-links">
-                <a href="#"><FaFacebookSquare className="icon"/></a>
-                <a href="#"><FaInstagramSquare className="icon"/></a>
-                <a href="#"><FaYoutube className="icon"/></a>
-                <a href="#"><IoLogoGithub className="icon"/></a>                  
-                  
-              </div>
-              <div className="contact-info">
-                <a href="#">📞 Hotline: 1900.1234</a><br />                
-                <a href="#">✉️ Email: support@fluxmall.com</a>
-              </div>
-            </div>
-          </div>
-
-          <div className="footer-bottom">
-            <div className="payment-methods">
-              <span>Phương thức thanh toán:</span>
-              <span>Thẻ tín dụng</span>
-              <span>Chuyển khoản</span>
-              <span>Chuyển trả sau</span>
-              <span>E-wallet</span>
-            </div>
-          </div>
-
-          <div className="footer-copyright">
-            <p>&copy; 2025 FluxMall. Tất cả quyền được bảo lưu.</p>
-          </div>
-        </div>
-      </footer>
     </div>
   );
 } 
