@@ -1,0 +1,223 @@
+// ========== LAPTOP LAYOUT ==========
+.layout {
+  // max-width: 1400px;
+  margin: 0 auto;
+  padding-top: 2px;
+  padding-bottom: 20px;
+}
+
+// ========== TOP BANNER (Banner ngang trên đầu) ==========
+.top-banner {
+  width: 100%;
+  height: 40px;
+  background: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+// ========== MAIN WRAPPER ==========
+.main-wrapper {
+  display: flex;
+  gap: 16px;
+}
+
+// ========== SIDEBAR (Menu trái) ==========
+.sidebar {
+  width: 200px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  .sidebar-content {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .sidebar-title {
+    margin: 0 0 16px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+  }
+
+  .brand-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .brand-item {
+    .brand-link {
+      display: block;
+      padding: 10px 12px;
+      color: #555;
+      text-decoration: none;
+      border-radius: 4px;
+      transition: all 0.3s ease;
+      text-align: left;
+
+      &:hover {
+        background-color: #e3f2fd;
+        color: #1976d2;
+        padding-left: 16px;
+      }
+    }
+  }
+
+  // Banner dưới menu
+  .sidebar-banner {
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+
+    h4 {
+      margin: 0 0 8px 0;
+      font-size: 18px;
+    }
+
+    p {
+      margin: 0;
+      font-size: 14px;
+      opacity: 0.9;
+    }
+  }
+}
+
+// ========== MAIN CONTENT (Giữa) ==========
+.main-content {
+  flex: 1;
+
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 14px;
+    margin-bottom: 16px;
+  }
+
+  .bottom-banner {
+    width: 100%;
+    height: 180px;
+    background-color: #ff6b6b;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+}
+
+
+// ========== RIGHT BANNERS (Phải) ==========
+.right-banners {
+  width: 220px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  .banner {
+    height: 350px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+
+    .banner-title {
+      margin: 0 0 10px 0;
+      font-size: 18px;
+    }
+
+    .banner-text {
+      margin: 0;
+      font-size: 13px;
+      line-height: 1.5;
+    }
+
+    .banner-btn {
+      margin-top: 16px;
+      padding: 8px 20px;
+      background-color: white;
+      border: none;
+      border-radius: 4px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: transform 0.2s;
+      font-size: 13px;
+
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+  }
+
+  .banner-above {
+    background-color: #4a90e2;
+
+    .banner-btn {
+      color: #4a90e2;
+    }
+  }
+
+  .banner-below {
+    background-color: #50c878;
+
+    .banner-btn {
+      color: #50c878;
+    }
+  }
+}
+
+// ========== RESPONSIVE ==========
+// @media (max-width: 1200px) {
+//   .laptop-layout {
+//     flex-direction: column;
+//   }
+
+//   .sidebar,
+//   .right-banners {
+//     width: 100%;
+//   }
+
+//   .right-banners {
+//     flex-direction: row;
+
+//     .banner {
+//       flex: 1;
+//       height: 300px;
+//     }
+//   }
+
+//   .main-content .product-grid {
+//     grid-template-columns: repeat(3, 1fr);
+//   }
+// }
+
+// @media (max-width: 768px) {
+//   .main-content .product-grid {
+//     grid-template-columns: repeat(2, 1fr);
+//   }
+
+//   .right-banners {
+//     flex-direction: column;
+//   }
+// }

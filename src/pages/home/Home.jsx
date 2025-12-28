@@ -4,12 +4,11 @@ import { useCart } from '../../contexts/CartContext';
 
 import "./home.scss";
 
-import { slide1, slide2, slide3, Img1, Img2, Img3, Img4, Img5, acerAspireImg, acerNitroImg, acerNitro5Img, lenovoLoqImg, lenovoIdeapadImg } from "../../assets";
-import { 
-  FaFacebookSquare, FaChevronLeft, FaChevronRight, FaInstagramSquare, FaYoutube,
-  IoLogoGithub,
-  AiOutlinePlus, AiOutlineMinus, AiOutlineClose 
-} from "../../components/icons";
+import { slide1, slide2, slide3, Img1, Img2, Img3, Img4, Img5 } from "../../assets";
+import { FaFacebookSquare, FaChevronLeft, FaChevronRight, FaInstagramSquare, FaYoutube } from "react-icons/fa";
+import { HiMagnifyingGlass } from "react-icons/hi2";
+import { IoLogoGithub } from "react-icons/io";
+import { FiShoppingBag } from "react-icons/fi";
 
 const mockProducts = [
   { 
@@ -223,7 +222,8 @@ export default function Home() {
 
       {/* Banner Carousel */}
       <section className="banner-carousel">
-        <div className="sidebar">
+        
+        {/* <div className="sidebar">
           <div className="menu-header">
             <h2>Danh mục sản phẩm</h2>
           </div>
@@ -264,7 +264,7 @@ export default function Home() {
               </a>
             </li>
           </ul>
-        </div>
+        </div> */}
 
 
         <div className="container">
