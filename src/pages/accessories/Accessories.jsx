@@ -5,7 +5,7 @@ import "./Accessories.scss";
 
 export default function Accessories() {
   const { type } = useParams();
-  const { accessories } = data;
+  const { products } = data;
 
   const renderLayout = () => {
     switch (type) {
@@ -17,8 +17,8 @@ export default function Accessories() {
             <div className="main-wrapper">
               <main className="main-content">
                 <div className="product-grid">
-                  {accessories
-                    .filter((a) => a.category.toLowerCase() === "bag")
+                  {products
+                    .filter((p) => p.category.toLowerCase() === "bag")
                     .map((item) => (
                       <ProductCard key={item.id} item={item} />
                     ))}
@@ -36,7 +36,7 @@ export default function Accessories() {
             <div className="main-wrapper">
               <main className="main-content">
                 <div className="product-grid">
-                  {accessories
+                  {products
                     .filter((p) => p.category.toLowerCase() === "rack")
                     .map((item) => (
                       <ProductCard key={item.id} item={item} />
@@ -54,7 +54,7 @@ export default function Accessories() {
             <div className="main-wrapper">
               <main className="main-content">
                 <div className="product-grid">
-                  {accessories
+                  {products
                     .filter((p) => p.category.toLowerCase() === "cleaning")
                     .map((item) => (
                       <ProductCard key={item.id} item={item} />

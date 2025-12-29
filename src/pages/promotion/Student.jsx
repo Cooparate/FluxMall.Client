@@ -1,8 +1,6 @@
-import React from "react";
 import "./Student.scss";
 import { RiCouponLine, FiPercent, FiGift } from "../../components/icons";
 
-// Mock data cho ưu đãi sinh viên
 const studentDeals = [
   {
     id: 1,
@@ -86,20 +84,16 @@ export default function Student() {
           <div className="deals-grid">
             {studentDeals.map((deal) => (
               <div key={deal.id} className="deal-card">
-                <div className="deal-icon-wrapper">{getIcon(deal.icon)}</div>
+                <div className="deal-left">
+                  <div className="deal-icon-wrapper">{getIcon(deal.icon)}</div>
 
-                <div className="deal-info">
-                  <div className="deal-discount">{deal.discount}</div>
-                  <h3>{deal.title}</h3>
-
-                  {/* gộp description + condition 1 dòng */}
-                  <p className="deal-meta">
-                    <span className="deal-description">{deal.description}</span>
-                    <span className="meta-sep"> · </span>
-                    <span className="deal-condition">{deal.condition}</span>
-                  </p>
-
-                  <p className="deal-validity">HSD: {deal.validUntil}</p>
+                  <div className="deal-info">
+                    <div className="deal-discount">{deal.discount}</div>
+                    <h3>{deal.title}</h3>
+                    <p className="deal-description">{deal.description}</p>
+                    <p className="deal-condition">{deal.condition}</p>
+                    <p className="deal-validity">HSD: {deal.validUntil}</p>
+                  </div>
                 </div>
 
                 <div className="deal-code-section">
