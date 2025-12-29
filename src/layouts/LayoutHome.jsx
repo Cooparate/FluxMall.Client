@@ -41,6 +41,11 @@ export default function layoutHome() {
     setOpen(false);
   };
 
+  const goAccessories = (type) => {
+    navigate(`/accessories/${type}`);
+    setOpen(false);
+  }
+
   const handleLogout = () => {
     localStorage.removeItem('fluxmall_current_user');
     setCurrentUser(null);
@@ -216,16 +221,16 @@ export default function layoutHome() {
                 </ul>
               </li>             
               
-              <li><a href="#">Giảm giá sốc</a></li>
-              <li><a href="#">Dành cho sinh viên</a></li>
+              <li><Link to="/sale">Giảm giá sốc</Link></li>
+              <li><Link to="/student">Dành cho sinh viên</Link></li>
   
               {/* -- Phụ kiện -- */}
               <li className="has-dropdown">
                 <a href="#">Phụ kiện</a>
                 <ul className="dropdown-menu">
-                  <li><a href="#">Túi chống sốc</a></li>
-                  <li><a href="#">Bộ vệ sinh laptop</a></li>
-                  <li><a href="#">Đế tảng nhiệt</a></li>
+                  <li><a href="" onClick={() => goAccessories("bag")}>Túi chống sốc</a></li>
+                  <li><a href="" onClick={() => goAccessories("cleaning")}>Bộ vệ sinh laptop</a></li>
+                  <li><a href="" onClick={() => goAccessories("rack")}>Đế tảng nhiệt</a></li>
                 </ul>
               </li>
 

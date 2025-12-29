@@ -15,6 +15,9 @@ const Bestseller = lazy(() => import('./pages/bestseller/Bestseller'));
 const NewArrivals = lazy(() => import('./pages/bestseller/NewArrivals'));
 const ProductDetail = lazy(() => import('./components/product/ProductDetail'));
 const LayoutHome = lazy(() => import('./layouts/LayoutHome'));
+const Sale = lazy(() => import('./pages/promotion/Sale'));
+const Student = lazy(() => import('./pages/promotion/Student'));
+const Accessories = lazy(() => import('./pages/accessories/Accessories'));
 
 // Loading component
 const LoadingFallback = () => (
@@ -53,6 +56,10 @@ function App() {
               <Route path="/newarrivals" element={<NewArrivals />} />
               <Route path="/warranty" element={<Warranty />} />
               <Route path="/contact" element={<Contact />} />
+              <Route path="/sale" element={<Sale />} />
+              <Route path="/student" element={<Student />} />
+              <Route path="/accessories/:type" element={<Accessories />} />
+              <Route path="/product" element={<ProductDetail />} />
             </Route>
           </Routes>
         </Suspense>
