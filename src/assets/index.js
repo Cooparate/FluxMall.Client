@@ -15,7 +15,6 @@ import Img3 from "./images/Acer-detail-11.webp";
 import Img4 from "./images/Acer-detail-11.webp";
 import Img5 from "./images/Acer-detail-11.webp";
 
-import BannerMouse from "./images/Banner-Mouse.webp"
 
 // Team member images
 import backendDevImg from "./images/consauhayngu.webp";
@@ -31,7 +30,6 @@ import lenovoIdeapadImg from "./images/Acer-Gaming-Nitro-v15.webp";
 //Export all images
 export {
   banner,
-  BannerMouse,
   slide1,
   slide2,
   slide3,

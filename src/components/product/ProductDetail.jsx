@@ -11,6 +11,7 @@ export default function ProductDetail() {
   const { addToCart } = useCart();
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [quantity, setQuantity] = useState(1);
+  const [showMore, setShowMore] = useState(false);
 
   const product = data.products.find(p => p.id === parseInt(id));
 
@@ -153,7 +154,7 @@ export default function ProductDetail() {
 
           {/* Quantity and actions */}
           <div className="actions-section">
-            <div className="quantity-control">
+            {/* <div className="quantity-control">
               <label>Số lượng:</label>
               <button 
                 className="qty-btn"
@@ -173,7 +174,7 @@ export default function ProductDetail() {
               >
                 +
               </button>
-            </div>
+            </div> */}
 
             <button 
               className="btn-add-cart"
@@ -194,27 +195,23 @@ export default function ProductDetail() {
       </div>
 
 {/* Warranty info */}
-{product.warranty && (
-  <div className="warranty-section">
-    <h2>Bảo hành & Chính sách</h2>
 
-    <div className="warranty-card">
-      {Object.entries(product.warranty).map(([key, value]) => {
-        const keyDisplay = key
-          .replace(/_/g, ' ')
-          .replace(/\b\w/g, l => l.toUpperCase());
+{product.productInfo && (
+  <div className="info-section">
+    <h2>Thông tin sản phẩm</h2>
 
-        const valueDisplay = Array.isArray(value)
-          ? value.join(', ')
-          : String(value);
-
-        return (
-          <p key={key}>
-            <strong>{keyDisplay}:</strong> {valueDisplay}
-          </p>
-        );
-      })}
+    <div
+      className={`product-info ${showMore ? "expanded" : "collapsed"}`}
+    >
+      {product.productInfo}
     </div>
+
+    <button
+      className="btn-show-more"
+      onClick={() => setShowMore(!showMore)}
+    >
+      {showMore ? "Thu gọn" : "Xem thêm"}
+    </button>
   </div>
 )}
 
@@ -245,6 +242,31 @@ export default function ProductDetail() {
           </div>
         </div>
       )}
+
+      {product.warranty && (
+  <div className="warranty-section">
+    <h2>Bảo hành & Chính sách</h2>
+
+    <div className="warranty-card">
+      {Object.entries(product.warranty).map(([key, value]) => {
+        const keyDisplay = key
+          .replace(/_/g, ' ')
+          .replace(/\b\w/g, l => l.toUpperCase());
+
+        const valueDisplay = Array.isArray(value)
+          ? value.join(', ')
+          : String(value);
+
+        return (
+          <p key={key}>
+            <strong>{keyDisplay}:</strong> {valueDisplay}
+          </p>
+        );
+      })}
+    </div>
+  </div>
+)}
+
 
       {/* Store info */}
       {/* {product.store && product.store.length > 0 && (
