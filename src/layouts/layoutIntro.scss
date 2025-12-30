@@ -4,7 +4,7 @@
   top: 0;
   left: 0;
   right: 0;
-  background: rgba(255, 255, 255, 0.95);
+  background: white;
   border-bottom: 1px solid #e5e7eb;
   z-index: 100;
   padding: 16px 0;
@@ -28,8 +28,7 @@
   font-size: 26px;
   font-weight: bold;
   margin: 0;
-  background: linear-gradient(135deg, #ffc250 0%, #ff9634 100%);
-  //  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: #ff6b6b;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -63,7 +62,7 @@
   border-radius: 8px;
   font-weight: 600;
   //color: #667eea !important;
-  color: #ffc250 !important;
+  color: #ff6b6b !important;
   transition: all 0.3s;
 }
 
@@ -74,8 +73,7 @@
 /* Nút Sign up */
 .btn-register {
   padding: 10px 24px;
-  // background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  background: linear-gradient(135deg, #ffc250 0%, #ff9634 100%);
+  background: linear-gradient(135deg, #ff5e61eb 0%, #ffaa5b 100%);
   border-radius: 8px;
   color: #fff !important;
   font-weight: 600;
