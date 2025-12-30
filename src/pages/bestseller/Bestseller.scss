@@ -80,11 +80,11 @@
     margin-bottom: 10px;
     padding-bottom: 10px;
     border-bottom: 1px solid #eee;
-    
+
     &:last-of-type {
       border-bottom: none;
     }
-    
+
     h3 {
       font-size: 14px;
       font-weight: 700;
@@ -93,14 +93,14 @@
       text-transform: uppercase;
       letter-spacing: 0.5px;
     }
-    
+
     .category-filter,
     .sort-filter {
       display: flex;
       flex-direction: column;
       gap: 4px;
     }
-    
+
     .filter-option {
       display: flex;
       align-items: center;
@@ -165,7 +165,6 @@
     @media (max-width: 480px) {
       grid-template-columns: 1fr;
     }
-
   }
 
   .no-products {

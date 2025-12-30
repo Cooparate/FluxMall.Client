@@ -1,0 +1,215 @@
+/* ===== Sale Page ===== */
+.sale-page {
+  background: #f5f5f5;
+  padding: 20px;
+  margin: 0 100px;
+}
+
+/* ===== Banner ===== */
+.sale-banner {
+  background: linear-gradient(135deg, #ff5e61eb 0%, #ffaa5b 100%);
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+  margin-bottom: 20px;
+
+  h1 {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 8px;
+
+    @media (max-width: 768px) {
+      font-size: 28px;
+    }
+  }
+
+  p {
+    font-size: 18px;
+    opacity: 0.95;
+
+    @media (max-width: 768px) {
+      font-size: 14px;
+    }
+  }
+}
+
+/* ===== Tabs ===== */
+.sale-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 20px;
+
+  button {
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    background: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+
+    &:hover {
+      background: #fff1f0;
+    }
+
+    &.active {
+      background: #ff4d4f;
+      color: #fff;
+      border-color: #ff4d4f;
+    }
+  }
+}
+
+/* ===== Flash Sale Header ===== */
+.sale-header {
+  max-width: 1400px;
+  margin: 0 auto 16px;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  h2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #333;
+  }
+
+  .countdown {
+    font-size: 22px;
+    padding: 6px 14px;
+    border-radius: 20px;
+    background: #fff1f0;
+    color: #ff4d4f;
+    font-weight: 600;
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    gap: 8px;
+    text-align: center;
+  }
+}
+
+/* ===== Main Content ===== */
+.sale-main {
+  // max-width: 1400px;
+  // margin: 0 auto;
+  // padding: 0 20px;
+  flex: 1;
+
+  .products-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 14px;
+    margin-bottom: 16px;
+
+    @media (max-width: 1024px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    @media (max-width: 768px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: 480px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .no-products {
+    background: white;
+    padding: 60px 20px;
+    border-radius: 8px;
+    text-align: center;
+
+    p {
+      font-size: 18px;
+      color: #999;
+      margin: 0;
+    }
+  }
+}
+
+/* ===== Voucher Section ===== */
+.voucher-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+
+  h2 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 6px;
+  }
+
+  p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+  }
+}
+
+.voucher-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.voucher-card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  border: 2px dashed #ff4d4f;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+
+  h4 {
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  .code {
+    font-size: 18px;
+    font-weight: 700;
+    color: #ff4d4f;
+    letter-spacing: 1px;
+  }
+
+  button {
+    margin-top: 6px;
+    padding: 8px 14px;
+    border-radius: 6px;
+    border: none;
+    background: #ff4d4f;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.9;
+    }
+  }
+
+  &.highlight {
+    background: linear-gradient(135deg, #ff4d4f, #ff9f43);
+    color: #fff;
+
+    .code {
+      color: #fff;
+    }
+
+    button {
+      background: #fff;
+      color: #ff4d4f;
+    }
+  }
+}

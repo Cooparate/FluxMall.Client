@@ -114,8 +114,8 @@
       "image": {
         "img0": "Dell-15-DC15250.webp",
         "img1": "Dell-detail-11.webp",
-        "img2": "Dell-detail-11.webp",
-        "img3": "Dell-detail-11.webp"
+        "img2": "Dell-detail-12.webp",
+        "img3": "Dell-detail-13.webp"
       },
       "description": "Laptop Dell 15 DC15250 sử dụng Intel Core i7 1355U, thiết kế mỏng nhẹ, màn hình Full HD 120Hz, phù hợp học tập và làm việc văn phòng chuyên nghiệp.",
       "specifications": {
@@ -343,190 +343,184 @@
     },
 
     {
-  "id": 5,
-  "name": "Laptop Lenovo Core 5 Raptor Lake 210H",
-  "brand": "Lenovo",
-  "category": "Laptop",
-  "price": "19990000",
-  "old_price": "21990000",
-  "discount": "-9%",
-  "tag": "Giảm 9%",
-  "image": {
-    "img0": "Lenovo-ThinkBook-14-G8.webp",
-    "img1": "Lenovo-detail-11.webp",
-    "img2": "lenovo-detail-12.webp",
-    "img3": "lenovo-detail-13.webp"
-  },
-  "description": "Laptop Lenovo trang bị Intel Core 5 Raptor Lake 210H, RAM DDR5 16GB, màn hình 14 inch WUXGA, thiết kế gọn nhẹ, phù hợp học tập và làm việc.",
-  "specifications": {
-    "cpu": "Intel Core 5 Raptor Lake - 210H",
-    "cores": "8",
-    "threads": "12",
-    "cpu_speed": "2.20 GHz (Up to 4.80 GHz)",
-    "gpu": "Intel Graphics",
-    "ram": "16GB DDR5",
-    "ram_bus": "5600 MHz",
-    "ram_max": "32 GB",
-    "storage": "512GB SSD NVMe M.2 PCIe Gen 4.0 (nâng cấp tối đa 2TB)",
-    "display": "14 inch WUXGA (1920 x 1200), IPS, 60Hz",
-    "color_gamut": "45% NTSC",
-    "screen_tech": "Anti Glare, 300 nits",
-    "ports": [
-      "Jack tai nghe 3.5mm",
-      "USB-C 3.2 Gen 2 (Power Delivery, DisplayPort 1.4)",
-      "USB-C Thunderbolt 4 / USB4 (DisplayPort 2.1)",
-      "2 x USB-A 3.2 Gen 1",
-      "HDMI 2.1",
-      "LAN RJ45",
-      "Khe thẻ SD"
-    ],
-    "wireless": "Wi-Fi 6E, Bluetooth 5.3",
-    "webcam": "FHD 1080p + IR, Privacy Shutter",
-    "keyboard": "Đèn nền bàn phím",
-    "audio": [
-      "Realtek ALC3287",
-      "High Definition Audio"
-    ],
-    "battery": "Li-ion 45Wh",
-    "os": "Windows 11 Home SL",
-    "release_year": "2025",
-    "size_weight": "313.5 x 224 x 17.5 mm - 1.36 kg",
-    "material": "Vỏ nhựa, nắp lưng hợp kim nhôm"
-  },
-  "features": [
-    "CPU Intel Core 5 Raptor Lake thế hệ mới",
-    "Màn hình WUXGA sắc nét",
-    "Wi-Fi 6E tốc độ cao",
-    "Thunderbolt 4 hỗ trợ đa thiết bị",
-    "Thiết kế mỏng nhẹ 1.36kg",
-    "Bản lề mở 180 độ"
-  ],
-  "store": [
-    {
-      "storeId": 1,
-      "city": "TP. Hồ Chí Minh",
-      "province": "TP. Hồ Chí Minh",
-      "address": "2958 siêu thị Thế Giới Di Động toàn quốc",
-      "phone": "18001060",
-      "hours": "8:00 - 22:00",
-      "status": "Chính hãng"
-    }
-  ],
-  "warranty": {
-    "laptop": "2 năm chính hãng",
-    "battery": "1 năm",
-    "exchange_policy": "Hư gì đổi nấy 12 tháng (miễn phí tháng đầu)",
-    "included_items": [
-      "Sách hướng dẫn",
-      "Sạc Laptop Lenovo 65W",
-      "Thùng máy"
-    ]
-  },
-  "promotion": {
-    "shockSale": false,
-    "studentDiscount": true,
-    "gift": "Túi chống sốc"
-  },
-  "badge": {
-    "bestSeller": false,
-    "newArrival": true
-  },
-  "inStock": true
-},
+      "id": 5,
+      "name": "Laptop Lenovo Core 5 Raptor Lake 210H",
+      "brand": "Lenovo",
+      "category": "Laptop",
+      "price": "19990000",
+      "old_price": "21990000",
+      "discount": "-9%",
+      "tag": "Giảm 9%",
+      "image": {
+        "img0": "Lenovo-ThinkBook-14-G8.webp",
+        "img1": "Lenovo-detail-11.webp",
+        "img2": "lenovo-detail-12.webp",
+        "img3": "lenovo-detail-13.webp"
+      },
+      "description": "Laptop Lenovo trang bị Intel Core 5 Raptor Lake 210H, RAM DDR5 16GB, màn hình 14 inch WUXGA, thiết kế gọn nhẹ, phù hợp học tập và làm việc.",
+      "specifications": {
+        "cpu": "Intel Core 5 Raptor Lake - 210H",
+        "cores": "8",
+        "threads": "12",
+        "cpu_speed": "2.20 GHz (Up to 4.80 GHz)",
+        "gpu": "Intel Graphics",
+        "ram": "16GB DDR5",
+        "ram_bus": "5600 MHz",
+        "ram_max": "32 GB",
+        "storage": "512GB SSD NVMe M.2 PCIe Gen 4.0 (nâng cấp tối đa 2TB)",
+        "display": "14 inch WUXGA (1920 x 1200), IPS, 60Hz",
+        "color_gamut": "45% NTSC",
+        "screen_tech": "Anti Glare, 300 nits",
+        "ports": [
+          "Jack tai nghe 3.5mm",
+          "USB-C 3.2 Gen 2 (Power Delivery, DisplayPort 1.4)",
+          "USB-C Thunderbolt 4 / USB4 (DisplayPort 2.1)",
+          "2 x USB-A 3.2 Gen 1",
+          "HDMI 2.1",
+          "LAN RJ45",
+          "Khe thẻ SD"
+        ],
+        "wireless": "Wi-Fi 6E, Bluetooth 5.3",
+        "webcam": "FHD 1080p + IR, Privacy Shutter",
+        "keyboard": "Đèn nền bàn phím",
+        "audio": ["Realtek ALC3287", "High Definition Audio"],
+        "battery": "Li-ion 45Wh",
+        "os": "Windows 11 Home SL",
+        "release_year": "2025",
+        "size_weight": "313.5 x 224 x 17.5 mm - 1.36 kg",
+        "material": "Vỏ nhựa, nắp lưng hợp kim nhôm"
+      },
+      "features": [
+        "CPU Intel Core 5 Raptor Lake thế hệ mới",
+        "Màn hình WUXGA sắc nét",
+        "Wi-Fi 6E tốc độ cao",
+        "Thunderbolt 4 hỗ trợ đa thiết bị",
+        "Thiết kế mỏng nhẹ 1.36kg",
+        "Bản lề mở 180 độ"
+      ],
+      "store": [
+        {
+          "storeId": 1,
+          "city": "TP. Hồ Chí Minh",
+          "province": "TP. Hồ Chí Minh",
+          "address": "2958 siêu thị Thế Giới Di Động toàn quốc",
+          "phone": "18001060",
+          "hours": "8:00 - 22:00",
+          "status": "Chính hãng"
+        }
+      ],
+      "warranty": {
+        "laptop": "2 năm chính hãng",
+        "battery": "1 năm",
+        "exchange_policy": "Hư gì đổi nấy 12 tháng (miễn phí tháng đầu)",
+        "included_items": [
+          "Sách hướng dẫn",
+          "Sạc Laptop Lenovo 65W",
+          "Thùng máy"
+        ]
+      },
+      "promotion": {
+        "shockSale": false,
+        "studentDiscount": true,
+        "gift": "Túi chống sốc"
+      },
+      "badge": {
+        "bestSeller": false,
+        "newArrival": true
+      },
+      "inStock": true
+    },
 
-{
-  "id": 6,
-  "name": "Laptop MSI AMD Ryzen AI 5 340 OLED 2.8K",
-  "brand": "MSI",
-  "category": "Laptop",
-  "price": "23990000",
-  "old_price": "25990000",
-  "discount": "-8%",
-  "tag": "Mẫu mới",
-  "image": {
-    "img0": "MSI-Venture-A14AI-A3HMG-R5AI340.webp",
-    "img1": "MSI-detail-11.webp",
-    "img2": "MSI-detail-12.webp",
-    "img3": "MSI-detail-13.webp",
-    "img4": "MSI-detail-14.webp"
-  },
-  "description": "Laptop MSI trang bị AMD Ryzen AI 5 340 tích hợp NPU XDNA, màn hình OLED 2.8K 120Hz, RAM DDR5 16GB, pin lớn 75Wh, tối ưu cho công việc sáng tạo và AI.",
-  "productInfo": "Trái tim của chiếc laptop MSI Venture Series là bộ vi xử lý AMD Ryzen AI 5 340 với 6 nhân 12 luồng, tốc độ xung nhịp lên đến 4.80 GHz. Nhờ đó, máy có thể xử lý mượt mà các tác vụ văn phòng hàng ngày, học tập, duyệt web, xem phim và thậm chí là chỉnh sửa ảnh, video cơ bản. Điểm đặc biệt là con chip này còn tích hợp NPU AMD XDNA, mang đến hiệu năng xử lý AI lên đến 50 TOPS, hỗ trợ các ứng dụng AI thông minh như nhận diện khuôn mặt, cải thiện chất lượng hình ảnh và video, giúp bạn làm việc hiệu quả hơn.\n\nCard đồ họa tích hợp AMD Radeon Graphics tuy không phải là card rời mạnh mẽ, nhưng vẫn đủ sức đáp ứng nhu cầu đồ họa cơ bản của người dùng. Bạn có thể thoải mái chơi các tựa game nhẹ nhàng hoặc chỉnh sửa ảnh, video ở mức độ vừa phải.\n\nĐi kèm với đó là 16 GB RAM DDR5 tốc độ 5600 MHz, cho phép bạn thoải mái mở nhiều tab trình duyệt, chạy nhiều ứng dụng cùng lúc mà không lo giật lag. Ổ cứng 512 GB SSD NVMe PCIe không chỉ cung cấp không gian lưu trữ đủ dùng mà còn giúp máy khởi động nhanh chóng và truy xuất dữ liệu siêu tốc. Nếu bạn cần thêm không gian lưu trữ, máy còn hỗ trợ nâng cấp RAM lên đến 96 GB và thay thế ổ cứng SSD lên đến 4 TB.\n\nMSI Venture A14 AI+ A3HMG sở hữu màn hình 14 inch độ phân giải 2.8K (2880 x 1800) với tấm nền OLED, mang đến chất lượng hiển thị tuyệt đẹp. Màu sắc sống động, độ tương phản cao và góc nhìn rộng giúp bạn có những trải nghiệm xem phim, chơi game và làm việc tuyệt vời. Tần số quét 120 Hz giúp hình ảnh hiển thị mượt mà hơn, đặc biệt là khi chơi game hoặc xem các nội dung chuyển động nhanh.\n\nLaptop MSI Venture A14 AI+ A3HMG có thiết kế mỏng nhẹ với kích thước chỉ 21.6 mm và khối lượng 1.625 kg, rất tiện lợi để mang theo bên mình khi di chuyển. Vỏ máy được làm từ chất liệu nhựa, mang đến cảm giác chắc chắn và bền bỉ. Bàn phím có đèn nền đơn sắc màu trắng, giúp bạn dễ dàng gõ phím trong điều kiện thiếu sáng. Bản lề có khả năng mở 180 độ, giúp bạn dễ dàng chia sẻ nội dung với người khác. Công tắc khóa camera giúp bảo vệ sự riêng tư của bạn. Camera IR còn hỗ trợ tính năng nhận diện khuôn mặt (FaceID) giúp bạn mở khóa máy nhanh chóng và an toàn.\n\nLaptop được trang bị đầy đủ các cổng kết nối cần thiết, bao gồm 2 cổng USB 3.2, HDMI, cổng LAN (RJ45), cổng headphone/microphone combo và 1 cổng USB Type-C 3.2 hỗ trợ Power Delivery và DisplayPort. Kết nối không dây Wi-Fi 6E (802.11ax) và Bluetooth 5.3 cho tốc độ truyền dữ liệu nhanh chóng và ổn định. Pin 4-cell Li-ion 75 Wh cho thời lượng sử dụng khá tốt, đủ để bạn làm việc và giải trí trong một ngày dài.",
-  "specifications": {
-    "cpu": "AMD Ryzen AI 5 - 340",
-    "cores": "6",
-    "threads": "12",
-    "cpu_speed": "2.00 GHz (Up to 4.80 GHz)",
-    "ai_performance": "Lên đến 50 TOPS",
-    "gpu": "Card tích hợp - AMD Radeon Graphics",
-    "ram": "16GB DDR5",
-    "ram_bus": "5600 MHz",
-    "ram_max": "96 GB",
-    "storage": "512GB SSD NVMe PCIe (nâng cấp tối đa 4TB)",
-    "display": "14 inch OLED - độ phân giải 2.8K (2880 x 1800), 16:10",
-    "refresh_rate": "120Hz",
-    "ports": [
-      "2 x USB 3.2",
-      "USB Type-C 3.2 (Power Delivery, DisplayPort)",
-      "HDMI",
-      "LAN RJ45",
-      "Jack tai nghe / microphone 3.5mm"
-    ],
-    "wireless": "Wi-Fi 6E, Bluetooth 5.3",
-    "webcam": "HD Webcam + Camera IR",
-    "keyboard": "Đèn nền đơn sắc (trắng)",
-    "audio": [
-      "Hi-Res Audio",
-      "DTS Audio"
-    ],
-    "battery": "4-cell Li-ion 75Wh",
-    "os": "Windows 11 Home SL",
-    "release_year": "2025",
-    "size_weight": "315.6 x 235.5 x 21.6 mm - 1.625 kg",
-    "material": "Vỏ nhựa"
-  },
-  "features": [
-    "CPU AMD Ryzen AI tích hợp NPU XDNA",
-    "Hiệu năng AI lên đến 50 TOPS",
-    "Màn hình OLED 2.8K 120Hz siêu nét",
-    "Pin lớn 75Wh",
-    "Wi-Fi 6E tốc độ cao",
-    "Bản lề mở 180 độ"
-  ],
-  "store": [
     {
-      "storeId": 1,
-      "city": "Toàn quốc",
-      "province": "Việt Nam",
-      "address": "2958 siêu thị Thế Giới Di Động",
-      "phone": "18001060",
-      "hours": "8:00 - 22:00",
-      "status": "Chính hãng"
-    }
-  ],
-  "warranty": {
-    "laptop": "2 năm chính hãng",
-    "battery": "1 năm",
-    "exchange_policy": "Hư gì đổi nấy 12 tháng (miễn phí tháng đầu)",
-    "included_items": [
-      "Sách hướng dẫn",
-      "Thùng máy",
-      "Túi xách",
-      "Sạc Laptop MSI 90W"
-    ]
-  },
-  "promotion": {
-    "shockSale": false,
-    "studentDiscount": true,
-    "gift": null
-  },
-  "badge": {
-    "bestSeller": false,
-    "newArrival": true
-  },
-  "inStock": true
-},
-
+      "id": 6,
+      "name": "Laptop MSI AMD Ryzen AI 5 340 OLED 2.8K",
+      "brand": "MSI",
+      "category": "Laptop",
+      "price": "23990000",
+      "old_price": "25990000",
+      "discount": "-8%",
+      "tag": "Mẫu mới",
+      "image": {
+        "img0": "MSI-Venture-A14AI-A3HMG-R5AI340.webp",
+        "img1": "MSI-detail-11.webp",
+        "img2": "MSI-detail-12.webp",
+        "img3": "MSI-detail-13.webp",
+        "img4": "MSI-detail-14.webp"
+      },
+      "description": "Laptop MSI trang bị AMD Ryzen AI 5 340 tích hợp NPU XDNA, màn hình OLED 2.8K 120Hz, RAM DDR5 16GB, pin lớn 75Wh, tối ưu cho công việc sáng tạo và AI.",
+      "productInfo": "Trái tim của chiếc laptop MSI Venture Series là bộ vi xử lý AMD Ryzen AI 5 340 với 6 nhân 12 luồng, tốc độ xung nhịp lên đến 4.80 GHz. Nhờ đó, máy có thể xử lý mượt mà các tác vụ văn phòng hàng ngày, học tập, duyệt web, xem phim và thậm chí là chỉnh sửa ảnh, video cơ bản. Điểm đặc biệt là con chip này còn tích hợp NPU AMD XDNA, mang đến hiệu năng xử lý AI lên đến 50 TOPS, hỗ trợ các ứng dụng AI thông minh như nhận diện khuôn mặt, cải thiện chất lượng hình ảnh và video, giúp bạn làm việc hiệu quả hơn.\n\nCard đồ họa tích hợp AMD Radeon Graphics tuy không phải là card rời mạnh mẽ, nhưng vẫn đủ sức đáp ứng nhu cầu đồ họa cơ bản của người dùng. Bạn có thể thoải mái chơi các tựa game nhẹ nhàng hoặc chỉnh sửa ảnh, video ở mức độ vừa phải.\n\nĐi kèm với đó là 16 GB RAM DDR5 tốc độ 5600 MHz, cho phép bạn thoải mái mở nhiều tab trình duyệt, chạy nhiều ứng dụng cùng lúc mà không lo giật lag. Ổ cứng 512 GB SSD NVMe PCIe không chỉ cung cấp không gian lưu trữ đủ dùng mà còn giúp máy khởi động nhanh chóng và truy xuất dữ liệu siêu tốc. Nếu bạn cần thêm không gian lưu trữ, máy còn hỗ trợ nâng cấp RAM lên đến 96 GB và thay thế ổ cứng SSD lên đến 4 TB.\n\nMSI Venture A14 AI+ A3HMG sở hữu màn hình 14 inch độ phân giải 2.8K (2880 x 1800) với tấm nền OLED, mang đến chất lượng hiển thị tuyệt đẹp. Màu sắc sống động, độ tương phản cao và góc nhìn rộng giúp bạn có những trải nghiệm xem phim, chơi game và làm việc tuyệt vời. Tần số quét 120 Hz giúp hình ảnh hiển thị mượt mà hơn, đặc biệt là khi chơi game hoặc xem các nội dung chuyển động nhanh.\n\nLaptop MSI Venture A14 AI+ A3HMG có thiết kế mỏng nhẹ với kích thước chỉ 21.6 mm và khối lượng 1.625 kg, rất tiện lợi để mang theo bên mình khi di chuyển. Vỏ máy được làm từ chất liệu nhựa, mang đến cảm giác chắc chắn và bền bỉ. Bàn phím có đèn nền đơn sắc màu trắng, giúp bạn dễ dàng gõ phím trong điều kiện thiếu sáng. Bản lề có khả năng mở 180 độ, giúp bạn dễ dàng chia sẻ nội dung với người khác. Công tắc khóa camera giúp bảo vệ sự riêng tư của bạn. Camera IR còn hỗ trợ tính năng nhận diện khuôn mặt (FaceID) giúp bạn mở khóa máy nhanh chóng và an toàn.\n\nLaptop được trang bị đầy đủ các cổng kết nối cần thiết, bao gồm 2 cổng USB 3.2, HDMI, cổng LAN (RJ45), cổng headphone/microphone combo và 1 cổng USB Type-C 3.2 hỗ trợ Power Delivery và DisplayPort. Kết nối không dây Wi-Fi 6E (802.11ax) và Bluetooth 5.3 cho tốc độ truyền dữ liệu nhanh chóng và ổn định. Pin 4-cell Li-ion 75 Wh cho thời lượng sử dụng khá tốt, đủ để bạn làm việc và giải trí trong một ngày dài.",
+      "specifications": {
+        "cpu": "AMD Ryzen AI 5 - 340",
+        "cores": "6",
+        "threads": "12",
+        "cpu_speed": "2.00 GHz (Up to 4.80 GHz)",
+        "ai_performance": "Lên đến 50 TOPS",
+        "gpu": "Card tích hợp - AMD Radeon Graphics",
+        "ram": "16GB DDR5",
+        "ram_bus": "5600 MHz",
+        "ram_max": "96 GB",
+        "storage": "512GB SSD NVMe PCIe (nâng cấp tối đa 4TB)",
+        "display": "14 inch OLED - độ phân giải 2.8K (2880 x 1800), 16:10",
+        "refresh_rate": "120Hz",
+        "ports": [
+          "2 x USB 3.2",
+          "USB Type-C 3.2 (Power Delivery, DisplayPort)",
+          "HDMI",
+          "LAN RJ45",
+          "Jack tai nghe / microphone 3.5mm"
+        ],
+        "wireless": "Wi-Fi 6E, Bluetooth 5.3",
+        "webcam": "HD Webcam + Camera IR",
+        "keyboard": "Đèn nền đơn sắc (trắng)",
+        "audio": ["Hi-Res Audio", "DTS Audio"],
+        "battery": "4-cell Li-ion 75Wh",
+        "os": "Windows 11 Home SL",
+        "release_year": "2025",
+        "size_weight": "315.6 x 235.5 x 21.6 mm - 1.625 kg",
+        "material": "Vỏ nhựa"
+      },
+      "features": [
+        "CPU AMD Ryzen AI tích hợp NPU XDNA",
+        "Hiệu năng AI lên đến 50 TOPS",
+        "Màn hình OLED 2.8K 120Hz siêu nét",
+        "Pin lớn 75Wh",
+        "Wi-Fi 6E tốc độ cao",
+        "Bản lề mở 180 độ"
+      ],
+      "store": [
+        {
+          "storeId": 1,
+          "city": "Toàn quốc",
+          "province": "Việt Nam",
+          "address": "2958 siêu thị Thế Giới Di Động",
+          "phone": "18001060",
+          "hours": "8:00 - 22:00",
+          "status": "Chính hãng"
+        }
+      ],
+      "warranty": {
+        "laptop": "2 năm chính hãng",
+        "battery": "1 năm",
+        "exchange_policy": "Hư gì đổi nấy 12 tháng (miễn phí tháng đầu)",
+        "included_items": [
+          "Sách hướng dẫn",
+          "Thùng máy",
+          "Túi xách",
+          "Sạc Laptop MSI 90W"
+        ]
+      },
+      "promotion": {
+        "featured": true,
+        "shockSale": false,
+        "studentDiscount": true,
+        "gift": null
+      },
+      "badge": {
+        "bestSeller": false,
+        "newArrival": true
+      },
+      "inStock": true
+    },
 
     {
       "id": 9,
@@ -684,6 +678,7 @@
       ],
       "warranty": "12 tháng chính hãng",
       "promotion": {
+        "featured": true,
         "shockSale": true,
         "studentDiscount": false,
         "gift": "Pin AA"
@@ -736,7 +731,7 @@
         "RGB đẹp mắt"
       ],
       "warranty": "12 tháng chính hãng",
-            "promotion": {
+      "promotion": {
         "shockSale": true,
         "studentDiscount": true,
         "gift": "Pin AA"
@@ -788,7 +783,7 @@
         "Giá dễ tiếp cận"
       ],
       "warranty": "12 tháng chính hãng",
-            "promotion": {
+      "promotion": {
         "shockSale": true,
         "studentDiscount": false,
         "gift": "Pin AA"
@@ -841,7 +836,7 @@
         "Kết nối đa chế độ"
       ],
       "warranty": "12 tháng chính hãng",
-            "promotion": {
+      "promotion": {
         "shockSale": true,
         "studentDiscount": false,
         "gift": "Pin AA"
@@ -892,7 +887,7 @@
         "Hỗ trợ trợ lý ảo"
       ],
       "warranty": "12 tháng chính hãng",
-            "promotion": {
+      "promotion": {
         "shockSale": true,
         "studentDiscount": false,
         "gift": "Pin AA"
@@ -949,7 +944,8 @@
         "Nhẹ, đeo thoải mái"
       ],
       "warranty": "12 tháng chính hãng",
-            "promotion": {
+      "promotion": {
+        "featured": true,
         "shockSale": true,
         "studentDiscount": false,
         "gift": "Pin AA"
@@ -999,7 +995,7 @@
         "Tùy chỉnh EQ qua app"
       ],
       "warranty": "12 tháng chính hãng",
-            "promotion": {
+      "promotion": {
         "shockSale": true,
         "studentDiscount": true,
         "gift": "Pin AA"
@@ -1009,350 +1005,343 @@
         "newArrival": true
       },
       "inStock": true
-    }
-
-
-
-  ],
-
-  "accessories":[
-{
-  "id": 1,
-  "name": "Túi chống sốc Laptop 14 inch Tomtoc A45",
-  "brand": "Tomtoc",
-  "category": "Bag",
-  "price": "290000",
-  "old_price": null,
-  "discount": null,
-  "tag": "Phụ kiện",
-  "image": {
-    "img0": "Tui-chong-soc-14inch-tomtocA45.webp",
-    "img1": "Tui-chong-soc-detail-11.webp"
-  },
-  "description": "Túi chống sốc Laptop 14 inch Tomtoc A45 được thiết kế với công nghệ bảo vệ 360° tiên tiến từ Hoa Kỳ, mang lại khả năng chống va đập tối ưu, chống thấm nước hiệu quả và tiện lợi khi di chuyển.",
-  "productInfo": "Túi chống sốc Laptop 14 inch Tomtoc A45 là lựa chọn hoàn hảo cho những ai đang tìm kiếm sự bảo vệ an toàn tuyệt đối cho laptop. Sản phẩm được trang bị lớp đệm bảo vệ 360° bao quanh vành túi, hoạt động như túi khí xe hơi, giúp hấp thụ lực va chạm hiệu quả.\n\nTomtoc A45 sở hữu thiết kế 2 trong 1 tiện lợi, cho phép người dùng xách tay truyền thống hoặc đeo vai chéo với dây đeo êm ái có thể điều chỉnh độ dài. Mặt sau túi còn được tích hợp 2 quai dọc giúp cố định túi vào vali, rất phù hợp cho người thường xuyên di chuyển hoặc đi công tác.\n\nBên ngoài túi được làm từ chất liệu Polyester chống thấm nước, kết hợp cùng lớp đệm dày bên trong giúp bảo vệ laptop khỏi nước, bụi bẩn và các tác động từ môi trường.\n\nKhoang chính cho phép lấy laptop nhanh chóng, trong khi hai túi phụ bên ngoài giúp lưu trữ phụ kiện như sạc, chuột, cáp hoặc các vật dụng cá nhân một cách gọn gàng.",
-  "specifications": {
-    "compatible_size": "Laptop 14 inch",
-    "material": "Polyester chống thấm nước",
-    "protection": "Đệm chống sốc 360°",
-    "carry_style": "Xách tay, đeo vai chéo",
-    "extra_feature": "Quai gắn vali tiện lợi",
-    "color": "Hồng, đen, xám",
-    "origin": "Thiết kế công nghệ Hoa Kỳ"
-  },
-  "features": [
-    "Bảo vệ chống sốc 360° như túi khí",
-    "Chống thấm nước hiệu quả",
-    "Thiết kế 2 trong 1 tiện lợi",
-    "Có quai gắn vali khi di chuyển",
-    "Khoang chứa rộng rãi, dễ lấy laptop"
-  ],
-  "warranty": {
-    "policy": "Sản phẩm mới, chính hãng",
-    "exchange_policy": "Không đổi trả, không bảo hành"
-  },
-  "badge": {
-    "newArrival": false
-  },
-  "inStock": true
-},
-
-{
-  "id": 2,
-  "name": "Túi xách chống sốc Laptop 14 inch Tomtoc Briefcase Premium A11D3P1",
-  "brand": "Tomtoc",
-  "category": "Bag",
-  "price": "890000",
-  "old_price": null,
-  "discount": null,
-  "tag": "Cao cấp",
-  "image": {
-    "img0": "Tui-chong-soc-14inch-Briefcase.webp",
-    "img1": "Tui-chong-soc-detail-21.webp"
-  },
-  "description": "Túi xách chống sốc Laptop 14 inch Tomtoc Briefcase Premium A11D3P1 sở hữu thiết kế thời trang, chất liệu cao cấp cùng công nghệ bảo vệ CornerArmor độc quyền từ Hoa Kỳ, mang lại khả năng chống va đập tối ưu và phong cách sang trọng cho người dùng.",
-  "productInfo": "Túi xách chống sốc Laptop 14 inch Tomtoc Briefcase Premium A11D3P1 là lựa chọn lý tưởng cho những ai cần sự kết hợp giữa thời trang và khả năng bảo vệ laptop vượt trội. Sản phẩm được trang bị công nghệ CornerArmor – sáng chế của Hoa Kỳ – được tích hợp tại các góc dưới của túi, hoạt động như túi khí ô tô giúp hấp thụ lực khi va đập hoặc rơi rớt.\n\nBên trong túi là lớp lót mềm mại kết hợp với đệm dày ở ngăn chính, giúp bảo vệ laptop khỏi các tác động vật lý cũng như hạn chế trầy xước trong quá trình sử dụng. Điều này mang đến sự an tâm tối đa cho người dùng thường xuyên di chuyển hoặc làm việc bên ngoài.\n\nTomtoc Briefcase Premium A11D3P1 còn nổi bật với tay cầm làm từ da PU mềm mại, cho cảm giác cầm nắm chắc chắn, êm ái và tăng thêm vẻ sang trọng cho tổng thể thiết kế. Chất liệu da PU bền bỉ giúp túi giữ được form dáng đẹp theo thời gian.\n\nNgoài ra, túi được trang bị khóa kéo YKK cao cấp đến từ Nhật Bản, nổi tiếng với độ bền và khả năng vận hành mượt mà, mang lại trải nghiệm sử dụng ổn định và lâu dài.",
-  "specifications": {
-    "compatible_size": "Laptop 14 inch",
-    "material": "Polyester cao cấp + da PU",
-    "protection": "CornerArmor + đệm chống sốc dày",
-    "carry_style": "Xách tay",
-    "zipper": "Khóa kéo YKK (Nhật Bản)",
-    "color": "Xám đậm, hồng nhạt, cam",
-    "origin": "Công nghệ Hoa Kỳ"
-  },
-  "features": [
-    "Công nghệ CornerArmor bảo vệ góc túi",
-    "Lớp đệm dày và lót mềm chống trầy xước",
-    "Thiết kế thời trang, sang trọng",
-    "Tay cầm da PU êm ái, chắc chắn",
-    "Khóa kéo YKK cao cấp từ Nhật Bản"
-  ],
-  "warranty": {
-    "policy": "Sản phẩm mới, chính hãng",
-    "exchange_policy": "Không đổi trả, không bảo hành"
-  },
-  "badge": {
-    "bestSeller": false,
-    "newArrival": false
-  },
-  "inStock": true
-}, 
-
+    },
 
     {
-  "id": 3,
-  "name": "Balo Laptop 16 inch Tomtoc PREMIUM COMMUTING & TRAVEL T71L1D1",
-  "brand": "Tomtoc",
-  "category": "Bag",
-  "price": "1290000",
-  "old_price": null,
-  "discount": null,
-  "tag": "Cao cấp",
-  "image": {
-    "img0": "Balo-16inch-Tomtoc-Premium.webp",
-    "img1": "Balo-detail-11.webp"
-  },
-  "description": "Balo Laptop 16 inch Tomtoc PREMIUM COMMUTING & TRAVEL T71L1D1 đến từ thương hiệu Tomtoc (Mỹ), nổi bật với thiết kế tối giản, chất liệu nylon chống thấm cao cấp và khả năng bảo vệ laptop tối ưu cho nhu cầu đi làm, đi học và du lịch.",
-  "productInfo": "Balo Laptop 16 inch Tomtoc PREMIUM COMMUTING & TRAVEL là sự kết hợp hoàn hảo giữa tính thẩm mỹ và công năng sử dụng. Sản phẩm được làm từ chất liệu Nylon chống thấm nước cao cấp với cấu trúc sợi chặt chẽ và lớp phủ bảo vệ đặc biệt, giúp hạn chế nước thấm vào bên trong, đồng thời giảm trọng lượng và áp lực lên vai khi đeo lâu.\n\nBalo sở hữu thiết kế tối giản nhưng không gian lưu trữ bên trong được tối ưu thông minh với nhiều ngăn chia khoa học. Ngăn chính rộng rãi cho phép bạn sắp xếp laptop, tài liệu, quần áo hoặc các vật dụng cá nhân một cách gọn gàng và dễ tìm kiếm.\n\nNgăn laptop chống sốc độc lập được đặt phía sau ngăn chính, trang bị khóa riêng cùng lớp đệm dày và mềm mại bao quanh, giúp bảo vệ tối đa máy tính xách tay khỏi va đập, trầy xước và bụi bẩn trong quá trình di chuyển.\n\nHai túi phụ phía trước hỗ trợ lưu trữ các vật dụng cá nhân như hộ chiếu, sách điện tử, chìa khóa, sạc dự phòng, thẻ ngân hàng… với các ngăn nhỏ được bố trí hợp lý để tránh thất lạc đồ đạc.\n\nNgoài ra, balo còn được trang bị hai tay cầm linh hoạt (trên và bên hông), giúp người dùng dễ dàng thay đổi cách cầm nắm. Túi bên hông được tối ưu với lỗ thoát cáp sạc ẩn và ngăn đựng chai nước riêng biệt, mang đến sự tiện lợi tối đa khi di chuyển.",
-  "specifications": {
-    "compatible_size": "Laptop 16 inch",
-    "material": "Nylon cao cấp chống thấm nước",
-    "protection": "Ngăn laptop chống sốc độc lập, đệm dày",
-    "carry_style": "Đeo vai, xách tay trên / bên hông",
-    "storage": "Nhiều ngăn chia thông minh",
-    "extra_feature": "Lỗ thoát cáp sạc ẩn, ngăn đựng chai nước",
-    "color": "Đen",
-    "origin": "Thương hiệu Hoa Kỳ"
-  },
-  "features": [
-    "Chất liệu nylon chống thấm nước cao cấp",
-    "Ngăn laptop chống sốc độc lập an toàn",
-    "Thiết kế tối giản, hiện đại",
-    "Không gian lưu trữ rộng rãi, khoa học",
-    "Có lỗ thoát cáp sạc và ngăn đựng chai nước"
+      "id": 91,
+      "name": "Túi chống sốc Laptop 14 inch Tomtoc A45",
+      "brand": "Tomtoc",
+      "category": "Bag",
+      "price": "290000",
+      "old_price": null,
+      "discount": null,
+      "tag": "Phụ kiện",
+      "image": {
+        "img0": "Tui-chong-soc-14inch-tomtocA45.webp",
+        "img1": "Tui-chong-soc-detail-11.webp"
+      },
+      "description": "Túi chống sốc Laptop 14 inch Tomtoc A45 được thiết kế với công nghệ bảo vệ 360° tiên tiến từ Hoa Kỳ, mang lại khả năng chống va đập tối ưu, chống thấm nước hiệu quả và tiện lợi khi di chuyển.",
+      "productInfo": "Túi chống sốc Laptop 14 inch Tomtoc A45 là lựa chọn hoàn hảo cho những ai đang tìm kiếm sự bảo vệ an toàn tuyệt đối cho laptop. Sản phẩm được trang bị lớp đệm bảo vệ 360° bao quanh vành túi, hoạt động như túi khí xe hơi, giúp hấp thụ lực va chạm hiệu quả.\n\nTomtoc A45 sở hữu thiết kế 2 trong 1 tiện lợi, cho phép người dùng xách tay truyền thống hoặc đeo vai chéo với dây đeo êm ái có thể điều chỉnh độ dài. Mặt sau túi còn được tích hợp 2 quai dọc giúp cố định túi vào vali, rất phù hợp cho người thường xuyên di chuyển hoặc đi công tác.\n\nBên ngoài túi được làm từ chất liệu Polyester chống thấm nước, kết hợp cùng lớp đệm dày bên trong giúp bảo vệ laptop khỏi nước, bụi bẩn và các tác động từ môi trường.\n\nKhoang chính cho phép lấy laptop nhanh chóng, trong khi hai túi phụ bên ngoài giúp lưu trữ phụ kiện như sạc, chuột, cáp hoặc các vật dụng cá nhân một cách gọn gàng.",
+      "specifications": {
+        "compatible_size": "Laptop 14 inch",
+        "material": "Polyester chống thấm nước",
+        "protection": "Đệm chống sốc 360°",
+        "carry_style": "Xách tay, đeo vai chéo",
+        "extra_feature": "Quai gắn vali tiện lợi",
+        "color": "Hồng, đen, xám",
+        "origin": "Thiết kế công nghệ Hoa Kỳ"
+      },
+      "features": [
+        "Bảo vệ chống sốc 360° như túi khí",
+        "Chống thấm nước hiệu quả",
+        "Thiết kế 2 trong 1 tiện lợi",
+        "Có quai gắn vali khi di chuyển",
+        "Khoang chứa rộng rãi, dễ lấy laptop"
+      ],
+      "warranty": {
+        "policy": "Sản phẩm mới, chính hãng",
+        "exchange_policy": "Không đổi trả, không bảo hành"
+      },
+      "badge": {
+        "newArrival": false
+      },
+      "inStock": true
+    },
+
+    {
+      "id": 92,
+      "name": "Túi xách chống sốc Laptop 14 inch Tomtoc Briefcase Premium A11D3P1",
+      "brand": "Tomtoc",
+      "category": "Bag",
+      "price": "890000",
+      "old_price": null,
+      "discount": null,
+      "tag": "Cao cấp",
+      "image": {
+        "img0": "Tui-chong-soc-14inch-Briefcase.webp",
+        "img1": "Tui-chong-soc-detail-21.webp"
+      },
+      "description": "Túi xách chống sốc Laptop 14 inch Tomtoc Briefcase Premium A11D3P1 sở hữu thiết kế thời trang, chất liệu cao cấp cùng công nghệ bảo vệ CornerArmor độc quyền từ Hoa Kỳ, mang lại khả năng chống va đập tối ưu và phong cách sang trọng cho người dùng.",
+      "productInfo": "Túi xách chống sốc Laptop 14 inch Tomtoc Briefcase Premium A11D3P1 là lựa chọn lý tưởng cho những ai cần sự kết hợp giữa thời trang và khả năng bảo vệ laptop vượt trội. Sản phẩm được trang bị công nghệ CornerArmor – sáng chế của Hoa Kỳ – được tích hợp tại các góc dưới của túi, hoạt động như túi khí ô tô giúp hấp thụ lực khi va đập hoặc rơi rớt.\n\nBên trong túi là lớp lót mềm mại kết hợp với đệm dày ở ngăn chính, giúp bảo vệ laptop khỏi các tác động vật lý cũng như hạn chế trầy xước trong quá trình sử dụng. Điều này mang đến sự an tâm tối đa cho người dùng thường xuyên di chuyển hoặc làm việc bên ngoài.\n\nTomtoc Briefcase Premium A11D3P1 còn nổi bật với tay cầm làm từ da PU mềm mại, cho cảm giác cầm nắm chắc chắn, êm ái và tăng thêm vẻ sang trọng cho tổng thể thiết kế. Chất liệu da PU bền bỉ giúp túi giữ được form dáng đẹp theo thời gian.\n\nNgoài ra, túi được trang bị khóa kéo YKK cao cấp đến từ Nhật Bản, nổi tiếng với độ bền và khả năng vận hành mượt mà, mang lại trải nghiệm sử dụng ổn định và lâu dài.",
+      "specifications": {
+        "compatible_size": "Laptop 14 inch",
+        "material": "Polyester cao cấp + da PU",
+        "protection": "CornerArmor + đệm chống sốc dày",
+        "carry_style": "Xách tay",
+        "zipper": "Khóa kéo YKK (Nhật Bản)",
+        "color": "Xám đậm, hồng nhạt, cam",
+        "origin": "Công nghệ Hoa Kỳ"
+      },
+      "features": [
+        "Công nghệ CornerArmor bảo vệ góc túi",
+        "Lớp đệm dày và lót mềm chống trầy xước",
+        "Thiết kế thời trang, sang trọng",
+        "Tay cầm da PU êm ái, chắc chắn",
+        "Khóa kéo YKK cao cấp từ Nhật Bản"
+      ],
+      "warranty": {
+        "policy": "Sản phẩm mới, chính hãng",
+        "exchange_policy": "Không đổi trả, không bảo hành"
+      },
+      "badge": {
+        "bestSeller": false,
+        "newArrival": false
+      },
+      "inStock": true
+    },
+
+    {
+      "id": 93,
+      "name": "Balo Laptop 16 inch Tomtoc PREMIUM COMMUTING & TRAVEL T71L1D1",
+      "brand": "Tomtoc",
+      "category": "Bag",
+      "price": "1290000",
+      "old_price": null,
+      "discount": null,
+      "tag": "Cao cấp",
+      "image": {
+        "img0": "Balo-16inch-Tomtoc-Premium.webp",
+        "img1": "Balo-detail-11.webp"
+      },
+      "description": "Balo Laptop 16 inch Tomtoc PREMIUM COMMUTING & TRAVEL T71L1D1 đến từ thương hiệu Tomtoc (Mỹ), nổi bật với thiết kế tối giản, chất liệu nylon chống thấm cao cấp và khả năng bảo vệ laptop tối ưu cho nhu cầu đi làm, đi học và du lịch.",
+      "productInfo": "Balo Laptop 16 inch Tomtoc PREMIUM COMMUTING & TRAVEL là sự kết hợp hoàn hảo giữa tính thẩm mỹ và công năng sử dụng. Sản phẩm được làm từ chất liệu Nylon chống thấm nước cao cấp với cấu trúc sợi chặt chẽ và lớp phủ bảo vệ đặc biệt, giúp hạn chế nước thấm vào bên trong, đồng thời giảm trọng lượng và áp lực lên vai khi đeo lâu.\n\nBalo sở hữu thiết kế tối giản nhưng không gian lưu trữ bên trong được tối ưu thông minh với nhiều ngăn chia khoa học. Ngăn chính rộng rãi cho phép bạn sắp xếp laptop, tài liệu, quần áo hoặc các vật dụng cá nhân một cách gọn gàng và dễ tìm kiếm.\n\nNgăn laptop chống sốc độc lập được đặt phía sau ngăn chính, trang bị khóa riêng cùng lớp đệm dày và mềm mại bao quanh, giúp bảo vệ tối đa máy tính xách tay khỏi va đập, trầy xước và bụi bẩn trong quá trình di chuyển.\n\nHai túi phụ phía trước hỗ trợ lưu trữ các vật dụng cá nhân như hộ chiếu, sách điện tử, chìa khóa, sạc dự phòng, thẻ ngân hàng… với các ngăn nhỏ được bố trí hợp lý để tránh thất lạc đồ đạc.\n\nNgoài ra, balo còn được trang bị hai tay cầm linh hoạt (trên và bên hông), giúp người dùng dễ dàng thay đổi cách cầm nắm. Túi bên hông được tối ưu với lỗ thoát cáp sạc ẩn và ngăn đựng chai nước riêng biệt, mang đến sự tiện lợi tối đa khi di chuyển.",
+      "specifications": {
+        "compatible_size": "Laptop 16 inch",
+        "material": "Nylon cao cấp chống thấm nước",
+        "protection": "Ngăn laptop chống sốc độc lập, đệm dày",
+        "carry_style": "Đeo vai, xách tay trên / bên hông",
+        "storage": "Nhiều ngăn chia thông minh",
+        "extra_feature": "Lỗ thoát cáp sạc ẩn, ngăn đựng chai nước",
+        "color": "Đen",
+        "origin": "Thương hiệu Hoa Kỳ"
+      },
+      "features": [
+        "Chất liệu nylon chống thấm nước cao cấp",
+        "Ngăn laptop chống sốc độc lập an toàn",
+        "Thiết kế tối giản, hiện đại",
+        "Không gian lưu trữ rộng rãi, khoa học",
+        "Có lỗ thoát cáp sạc và ngăn đựng chai nước"
+      ],
+      "warranty": {
+        "policy": "Sản phẩm mới, chính hãng",
+        "exchange_policy": "Không đổi trả, không bảo hành"
+      },
+      
+      "promotion": {
+        "featured": true
+      },
+
+      "badge": {
+        "bestSeller": false,
+        "newArrival": false
+      },
+      "inStock": true
+    },
+
+    {
+      "id": 94,
+      "name": "Đế Laptop Xoay 360 Havit ST7411",
+      "brand": "Havit",
+      "category": "Rack",
+      "price": "390000",
+      "old_price": null,
+      "discount": null,
+      "tag": "Phụ kiện",
+      "image": {
+        "img0": "De-laptop-Xoay360-Havit.webp",
+        "img1": "De-laptop-detail-11.webp"
+      },
+      "description": "Đế Laptop Xoay 360 Havit ST7411 được thiết kế chắc chắn từ thép cacbon kết hợp silicon chống trượt, hỗ trợ xoay 360 độ, điều chỉnh độ cao linh hoạt và gấp gọn tiện lợi, phù hợp cho laptop và tablet lên đến 16 inch.",
+      "productInfo": "Đế Laptop Xoay 360 Havit ST7411 là phụ kiện lý tưởng cho người dùng laptop và máy tính bảng, giúp tối ưu tư thế làm việc và nâng cao trải nghiệm sử dụng. Sản phẩm được chế tạo từ thép cacbon cao cấp, mang lại độ bền và khả năng chịu lực tốt, kết hợp với lớp silicon chống trượt giúp cố định thiết bị an toàn trong quá trình sử dụng.\n\nThiết kế đế xoay 360 độ cho phép người dùng dễ dàng điều chỉnh góc nhìn linh hoạt, thuận tiện khi làm việc nhóm, học tập hoặc thuyết trình. Ngoài ra, đế còn hỗ trợ điều chỉnh độ cao phù hợp với nhiều tư thế ngồi, giúp giảm mỏi cổ và vai khi sử dụng laptop trong thời gian dài.\n\nHavit ST7411 sở hữu thiết kế gấp gọn thông minh, dễ dàng mang theo khi di chuyển hoặc cất giữ gọn gàng khi không sử dụng. Sản phẩm tương thích tốt với laptop và máy tính bảng có kích thước lên đến 16 inch, đáp ứng đa dạng nhu cầu sử dụng hàng ngày.",
+      "specifications": {
+        "compatible_size": "Laptop & Tablet lên đến 16 inch",
+        "material": "Thép cacbon + Silicon chống trượt",
+        "adjustment": "Điều chỉnh độ cao linh hoạt",
+        "rotation": "Xoay 360 độ",
+        "design": "Gấp gọn tiện lợi",
+        "dimensions": "28.6 x 23.4 x 5.2 cm",
+        "weight": "1780 g",
+        "manufacturer": "HAVIT",
+        "origin": "Trung Quốc",
+        "brand_origin": "Trung Quốc"
+      },
+      "features": [
+        "Xoay 360 độ linh hoạt",
+        "Điều chỉnh độ cao tiện lợi",
+        "Chất liệu thép cacbon chắc chắn",
+        "Silicon chống trượt an toàn",
+        "Thiết kế gấp gọn, dễ mang theo"
+      ],
+      "warranty": {
+        "policy": "Sản phẩm mới, chính hãng",
+        "exchange_policy": "Không đổi trả, không bảo hành"
+      },
+      "badge": {
+        "bestSeller": false,
+        "newArrival": false
+      },
+      "inStock": true
+    },
+
+    {
+      "id": 95,
+      "name": "Đế Laptop Havit ST7400",
+      "brand": "Havit",
+      "category": "Rack",
+      "price": "190000",
+      "old_price": null,
+      "discount": null,
+      "tag": "Phụ kiện",
+      "image": {
+        "img0": "De-laptop-Havit-ST7400.webp",
+        "img1": "De-laptop-detail-21.webp"
+      },
+      "description": "Đế Laptop Havit ST7400 được làm từ hợp kim nhôm kết hợp silicon và nhựa ABS, thiết kế gấp gọn, trọng lượng nhẹ và hỗ trợ 6 mức điều chỉnh độ cao, phù hợp cho laptop từ 15.6 đến 17 inch.",
+      "productInfo": "Đế Laptop Havit ST7400 là phụ kiện tiện ích giúp cải thiện tư thế làm việc và tăng hiệu quả tản nhiệt cho laptop. Sản phẩm sử dụng chất liệu hợp kim nhôm cao cấp mang lại độ bền và khả năng chịu lực tốt, kết hợp silicon chống trượt và nhựa ABS giúp cố định laptop chắc chắn trong quá trình sử dụng.\n\nThiết kế gấp gọn thông minh cùng trọng lượng chỉ 290 g giúp bạn dễ dàng mang theo khi di chuyển hoặc sử dụng linh hoạt tại nhiều không gian làm việc khác nhau. Đế hỗ trợ 6 mức điều chỉnh độ cao, cho phép người dùng tùy chỉnh góc nhìn phù hợp, giảm mỏi cổ và vai khi làm việc lâu dài.\n\nHavit ST7400 tương thích với các dòng laptop có kích thước từ dưới 15.6 inch đến 17 inch, đáp ứng tốt nhu cầu học tập, làm việc và giải trí hàng ngày.",
+      "specifications": {
+        "compatible_size": "Laptop từ dưới 15.6 đến 17 inch",
+        "material": "Hợp kim nhôm + Silicon + Nhựa ABS",
+        "adjustment": "6 mức điều chỉnh độ cao",
+        "design": "Gấp gọn, trọng lượng nhẹ",
+        "dimensions": "26.8 x 6.6 x 2.6 cm",
+        "weight": "290 g",
+        "manufacturer": "HAVIT",
+        "origin": "Trung Quốc",
+        "brand_origin": "Trung Quốc"
+      },
+      "features": [
+        "Hỗ trợ 6 mức điều chỉnh độ cao",
+        "Thiết kế gấp gọn, dễ mang theo",
+        "Chất liệu hợp kim nhôm bền bỉ",
+        "Silicon chống trượt an toàn",
+        "Trọng lượng nhẹ chỉ 290 g"
+      ],
+      "warranty": {
+        "policy": "Sản phẩm mới, chính hãng",
+        "exchange_policy": "Không đổi trả, không bảo hành"
+      },
+      "badge": {
+        "bestSeller": false,
+        "newArrival": false
+      },
+      "inStock": true
+    },
+
+    {
+      "id": 96,
+      "name": "Bộ Vệ Sinh Laptop JRC 5in1 Multi-Functional Nano",
+      "brand": "JRC",
+      "category": "Cleaning",
+      "price": "150000",
+      "old_price": null,
+      "discount": null,
+      "tag": "Phụ kiện",
+      "image": {
+        "img0": "Ve-Sinh-Laptop-Kinhmaster.webp",
+        "img1": "Ve-Sinh-Laptop-detail-11.webp"
+      },
+      "description": "Bộ vệ sinh Laptop JRC 5in1 Multi-Functional Nano sử dụng dung dịch nano cao cấp, an toàn cho thiết bị và sức khỏe, giúp làm sạch màn hình, bàn phím và các bề mặt nhựa một cách hiệu quả.",
+      "productInfo": [
+        "Bộ vệ sinh Laptop JRC 5in1 Multi-Functional Nano là giải pháp làm sạch toàn diện cho laptop và các thiết bị điện tử. Sản phẩm sử dụng dung dịch nano với công thức hoàn toàn tự nhiên, không chứa Ammonia hay cồn, đảm bảo an toàn cho người dùng và thân thiện với môi trường.\n\nDung dịch vệ sinh JRC giúp hạn chế phai màu zin của thiết bị sau thời gian dài sử dụng, không ảnh hưởng đến chất lượng linh kiện và bề mặt máy. Bộ sản phẩm bao gồm đầy đủ các dụng cụ cần thiết để làm sạch từ màn hình đến các khe nhỏ và bề mặt nhựa.\n\nVới thiết kế tiện lợi và đa năng, JRC 5in1 phù hợp cho việc vệ sinh màn hình laptop, máy tính bảng, điện thoại, bàn phím và nhiều thiết bị điện tử khác trong gia đình hoặc văn phòng.",
+        "\n\nBộ dụng cụ vệ sinh gồm: ",
+        "\n2 khăn lau màn hình mềm",
+        "\n1 chổi quét bụi",
+        "\n1 lọ dung dịch vệ sinh nano 100ml",
+        "\n1 bóng thổi bụi",
+        "\n1 cốc giấy đựng",
+        "\n\nHƯỚNG DẪN SỬ DỤNG: ",
+        "\n-Đối với màn hình: ",
+        "\nNgắt điện thiết bị trước khi vệ sinh",
+        "\nXịt 1–2 lần dung dịch lên màn hình hoặc khăn",
+        "\nLau nhẹ nhàng bằng khăn mềm",
+        "\nLau lại bằng phần khăn khô",
+        "\n\n-Đối với bề mặt nhựa: ",
+        "\nDùng chổi quét sạch bụi",
+        "\nXịt 2–3 lần dung dịch lên khăn",
+        "\nLau bề mặt nhựa",
+        "\nLau lại bằng phần khăn khô"
+      ],
+
+      "specifications": {
+        "material": "Dung dịch Nano tự nhiên",
+        "liquid_volume": "100 ml",
+        "safe_formula": "Không Ammonia, không cồn",
+        "usage": "Vệ sinh màn hình và thiết bị điện tử",
+        "brand_origin": "Trung Quốc"
+      },
+      "features": [
+        "Dung dịch nano an toàn, không chứa cồn",
+        "Thân thiện với môi trường và sức khỏe",
+        "Phù hợp nhiều thiết bị điện tử"
+      ],
+
+      "warranty": {
+        "policy": "Sản phẩm mới",
+        "exchange_policy": "Không đổi trả, không bảo hành"
+      },
+      "badge": {
+        "newArrival": false
+      },
+      "inStock": true
+    },
+
+    {
+      "id": 97,
+      "name": "Bộ Vệ Sinh Laptop Đa Năng 7 in 1",
+      "brand": "OEM",
+      "category": "Cleaning",
+      "price": "89000",
+      "old_price": null,
+      "discount": null,
+      "tag": "Phụ kiện",
+      "image": {
+        "img0": "Ve-Sinh-Laptop-7in1.webp",
+        "img1": "Ve-Sinh-Laptop-detail-21.webp"
+      },
+      "description": "Bộ vệ sinh Laptop đa năng 7 in 1 giúp làm sạch toàn diện màn hình, bàn phím, tai nghe và các thiết bị điện tử, loại bỏ bụi bẩn và dấu vân tay hiệu quả, giữ thiết bị luôn sạch sẽ và bền bỉ.",
+      "productInfo": [
+        "Bộ vệ sinh Laptop đa năng 7 in 1 là giải pháp tiện lợi giúp giữ cho các thiết bị điện tử luôn sạch sẽ và hoạt động ổn định. Sản phẩm hỗ trợ làm sạch màn hình, bàn phím, tai nghe và các chi tiết nhỏ một cách nhanh chóng và hiệu quả.\n\nBộ dụng cụ được thiết kế nhỏ gọn, dễ dàng mang theo, phù hợp cho dân văn phòng, học sinh – sinh viên và những người thường xuyên sử dụng laptop, tablet hoặc tai nghe không dây.",
+        "\n\nƯU ĐIỂM SẢN PHẨM:",
+        "\nDụng cụ làm sạch laptop chuyên nghiệp, loại bỏ bụi bẩn và vết ố trên màn hình, bàn phím",
+        "\nThiết kế 7 in 1 nhỏ gọn, tiện lợi mang theo mọi lúc",
+        "\nCọ vệ sinh bàn phím giúp làm sạch sâu từng kẽ phím",
+        "\nDụng cụ vệ sinh tai nghe AirPods giúp âm thanh luôn trong trẻo",
+        "\n\nBỘ DỤNG CỤ BAO GỒM:",
+        "\n1 bút vệ sinh 3 trong 1",
+        "\n1 bàn chải lông mềm mịn",
+        "\n1 dụng cụ tháo bàn phím",
+        "\n1 bình dung dịch vệ sinh (10ml)",
+        "\n1 khăn lau chuyên dụng",
+        "\n\nLƯU Ý:",
+        "\nDung dịch đi kèm dung tích 10ml, có thể chiết thêm từ chai 30ml hoặc sử dụng nước lau kính chuyên dụng"
+      ],
+      "specifications": {
+        "material": "Nhựa ABS",
+        "liquid_volume": "10 ml",
+        "usage": "Vệ sinh laptop, bàn phím, tai nghe, thiết bị điện tử",
+        "dimensions": "15 x 4 x 6 cm",
+        "origin": "Trung Quốc"
+      },
+      "features": [
+        "Bộ vệ sinh đa năng 7 in 1 tiện lợi",
+        "Làm sạch sâu bàn phím và màn hình",
+        "Hỗ trợ vệ sinh tai nghe AirPods",
+        "Thiết kế nhỏ gọn, dễ mang theo",
+        "Chất liệu nhựa ABS bền bỉ"
+      ],
+      "warranty": {
+        "policy": "Sản phẩm mới",
+        "exchange_policy": "Không đổi trả, không bảo hành"
+      },
+      "promotion": {
+        "featured": true
+      },
+      "badge": {
+        "newArrival": false
+      },
+      "inStock": true
+    }
   ],
-  "warranty": {
-    "policy": "Sản phẩm mới, chính hãng",
-    "exchange_policy": "Không đổi trả, không bảo hành"
-  },
-  "badge": {
-    "bestSeller": false,
-    "newArrival": false
-  },
-  "inStock": true
-},
-
-
-{
-  "id": 93,
-  "name": "Đế Laptop Xoay 360 Havit ST7411",
-  "brand": "Havit",
-  "category": "Rack",
-  "price": "390000",
-  "old_price": null,
-  "discount": null,
-  "tag": "Phụ kiện",
-  "image": {
-    "img0": "De-laptop-Xoay360-Havit.webp",
-    "img1": "De-laptop-detail-11.webp"
-  },
-  "description": "Đế Laptop Xoay 360 Havit ST7411 được thiết kế chắc chắn từ thép cacbon kết hợp silicon chống trượt, hỗ trợ xoay 360 độ, điều chỉnh độ cao linh hoạt và gấp gọn tiện lợi, phù hợp cho laptop và tablet lên đến 16 inch.",
-  "productInfo": "Đế Laptop Xoay 360 Havit ST7411 là phụ kiện lý tưởng cho người dùng laptop và máy tính bảng, giúp tối ưu tư thế làm việc và nâng cao trải nghiệm sử dụng. Sản phẩm được chế tạo từ thép cacbon cao cấp, mang lại độ bền và khả năng chịu lực tốt, kết hợp với lớp silicon chống trượt giúp cố định thiết bị an toàn trong quá trình sử dụng.\n\nThiết kế đế xoay 360 độ cho phép người dùng dễ dàng điều chỉnh góc nhìn linh hoạt, thuận tiện khi làm việc nhóm, học tập hoặc thuyết trình. Ngoài ra, đế còn hỗ trợ điều chỉnh độ cao phù hợp với nhiều tư thế ngồi, giúp giảm mỏi cổ và vai khi sử dụng laptop trong thời gian dài.\n\nHavit ST7411 sở hữu thiết kế gấp gọn thông minh, dễ dàng mang theo khi di chuyển hoặc cất giữ gọn gàng khi không sử dụng. Sản phẩm tương thích tốt với laptop và máy tính bảng có kích thước lên đến 16 inch, đáp ứng đa dạng nhu cầu sử dụng hàng ngày.",
-  "specifications": {
-    "compatible_size": "Laptop & Tablet lên đến 16 inch",
-    "material": "Thép cacbon + Silicon chống trượt",
-    "adjustment": "Điều chỉnh độ cao linh hoạt",
-    "rotation": "Xoay 360 độ",
-    "design": "Gấp gọn tiện lợi",
-    "dimensions": "28.6 x 23.4 x 5.2 cm",
-    "weight": "1780 g",
-    "manufacturer": "HAVIT",
-    "origin": "Trung Quốc",
-    "brand_origin": "Trung Quốc"
-  },
-  "features": [
-    "Xoay 360 độ linh hoạt",
-    "Điều chỉnh độ cao tiện lợi",
-    "Chất liệu thép cacbon chắc chắn",
-    "Silicon chống trượt an toàn",
-    "Thiết kế gấp gọn, dễ mang theo"
-  ],
-  "warranty": {
-    "policy": "Sản phẩm mới, chính hãng",
-    "exchange_policy": "Không đổi trả, không bảo hành"
-  },
-  "badge": {
-    "bestSeller": false,
-    "newArrival": false
-  },
-  "inStock": true
-}
-
-
-,
-{
-  "id": 94,
-  "name": "Đế Laptop Havit ST7400",
-  "brand": "Havit",
-  "category": "Rack",
-  "price": "190000",
-  "old_price": null,
-  "discount": null,
-  "tag": "Phụ kiện",
-  "image": {
-    "img0": "De-laptop-Havit-ST7400.webp",
-    "img1": "De-laptop-detail-21.webp"
-  },
-  "description": "Đế Laptop Havit ST7400 được làm từ hợp kim nhôm kết hợp silicon và nhựa ABS, thiết kế gấp gọn, trọng lượng nhẹ và hỗ trợ 6 mức điều chỉnh độ cao, phù hợp cho laptop từ 15.6 đến 17 inch.",
-  "productInfo": "Đế Laptop Havit ST7400 là phụ kiện tiện ích giúp cải thiện tư thế làm việc và tăng hiệu quả tản nhiệt cho laptop. Sản phẩm sử dụng chất liệu hợp kim nhôm cao cấp mang lại độ bền và khả năng chịu lực tốt, kết hợp silicon chống trượt và nhựa ABS giúp cố định laptop chắc chắn trong quá trình sử dụng.\n\nThiết kế gấp gọn thông minh cùng trọng lượng chỉ 290 g giúp bạn dễ dàng mang theo khi di chuyển hoặc sử dụng linh hoạt tại nhiều không gian làm việc khác nhau. Đế hỗ trợ 6 mức điều chỉnh độ cao, cho phép người dùng tùy chỉnh góc nhìn phù hợp, giảm mỏi cổ và vai khi làm việc lâu dài.\n\nHavit ST7400 tương thích với các dòng laptop có kích thước từ dưới 15.6 inch đến 17 inch, đáp ứng tốt nhu cầu học tập, làm việc và giải trí hàng ngày.",
-  "specifications": {
-    "compatible_size": "Laptop từ dưới 15.6 đến 17 inch",
-    "material": "Hợp kim nhôm + Silicon + Nhựa ABS",
-    "adjustment": "6 mức điều chỉnh độ cao",
-    "design": "Gấp gọn, trọng lượng nhẹ",
-    "dimensions": "26.8 x 6.6 x 2.6 cm",
-    "weight": "290 g",
-    "manufacturer": "HAVIT",
-    "origin": "Trung Quốc",
-    "brand_origin": "Trung Quốc"
-  },
-  "features": [
-    "Hỗ trợ 6 mức điều chỉnh độ cao",
-    "Thiết kế gấp gọn, dễ mang theo",
-    "Chất liệu hợp kim nhôm bền bỉ",
-    "Silicon chống trượt an toàn",
-    "Trọng lượng nhẹ chỉ 290 g"
-  ],
-  "warranty": {
-    "policy": "Sản phẩm mới, chính hãng",
-    "exchange_policy": "Không đổi trả, không bảo hành"
-  },
-  "badge": {
-    "bestSeller": false,
-    "newArrival": false
-  },
-  "inStock": true
-}
-
-    ,{
-  "id": 95,
-  "name": "Bộ Vệ Sinh Laptop JRC 5in1 Multi-Functional Nano",
-  "brand": "JRC",
-  "category": "Cleaning",
-  "price": "150000",
-  "old_price": null,
-  "discount": null,
-  "tag": "Phụ kiện",
-  "image": {
-    "img0": "Ve-Sinh-Laptop-Kinhmaster.webp",
-    "img1": "Ve-Sinh-Laptop-detail-11.webp"
-  },
-  "description": "Bộ vệ sinh Laptop JRC 5in1 Multi-Functional Nano sử dụng dung dịch nano cao cấp, an toàn cho thiết bị và sức khỏe, giúp làm sạch màn hình, bàn phím và các bề mặt nhựa một cách hiệu quả.",
-  "productInfo": ["Bộ vệ sinh Laptop JRC 5in1 Multi-Functional Nano là giải pháp làm sạch toàn diện cho laptop và các thiết bị điện tử. Sản phẩm sử dụng dung dịch nano với công thức hoàn toàn tự nhiên, không chứa Ammonia hay cồn, đảm bảo an toàn cho người dùng và thân thiện với môi trường.\n\nDung dịch vệ sinh JRC giúp hạn chế phai màu zin của thiết bị sau thời gian dài sử dụng, không ảnh hưởng đến chất lượng linh kiện và bề mặt máy. Bộ sản phẩm bao gồm đầy đủ các dụng cụ cần thiết để làm sạch từ màn hình đến các khe nhỏ và bề mặt nhựa.\n\nVới thiết kế tiện lợi và đa năng, JRC 5in1 phù hợp cho việc vệ sinh màn hình laptop, máy tính bảng, điện thoại, bàn phím và nhiều thiết bị điện tử khác trong gia đình hoặc văn phòng.",
-    "\n\nBộ dụng cụ vệ sinh gồm: ",
-    "\n2 khăn lau màn hình mềm",
-    "\n1 chổi quét bụi",
-    "\n1 lọ dung dịch vệ sinh nano 100ml",
-    "\n1 bóng thổi bụi",
-    "\n1 cốc giấy đựng",
-    "\n\nHƯỚNG DẪN SỬ DỤNG: ",
-    "\n-Đối với màn hình: ",
-      "\nNgắt điện thiết bị trước khi vệ sinh",
-      "\nXịt 1–2 lần dung dịch lên màn hình hoặc khăn",
-      "\nLau nhẹ nhàng bằng khăn mềm",
-      "\nLau lại bằng phần khăn khô",
-      "\n\n-Đối với bề mặt nhựa: ",
-      "\nDùng chổi quét sạch bụi",
-      "\nXịt 2–3 lần dung dịch lên khăn",
-      "\nLau bề mặt nhựa",
-      "\nLau lại bằng phần khăn khô"
-
-],
-  
-  
-  "specifications": {
-    "material": "Dung dịch Nano tự nhiên",
-    "liquid_volume": "100 ml",
-    "safe_formula": "Không Ammonia, không cồn",
-    "usage": "Vệ sinh màn hình và thiết bị điện tử",
-    "brand_origin": "Trung Quốc"
-  },
-  "features": [
-    "Dung dịch nano an toàn, không chứa cồn",
-    "Thân thiện với môi trường và sức khỏe",
-    "Phù hợp nhiều thiết bị điện tử"
-  ],
-
-  "warranty": {
-    "policy": "Sản phẩm mới",
-    "exchange_policy": "Không đổi trả, không bảo hành"
-  },
-  "badge": {
-    "newArrival": false
-  },
-  "inStock": true
-}
-
-,{
-  "id": 96,
-  "name": "Bộ Vệ Sinh Laptop Đa Năng 7 in 1",
-  "brand": "OEM",
-  "category": "Cleaning",
-  "price": "89000",
-  "old_price": null,
-  "discount": null,
-  "tag": "Phụ kiện",
-  "image": {
-    "img0": "Ve-Sinh-Laptop-7in1.webp",
-    "img1": "Ve-Sinh-Laptop-detail-21.webp"
-  },
-  "description": "Bộ vệ sinh Laptop đa năng 7 in 1 giúp làm sạch toàn diện màn hình, bàn phím, tai nghe và các thiết bị điện tử, loại bỏ bụi bẩn và dấu vân tay hiệu quả, giữ thiết bị luôn sạch sẽ và bền bỉ.",
-  "productInfo": [
-    "Bộ vệ sinh Laptop đa năng 7 in 1 là giải pháp tiện lợi giúp giữ cho các thiết bị điện tử luôn sạch sẽ và hoạt động ổn định. Sản phẩm hỗ trợ làm sạch màn hình, bàn phím, tai nghe và các chi tiết nhỏ một cách nhanh chóng và hiệu quả.\n\nBộ dụng cụ được thiết kế nhỏ gọn, dễ dàng mang theo, phù hợp cho dân văn phòng, học sinh – sinh viên và những người thường xuyên sử dụng laptop, tablet hoặc tai nghe không dây.",
-    "\n\nƯU ĐIỂM SẢN PHẨM:",
-    "\nDụng cụ làm sạch laptop chuyên nghiệp, loại bỏ bụi bẩn và vết ố trên màn hình, bàn phím",
-    "\nThiết kế 7 in 1 nhỏ gọn, tiện lợi mang theo mọi lúc",
-    "\nCọ vệ sinh bàn phím giúp làm sạch sâu từng kẽ phím",
-    "\nDụng cụ vệ sinh tai nghe AirPods giúp âm thanh luôn trong trẻo",
-    "\n\nBỘ DỤNG CỤ BAO GỒM:",
-    "\n1 bút vệ sinh 3 trong 1",
-    "\n1 bàn chải lông mềm mịn",
-    "\n1 dụng cụ tháo bàn phím",
-    "\n1 bình dung dịch vệ sinh (10ml)",
-    "\n1 khăn lau chuyên dụng",
-    "\n\nLƯU Ý:",
-    "\nDung dịch đi kèm dung tích 10ml, có thể chiết thêm từ chai 30ml hoặc sử dụng nước lau kính chuyên dụng"
-  ],
-  "specifications": {
-    "material": "Nhựa ABS",
-    "liquid_volume": "10 ml",
-    "usage": "Vệ sinh laptop, bàn phím, tai nghe, thiết bị điện tử",
-    "dimensions": "15 x 4 x 6 cm",
-    "origin": "Trung Quốc"
-  },
-  "features": [
-    "Bộ vệ sinh đa năng 7 in 1 tiện lợi",
-    "Làm sạch sâu bàn phím và màn hình",
-    "Hỗ trợ vệ sinh tai nghe AirPods",
-    "Thiết kế nhỏ gọn, dễ mang theo",
-    "Chất liệu nhựa ABS bền bỉ"
-  ],
-  "warranty": {
-    "policy": "Sản phẩm mới",
-    "exchange_policy": "Không đổi trả, không bảo hành"
-  },
-  "badge": {
-    "newArrival": false
-  },
-  "inStock": true
-}
-
-
-
-  ],
-
-
 
   "categories": [
     {
@@ -1376,8 +1365,6 @@
       "label": "Tai nghe"
     }
   ],
-
-  
 
   "categorie": [
     {

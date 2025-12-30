@@ -4,9 +4,9 @@
 import banner from "./images/BannerHome.gif";
 
 // Slide carousel images
-import slide1 from "./images/Asus-Vivobook-15-X1504VA.webp";
-import slide2 from "./images/Acer-Gaming-Nitro-v15.webp";
-import slide3 from "./images/Dell-15-DC15250.webp";
+import slide1 from "./images/Lapai_lenovo_yoga_Desk_1_.webp";
+import slide2 from "./images/Lapai_msi_prestige_Desk.webp";
+import slide3 from "./images/Lapai_msi_prestige_ukiyoe_Desk.webp";
 
 // Product images
 import Img1 from "./images/Acer-detail-11.webp";

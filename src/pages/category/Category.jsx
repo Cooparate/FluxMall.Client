@@ -3,7 +3,6 @@ import data from "../../assets/data/data.json";
 import ProductCard from "../../components/product/ProductCard";
 import "./category.scss";
 
-
 export default function Category() {
   const { type } = useParams();
   const { products } = data;
@@ -23,7 +22,6 @@ export default function Category() {
                 <img src="/src/assets/images/Banner-Laptop-Lenovo.webp" alt="" />
                 <img src="/src/assets/images/Banner-Headphone-Sony.webp" alt="" />
             </div> */}
-
 
             {/* <div className="bottom-banner">
               <div className="banner-left">
@@ -57,7 +55,7 @@ export default function Category() {
                   <img src="/src/assets/images/Banner-Laptop-Doc.webp" alt="" />
                 </div>
                 */}
-                
+
                 {/* <div className="sidebar-banner">
                   <h4>Trả góp 0%</h4>
                   <p>Duyệt nhanh chóng</p>
@@ -67,7 +65,6 @@ export default function Category() {
                   <h4>Trả góp 0%</h4>
                   <p>Duyệt nhanh chóng</p>
                 </div> */}
-
               </aside>
 
               {/* Main content */}
@@ -79,7 +76,6 @@ export default function Category() {
                       <ProductCard key={item.id} item={item} />
                     ))}
                 </div>
-
               </main>
 
               {/* Right banners */}
@@ -209,9 +205,17 @@ export default function Category() {
                 <div className="sidebar-content">
                   <h3 className="sidebar-title">Thương hiệu</h3>
                   <ul className="brand-list">
-                    {["Logitech", "Razer", "SteelSeries", "Corsair", "HyperX"].map((brand) => (
+                    {[
+                      "Logitech",
+                      "Razer",
+                      "SteelSeries",
+                      "Corsair",
+                      "HyperX",
+                    ].map((brand) => (
                       <li key={brand} className="brand-item">
-                        <a href="#" className="brand-link">{brand}</a>
+                        <a href="#" className="brand-link">
+                          {brand}
+                        </a>
                       </li>
                     ))}
                   </ul>
@@ -237,14 +241,18 @@ export default function Category() {
                 <div className="banner banner-above">
                   <h3 className="banner-title">Siêu nhẹ</h3>
                   <p className="banner-text">
-                    Dưới 60g<br />Di chuyển linh hoạt
+                    Dưới 60g
+                    <br />
+                    Di chuyển linh hoạt
                   </p>
                   <button className="banner-btn">Xem ngay</button>
                 </div>
                 <div className="banner banner-below">
                   <h3 className="banner-title">Không dây</h3>
                   <p className="banner-text">
-                    Độ trễ thấp<br />Pin 100+ giờ
+                    Độ trễ thấp
+                    <br />
+                    Pin 100+ giờ
                   </p>
                   <button className="banner-btn">Tìm hiểu</button>
                 </div>
@@ -265,11 +273,15 @@ export default function Category() {
                 <div className="sidebar-content">
                   <h3 className="sidebar-title">Thương hiệu</h3>
                   <ul className="brand-list">
-                    {["Sony", "Razer", "SteelSeries", "Corsair", "HyperX"].map((brand) => (
-                      <li key={brand} className="brand-item">
-                        <a href="#" className="brand-link">{brand}</a>
-                      </li>
-                    ))}
+                    {["Sony", "Razer", "SteelSeries", "Corsair", "HyperX"].map(
+                      (brand) => (
+                        <li key={brand} className="brand-item">
+                          <a href="#" className="brand-link">
+                            {brand}
+                          </a>
+                        </li>
+                      )
+                    )}
                   </ul>
                 </div>
                 <div className="sidebar-banner">
@@ -293,14 +305,18 @@ export default function Category() {
                 <div className="banner banner-above">
                   <h3 className="banner-title">Âm thanh vòm</h3>
                   <p className="banner-text">
-                    Trải nghiệm 7.1<br />Chìm đắm trong game
+                    Trải nghiệm 7.1
+                    <br />
+                    Chìm đắm trong game
                   </p>
                   <button className="banner-btn">Khám phá</button>
                 </div>
                 <div className="banner banner-below">
                   <h3 className="banner-title">Không dây</h3>
                   <p className="banner-text">
-                    Đàm thoại rõ nét<br />Pin lâu dài
+                    Đàm thoại rõ nét
+                    <br />
+                    Pin lâu dài
                   </p>
                   <button className="banner-btn">Tìm hiểu</button>
                 </div>

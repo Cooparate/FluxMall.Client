@@ -1,30 +1,32 @@
-import { useState, useMemo } from 'react';
-import data from '../../assets/data/data.json';
-import ProductCard from '../../components/product/ProductCard';
-import './Bestseller.scss';
+import { useState, useMemo } from "react";
+import data from "../../assets/data/data.json";
+import ProductCard from "../../components/product/ProductCard";
+import "./Bestseller.scss";
 
 export default function Bestseller() {
-  const [sortBy, setSortBy] = useState('newest');
-  const [category, setCategory] = useState('all');
+  const [sortBy, setSortBy] = useState("newest");
+  const [category, setCategory] = useState("all");
 
   // Lọc sản phẩm bestseller
   const bestSellers = useMemo(() => {
-    return data.products.filter(p => p.badge?.bestSeller === true);
+    return data.products.filter((p) => p.badge?.bestSeller === true);
   }, []);
 
   // Lọc theo category
   const filteredProducts = useMemo(() => {
     let result = bestSellers;
-    if (category !== 'all') {
-      result = result.filter(p => p.category.toLowerCase() === category.toLowerCase());
+    if (category !== "all") {
+      result = result.filter(
+        (p) => p.category.toLowerCase() === category.toLowerCase()
+      );
     }
 
     // Sắp xếp
-    if (sortBy === 'price-low') {
+    if (sortBy === "price-low") {
       result = [...result].sort((a, b) => Number(a.price) - Number(b.price));
-    } else if (sortBy === 'price-high') {
+    } else if (sortBy === "price-high") {
       result = [...result].sort((a, b) => Number(b.price) - Number(a.price));
-    } else if (sortBy === 'newest') {
+    } else if (sortBy === "newest") {
       result = [...result].reverse();
     }
 
@@ -32,7 +34,10 @@ export default function Bestseller() {
   }, [sortBy, category]);
 
   // Lấy danh sách category
-  const categories = ['all', ...new Set(bestSellers.map(p => p.category.toLowerCase()))];
+  const categories = [
+    "all",
+    ...new Set(bestSellers.map((p) => p.category.toLowerCase())),
+  ];
 
   return (
     <div className="bestseller-page">
@@ -51,7 +56,7 @@ export default function Bestseller() {
           <div className="filter-section">
             <h3>Danh mục</h3>
             <div className="category-filter">
-              {categories.map(cat => (
+              {categories.map((cat) => (
                 <label key={cat} className="filter-option">
                   <input
                     type="radio"
@@ -61,7 +66,9 @@ export default function Bestseller() {
                     onChange={(e) => setCategory(e.target.value)}
                   />
                   <span className="filter-label">
-                    {cat === 'all' ? 'Tất cả' : cat.charAt(0).toUpperCase() + cat.slice(1)}
+                    {cat === "all"
+                      ? "Tất cả"
+                      : cat.charAt(0).toUpperCase() + cat.slice(1)}
                   </span>
                 </label>
               ))}
@@ -73,9 +80,9 @@ export default function Bestseller() {
             <div className="sort-filter">
               {[
                 // { value: 'newest', label: 'Mới nhất' },
-                { value: 'price-low', label: 'Giá thấp đến cao' },
-                { value: 'price-high', label: 'Giá cao đến thấp' }
-              ].map(opt => (
+                { value: "price-low", label: "Giá thấp đến cao" },
+                { value: "price-high", label: "Giá cao đến thấp" },
+              ].map((opt) => (
                 <label key={opt.value} className="filter-option">
                   <input
                     type="radio"
@@ -91,7 +98,9 @@ export default function Bestseller() {
           </div>
 
           <div className="filter-stats">
-            <p><strong>{filteredProducts.length}</strong> sản phẩm tìm thấy</p>
+            <p>
+              <strong>{filteredProducts.length}</strong> sản phẩm tìm thấy
+            </p>
           </div>
         </aside>
 
@@ -99,7 +108,7 @@ export default function Bestseller() {
         <main className="bestseller-main">
           {filteredProducts.length > 0 ? (
             <div className="products-grid">
-              {filteredProducts.map(product => (
+              {filteredProducts.map((product) => (
                 <div key={product.id} className="product-wrapper">
                   <ProductCard item={product} />
                 </div>

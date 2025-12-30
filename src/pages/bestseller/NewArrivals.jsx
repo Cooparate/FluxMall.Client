@@ -49,53 +49,50 @@ export default function NewArrivals() {
         </div>
       </div>
 
-        <aside className="newarrivals-sidebar">
-          {/* ===== DANH MỤC ===== */}
-          <div className="filter-section">
-            {/* <h3>Danh mục</h3> */}
-            <div className="filter-buttons">
-              {categories.map((cat) => (
-                <button
-                  key={cat}
-                  className={`filter-btn ${category === cat ? "active" : ""}`}
-                  onClick={() => setCategory(cat)}
-                >
-                  {cat === "all" ? "Tất cả" : cat}
-                </button>
-              ))}
-            </div>
+      <aside className="newarrivals-sidebar">
+        {/* ===== DANH MỤC ===== */}
+        <div className="filter-section">
+          {/* <h3>Danh mục</h3> */}
+          <div className="filter-buttons">
+            {categories.map((cat) => (
+              <button
+                key={cat}
+                className={`filter-btn ${category === cat ? "active" : ""}`}
+                onClick={() => setCategory(cat)}
+              >
+                {cat === "all" ? "Tất cả" : cat}
+              </button>
+            ))}
           </div>
+        </div>
 
-          {/* ===== SẮP XẾP ===== */}
-          <div className="filter-section">
-            {/* <h3>Sắp xếp</h3> */}
-            <div className="filter-buttons">
-              {[
-                { value: "newest", label: "Mới nhất" },
-                { value: "price-low", label: "Giá thấp → cao" },
-                { value: "price-high", label: "Giá cao → thấp" },
-              ].map((opt) => (
-                <button
-                  key={opt.value}
-                  className={`filter-btn ${
-                    sortBy === opt.value ? "active" : ""
-                  }`}
-                  onClick={() => setSortBy(opt.value)}
-                >
-                  {opt.label}
-                </button>
-              ))}
-            </div>
+        {/* ===== SẮP XẾP ===== */}
+        <div className="filter-section">
+          {/* <h3>Sắp xếp</h3> */}
+          <div className="filter-buttons">
+            {[
+              { value: "newest", label: "Mới nhất" },
+              { value: "price-low", label: "Giá thấp → cao" },
+              { value: "price-high", label: "Giá cao → thấp" },
+            ].map((opt) => (
+              <button
+                key={opt.value}
+                className={`filter-btn ${sortBy === opt.value ? "active" : ""}`}
+                onClick={() => setSortBy(opt.value)}
+              >
+                {opt.label}
+              </button>
+            ))}
           </div>
+        </div>
 
-          {/* ===== THỐNG KÊ ===== */}
-          {/* <div className="filter-stats">
+        {/* ===== THỐNG KÊ ===== */}
+        {/* <div className="filter-stats">
             <p>
               <strong>{filteredProducts.length}</strong> sản phẩm được tìm thấy
             </p>
           </div> */}
-        </aside>
-
+      </aside>
 
       {/* Main Content */}
       <div className="newarrivals-container">

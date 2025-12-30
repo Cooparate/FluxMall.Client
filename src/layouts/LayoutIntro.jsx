@@ -1,5 +1,5 @@
-import { Link } from 'react-router-dom';
-import './layoutIntro.scss';
+import { Link } from "react-router-dom";
+import "./layoutIntro.scss";
 
 const NavbarIntro = () => {
   return (
@@ -10,8 +10,12 @@ const NavbarIntro = () => {
         </Link>
         <div className="nav-links">
           <div className="nav-auth">
-            <Link to="/login" className="btn-login">Đăng nhập</Link>
-            <Link to="/register" className="btn-register">Đăng ký</Link>
+            <Link to="/login" className="btn-login">
+              Đăng nhập
+            </Link>
+            <Link to="/register" className="btn-register">
+              Đăng ký
+            </Link>
           </div>
         </div>
       </div>

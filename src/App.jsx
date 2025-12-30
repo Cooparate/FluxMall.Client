@@ -13,6 +13,7 @@ const Warranty = lazy(() => import('./pages/warranty/Warranty'));
 const Contact = lazy(() => import('./pages/contact/Contact'));
 const Bestseller = lazy(() => import('./pages/bestseller/Bestseller'));
 const NewArrivals = lazy(() => import('./pages/bestseller/NewArrivals'));
+const Sale = lazy(() => import('./pages/promotion/Sale'));
 const ProductDetail = lazy(() => import('./components/product/ProductDetail'));
 const LayoutHome = lazy(() => import('./layouts/LayoutHome'));
 
@@ -27,7 +28,7 @@ const LoadingFallback = () => (
     color: '#0066cc',
     fontWeight: '600'
   }}>
-    ⚡ Đang tải...
+    Đang tải...
   </div>
 );
 
@@ -51,6 +52,7 @@ function App() {
               <Route path="/product/:id" element={<ProductDetail />} />
               <Route path="/bestseller" element={<Bestseller />} />
               <Route path="/newarrivals" element={<NewArrivals />} />
+              <Route path="/promotion" element={<Sale />} />
               <Route path="/warranty" element={<Warranty />} />
               <Route path="/contact" element={<Contact />} />
             </Route>

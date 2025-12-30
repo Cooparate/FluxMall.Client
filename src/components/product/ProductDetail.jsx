@@ -1,9 +1,9 @@
-import { useParams, useNavigate } from 'react-router-dom';
-import { useState, useEffect } from 'react';
-import { useCart } from '../../contexts/CartContext';
-import data from '../../assets/data/data.json';
-import './ProductDetail.scss';
-import { AiOutlineLeft } from 'react-icons/ai';
+import { useParams, useNavigate } from "react-router-dom";
+import { useState, useEffect } from "react";
+import { useCart } from "../../contexts/CartContext";
+import data from "../../assets/data/data.json";
+import "./ProductDetail.scss";
+import { AiOutlineLeft } from "react-icons/ai";
 
 export default function ProductDetail() {
   const { id } = useParams();
@@ -13,7 +13,7 @@ export default function ProductDetail() {
   const [quantity, setQuantity] = useState(1);
   const [showMore, setShowMore] = useState(false);
 
-  const product = data.products.find(p => p.id === parseInt(id));
+  const product = data.products.find((p) => p.id === parseInt(id));
 
   // useEffect để xử lý thay đổi productId từ URL
   // Reset state khi chuyển sang sản phẩm khác và scroll to top
@@ -28,7 +28,7 @@ export default function ProductDetail() {
       <div className="product-detail-container">
         <div className="not-found">
           <h2>Sản phẩm không tìm thấy</h2>
-          <button onClick={() => navigate('/home')} className="btn-back-home">
+          <button onClick={() => navigate("/home")} className="btn-back-home">
             Quay lại trang chủ
           </button>
         </div>
@@ -36,8 +36,8 @@ export default function ProductDetail() {
     );
   }
 
-  const images = Object.values(product.image).filter(img => img);
-  
+  const images = Object.values(product.image).filter((img) => img);
+
   const handlePrevImage = () => {
     setCurrentImageIndex((prev) => (prev === 0 ? images.length - 1 : prev - 1));
   };
@@ -52,14 +52,14 @@ export default function ProductDetail() {
       name: product.name,
       price: product.price,
       quantity: quantity,
-      image: product.image.img0
+      image: product.image.img0,
     });
     alert(`Đã thêm ${quantity} sản phẩm vào giỏ!`);
   };
 
   const handleBuy = () => {
     handleAddToCart();
-    navigate('/cart');
+    navigate("/cart");
   };
 
   return (
@@ -73,14 +73,18 @@ export default function ProductDetail() {
         {/* Left: Images */}
         <div className="detail-images">
           <div className="main-image">
-            <img 
+            <img
               src={`/src/assets/images/${images[currentImageIndex]}`}
               alt={product.name}
             />
             {images.length > 1 && (
               <>
-                <button className="nav-btn prev" onClick={handlePrevImage}>❮</button>
-                <button className="nav-btn next" onClick={handleNextImage}>❯</button>
+                <button className="nav-btn prev" onClick={handlePrevImage}>
+                  ❮
+                </button>
+                <button className="nav-btn next" onClick={handleNextImage}>
+                  ❯
+                </button>
               </>
             )}
           </div>
@@ -91,10 +95,15 @@ export default function ProductDetail() {
               {images.map((img, idx) => (
                 <div
                   key={idx}
-                  className={`thumbnail ${idx === currentImageIndex ? 'active' : ''}`}
+                  className={`thumbnail ${
+                    idx === currentImageIndex ? "active" : ""
+                  }`}
                   onClick={() => setCurrentImageIndex(idx)}
                 >
-                  <img src={`/src/assets/images/${img}`} alt={`${product.name} ${idx}`} />
+                  <img
+                    src={`/src/assets/images/${img}`}
+                    alt={`${product.name} ${idx}`}
+                  />
                 </div>
               ))}
             </div>
@@ -147,8 +156,12 @@ export default function ProductDetail() {
 
           {/* Stock status */}
           <div className="stock-section">
-            <span className={`stock-status ${product.inStock ? 'in-stock' : 'out-stock'}`}>
-              {product.inStock ? 'Còn hàng' : 'Hết hàng'}
+            <span
+              className={`stock-status ${
+                product.inStock ? "in-stock" : "out-stock"
+              }`}
+            >
+              {product.inStock ? "Còn hàng" : "Hết hàng"}
             </span>
           </div>
 
@@ -176,14 +189,14 @@ export default function ProductDetail() {
               </button>
             </div> */}
 
-            <button 
+            <button
               className="btn-add-cart"
               onClick={handleAddToCart}
               disabled={!product.inStock}
             >
               Thêm vào giỏ
             </button>
-            <button 
+            <button
               className="btn-buy-now"
               onClick={handleBuy}
               disabled={!product.inStock}
@@ -194,27 +207,26 @@ export default function ProductDetail() {
         </div>
       </div>
 
-{/* Warranty info */}
+      {/* Warranty info */}
 
-{product.productInfo && (
-  <div className="info-section">
-    <h2>Thông tin sản phẩm</h2>
+      {product.productInfo && (
+        <div className="info-section">
+          <h2>Thông tin sản phẩm</h2>
 
-    <div
-      className={`product-info ${showMore ? "expanded" : "collapsed"}`}
-    >
-      {product.productInfo}
-    </div>
+          <div
+            className={`product-info ${showMore ? "expanded" : "collapsed"}`}
+          >
+            {product.productInfo}
+          </div>
 
-    <button
-      className="btn-show-more"
-      onClick={() => setShowMore(!showMore)}
-    >
-      {showMore ? "Thu gọn" : "Xem thêm"}
-    </button>
-  </div>
-)}
-
+          <button
+            className="btn-show-more"
+            onClick={() => setShowMore(!showMore)}
+          >
+            {showMore ? "Thu gọn" : "Xem thêm"}
+          </button>
+        </div>
+      )}
 
       {/* Specifications section */}
       {product.specifications && (
@@ -224,12 +236,12 @@ export default function ProductDetail() {
             {Object.entries(product.specifications).map(([key, value]) => {
               // Format key name
               const keyDisplay = key
-                .replace(/_/g, ' ')
-                .replace(/\b\w/g, l => l.toUpperCase());
+                .replace(/_/g, " ")
+                .replace(/\b\w/g, (l) => l.toUpperCase());
 
               // Handle array values
-              const valueDisplay = Array.isArray(value) 
-                ? value.join(', ')
+              const valueDisplay = Array.isArray(value)
+                ? value.join(", ")
                 : String(value);
 
               return (
@@ -244,29 +256,28 @@ export default function ProductDetail() {
       )}
 
       {product.warranty && (
-  <div className="warranty-section">
-    <h2>Bảo hành & Chính sách</h2>
+        <div className="warranty-section">
+          <h2>Bảo hành & Chính sách</h2>
 
-    <div className="warranty-card">
-      {Object.entries(product.warranty).map(([key, value]) => {
-        const keyDisplay = key
-          .replace(/_/g, ' ')
-          .replace(/\b\w/g, l => l.toUpperCase());
+          <div className="warranty-card">
+            {Object.entries(product.warranty).map(([key, value]) => {
+              const keyDisplay = key
+                .replace(/_/g, " ")
+                .replace(/\b\w/g, (l) => l.toUpperCase());
 
-        const valueDisplay = Array.isArray(value)
-          ? value.join(', ')
-          : String(value);
+              const valueDisplay = Array.isArray(value)
+                ? value.join(", ")
+                : String(value);
 
-        return (
-          <p key={key}>
-            <strong>{keyDisplay}:</strong> {valueDisplay}
-          </p>
-        );
-      })}
-    </div>
-  </div>
-)}
-
+              return (
+                <p key={key}>
+                  <strong>{keyDisplay}:</strong> {valueDisplay}
+                </p>
+              );
+            })}
+          </div>
+        </div>
+      )}
 
       {/* Store info */}
       {/* {product.store && product.store.length > 0 && (
@@ -294,14 +305,10 @@ export default function ProductDetail() {
           <h2>Khuyến mãi đặc biệt</h2>
           <div className="promotion-list">
             {product.promotion.shockSale && (
-              <div className="promotion-item shock-sale">
-                Giảm giá sốc
-              </div>
+              <div className="promotion-item shock-sale">Giảm giá sốc</div>
             )}
             {product.promotion.studentDiscount && (
-              <div className="promotion-item student">
-                Dành cho sinh viên
-              </div>
+              <div className="promotion-item student">Dành cho sinh viên</div>
             )}
             {product.promotion.gift && (
               <div className="promotion-item gift">
@@ -314,6 +321,3 @@ export default function ProductDetail() {
     </div>
   );
 }
-
-
-
