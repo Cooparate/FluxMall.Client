@@ -7,6 +7,7 @@ import banner from "./images/BannerHome.gif";
 import slide1 from "./images/Lapai_lenovo_yoga_Desk_1_.webp";
 import slide2 from "./images/Lapai_msi_prestige_Desk.webp";
 import slide3 from "./images/Lapai_msi_prestige_ukiyoe_Desk.webp";
+import slide4 from "./images/Lapai_vivobookS_Desk.webp";
 
 // Product images
 import Img1 from "./images/Acer-detail-11.webp";
@@ -33,6 +34,7 @@ export {
   slide1,
   slide2,
   slide3,
+  slide4,
   Img1,
   Img2,
   Img3,

@@ -10,6 +10,7 @@ import {
   slide1,
   slide2,
   slide3,
+  slide4,
   acerAspireImg,
   acerNitroImg,
   acerNitro5Img,
@@ -27,24 +28,19 @@ import {
 const bannerSlides = [
   {
     id: 1,
-    title: "THỨ TƯ SALE SẬP SÀN",
-    subtitle: "Giảm đến 50%",
-    discount: "400K",
     image: slide2,
   },
   {
     id: 2,
-    title: "IPHONE 17 VÀ IPHONE AIR",
-    subtitle: "Được thiết kế cho Apple Intelligence",
-    discount: "HỌC VỤ",
     image: slide1,
   },
   {
     id: 3,
-    title: "QUẢNG BÌNH",
-    subtitle: "Rất sản lòng hỗ trợ anh/chị",
-    discount: "ĐƠN 700K",
     image: slide3,
+  },
+  {
+    id: 4,
+    image: slide4,
   },
 ];
 
