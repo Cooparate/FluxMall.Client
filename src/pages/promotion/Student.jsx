@@ -67,16 +67,17 @@ export default function Student() {
     <div className="student-page">
       <div className="student-banner">
         <div className="banner-content">
-          <h1>🎓 Ưu đãi Sinh viên</h1>
-          <p>Sao chép mã và áp dụng khi thanh toán</p>
+          <img src="src/assets/images/Danh-cho-sinh-vien.webp" alt="image" />
+          {/* <h1>🎓 Ưu đãi Sinh viên</h1>
+          <p>Sao chép mã và áp dụng khi thanh toán</p> */}
         </div>
       </div>
 
       <div className="student-container">
         <div className="info-box">
           <p>
-            📋 Xuất trình thẻ sinh viên còn hiệu lực khi nhận hàng hoặc gửi ảnh
-            xác nhận
+            Xuất trình thẻ sinh viên còn hiệu lực khi nhận hàng hoặc gửi ảnh xác nhận <br />
+            Sao chép mã và áp dụng khi thanh toán
           </p>
         </div>
 

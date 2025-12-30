@@ -29,7 +29,7 @@ const LoadingFallback = () => (
     color: '#0066cc',
     fontWeight: '600'
   }}>
-    ⚡ Đang tải...
+    Đang tải...
   </div>
 );
 
