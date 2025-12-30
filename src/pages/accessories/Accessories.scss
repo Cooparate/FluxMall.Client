@@ -1,0 +1,265 @@
+@use "../../App.scss" as *;
+
+// ========= Layout ========
+.layout {
+  padding: 20px 20px;
+  margin: 0 auto;
+
+  @media (max-width: 768px) {
+    padding: 15px 10px;
+  }
+
+  @media (max-width: 480px) {
+    padding: 10px 5px;
+  }
+}
+
+// ======== TOP Banner =======
+.top-banner {
+  width: 100%;
+  height: 40px;
+  background: linear-gradient(135deg, #0066cc 0%, #0052a3 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 20px;
+
+  @media (max-width: 768px) {
+    height: 35px;
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+
+  @media (max-width: 480px) {
+    height: 30px;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+}
+
+// ========== MAIN WRAPPER ==========
+.main-wrapper {
+  display: flex;
+  gap: 10px;
+
+  @media (max-width: 1024px) {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+
+// ========== LEFT BANNERS (Mới thêm - KHÔNG CÓ BUTTON) ==========
+.left-banners {
+  width: 220px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+
+  .banner {
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  .banner-left {
+    height: 704px; // Chiều cao cho cả 2 banner right (350 + 4 gap + 350)
+    background-image: url("../../assets/images/Banner-Laptop-Doc.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    // KHÔNG CÓ button ở đây
+  }
+
+  @media (max-width: 1200px) {
+    width: 180px;
+
+    .banner-left {
+      height: 600px;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    width: 100%;
+    order: 2; // Đưa xuống dưới product grid trên tablet/mobile
+
+    .banner-left {
+      height: 300px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .banner-left {
+      height: 250px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .banner-left {
+      height: 200px;
+    }
+  }
+}
+
+// ========== MAIN CONTENT (Giữa) ==========
+.main-content {
+  flex: 1;
+
+  @media (max-width: 1024px) {
+    order: 1; // Product grid lên trên
+  }
+
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 14px;
+    margin-bottom: 10px;
+    padding: 0 100px;
+
+    // Desktop lớn (>1400px): 5 cột
+    @media (max-width: 1400px) {
+      padding: 0 50px;
+    }
+
+    // Desktop nhỏ & Laptop (1024px - 1200px): 4 cột
+    @media (max-width: 1200px) {
+      grid-template-columns: repeat(4, 1fr);
+      padding: 0 30px;
+      gap: 12px;
+    }
+
+    // Tablet ngang (768px - 1024px): 3 cột
+    @media (max-width: 1024px) {
+      grid-template-columns: repeat(3, 1fr);
+      padding: 0 20px;
+      gap: 10px;
+    }
+
+    // Tablet dọc (600px - 768px): 2 cột
+    @media (max-width: 768px) {
+      grid-template-columns: repeat(2, 1fr);
+      padding: 0 10px;
+      gap: 10px;
+    }
+
+    // Mobile (480px - 600px): 2 cột nhỏ hơn
+    @media (max-width: 600px) {
+      grid-template-columns: repeat(2, 1fr);
+      padding: 0 5px;
+      gap: 8px;
+    }
+
+    // Mobile nhỏ (<480px): 1 cột
+    @media (max-width: 480px) {
+      grid-template-columns: 1fr;
+      padding: 0;
+      gap: 10px;
+    }
+  }
+}
+
+// ========== RIGHT BANNERS (Giữ nguyên) ==========
+.right-banners {
+  width: 220px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+
+  .banner {
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+
+    .banner-title {
+      margin: 0 0 10px 0;
+      font-size: 18px;
+    }
+
+    .banner-text {
+      margin: 0;
+      font-size: 13px;
+      line-height: 1.5;
+    }
+
+    .banner-btn {
+      margin-top: 10px;
+      padding: 8px 30px;
+      background-color: white;
+      border: none;
+      border-radius: 4px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: transform 0.2s;
+      font-size: 13px;
+
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+  }
+
+  .banner-above {
+    background-image: url("../../assets/images/Banner-Laptop-Doc.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    .banner-btn {
+      color: #4a90e2;
+    }
+  }
+
+  .banner-below {
+    background-image: url("../../assets/images/Banner-Laptop-Doc.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    .banner-btn {
+      color: #50c878;
+    }
+  }
+
+  @media (max-width: 1200px) {
+    width: 180px;
+
+    .banner {
+      height: 300px;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    width: 100%;
+    flex-direction: row;
+    order: 3; // Xuống cuối cùng
+
+    .banner {
+      flex: 1;
+      height: 250px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+
+    .banner {
+      height: 200px;
+    }
+  }
+}

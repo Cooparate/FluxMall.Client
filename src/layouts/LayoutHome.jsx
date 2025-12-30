@@ -39,6 +39,11 @@ export default function layoutHome() {
     setOpen(false);
   };
 
+  const goAccessories = (type) => {
+    navigate(`/accessories/${type}`);
+    setOpen(false);
+  }
+
   const handleLogout = () => {
     localStorage.removeItem("fluxmall_current_user");
     setCurrentUser(null);

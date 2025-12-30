@@ -33,7 +33,11 @@ export {
   FiEye,
   FiEyeOff,
   FiUser,
-  FiLogOut 
+  FiLogOut,
+  FiClock,
+  FiPercent,
+  FiTag,
+  FiGift
 } from "react-icons/fi";
 
 // Hero Icons 2
