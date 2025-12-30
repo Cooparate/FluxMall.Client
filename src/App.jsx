@@ -54,7 +54,7 @@ function App() {
               <Route path="/product/:id" element={<ProductDetail />} />
               <Route path="/bestseller" element={<Bestseller />} />
               <Route path="/newarrivals" element={<NewArrivals />} />
-              <Route path="/promotion" element={<Sale />} />
+              <Route path="/sale" element={<Sale />} />
               <Route path="/warranty" element={<Warranty />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="/student" element={<Student />} />

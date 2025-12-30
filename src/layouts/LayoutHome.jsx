@@ -265,10 +265,10 @@ export default function layoutHome() {
               </li>
 
               <li>
-                <Link to="/promotion">Giảm giá sốc</Link>
+                <Link to="/sale">Giảm giá sốc</Link>
               </li>
               <li>
-                <a href="#">Dành cho sinh viên</a>
+                <Link to="/student">Ưu đãi sinh viên</Link>
               </li>
 
               {/* -- Phụ kiện -- */}
@@ -276,13 +276,19 @@ export default function layoutHome() {
                 <a href="#">Phụ kiện</a>
                 <ul className="dropdown-menu">
                   <li>
-                    <a href="#">Túi chống sốc</a>
+                    <a href="" onClick={() => goAccessories("bag")}>
+                      Túi chống sốc
+                    </a>
                   </li>
                   <li>
-                    <a href="#">Bộ vệ sinh laptop</a>
+                    <a href="" onClick={() => goAccessories("cleaning")}>
+                      Bộ vệ sinh laptop
+                    </a>
                   </li>
                   <li>
-                    <a href="#">Đế tảng nhiệt</a>
+                    <a href="" onClick={() => goAccessories("rack")}>
+                      Đế tản nhiệt
+                    </a>
                   </li>
                 </ul>
               </li>

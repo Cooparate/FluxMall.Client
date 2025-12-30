@@ -430,93 +430,6 @@
       },
       "inStock": true
     },
-      "id": 5,
-      "name": "Laptop Lenovo Core 5 Raptor Lake 210H",
-      "brand": "Lenovo",
-      "category": "Laptop",
-      "price": "19990000",
-      "old_price": "21990000",
-      "discount": "-9%",
-      "tag": "Giảm 9%",
-      "image": {
-        "img0": "Lenovo-ThinkBook-14-G8.webp",
-        "img1": "Lenovo-detail-11.webp",
-        "img2": "lenovo-detail-12.webp",
-        "img3": "lenovo-detail-13.webp"
-      },
-      "description": "Laptop Lenovo trang bị Intel Core 5 Raptor Lake 210H, RAM DDR5 16GB, màn hình 14 inch WUXGA, thiết kế gọn nhẹ, phù hợp học tập và làm việc.",
-      "specifications": {
-        "cpu": "Intel Core 5 Raptor Lake - 210H",
-        "cores": "8",
-        "threads": "12",
-        "cpu_speed": "2.20 GHz (Up to 4.80 GHz)",
-        "gpu": "Intel Graphics",
-        "ram": "16GB DDR5",
-        "ram_bus": "5600 MHz",
-        "ram_max": "32 GB",
-        "storage": "512GB SSD NVMe M.2 PCIe Gen 4.0 (nâng cấp tối đa 2TB)",
-        "display": "14 inch WUXGA (1920 x 1200), IPS, 60Hz",
-        "color_gamut": "45% NTSC",
-        "screen_tech": "Anti Glare, 300 nits",
-        "ports": [
-          "Jack tai nghe 3.5mm",
-          "USB-C 3.2 Gen 2 (Power Delivery, DisplayPort 1.4)",
-          "USB-C Thunderbolt 4 / USB4 (DisplayPort 2.1)",
-          "2 x USB-A 3.2 Gen 1",
-          "HDMI 2.1",
-          "LAN RJ45",
-          "Khe thẻ SD"
-        ],
-        "wireless": "Wi-Fi 6E, Bluetooth 5.3",
-        "webcam": "FHD 1080p + IR, Privacy Shutter",
-        "keyboard": "Đèn nền bàn phím",
-        "audio": ["Realtek ALC3287", "High Definition Audio"],
-        "battery": "Li-ion 45Wh",
-        "os": "Windows 11 Home SL",
-        "release_year": "2025",
-        "size_weight": "313.5 x 224 x 17.5 mm - 1.36 kg",
-        "material": "Vỏ nhựa, nắp lưng hợp kim nhôm"
-      },
-      "features": [
-        "CPU Intel Core 5 Raptor Lake thế hệ mới",
-        "Màn hình WUXGA sắc nét",
-        "Wi-Fi 6E tốc độ cao",
-        "Thunderbolt 4 hỗ trợ đa thiết bị",
-        "Thiết kế mỏng nhẹ 1.36kg",
-        "Bản lề mở 180 độ"
-      ],
-      "store": [
-        {
-          "storeId": 1,
-          "city": "TP. Hồ Chí Minh",
-          "province": "TP. Hồ Chí Minh",
-          "address": "2958 siêu thị Thế Giới Di Động toàn quốc",
-          "phone": "18001060",
-          "hours": "8:00 - 22:00",
-          "status": "Chính hãng"
-        }
-      ],
-      "warranty": {
-        "laptop": "2 năm chính hãng",
-        "battery": "1 năm",
-        "exchange_policy": "Hư gì đổi nấy 12 tháng (miễn phí tháng đầu)",
-        "included_items": [
-          "Sách hướng dẫn",
-          "Sạc Laptop Lenovo 65W",
-          "Thùng máy"
-        ]
-      },
-      "promotion": {
-        "shockSale": false,
-        "studentDiscount": true,
-        "gift": "Túi chống sốc"
-      },
-      "badge": {
-        "bestSeller": false,
-        "newArrival": true
-      },
-      "inStock": true
-    },
 
     {
       "id": 6,
@@ -975,7 +888,6 @@
       ],
       "warranty": "12 tháng chính hãng",
       "promotion": {
-      "promotion": {
         "shockSale": true,
         "studentDiscount": false,
         "gift": "Pin AA"
@@ -1093,7 +1005,6 @@
         "newArrival": true
       },
       "inStock": true
-    },
     },
 
     {
@@ -1215,7 +1126,7 @@
         "policy": "Sản phẩm mới, chính hãng",
         "exchange_policy": "Không đổi trả, không bảo hành"
       },
-      
+
       "promotion": {
         "featured": true
       },
@@ -1364,15 +1275,6 @@
         "Phù hợp nhiều thiết bị điện tử"
       ],
 
-      "warranty": {
-        "policy": "Sản phẩm mới",
-        "exchange_policy": "Không đổi trả, không bảo hành"
-      },
-      "badge": {
-        "newArrival": false
-      },
-      "inStock": true
-    },
       "warranty": {
         "policy": "Sản phẩm mới",
         "exchange_policy": "Không đổi trả, không bảo hành"

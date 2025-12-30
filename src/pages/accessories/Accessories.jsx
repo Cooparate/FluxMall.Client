@@ -38,10 +38,6 @@ export default function Accessories() {
           <div className="layout">
             <div className="top-banner">ĐẾ TẢN NHIỆT</div>
             <div className="main-wrapper">
-              <aside className="left-banners">
-                <div className="banner banner-left"></div>
-              </aside>
-
               <main className="main-content">
                 <div className="product-grid">
                   {products
@@ -52,11 +48,8 @@ export default function Accessories() {
                 </div>
               </main>
 
-              {/* Right banners */}
               <aside className="right-banners">
                 <div className="banner banner-above"></div>
-
-                <div className="banner banner-below"></div>
               </aside>
             </div>
           </div>
@@ -67,10 +60,8 @@ export default function Accessories() {
           <div className="layout">
             <div className="top-banner">BỘ DỤNG CỤ VỆ SINH LAPTOP</div>
             <div className="main-wrapper">
-              {/* Left banner - KHÔNG CÓ BUTTON */}
               <aside className="left-banners">
                 <div className="banner banner-left">
-                  {/* Chỉ hiển thị hình ảnh, không có button */}
                 </div>
               </aside>
 
@@ -83,13 +74,6 @@ export default function Accessories() {
                     ))}
                 </div>
               </main>
-
-              {/* Right banners */}
-              <aside className="right-banners">
-                <div className="banner banner-above"></div>
-
-                <div className="banner banner-below"></div>
-              </aside>
             </div>
           </div>
         );
