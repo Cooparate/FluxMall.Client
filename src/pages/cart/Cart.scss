@@ -76,13 +76,14 @@
         border-radius: $border-radius;
         box-shadow: 0 2px 8px $box-shadow;
         display: flex;
+        flex-wrap: wrap;
         align-items: center;
         gap: 20px;
         position: relative;
         transition: $transition-speed;
 
         &.selected {
-          border: 2px solid $color-blue;
+          padding-bottom: 70px;
         }
 
         &:hover {
@@ -238,25 +239,27 @@
         /* Voucher section */
         .item-voucher-section {
           position: absolute;
-          bottom: 15px;
-          left: 150px;
+          bottom: 12px;
+          left: 20px;
           right: 20px;
           display: flex;
           align-items: center;
+          padding-top: 10px;
+          border-top: 1px solid #f0f0f0;
 
           .voucher-applied {
             display: flex;
             align-items: center;
-            gap: 10px;
-            //background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            background: #ff6b6b;
-            padding: 8px 12px;
-            border-radius: $border-radius;
-            color: white;
+            gap: 8px;
+            background: #e3f2fd;
+            padding: 6px 12px;
+            border-radius: 6px;
+            border: 1px solid #0066cc;
+            color: #0066cc;
             font-size: 13px;
 
             .voucher-icon {
-              font-size: 18px;
+              font-size: 16px;
             }
 
             .voucher-name {
@@ -265,17 +268,16 @@
 
             .voucher-desc {
               font-size: 12px;
-              opacity: 0.9;
+              color: #666;
             }
 
             .btn-remove-voucher {
-              background: rgba(255, 255, 255, 0.3);
+              background: none;
               border: none;
-              color: white;
+              color: #999;
               font-size: 16px;
               cursor: pointer;
-              padding: 4px;
-              border-radius: 50%;
+              padding: 2px;
               display: flex;
               align-items: center;
               justify-content: center;
@@ -283,7 +285,7 @@
               transition: $transition-speed;
 
               &:hover {
-                background: rgba(255, 255, 255, 0.5);
+                color: #0066cc;
               }
             }
           }
@@ -291,23 +293,23 @@
           .btn-select-voucher {
             display: flex;
             align-items: center;
-            gap: 8px;
-            padding: 8px 16px;
-            border: 2px dashed $color-blue;
+            gap: 6px;
+            padding: 6px 12px;
+            border: 1px dashed #0066cc;
             background: white;
-            color: $color-blue;
-            border-radius: $border-radius;
+            color: #0066cc;
+            border-radius: 6px;
             cursor: pointer;
             font-size: 13px;
-            font-weight: 600;
+            font-weight: 500;
             transition: $transition-speed;
 
             .voucher-icon {
-              font-size: 18px;
+              font-size: 16px;
             }
 
             &:hover {
-              background: rgba($color-blue, 0.05);
+              background: #f5f5f5;
               border-style: solid;
             }
           }
@@ -579,7 +581,7 @@
 
     .cart-items .cart-item {
       flex-wrap: wrap;
-      
+
       .item-voucher-section {
         position: static;
         width: 100%;

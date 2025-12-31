@@ -2,6 +2,8 @@ import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { useCart } from "../../contexts/CartContext";
 import ProductCard from "../../components/product/ProductCard";
+import ProductOptionsModal from "../../components/product/ProductOptionsModal";
+import LoginAlertModal from "../../components/auth/LoginAlerModal";
 import data from "../../assets/data/data.json";
 
 import "./home.scss";
@@ -18,13 +20,7 @@ import {
   lenovoIdeapadImg,
   featuredProductBanner,
 } from "../../assets";
-import {
-  FaChevronLeft,
-  FaChevronRight,
-  AiOutlinePlus,
-  AiOutlineMinus,
-  AiOutlineClose,
-} from "../../components/icons";
+import { FaChevronLeft, FaChevronRight } from "../../components/icons";
 
 const bannerSlides = [
   {
@@ -56,11 +52,6 @@ export default function Home() {
   const [showLoginAlert, setShowLoginAlert] = useState(false);
   const [showModal, setShowModal] = useState(false);
   const [selectedProduct, setSelectedProduct] = useState(null);
-  const [modalOptions, setModalOptions] = useState({
-    color: "",
-    size: "",
-    quantity: 1,
-  });
   const [t, setT] = useState(60 * 60);
 
   useEffect(() => {
@@ -100,53 +91,38 @@ export default function Home() {
 
   const goCategory = (type) => {
     navigate(`/category/${type}`);
-    setOpen(false);
   };
 
   const openModal = (product) => {
     if (!checkLoginBeforeAction()) return;
     setSelectedProduct(product);
-    setModalOptions({
-      color: product.hasColors ? product.colors[0] : "",
-      size: product.hasSizes ? product.sizes[0] : "",
-      quantity: 1,
-    });
     setShowModal(true);
   };
 
   const closeModal = () => {
     setShowModal(false);
     setSelectedProduct(null);
-    setModalOptions({ color: "", size: "", quantity: 1 });
   };
 
-  const handleQuantityChange = (change) => {
-    setModalOptions((prev) => ({
-      ...prev,
-      quantity: Math.max(1, prev.quantity + change),
-    }));
-  };
-
-  const handleAddToCart = () => {
+  const handleConfirmAddToCart = (modalOptions) => {
     if (selectedProduct) {
-      if (selectedProduct.hasColors && !modalOptions.color) {
-        alert("Vui lòng chọn màu sắc");
-        return;
-      }
-      if (selectedProduct.hasSizes && !modalOptions.size) {
-        alert("Vui lòng chọn kích cỡ");
-        return;
-      }
       addToCart(selectedProduct, modalOptions);
       alert("Đã thêm sản phẩm vào giỏ hàng!");
       closeModal();
     }
   };
 
-  const calculateModalPrice = () => {
-    if (!selectedProduct) return 0;
-    const basePrice = parseFloat(selectedProduct.price);
-    return (basePrice * modalOptions.quantity).toLocaleString("vi-VN");
+  // Chuẩn bị productOptions cho modal
+  const getProductOptions = (product) => {
+    if (!product)
+      return { hasColors: false, colors: [], hasSizes: false, sizes: [] };
+
+    return {
+      hasColors: product.hasColors || false,
+      colors: product.colors || [],
+      hasSizes: product.hasSizes || false,
+      sizes: product.sizes || [],
+    };
   };
 
   return (
@@ -260,13 +236,8 @@ export default function Home() {
       {/* Products Section */}
       <section className="products">
         <div className="container">
-          <img
-            id="student"
-            src={featuredProductBanner}
-            alt="image"
-          />
+          <img id="student" src={featuredProductBanner} alt="image" />
 
-          {/* ✅ THAY ĐỔI 4: Lấy products từ data.json giống Category.jsx */}
           <div className="grid">
             {products
               .filter((product) => product.promotion?.featured === true)
@@ -293,162 +264,22 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Modal yêu cầu đăng nhập */}
-      {showLoginAlert && (
-        <div className="modal-overlay" onClick={() => setShowLoginAlert(false)}>
-          <div
-            className="modal-content login-alert"
-            onClick={(e) => e.stopPropagation()}
-          >
-            <button
-              className="modal-close"
-              onClick={() => setShowLoginAlert(false)}
-            >
-              <AiOutlineClose />
-            </button>
+      {/* MODAL THÔNG BÁO ĐĂNG NHẬP - Component riêng */}
+      <LoginAlertModal
+        show={showLoginAlert}
+        onClose={() => setShowLoginAlert(false)}
+      />
 
-            <div className="login-alert-body">
-              <div className="alert-icon">🔒</div>
-              <h3>Yêu cầu đăng nhập</h3>
-              <p>Bạn cần đăng nhập để thực hiện thao tác này</p>
-
-              <div className="alert-actions">
-                <button
-                  className="btn-login"
-                  onClick={() => navigate("/login")}
-                >
-                  Đăng nhập ngay
-                </button>
-                <button
-                  className="btn-cancel"
-                  onClick={() => setShowLoginAlert(false)}
-                >
-                  Để sau
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      )}
-
-      {/* Modal thêm vào giỏ hàng */}
-      {showModal && selectedProduct && (
-        <div className="modal-overlay" onClick={closeModal}>
-          <div className="modal-content" onClick={(e) => e.stopPropagation()}>
-            <button className="modal-close" onClick={closeModal}>
-              <AiOutlineClose />
-            </button>
-
-            <div className="modal-body">
-              <div className="modal-image">
-                <img
-                  src={new URL(`../../assets/images/${selectedProduct.image.img0}`, import.meta.url).href}
-                  alt={selectedProduct.name}
-                />
-              </div>
-
-              <div className="modal-info">
-                <h3>{selectedProduct.name}</h3>
-                <div className="modal-price">
-                  <span className="price">
-                    {Number(selectedProduct.price).toLocaleString("vi-VN")} ₫
-                  </span>
-                  <span className="old-price">
-                    {Number(selectedProduct.old_price).toLocaleString("vi-VN")}{" "}
-                    ₫
-                  </span>
-                </div>
-
-                {/* Chọn màu sắc */}
-                {selectedProduct.hasColors && (
-                  <div className="modal-option">
-                    <label>Màu sắc:</label>
-                    <div className="option-buttons">
-                      {selectedProduct.colors.map((color) => (
-                        <button
-                          key={color}
-                          className={`option-btn ${
-                            modalOptions.color === color ? "active" : ""
-                          }`}
-                          onClick={() =>
-                            setModalOptions((prev) => ({ ...prev, color }))
-                          }
-                        >
-                          {color}
-                        </button>
-                      ))}
-                    </div>
-                  </div>
-                )}
-
-                {/* Chọn kích cỡ */}
-                {selectedProduct.hasSizes && (
-                  <div className="modal-option">
-                    <label>Dung lượng:</label>
-                    <div className="option-buttons">
-                      {selectedProduct.sizes.map((size) => (
-                        <button
-                          key={size}
-                          className={`option-btn ${
-                            modalOptions.size === size ? "active" : ""
-                          }`}
-                          onClick={() =>
-                            setModalOptions((prev) => ({ ...prev, size }))
-                          }
-                        >
-                          {size}
-                        </button>
-                      ))}
-                    </div>
-                  </div>
-                )}
-
-                {/* Chọn số lượng */}
-                <div className="modal-option">
-                  <label>Số lượng:</label>
-                  <div className="quantity-control">
-                    <button
-                      className="quantity-btn"
-                      onClick={() => handleQuantityChange(-1)}
-                      disabled={modalOptions.quantity <= 1}
-                    >
-                      <AiOutlineMinus />
-                    </button>
-                    <input
-                      type="number"
-                      value={modalOptions.quantity}
-                      onChange={(e) => {
-                        const val = parseInt(e.target.value) || 1;
-                        setModalOptions((prev) => ({
-                          ...prev,
-                          quantity: Math.max(1, val),
-                        }));
-                      }}
-                      min="1"
-                    />
-                    <button
-                      className="quantity-btn"
-                      onClick={() => handleQuantityChange(1)}
-                    >
-                      <AiOutlinePlus />
-                    </button>
-                  </div>
-                </div>
-
-                {/* Tổng tiền */}
-                <div className="modal-total">
-                  <span>Tổng tiền:</span>
-                  <span className="total-price">{calculateModalPrice()} ₫</span>
-                </div>
-
-                {/* Nút thêm vào giỏ */}
-                <button className="modal-add-btn" onClick={handleAddToCart}>
-                  Thêm vào giỏ hàng
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
+      {/* MODAL CHỌN OPTIONS - Component riêng */}
+      {selectedProduct && (
+        <ProductOptionsModal
+          show={showModal}
+          onClose={closeModal}
+          product={selectedProduct}
+          productOptions={getProductOptions(selectedProduct)}
+          isBuyNow={false}
+          onConfirm={handleConfirmAddToCart}
+        />
       )}
     </div>
   );

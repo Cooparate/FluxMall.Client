@@ -2,6 +2,8 @@ import { useParams, useNavigate } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { useCart } from "../../contexts/CartContext";
 import data from "../../assets/data/data.json";
+import ProductOptionsModal from "../../components/product/ProductOptionsModal";
+import LoginAlertModal from "../../components/auth/LoginAlerModal";
 import "./ProductDetail.scss";
 import { AiOutlineLeft } from "react-icons/ai";
 
@@ -13,10 +15,71 @@ export default function ProductDetail() {
   const [quantity, setQuantity] = useState(1);
   const [showMore, setShowMore] = useState(false);
 
+  // Modal state
+  const [showModal, setShowModal] = useState(false);
+  const [isBuyNow, setIsBuyNow] = useState(false);
+  const [showLoginAlert, setShowLoginAlert] = useState(false);
+
+  // Kiểm tra user đã đăng nhập chưa
+  const checkLogin = () => {
+    const currentUser = localStorage.getItem("fluxmall_current_user");
+    if (!currentUser) {
+      setShowLoginAlert(true);
+      return false;
+    }
+    return true;
+  };
+
   const product = data.products.find((p) => p.id === parseInt(id));
 
-  // useEffect để xử lý thay đổi productId từ URL
-  // Reset state khi chuyển sang sản phẩm khác và scroll to top
+  // Tự động phát hiện options từ specifications
+  const getProductOptions = () => {
+    if (!product)
+      return { hasColors: false, colors: [], hasSizes: false, sizes: [] };
+
+    let colors = [];
+    let sizes = [];
+
+    // Lấy màu từ specifications.color nếu có
+    if (product.specifications?.color) {
+      colors = Array.isArray(product.specifications.color)
+        ? product.specifications.color
+        : [product.specifications.color];
+    }
+
+    // Lấy size từ RAM hoặc storage cho Laptop
+    if (product.category.toLowerCase() === "laptop") {
+      if (product.specifications?.ram) {
+        sizes.push(product.specifications.ram);
+      }
+      sizes.push("RAM 8GB", "RAM 16GB", "RAM 32GB");
+      sizes = [...new Set(sizes)];
+    }
+
+    // Bag/Túi có thể có nhiều size
+    if (product.category.toLowerCase() === "bag") {
+      sizes = ["13 inch", "14 inch", "15.6 inch", "16 inch"];
+    }
+
+    // Keyboard, Mouse, Headphone có nhiều màu
+    if (
+      ["keyboard", "mouse", "headphone"].includes(
+        product.category.toLowerCase()
+      )
+    ) {
+      colors = ["Đen", "Trắng", "Xám"];
+    }
+
+    return {
+      hasColors: colors.length > 0,
+      colors: colors,
+      hasSizes: sizes.length > 0,
+      sizes: sizes,
+    };
+  };
+
+  const productOptions = getProductOptions();
+
   useEffect(() => {
     setCurrentImageIndex(0);
     setQuantity(1);
@@ -46,20 +109,48 @@ export default function ProductDetail() {
     setCurrentImageIndex((prev) => (prev === images.length - 1 ? 0 : prev + 1));
   };
 
+  // Mở modal khi nhấn "Thêm vào giỏ"
   const handleAddToCart = () => {
-    addToCart({
-      id: product.id,
-      name: product.name,
-      price: product.price,
-      quantity: quantity,
-      image: product.image.img0,
-    });
-    alert(`Đã thêm ${quantity} sản phẩm vào giỏ!`);
+    if (!checkLogin()) return;
+    setIsBuyNow(false);
+    setShowModal(true);
   };
 
+  // Mở modal khi nhấn "Mua ngay"
   const handleBuy = () => {
-    handleAddToCart();
-    navigate("/cart");
+    if (!checkLogin()) return;
+    setIsBuyNow(true);
+    setShowModal(true);
+  };
+
+  // Xác nhận thêm vào giỏ từ modal
+  const confirmAddToCart = (modalOptions) => {
+    // Chuẩn bị dữ liệu sản phẩm
+    const productData = {
+      id: product.id,
+      name: product.name,
+      price: product.price.toLocaleString
+        ? product.price.toLocaleString("vi-VN")
+        : product.price,
+      old_price: product.old_price,
+      image: product.image.img0,
+      hasColors: productOptions.hasColors,
+      colors: productOptions.colors,
+      hasSizes: productOptions.hasSizes,
+      sizes: productOptions.sizes,
+    };
+
+    // Thêm vào giỏ hàng
+    addToCart(productData, modalOptions);
+
+    if (isBuyNow) {
+      alert("Đã chọn sản phẩm để thanh toán!");
+      setShowModal(false);
+      navigate("/cart");
+    } else {
+      alert(`Đã thêm ${modalOptions.quantity} sản phẩm vào giỏ!`);
+      setShowModal(false);
+    }
   };
 
   return (
@@ -74,7 +165,12 @@ export default function ProductDetail() {
         <div className="detail-images">
           <div className="main-image">
             <img
-              src={new URL(`../../assets/images/${images[currentImageIndex]}`, import.meta.url).href}
+              src={
+                new URL(
+                  `../../assets/images/${images[currentImageIndex]}`,
+                  import.meta.url
+                ).href
+              }
               alt={product.name}
             />
             {images.length > 1 && (
@@ -89,7 +185,6 @@ export default function ProductDetail() {
             )}
           </div>
 
-          {/* Thumbnail images */}
           {images.length > 1 && (
             <div className="thumbnails">
               {images.map((img, idx) => (
@@ -101,7 +196,10 @@ export default function ProductDetail() {
                   onClick={() => setCurrentImageIndex(idx)}
                 >
                   <img
-                    src={new URL(`../../assets/images/${img}`, import.meta.url).href}
+                    src={
+                      new URL(`../../assets/images/${img}`, import.meta.url)
+                        .href
+                    }
                     alt={`${product.name} ${idx}`}
                   />
                 </div>
@@ -112,14 +210,11 @@ export default function ProductDetail() {
 
         {/* Right: Info */}
         <div className="detail-info">
-          {/* Product basic info */}
           <div className="product-header">
-            {/* {product.tag && <span className="tag">{product.tag}</span>} */}
             <h1>{product.name}</h1>
             <p className="brand">Hãng {product.brand}</p>
           </div>
 
-          {/* Pricing */}
           <div className="pricing-section">
             <div className="price-group">
               <span className="current-price">
@@ -136,13 +231,11 @@ export default function ProductDetail() {
             )}
           </div>
 
-          {/* Description */}
           <div className="description-section">
             <h3>Mô tả sản phẩm</h3>
             <p>{product.description}</p>
           </div>
 
-          {/* Features */}
           {product.features && product.features.length > 0 && (
             <div className="features-section">
               <h3>Điểm nổi bật</h3>
@@ -154,7 +247,6 @@ export default function ProductDetail() {
             </div>
           )}
 
-          {/* Stock status */}
           <div className="stock-section">
             <span
               className={`stock-status ${
@@ -165,30 +257,7 @@ export default function ProductDetail() {
             </span>
           </div>
 
-          {/* Quantity and actions */}
           <div className="actions-section">
-            {/* <div className="quantity-control">
-              <label>Số lượng:</label>
-              <button 
-                className="qty-btn"
-                onClick={() => setQuantity(Math.max(1, quantity - 1))}
-              >
-                −
-              </button>
-              <input 
-                type="number" 
-                min="1" 
-                value={quantity}
-                onChange={(e) => setQuantity(Math.max(1, parseInt(e.target.value) || 1))}
-              />
-              <button 
-                className="qty-btn"
-                onClick={() => setQuantity(quantity + 1)}
-              >
-                +
-              </button>
-            </div> */}
-
             <button
               className="btn-add-cart"
               onClick={handleAddToCart}
@@ -207,18 +276,31 @@ export default function ProductDetail() {
         </div>
       </div>
 
-      {/* Warranty info */}
+      {/* MODAL CHỌN OPTIONS - Component riêng */}
+      <ProductOptionsModal
+        show={showModal}
+        onClose={() => setShowModal(false)}
+        product={product}
+        productOptions={productOptions}
+        isBuyNow={isBuyNow}
+        onConfirm={confirmAddToCart}
+      />
 
+      {/* MODAL THÔNG BÁO ĐĂNG NHẬP - Component riêng */}
+      <LoginAlertModal
+        show={showLoginAlert}
+        onClose={() => setShowLoginAlert(false)}
+      />
+
+      {/* Các phần khác giữ nguyên */}
       {product.productInfo && (
         <div className="info-section">
           <h2>Thông tin sản phẩm</h2>
-
           <div
             className={`product-info ${showMore ? "expanded" : "collapsed"}`}
           >
             {product.productInfo}
           </div>
-
           <button
             className="btn-show-more"
             onClick={() => setShowMore(!showMore)}
@@ -228,18 +310,15 @@ export default function ProductDetail() {
         </div>
       )}
 
-      {/* Specifications section */}
       {product.specifications && (
         <div className="specifications-section">
           <h2>Thông số kỹ thuật</h2>
           <div className="specs-grid">
             {Object.entries(product.specifications).map(([key, value]) => {
-              // Format key name
               const keyDisplay = key
                 .replace(/_/g, " ")
                 .replace(/\b\w/g, (l) => l.toUpperCase());
 
-              // Handle array values
               const valueDisplay = Array.isArray(value)
                 ? value.join(", ")
                 : String(value);
@@ -258,7 +337,6 @@ export default function ProductDetail() {
       {product.warranty && (
         <div className="warranty-section">
           <h2>Bảo hành & Chính sách</h2>
-
           <div className="warranty-card">
             {Object.entries(product.warranty).map(([key, value]) => {
               const keyDisplay = key
@@ -279,27 +357,6 @@ export default function ProductDetail() {
         </div>
       )}
 
-      {/* Store info */}
-      {/* {product.store && product.store.length > 0 && (
-        <div className="store-section">
-          <h2>Thông tin cửa hàng</h2>
-          <div className="stores-grid">
-            {product.store.map((store, idx) => (
-              <div key={idx} className="store-card">
-                <h4>{store.address}</h4>
-                <p><strong>Thành phố:</strong> {store.city}</p>
-                <p><strong>Điện thoại:</strong> {store.phone}</p>
-                <p><strong>Giờ mở cửa:</strong> {store.hours}</p>
-                <p className="store-status"><strong>Trạng thái:</strong> {store.status}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      )} */}
-
-      {/* Warranty info */}
-
-      {/* Promotion info */}
       {product.promotion && (
         <div className="promotion-section">
           <h2>Khuyến mãi đặc biệt</h2>

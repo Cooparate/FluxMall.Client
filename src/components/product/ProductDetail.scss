@@ -170,21 +170,9 @@
   gap: 20px;
 
   .product-header {
-    // background: #4caf50;
     position: relative;
     padding-bottom: 5px;
     border-bottom: 1px solid #eee;
-
-    // .tag {
-    //   display: inline-block;
-    //   background: #ff4444;
-    //   color: white;
-    //   padding: 6px 12px;
-    //   border-radius: 4px;
-    //   font-size: 12px;
-    //   font-weight: 600;
-    //   margin-bottom: 10px;
-    // }
 
     h1,
     .brand {
@@ -275,14 +263,6 @@
         font-size: 14px;
         color: #333;
         line-height: 1.5;
-
-        // &::before {
-        //   position: absolute;
-        //   left: 0;
-        //   color: #0066cc;
-        //   font-weight: bold;
-        //   font-size: 16px;
-        // }
       }
     }
   }
@@ -473,73 +453,6 @@
   }
 }
 
-// // Store Section
-// .store-section {
-//   background: white;
-//   padding: 30px;
-//   border-radius: 8px;
-//   margin-bottom: 30px;
-
-//   h2 {
-//     font-size: 20px;
-//     font-weight: 700;
-//     margin-bottom: 20px;
-//     color: #333;
-//     padding-bottom: 15px;
-//     border-bottom: 2px solid #0066cc;
-//   }
-
-//   .stores-grid {
-//     display: grid;
-//     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-//     gap: 20px;
-
-//     @media (max-width: 768px) {
-//       grid-template-columns: 1fr;
-//     }
-
-//     .store-card {
-//       border: 1px solid #e0e0e0;
-//       border-radius: 8px;
-//       padding: 20px;
-//       background: #f9f9f9;
-//       transition: all 0.3s ease;
-
-//       &:hover {
-//         border-color: #0066cc;
-//         box-shadow: 0 2px 8px rgba(0, 102, 204, 0.1);
-//       }
-
-//       h4 {
-//         font-size: 14px;
-//         font-weight: 600;
-//         color: #333;
-//         margin-bottom: 12px;
-//       }
-
-//       p {
-//         font-size: 13px;
-//         color: #666;
-//         margin: 8px 0;
-//         line-height: 1.5;
-
-//         strong {
-//           color: #333;
-//         }
-
-//         &.store-status {
-//           background: #e8f5e9;
-//           color: #2e7d32;
-//           padding: 6px 10px;
-//           border-radius: 4px;
-//           display: inline-block;
-//           margin-top: 8px;
-//         }
-//       }
-//     }
-//   }
-// }
-
 // Product-infor-Section (STYLE GIỐNG STORE)
 .info-section {
   background: white;
@@ -621,16 +534,8 @@
   }
 
   .warranty-card {
-    // border: 1px solid #e0e0e0;
-    // border-radius: 8px;
     padding: 20px 24px;
     background: white;
-    // transition: all 0.3s ease;
-
-    // &:hover {
-    //   border-color: #0066cc;
-    //   box-shadow: 0 2px 8px rgba(0, 102, 204, 0.1);
-    // }
 
     p {
       font-size: 14px;
