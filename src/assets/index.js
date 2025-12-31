@@ -28,6 +28,12 @@ import acerNitro5Img from "./images/Acer-Gaming-Nitro-v15.webp";
 import lenovoLoqImg from "./images/Acer-Gaming-Nitro-v15.webp";
 import lenovoIdeapadImg from "./images/Acer-Gaming-Nitro-v15.webp";
 
+// Featured product banner
+import featuredProductBanner from "./images/san-pham-noi-bat-20-03-2024.gif";
+
+// For Student
+import forStudentBanner from "./images/Danh-cho-sinh-vien.webp";
+
 //Export all images
 export {
   banner,
@@ -46,7 +52,9 @@ export {
   acerNitroImg,
   acerNitro5Img,
   lenovoLoqImg,
-  lenovoIdeapadImg
+  lenovoIdeapadImg,
+  featuredProductBanner,
+  forStudentBanner
 };
 
 

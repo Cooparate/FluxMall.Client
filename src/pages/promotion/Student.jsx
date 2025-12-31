@@ -1,5 +1,6 @@
 import "./Student.scss";
 import { RiCouponLine, FiPercent, FiGift } from "../../components/icons";
+import { forStudentBanner } from "../../assets";
 
 const studentDeals = [
   {
@@ -67,7 +68,7 @@ export default function Student() {
     <div className="student-page">
       <div className="student-banner">
         <div className="banner-content">
-          <img src="src/assets/images/Danh-cho-sinh-vien.webp" alt="image" />
+          <img src={forStudentBanner} alt="image" />
           {/* <h1>🎓 Ưu đãi Sinh viên</h1>
           <p>Sao chép mã và áp dụng khi thanh toán</p> */}
         </div>

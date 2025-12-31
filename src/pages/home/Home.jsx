@@ -16,6 +16,7 @@ import {
   acerNitro5Img,
   lenovoLoqImg,
   lenovoIdeapadImg,
+  featuredProductBanner,
 } from "../../assets";
 import {
   FaChevronLeft,
@@ -261,7 +262,7 @@ export default function Home() {
         <div className="container">
           <img
             id="student"
-            src="src/assets/images/san-pham-noi-bat-20-03-2024.gif"
+            src={featuredProductBanner}
             alt="image"
           />
 
@@ -341,7 +342,7 @@ export default function Home() {
             <div className="modal-body">
               <div className="modal-image">
                 <img
-                  src={`/src/assets/images/${selectedProduct.image.img0}`}
+                  src={new URL(`../../assets/images/${selectedProduct.image.img0}`, import.meta.url).href}
                   alt={selectedProduct.name}
                 />
               </div>

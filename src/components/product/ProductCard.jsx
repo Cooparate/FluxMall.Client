@@ -11,7 +11,7 @@ export default function ProductCard({ item, onAdd, onBuy }) {
         style={{ textDecoration: "none", color: "inherit" }}
       >
         <div className="card-image">
-          <img src={`/src/assets/images/${item.image.img0}`} alt={item.name} />
+          <img src={new URL(`../../assets/images/${item.image.img0}`, import.meta.url).href} alt={item.name} />
         </div>
 
         <div className="card-content">

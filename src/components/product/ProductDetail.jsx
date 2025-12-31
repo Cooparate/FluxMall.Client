@@ -74,7 +74,7 @@ export default function ProductDetail() {
         <div className="detail-images">
           <div className="main-image">
             <img
-              src={`/src/assets/images/${images[currentImageIndex]}`}
+              src={new URL(`../../assets/images/${images[currentImageIndex]}`, import.meta.url).href}
               alt={product.name}
             />
             {images.length > 1 && (
@@ -101,7 +101,7 @@ export default function ProductDetail() {
                   onClick={() => setCurrentImageIndex(idx)}
                 >
                   <img
-                    src={`/src/assets/images/${img}`}
+                    src={new URL(`../../assets/images/${img}`, import.meta.url).href}
                     alt={`${product.name} ${idx}`}
                   />
                 </div>
