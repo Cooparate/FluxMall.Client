@@ -188,9 +188,11 @@ export default function Cart() {
 
                 {/* Thông tin sản phẩm */}
                 <div className="item-info">
-                  <img src={item.image} alt={item.name} className="item-image" />
-                  {/* src={new URL(`../../assets/images/${selectedProduct.image.img0}`, import.meta.url).href}
-                  alt={selectedProduct.name} */}
+                  <img 
+                    src={new URL(`../../assets/images/${typeof item.image === 'string' ? item.image : item.image?.img0}`, import.meta.url).href}
+                    alt={item.name} 
+                    className="item-image"
+                  />
                   <div className="item-details">
                     <h3>{item.name}</h3>
                     {item.color && <p>Màu: {item.color}</p>}
