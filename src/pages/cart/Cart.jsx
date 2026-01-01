@@ -130,6 +130,7 @@ export default function Cart() {
     // });
 
     alert(`Thanh toán ${getSelectedCount()} sản phẩm - Tổng: ${formatPrice(calculateSelectedTotal())}đ`);
+    removeSelectedItems();
   };
 
   // Nếu giỏ hàng trống
