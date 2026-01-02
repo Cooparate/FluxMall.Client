@@ -53,6 +53,7 @@ export default function Home() {
   const [showModal, setShowModal] = useState(false);
   const [selectedProduct, setSelectedProduct] = useState(null);
   const [t, setT] = useState(60 * 60);
+  const [searchQuery, setSearchQuery] = useState('');
 
   useEffect(() => {
     const i = setInterval(() => setT((t) => t - 1), 1000);
@@ -62,6 +63,14 @@ export default function Home() {
   useEffect(() => {
     const user = localStorage.getItem("fluxmall_current_user");
     if (user) setCurrentUser(JSON.parse(user));
+  }, []);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      const query = localStorage.getItem('fluxmall_search') || '';
+      setSearchQuery(query);
+    }, 300);
+    return () => clearInterval(interval);
   }, []);
 
   useEffect(() => {
@@ -240,7 +249,10 @@ export default function Home() {
 
           <div className="grid">
             {products
-              .filter((product) => product.promotion?.featured === true)
+              .filter((product) => {
+                if (!searchQuery) return product.promotion?.featured === true;
+                return product.name.toLowerCase().includes(searchQuery.toLowerCase());
+              })
               .map((product) => (
                 <ProductCard
                   key={product.id}

@@ -71,7 +71,11 @@ export default function layoutHome() {
               <h1>FluxMall</h1>
             </div>
             <div className="search-bar">
-              <input type="text" placeholder="Tìm kiếm sản phẩm..." />
+              <input 
+                type="text" 
+                placeholder="Tìm kiếm sản phẩm..." 
+                onChange={(e) => localStorage.setItem('fluxmall_search', e.target.value)}
+              />
               <HiMagnifyingGlass className="icon" />
             </div>
             <div className="header-right">
