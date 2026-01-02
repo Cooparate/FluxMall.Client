@@ -1,4 +1,5 @@
 import { useParams } from "react-router-dom";
+import { useState, useEffect } from "react";
 import data from "../../assets/data/data.json";
 import ProductCard from "../../components/product/ProductCard";
 import "./category.scss";
@@ -6,6 +7,18 @@ import "./category.scss";
 export default function Category() {
   const { type } = useParams();
   const { products } = data;
+
+  // Chức năng tìm kiếm
+  const [searchQuery, setSearchQuery] = useState('');
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      const query = localStorage.getItem('fluxmall_search') || '';
+      setSearchQuery(query);
+    }, 300);
+    return () => clearInterval(interval);
+  }, []);
+  //
 
   const renderLayout = () => {
     switch (type) {
@@ -71,7 +84,11 @@ export default function Category() {
               <main className="main-content">
                 <div className="product-grid">
                   {products
-                    .filter((p) => p.category.toLowerCase() === "laptop")
+                    .filter((p) => {
+                      const matchCategory = p.category.toLowerCase() === "laptop";
+                      if (!searchQuery) return matchCategory;
+                      return matchCategory && p.name.toLowerCase().includes(searchQuery.toLowerCase());
+                    })
                     .map((item) => (
                       <ProductCard key={item.id} item={item} />
                     ))}
@@ -156,7 +173,11 @@ export default function Category() {
               <main className="main-content">
                 <div className="product-grid">
                   {products
-                    .filter((p) => p.category.toLowerCase() === "keyboard")
+                    .filter((p) => {
+                      const matchCategory = p.category.toLowerCase() === "keyboard";
+                      if (!searchQuery) return matchCategory;
+                      return matchCategory && p.name.toLowerCase().includes(searchQuery.toLowerCase());
+                    })
                     .map((item) => (
                       <ProductCard key={item.id} item={item} />
                     ))}
@@ -228,7 +249,11 @@ export default function Category() {
               <main className="main-content">
                 <div className="product-grid">
                   {products
-                    .filter((p) => p.category.toLowerCase() === "mouse")
+                    .filter((p) => {
+                      const matchCategory = p.category.toLowerCase() === "mouse";
+                      if (!searchQuery) return matchCategory;
+                      return matchCategory && p.name.toLowerCase().includes(searchQuery.toLowerCase());
+                    })
                     .map((item) => (
                       <ProductCard key={item.id} item={item} />
                     ))}
@@ -292,7 +317,11 @@ export default function Category() {
               <main className="main-content">
                 <div className="product-grid">
                   {products
-                    .filter((p) => p.category.toLowerCase() === "headphone")
+                    .filter((p) => {
+                      const matchCategory = p.category.toLowerCase() === "headphone";
+                      if (!searchQuery) return matchCategory;
+                      return matchCategory && p.name.toLowerCase().includes(searchQuery.toLowerCase());
+                    })
                     .map((item) => (
                       <ProductCard key={item.id} item={item} />
                     ))}

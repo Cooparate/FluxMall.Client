@@ -1,4 +1,4 @@
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect } from "react";
 import data from "../../assets/data/data.json";
 import ProductCard from "../../components/product/ProductCard";
 import "./Bestseller.scss";
@@ -6,6 +6,18 @@ import "./Bestseller.scss";
 export default function Bestseller() {
   const [sortBy, setSortBy] = useState("newest");
   const [category, setCategory] = useState("all");
+
+  // Chức năng tìm kiếm
+  const [searchQuery, setSearchQuery] = useState("");
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      const query = localStorage.getItem("fluxmall_search") || "";
+      setSearchQuery(query);
+    }, 300);
+    return () => clearInterval(interval);
+  }, []);
+  //
 
   // Lọc sản phẩm bestseller
   const bestSellers = useMemo(() => {
@@ -21,6 +33,13 @@ export default function Bestseller() {
       );
     }
 
+    // Lọc theo tìm kiếm
+    if (searchQuery) {
+      result = result.filter((p) =>
+        p.name.toLowerCase().includes(searchQuery.toLowerCase())
+      );
+    }
+
     // Sắp xếp
     if (sortBy === "price-low") {
       result = [...result].sort((a, b) => Number(a.price) - Number(b.price));
@@ -31,7 +50,7 @@ export default function Bestseller() {
     }
 
     return result;
-  }, [sortBy, category]);
+  }, [sortBy, category, searchQuery]);
 
   // Lấy danh sách category
   const categories = [
