@@ -13,7 +13,7 @@ export default function Accessories() {
       case "bag":
         return (
           <div className="layout">
-            <div className="top-banner">TÚI CHỐNG SỐC DÀNH CHO LAPTOP</div>
+            <div className="top-banner top-banner-bag"></div>
             <div className="main-wrapper">
               <aside className="left-banners">
                 <div className="banner banner-left"></div>
@@ -36,8 +36,12 @@ export default function Accessories() {
       case "rack":
         return (
           <div className="layout">
-            <div className="top-banner">ĐẾ TẢN NHIỆT</div>
+            <div className="top-banner top-banner-rack"></div>
             <div className="main-wrapper">
+              <aside className="left-banners">
+                <div className="banner banner-left"></div>
+              </aside>
+              
               <main className="main-content">
                 <div className="product-grid">
                   {products
@@ -47,10 +51,6 @@ export default function Accessories() {
                     ))}
                 </div>
               </main>
-
-              <aside className="right-banners">
-                <div className="banner banner-above"></div>
-              </aside>
             </div>
           </div>
         );
@@ -58,7 +58,7 @@ export default function Accessories() {
       case "cleaning":
         return (
           <div className="layout">
-            <div className="top-banner">BỘ DỤNG CỤ VỆ SINH LAPTOP</div>
+            <div className="top-banner top-banner-cleaning"></div>
             <div className="main-wrapper">
               <aside className="left-banners">
                 <div className="banner banner-left">
