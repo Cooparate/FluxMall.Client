@@ -2,6 +2,8 @@
 
 // Banner images
 import banner from "./images/BannerHome.gif";
+import sanPhamNoiBat from "./images/san-pham-noi-bat-20-03-2024.gif";
+import danhChoSinhVien from "./images/Danh-cho-sinh-vien.webp";
 
 // Slide carousel images
 import slide1 from "./images/Lapai_lenovo_yoga_Desk_1_.webp";
@@ -25,7 +27,7 @@ import Img8 from "./images/Lenovo-ThinkBook-14-G8.webp";
 
 //Export all images
 export {
-  banner,
+  banner,sanPhamNoiBat, danhChoSinhVien,
   slide1, slide2, slide3, slide4,
   Img1, Img2, Img3, Img4, Img5, Img6, Img7, Img8,
   backendDevImg, frontendDevImg,

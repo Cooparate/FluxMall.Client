@@ -9,15 +9,13 @@ import "./home.scss";
 
 import {
   slide1, slide2, slide3, slide4,
-  Img1, Img2, Img3, Img4, Img5, Img6, Img7, Img8
+  Img1, Img2, Img3, Img4, Img5, Img6, Img7, Img8,
+  sanPhamNoiBat
 } from "../../assets";
 
 import {
   FaChevronLeft,
-  FaChevronRight,
-  AiOutlinePlus,
-  AiOutlineMinus,
-  AiOutlineClose,
+  FaChevronRight
 } from "../../components/icons";
 
 const bannerSlides = [
@@ -209,7 +207,7 @@ export default function Home() {
       {/* Products Section */}
       <section className="products">
         <div className="container">
-          <img id="student" src={featuredProductBanner} alt="image" />
+          <img id="student" src={sanPhamNoiBat} alt="image" />
 
           <div className="grid">
             {products

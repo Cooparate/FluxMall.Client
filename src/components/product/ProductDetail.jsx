@@ -31,8 +31,6 @@ export default function ProductDetail() {
     }
     return true;
   };
-
-  const product = data.products.find((p) => p.id === parseInt(id));
   
   // Tự động phát hiện options từ specifications
   const getProductOptions = () => {
