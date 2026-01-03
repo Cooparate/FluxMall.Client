@@ -3,20 +3,13 @@ import { useNavigate } from "react-router-dom";
 import { useCart } from "../../contexts/CartContext";
 import ProductCard from "../../components/product/ProductCard";
 import data from "../../assets/data/data.json";
-
 import "./home.scss";
 
 import {
-  slide1,
-  slide2,
-  slide3,
-  slide4,
-  acerAspireImg,
-  acerNitroImg,
-  acerNitro5Img,
-  lenovoLoqImg,
-  lenovoIdeapadImg,
+  slide1, slide2, slide3, slide4,
+  Img1, Img2, Img3, Img4, Img5, Img6, Img7, Img8
 } from "../../assets";
+
 import {
   FaChevronLeft,
   FaChevronRight,
@@ -191,48 +184,14 @@ export default function Home() {
             loop="infinite"
           >
             <div className="marquee-item">
-              <img
-                src={acerAspireImg}
-                alt="Acer Aspire Laptop"
-                loading="lazy"
-              />
-              <img
-                src={acerNitroImg}
-                alt="Acer Nitro V15 Laptop"
-                loading="lazy"
-              />
-              <img
-                src={acerNitro5Img}
-                alt="Acer Nitro 5 Laptop"
-                loading="lazy"
-              />
-              <img src={lenovoLoqImg} alt="Lenovo LOQ Laptop" loading="lazy" />
-              <img
-                src={lenovoIdeapadImg}
-                alt="Lenovo IdeaPad Slim Laptop"
-                loading="lazy"
-              />
-              <img
-                src={acerAspireImg}
-                alt="Acer Aspire Laptop"
-                loading="lazy"
-              />
-              <img
-                src={acerNitroImg}
-                alt="Acer Nitro V15 Laptop"
-                loading="lazy"
-              />
-              <img
-                src={acerNitro5Img}
-                alt="Acer Nitro 5 Laptop"
-                loading="lazy"
-              />
-              <img src={lenovoLoqImg} alt="Lenovo LOQ Laptop" loading="lazy" />
-              <img
-                src={lenovoIdeapadImg}
-                alt="Lenovo IdeaPad Slim Laptop"
-                loading="lazy"
-              />
+              <img src={Img1} alt="image" loading="lazy" />
+              <img src={Img2} alt="image" loading="lazy" />
+              <img src={Img3} alt="image" loading="lazy" />
+              <img src={Img4} alt="image" loading="lazy" />
+              <img src={Img5} alt="image" loading="lazy" />
+              <img src={Img6} alt="image" loading="lazy" />
+              <img src={Img7} alt="image" loading="lazy" />
+              <img src={Img8} alt="image" loading="lazy" />
             </div>
           </marquee>
         </div>

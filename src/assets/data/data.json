@@ -16,6 +16,7 @@
         "img3": "Acer-detail-13.webp"
       },
       "description": "Laptop Acer Gaming Nitro V 15 trang bị AMD Ryzen 5 6600H và RTX 3050 6GB, màn hình 15.6 inch Full HD 165Hz, phù hợp gaming và đồ họa.",
+      "productInfo": "Laptop Acer Nitro V 15 ANV15 41 R1JY là mẫu laptop gaming nổi bật với thiết kế thanh thoát, mướt mắt nhưng vẫn giữ được vẻ ngoài mạnh mẽ và cá tính đặc trưng của dòng Nitro. Các đường nét góc cạnh cùng tông màu đen chủ đạo và logo phong cách gaming giúp máy toát lên vẻ hầm hố, sẵn sàng đồng hành cùng game thủ trong mọi trận chiến.\n\nSức mạnh của máy đến từ vi xử lý AMD Ryzen 5 6600H với xung nhịp tối đa lên đến 4.5 GHz, đáp ứng mượt mà từ nhu cầu chơi game cho đến các tác vụ đồ họa như chỉnh sửa ảnh, dựng video hay render cơ bản. Kết hợp cùng card đồ họa rời NVIDIA GeForce RTX 3050 6 GB, Acer Nitro V 15 mang lại trải nghiệm hình ảnh sống động, khung hình ổn định khi chiến các tựa game phổ biến như Valorant, CS:GO, FIFA Online 4 hay những game AAA ở mức thiết lập phù hợp.\n\nLaptop được trang bị sẵn 16 GB RAM DDR5 cho khả năng đa nhiệm ổn định, giảm thiểu tình trạng giật lag khi mở nhiều ứng dụng cùng lúc, đồng thời hỗ trợ nâng cấp RAM lên dung lượng cao để đáp ứng nhu cầu sử dụng lâu dài. Ổ cứng SSD 512 GB NVMe PCIe giúp máy khởi động nhanh, mở ứng dụng và tải game mượt mà, mang đến không gian lưu trữ đủ dùng cho học tập, làm việc và giải trí.\n\nMàn hình IPS 15.6 inch độ phân giải Full HD cùng tần số quét 165 Hz mang lại hình ảnh sắc nét, chuyển động mượt mà và góc nhìn rộng. Công nghệ chống chói giúp hạn chế mỏi mắt khi sử dụng trong thời gian dài. Với trọng lượng khoảng 2.1 kg, bàn phím có đèn nền hỗ trợ chơi game ban đêm cùng hệ thống cổng kết nối đa dạng và pin 57 Wh, Acer Nitro V 15 là lựa chọn phù hợp cho game thủ và người dùng cần một chiếc laptop hiệu năng cao, bền bỉ và linh hoạt.",
       "specifications": {
         "cpu": "AMD Ryzen 5 6600H",
         "cores": "6",
@@ -64,18 +65,18 @@
           "storeId": 1,
           "city": "TP. Hồ Chí Minh",
           "province": "TP. Hồ Chí Minh",
-          "address": "888 Tây Sơn, Đống Đa, Hà Nội",
-          "phone": "02445678901",
-          "hours": "T2-T7: 8:30 - 18:00",
+          "address": "222 Nguyễn Thị Minh Khai, Quận 3, TP. Hồ Chí Minh",
+          "phone": "02878901234",
+          "hours": "T2-T7: 8:00 - 17:30",
           "status": "Chính hãng"
         },
         {
           "storeId": 2,
           "city": "TP. Hồ Chí Minh",
           "province": "TP. Hồ Chí Minh",
-          "address": "222 Nguyễn Thị Minh Khai, Quận 3, TP. Hồ Chí Minh",
-          "phone": "02878901234",
-          "hours": "T2-T7: 8:00 - 17:30",
+          "address": "105 Trần Hưng Đạo, Quận 1, TP. Hồ Chí Minh",
+          "phone": "02876543210",
+          "hours": "T2-CN: 8:00 - 21:00",
           "status": "Chính hãng"
         }
       ],
@@ -91,7 +92,7 @@
         ]
       },
       "promotion": {
-        "shockSale": true,
+        "shockSale": false,
         "studentDiscount": true,
         "gift": "Túi chống sốc"
       },
@@ -118,6 +119,7 @@
         "img3": "Dell-detail-13.webp"
       },
       "description": "Laptop Dell 15 DC15250 sử dụng Intel Core i7 1355U, thiết kế mỏng nhẹ, màn hình Full HD 120Hz, phù hợp học tập và làm việc văn phòng chuyên nghiệp.",
+      "productInfo": "Laptop Dell 15 DC15250 i7 1355U (CPH997) là lựa chọn đáng tin cậy cho học tập, làm việc văn phòng và thiết kế đồ họa cơ bản. Máy sở hữu thiết kế gọn nhẹ, hiện đại cùng hiệu năng ổn định, phù hợp với học sinh, sinh viên và nhân viên văn phòng cần một thiết bị sử dụng lâu dài, bền bỉ.\n\nDell 15 DC15250 được trang bị bộ vi xử lý Intel Core i7 1355U với 10 nhân 12 luồng, xung nhịp tối đa 5.00 GHz, giúp xử lý mượt mà các tác vụ đa nhiệm như soạn thảo, làm việc với bảng tính, thuyết trình hay mở nhiều ứng dụng cùng lúc. Card đồ họa tích hợp Intel UHD Graphics đáp ứng tốt nhu cầu chỉnh sửa ảnh, thiết kế 2D và các tác vụ đồ họa cơ bản.\n\nRAM 16 GB DDR4 cho khả năng đa nhiệm trơn tru, hạn chế giật lag khi làm việc lâu dài. Ổ cứng SSD NVMe M.2 PCIe dung lượng 1 TB mang đến tốc độ khởi động nhanh, truy xuất dữ liệu tức thì và không gian lưu trữ rộng rãi cho tài liệu, phần mềm và dự án cá nhân.\n\nMàn hình 15.6 inch Full HD với tần số quét 120 Hz mang lại trải nghiệm hiển thị mượt mà, sắc nét hơn màn hình thông thường. Công nghệ chống chói Anti Glare kết hợp góc nhìn rộng giúp bảo vệ mắt khi làm việc trong thời gian dài, phù hợp cho học tập, giải trí và làm việc hằng ngày.\n\nMáy có trọng lượng khoảng 1.65 kg, dễ dàng mang theo khi di chuyển. Hệ thống cổng kết nối đa dạng cùng Wi-Fi 6 và Bluetooth 5.0 đảm bảo khả năng kết nối ổn định. Pin 54 Wh đáp ứng tốt nhu cầu sử dụng trong một ngày học tập và làm việc cơ bản.",
       "specifications": {
         "cpu": "Intel Core i7 1355U",
         "cores": "10",
@@ -164,6 +166,24 @@
           "phone": "02878901234",
           "hours": "T2-T7: 8:00 - 17:30",
           "status": "Chính hãng"
+        },
+        {
+          "storeId": 2,
+          "city": "Mỹ Tho",
+          "province": "Tiền Giang",
+          "address": "12 Lý Thường Kiệt, TP. Mỹ Tho, Tiền Giang",
+          "phone": "02733889999",
+          "hours": "T2-T7: 7:30 - 17:00",
+          "status": "Chính hãng"
+        },
+        {
+          "storeId": 3,
+          "city": "Bến Tre",
+          "province": "Bến Tre",
+          "address": "89 Đại lộ Đồng Khởi, TP. Bến Tre, Bến Tre",
+          "phone": "02753887777",
+          "hours": "T2-T7: 7:30 - 17:30",
+          "status": "Chính hãng"
         }
       ],
       "warranty": {
@@ -200,6 +220,7 @@
         "img3": "Asus-detail-14.webp"
       },
       "description": "Laptop Asus Vivobook 15 trang bị Intel Core i3 1315U, thiết kế gọn nhẹ, độ bền chuẩn quân đội MIL-STD-810H, phù hợp học sinh sinh viên.",
+      "productInfo": "Laptop Asus Vivobook 15 X1504VA i3 1315U (NJ1634W) là lựa chọn lý tưởng cho học sinh, sinh viên và nhân viên văn phòng nhờ sự cân bằng giữa hiệu năng ổn định, thiết kế hiện đại và mức giá hợp lý. Máy đáp ứng tốt nhu cầu học tập, làm việc hằng ngày cũng như giải trí cơ bản, phù hợp với người dùng cần một chiếc laptop bền bỉ và dễ mang theo.\n\nSức mạnh của Vivobook 15 đến từ bộ vi xử lý Intel Core i3 1315U kết hợp cùng card đồ họa tích hợp Intel UHD Graphics, giúp xử lý mượt mà các tác vụ văn phòng như soạn thảo văn bản, làm việc với Excel, duyệt web hay học tập trực tuyến. Người dùng cũng có thể chỉnh sửa ảnh cơ bản trên Photoshop, Canva và giải trí nhẹ nhàng mà không gặp tình trạng giật lag.\n\nMáy được trang bị 8 GB RAM DDR4, hỗ trợ nâng cấp tối đa 16 GB, cho phép đa nhiệm ổn định khi mở nhiều ứng dụng và tab trình duyệt cùng lúc. Ổ cứng 512 GB SSD NVMe PCIe mang lại tốc độ khởi động nhanh, truy xuất dữ liệu tức thì và không gian lưu trữ rộng rãi cho tài liệu, hình ảnh và phần mềm học tập, làm việc.\n\nMàn hình 15.6 inch Full HD (1920 x 1080) cho hình ảnh rõ nét, màu sắc chân thực, đáp ứng tốt nhu cầu làm việc và giải trí. Công nghệ chống chói Anti Glare giúp hạn chế mỏi mắt khi sử dụng lâu dài, trong khi công nghệ âm thanh SonicMaster mang đến trải nghiệm nghe nhạc, xem phim sống động và dễ chịu.\n\nAsus Vivobook 15 sở hữu thiết kế tối giản với trọng lượng khoảng 1.7 kg, vỏ nhựa cứng cáp phủ màu bạc sang trọng và đạt tiêu chuẩn độ bền quân đội MIL STD 810H. Máy được trang bị webcam HD, công tắc khóa camera đảm bảo riêng tư, cảm biến vân tay tiện lợi cùng hệ thống cổng kết nối đa dạng và Wi-Fi 6E, Bluetooth 5.3. Pin 42 Wh cho thời lượng sử dụng khoảng 6–8 giờ, đáp ứng tốt một ngày học tập và làm việc.",
       "specifications": {
         "cpu": "Intel Core i3 1315U",
         "cores": "6",
@@ -247,6 +268,15 @@
           "phone": "02878901234",
           "hours": "T2-T7: 8:00 - 17:30",
           "status": "Chính hãng"
+        },
+        {
+          "storeId": 2,
+          "city": "Ninh Kiều",
+          "province": "Cần Thơ",
+          "address": "68 Nguyễn Trãi, Quận Ninh Kiều, TP. Cần Thơ",
+          "phone": "02923884444",
+          "hours": "T2-CN: 8:00 - 21:00",
+          "status": "Chính hãng"
         }
       ],
       "warranty": {
@@ -282,6 +312,7 @@
         "img3": "HP-detail-13.webp"
       },
       "description": "Laptop HP 240 G10 sở hữu Intel Core i3 1315U, thiết kế nhỏ gọn 14 inch, độ bền chuẩn quân đội MIL-STD-810H, phù hợp học tập và làm việc văn phòng.",
+      "productInfo": "Laptop HP 240 G10 i3 1315U (B73TJAT) là lựa chọn phù hợp cho học sinh, sinh viên và nhân viên văn phòng nhờ thiết kế mỏng nhẹ, hiệu năng ổn định và mức giá hợp lý. Máy đáp ứng tốt nhu cầu học tập, làm việc hằng ngày và giải trí cơ bản, thích hợp với người dùng cần một chiếc laptop gọn gàng, dễ mang theo.\n\nSức mạnh của HP 240 G10 đến từ bộ vi xử lý Intel Core i3 1315U với 6 nhân 8 luồng, xung nhịp tối đa 4.5 GHz, kết hợp cùng card đồ họa tích hợp Intel UHD Graphics. Cấu hình này giúp máy xử lý mượt các tác vụ văn phòng như Word, Excel, PowerPoint, học trực tuyến, duyệt web và chỉnh sửa ảnh, video cơ bản.\n\nMáy được trang bị RAM 8 GB DDR4 3200 MHz, hỗ trợ nâng cấp tối đa 16 GB, đảm bảo khả năng đa nhiệm ổn định khi mở nhiều ứng dụng cùng lúc. Ổ cứng 512 GB SSD NVMe PCIe giúp khởi động nhanh, truy xuất dữ liệu tức thì và cung cấp không gian lưu trữ rộng rãi cho tài liệu, phần mềm và dữ liệu học tập, làm việc.\n\nHP 240 G10 sở hữu màn hình 14 inch Full HD (1920 x 1080) với tấm nền IPS cho hình ảnh sắc nét, góc nhìn rộng và màu sắc trung thực. Công nghệ chống chói Anti Glare giúp hạn chế mỏi mắt khi sử dụng lâu, kết hợp cùng âm thanh Realtek HD và webcam HD có công tắc khóa, đáp ứng tốt nhu cầu học online và họp trực tuyến an toàn.\n\nVới trọng lượng chỉ 1.36 kg và độ mỏng 17.9 mm, laptop HP 240 G10 rất thuận tiện để mang theo hằng ngày. Máy được trang bị đầy đủ cổng kết nối, Wi-Fi 6 và Bluetooth 5.3 cho kết nối nhanh, ổn định. Pin 41 Wh đáp ứng tốt một ngày học tập và làm việc cơ bản, giúp người dùng yên tâm sử dụng.",
       "specifications": {
         "cpu": "Intel Core i3 1315U",
         "cores": "6",
@@ -323,6 +354,15 @@
           "phone": "02878901234",
           "hours": "T2-T7: 8:00 - 17:30",
           "status": "Chính hãng"
+        },
+        {
+          "storeId": 2,
+          "city": "Bình Thủy",
+          "province": "Cần Thơ",
+          "address": "120 Lê Hồng Phong, Quận Bình Thủy, TP. Cần Thơ",
+          "phone": "02923883333",
+          "hours": "T2-T7: 8:00 - 18:00",
+          "status": "Chính hãng"
         }
       ],
       "warranty": {
@@ -344,7 +384,7 @@
 
     {
       "id": 5,
-      "name": "Laptop Lenovo Core 5 Raptor Lake 210H",
+      "name": "Laptop Lenovo ThinkBook 14 G8 - 21SG007SVN",
       "brand": "Lenovo",
       "category": "Laptop",
       "price": "19990000",
@@ -358,6 +398,7 @@
         "img3": "lenovo-detail-13.webp"
       },
       "description": "Laptop Lenovo trang bị Intel Core 5 Raptor Lake 210H, RAM DDR5 16GB, màn hình 14 inch WUXGA, thiết kế gọn nhẹ, phù hợp học tập và làm việc.",
+      "productInfo": "Chiếc laptop Lenovo ThinkBook 14 G8 Core 5 210H (21SG007SVN) là lựa chọn lý tưởng cho học sinh, sinh viên, nhân viên văn phòng và cả những người làm thiết kế đồ họa cơ bản. Với hiệu năng ổn định, thiết kế mỏng nhẹ cùng nhiều tính năng bảo mật hiện đại, máy đáp ứng tốt nhu cầu học tập, làm việc và giải trí hằng ngày trong phân khúc giá tầm trung.\n\nSức mạnh của ThinkBook 14 G8 đến từ bộ vi xử lý Intel Core 5 Raptor Lake - 210H với 8 nhân 12 luồng, xung nhịp tối đa 4.80 GHz, kết hợp cùng card đồ họa tích hợp Intel Graphics. Cấu hình này giúp máy xử lý mượt mà các tác vụ văn phòng, đa nhiệm nặng, chỉnh sửa ảnh, video cơ bản và chạy các phần mềm thiết kế nhẹ. RAM 16 GB DDR5 5600 MHz cho khả năng đa nhiệm ấn tượng và hỗ trợ nâng cấp lên đến 32 GB khi cần.\n\nỔ cứng 512 GB SSD NVMe M.2 PCIe Gen 4.0 mang lại tốc độ truy xuất dữ liệu cực nhanh, giúp khởi động máy và mở ứng dụng chỉ trong vài giây. Máy còn hỗ trợ thêm khe SSD mở rộng, cho phép nâng cấp dung lượng lưu trữ lên đến 2 TB, đáp ứng tốt nhu cầu lưu trữ lâu dài cho công việc và học tập.\n\nLenovo ThinkBook 14 G8 sở hữu màn hình 14 inch độ phân giải WUXGA (1920 x 1200) với tấm nền IPS cho hình ảnh sắc nét, góc nhìn rộng và màu sắc trung thực. Công nghệ chống chói Anti Glare cùng độ sáng 300 nits giúp người dùng làm việc thoải mái trong nhiều điều kiện ánh sáng khác nhau. Hệ thống âm thanh HD Audio kết hợp webcam FHD 1080p mang lại trải nghiệm họp trực tuyến rõ nét và sống động.\n\nVới trọng lượng chỉ 1.36 kg và độ mỏng 17.5 mm, ThinkBook 14 G8 rất tiện lợi để mang theo hằng ngày. Máy được trang bị bàn phím có đèn nền, bản lề mở 180 độ, cảm biến vân tay, nhận diện khuôn mặt FaceID và công tắc khóa camera đảm bảo an toàn và riêng tư. Hệ thống cổng kết nối đa dạng cùng Wi-Fi 6E, Bluetooth 5.3 và pin 45 Wh giúp máy đáp ứng tốt nhu cầu làm việc liên tục cả ngày.",
       "specifications": {
         "cpu": "Intel Core 5 Raptor Lake - 210H",
         "cores": "8",
@@ -403,9 +444,18 @@
           "storeId": 1,
           "city": "TP. Hồ Chí Minh",
           "province": "TP. Hồ Chí Minh",
-          "address": "2958 siêu thị Thế Giới Di Động toàn quốc",
-          "phone": "18001060",
-          "hours": "8:00 - 22:00",
+          "address": "105 Trần Hưng Đạo, Quận 1, TP. Hồ Chí Minh",
+          "phone": "02876543210",
+          "hours": "T2-CN: 8:00 - 21:00",
+          "status": "Chính hãng"
+        },
+        {
+          "storeId": 2,
+          "city": "Cao Lãnh",
+          "province": "Đồng Tháp",
+          "address": "45 Nguyễn Huệ, TP. Cao Lãnh, Đồng Tháp",
+          "phone": "02773886666",
+          "hours": "T2-T7: 7:30 - 17:00",
           "status": "Chính hãng"
         }
       ],
@@ -490,11 +540,29 @@
       "store": [
         {
           "storeId": 1,
-          "city": "Toàn quốc",
-          "province": "Việt Nam",
-          "address": "2958 siêu thị Thế Giới Di Động",
-          "phone": "18001060",
-          "hours": "8:00 - 22:00",
+          "city": "Cao Lãnh",
+          "province": "Đồng Tháp",
+          "address": "45 Nguyễn Huệ, TP. Cao Lãnh, Đồng Tháp",
+          "phone": "02773886666",
+          "hours": "T2-T7: 7:30 - 17:00",
+          "status": "Chính hãng"
+        },
+        {
+          "storeId": 2,
+          "city": "Mỹ Tho",
+          "province": "Tiền Giang",
+          "address": "12 Lý Thường Kiệt, TP. Mỹ Tho, Tiền Giang",
+          "phone": "02733889999",
+          "hours": "T2-T7: 7:30 - 17:00",
+          "status": "Chính hãng"
+        },
+        {
+          "storeId": 3,
+          "city": "Bến Tre",
+          "province": "Bến Tre",
+          "address": "89 Đại lộ Đồng Khởi, TP. Bến Tre, Bến Tre",
+          "phone": "02753887777",
+          "hours": "T2-T7: 7:30 - 17:30",
           "status": "Chính hãng"
         }
       ],
@@ -517,6 +585,198 @@
       },
       "badge": {
         "bestSeller": false,
+        "newArrival": true
+      },
+      "inStock": true
+    },
+
+    {
+      "id": 7,
+      "name": "Laptop Lenovo Yoga Slim 7 OLED 14ILL10 - 83JX0081VN",
+      "brand": "Lenovo",
+      "category": "Laptop",
+      "price": "42990000",
+      "old_price": "45990000",
+      "discount": "-7%",
+      "tag": "Giảm 7%",
+      "image": {
+        "img0": "Lenovo-Yoga-Slim-7Oled-14IMH9.web.jpg",
+        "img1": "Lenovo-detail-21.webp",
+        "img2": "Lenovo-detail-22.webp",
+        "img3": "Lenovo-detail-23.webp",
+        "img4": "Lenovo-detail-24.webp"
+      },
+      "description": "Lenovo Yoga Slim 7 OLED sở hữu Intel Core Ultra 7 Lunar Lake 258V, RAM 32GB LPDDR5X, SSD 1TB cùng màn hình OLED 2.8K 120Hz, đáp ứng hoàn hảo nhu cầu học tập, làm việc và sáng tạo nội dung cao cấp.",
+      "productInfo": "Lenovo Yoga Slim 7 OLED là mẫu laptop cao cấp nổi bật với hiệu năng mạnh mẽ, thiết kế sang trọng và tính di động vượt trội, rất phù hợp cho sinh viên, nhân viên văn phòng và người dùng sáng tạo nội dung đang tìm kiếm một thiết bị gọn nhẹ nhưng vẫn đáp ứng tốt các tác vụ nặng. Với độ dày chỉ 13.9 mm và khối lượng siêu nhẹ 1.19 kg, máy dễ dàng đồng hành cùng bạn trong mọi hoạt động hằng ngày, từ giảng đường, văn phòng đến quán cà phê. Vỏ máy được hoàn thiện từ nhôm cao cấp mang lại cảm giác chắc chắn, hiện đại và bền bỉ. Bàn phím có đèn nền đơn sắc màu trắng hỗ trợ làm việc hiệu quả trong điều kiện thiếu sáng. Máy còn được trang bị camera 5.0 MP kết hợp camera IR hỗ trợ nhận diện khuôn mặt (FaceID) cùng công tắc khóa camera vật lý, đảm bảo an toàn và riêng tư cho người dùng.\n\nTrái tim của Lenovo Yoga Slim 7 OLED là bộ vi xử lý Intel Core Ultra 7 Lunar Lake – 258V tiên tiến với 8 nhân 8 luồng, xung nhịp cơ bản 2.20 GHz và có thể tăng tốc lên đến 4.80 GHz. Nhờ đó, máy dễ dàng xử lý mượt mà các tác vụ đa nhiệm nặng như chỉnh sửa ảnh, dựng video cơ bản hay vận hành các ứng dụng văn phòng phức tạp. Đặc biệt, NPU Intel AI Boost với hiệu năng AI lên đến 47 TOPS giúp tối ưu các tác vụ liên quan đến trí tuệ nhân tạo, nâng cao hiệu suất làm việc và học tập. Card đồ họa tích hợp Intel Arc 140V mang lại hiệu năng đồ họa ấn tượng, đáp ứng tốt các nhu cầu thiết kế 2D và dựng hình 3D ở mức độ vừa phải.\n\nMáy được trang bị 32 GB RAM LPDDR5X với tốc độ bus lên đến 8533 MHz, cho phép người dùng thoải mái mở nhiều ứng dụng nặng và hàng chục tab trình duyệt cùng lúc mà vẫn đảm bảo sự mượt mà. Ổ cứng 1 TB SSD NVMe M.2 PCIe Gen 4.0 x4 cung cấp không gian lưu trữ rộng rãi và tốc độ truy xuất dữ liệu cực nhanh, giúp rút ngắn thời gian khởi động máy và mở ứng dụng.\n\nLenovo Yoga Slim 7 OLED sở hữu màn hình OLED 14 inch độ phân giải 2.8K (2880 x 1800) siêu sắc nét. Tấm nền OLED cho màu đen sâu tuyệt đối, độ tương phản cao và màu sắc rực rỡ, mang đến trải nghiệm hiển thị ấn tượng cho cả công việc lẫn giải trí. Đây chính là điểm nhấn nổi bật giúp chiếc laptop này trở thành lựa chọn lý tưởng cho những ai yêu cầu cao về chất lượng hình ảnh và tính di động.",
+      "specifications": {
+        "cpu": "Intel Core Ultra 7 Lunar Lake - 258V",
+        "cores": "8",
+        "threads": "8",
+        "cpu_speed": "2.20 GHz (Up to 4.80 GHz)",
+        "npu": "Intel AI Boost",
+        "ai_performance": "Lên đến 47 TOPS",
+        "gpu": "Intel Arc 140V",
+        "ram": "32GB LPDDR5X (Onboard)",
+        "ram_bus": "8533 MHz",
+        "ram_max": "32 GB",
+        "storage": "1TB SSD NVMe M.2 PCIe Gen 4.0x4 (2242)",
+        "display": "14 inch 2.8K (2880 x 1800) OLED, 120Hz",
+        "color_gamut": "100% DCI-P3",
+        "screen_tech": [
+          "Eyesafe",
+          "DisplayHDR True Black 1000",
+          "Dolby Vision",
+          "X-Rite",
+          "PureSight Pro",
+          "500 nits",
+          "1100 nits (peak)"
+        ],
+        "ports": [
+          "Jack tai nghe 3.5mm",
+          "2 x Thunderbolt 4 (Power Delivery 3.0, DisplayPort 2.1)",
+          "USB 3.2 Gen 1 (Always On)",
+          "HDMI 2.1",
+          "Khe thẻ Micro SD"
+        ],
+        "wireless": "Wi-Fi 7 (802.11be), Bluetooth 5.4",
+        "webcam": "Camera 5.0 MP + IR",
+        "keyboard": "Đèn nền đơn sắc (trắng)",
+        "audio": ["2 loa woofers + 2 loa tweeters", "Smart AMP", "Dolby Atmos"],
+        "battery": "2-cell Li-Po 70Wh",
+        "os": "Windows 11 Home SL + Office Home 2024",
+        "release_year": "2025",
+        "size_weight": "312 x 219.3 x 13.9 mm - 1.19 kg",
+        "material": "Vỏ nhôm"
+      },
+      "features": [
+        "Hiệu năng mạnh mẽ với Intel Core Ultra 7 Lunar Lake",
+        "NPU AI Boost lên đến 47 TOPS",
+        "Màn hình OLED 2.8K 120Hz chuẩn màu DCI-P3",
+        "RAM 32GB LPDDR5X siêu nhanh",
+        "Thiết kế mỏng nhẹ cao cấp chỉ 1.19 kg",
+        "Camera 5MP + FaceID bảo mật cao",
+        "Chuẩn Intel Evo"
+      ],
+      "store": [
+        {
+          "storeId": 1,
+          "city": "Ninh Kiều",
+          "province": "Cần Thơ",
+          "address": "68 Nguyễn Trãi, Quận Ninh Kiều, TP. Cần Thơ",
+          "phone": "02923884444",
+          "hours": "T2-CN: 8:00 - 21:00",
+          "status": "Chính hãng"
+        },
+        {
+          "storeId": 2,
+          "city": "Bình Thủy",
+          "province": "Cần Thơ",
+          "address": "120 Lê Hồng Phong, Quận Bình Thủy, TP. Cần Thơ",
+          "phone": "02923883333",
+          "hours": "T2-T7: 8:00 - 18:00",
+          "status": "Chính hãng"
+        }
+      ],
+      "warranty": {
+        "laptop": "3 năm chính hãng",
+        "exchange_policy": "Hư gì đổi nấy 12 tháng (miễn phí tháng đầu)",
+        "included_items": [
+          "Sách hướng dẫn",
+          "Thùng máy",
+          "Sạc Laptop Lenovo 65W"
+        ]
+      },
+      "promotion": {
+        "shockSale": false,
+        "studentDiscount": true,
+        "gift": "Cài sẵn Office Home 2024"
+      },
+      "badge": {
+        "bestSeller": false,
+        "newArrival": true
+      },
+      "inStock": true
+    },
+
+    {
+      "id": 8,
+      "name": "Laptop MSI Modern 14 F1MG - 432VN",
+      "brand": "MSI",
+      "category": "Laptop",
+      "price": "16990000",
+      "old_price": "18990000",
+      "discount": "-10%",
+      "tag": "Giảm 10%",
+      "image": {
+        "img0": "MSI-Modern-14F1MG-432VN.webp",
+        "img1": "MSI-detail-21.webp",
+        "img2": "MSI-detail-22.webp",
+        "img3": "MSI-detail-23.webp",
+        "img4": "MSI-detail-24.webp"
+      },
+      "description": "Laptop MSI Modern 14 F1MG Core 5 120U là lựa chọn lý tưởng cho học sinh, sinh viên và nhân viên văn phòng cần một chiếc laptop mỏng nhẹ, hiệu năng ổn định và thiết kế hiện đại.",
+      "productInfo": "Laptop MSI Modern 14 F1MG Core 5 120U (432VN) là lựa chọn lý tưởng cho học sinh, sinh viên và nhân viên văn phòng đang tìm kiếm một chiếc laptop mỏng nhẹ, hiệu năng ổn định và thiết kế thanh lịch. Với độ dày chỉ 19.9 mm và khối lượng 1.5 kg, máy rất thuận tiện để mang theo bên mình trong quá trình học tập và làm việc hằng ngày. Vỏ nhựa được hoàn thiện tỉ mỉ mang lại vẻ ngoài hiện đại, bền bỉ. Bản lề mở 180 độ giúp dễ dàng chia sẻ nội dung với người đối diện. Bàn phím có đèn nền đơn sắc màu trắng hỗ trợ làm việc trong điều kiện thiếu sáng, touchpad thao tác mượt mà và chính xác. Đặc biệt, công tắc khóa camera vật lý giúp bảo vệ tối đa quyền riêng tư của người dùng.\n\nTrái tim của chiếc laptop này là bộ vi xử lý Intel Core 5 120U thuộc dòng Raptor Lake với 10 nhân 12 luồng, xung nhịp tối đa lên đến 5.00 GHz. Nhờ đó, máy có thể xử lý mượt mà các tác vụ văn phòng phổ biến như soạn thảo văn bản, duyệt web, làm việc với bảng tính, thuyết trình hay học tập trực tuyến. Card đồ họa tích hợp Intel Graphics đáp ứng tốt nhu cầu chỉnh sửa hình ảnh cơ bản và giải trí nhẹ nhàng.\n\nMáy được trang bị 16 GB RAM DDR4 tốc độ bus 3200 MHz, cho phép mở nhiều ứng dụng và tab trình duyệt cùng lúc mà vẫn đảm bảo sự ổn định. Ổ cứng 512 GB SSD NVMe PCIe Gen 4.0 mang lại tốc độ khởi động nhanh, truy xuất dữ liệu mượt mà và không gian lưu trữ rộng rãi. Ngoài ra, máy còn hỗ trợ nâng cấp RAM tối đa lên đến 64 GB, đáp ứng tốt nhu cầu sử dụng lâu dài trong tương lai.\n\nLaptop MSI Modern 14 F1MG sở hữu màn hình 14 inch Full HD (1920 x 1080) với tấm nền IPS cho góc nhìn rộng và màu sắc trung thực. Công nghệ chống chói Anti Glare giúp làm việc thoải mái trong môi trường nhiều ánh sáng. Độ sáng 250 nits cùng tần số quét 60 Hz phù hợp cho các tác vụ văn phòng, học tập và giải trí hằng ngày.\n\nVề kết nối, máy được trang bị đầy đủ các cổng cần thiết gồm USB 3.2, HDMI, LAN (RJ45), USB Type-C hỗ trợ USB, Power Delivery và DisplayPort cùng khe đọc thẻ Micro SD. Kết nối không dây Wi-Fi 6E và Bluetooth 5.3 mang lại tốc độ truyền dữ liệu nhanh và ổn định. Viên pin 3-cell 46.8 Wh đáp ứng tốt nhu cầu sử dụng trong vài giờ liên tục cho công việc và học tập.",
+      "specifications": {
+        "cpu": "Intel Core 5 Raptor Lake - 120U",
+        "cores": "10",
+        "threads": "12",
+        "cpu_speed": "1.40 GHz (Up to 5.00 GHz)",
+        "gpu": "Intel Graphics",
+        "ram": "16GB DDR4",
+        "ram_bus": "3200 MHz",
+        "ram_max": "64 GB",
+        "storage": "512GB SSD NVMe M.2 PCIe Gen 4.0",
+        "display": "14 inch Full HD (1920 x 1080), IPS, 60Hz",
+        "color_gamut": "45% NTSC",
+        "screen_tech": ["Anti Glare", "250 nits"],
+        "ports": [
+          "Jack tai nghe 3.5mm",
+          "3 x USB 3.2",
+          "HDMI",
+          "LAN RJ45",
+          "USB Type-C (Power Delivery, DisplayPort)",
+          "Khe thẻ Micro SD"
+        ],
+        "wireless": "Wi-Fi 6E (802.11ax), Bluetooth 5.3",
+        "webcam": "HD Webcam",
+        "keyboard": "Đèn nền đơn sắc (trắng)",
+        "audio": ["Hi-Res Audio"],
+        "battery": "3-cell 46.8Wh",
+        "os": "Windows 11 Home SL",
+        "release_year": "2025",
+        "size_weight": "323.9 x 217.2 x 19.9 mm - 1.5 kg",
+        "material": "Vỏ nhựa"
+      },
+      "features": [
+        "Intel Core 5 120U hiệu năng ổn định",
+        "RAM 16GB DDR4, SSD 512GB NVMe Gen 4",
+        "Màn hình 14 inch Full HD IPS chống chói",
+        "Thiết kế mỏng nhẹ 1.5 kg, bản lề 180 độ",
+        "Wi-Fi 6E, bàn phím đèn nền, khóa camera"
+      ],
+      "store": [
+        {
+          "storeId": 1,
+          "city": "TP. Hồ Chí Minh",
+          "province": "TP. Hồ Chí Minh",
+          "address": "105 Trần Hưng Đạo, Quận 1, TP. Hồ Chí Minh",
+          "phone": "02876543210",
+          "hours": "T2-CN: 8:00 - 21:00",
+          "status": "Chính hãng"
+        }
+      ],
+      "warranty": {
+        "laptop": "2 năm chính hãng",
+        "battery": "1 năm",
+        "exchange_policy": "Hư gì đổi nấy 12 tháng (miễn phí tháng đầu)",
+        "included_items": [
+          "Sách hướng dẫn",
+          "Thùng máy",
+          "Túi xách",
+          "Sạc Laptop MSI 65W"
+        ]
+      },
+      "badge": {
         "newArrival": true
       },
       "inStock": true
@@ -560,7 +820,20 @@
         "Thiết kế công thái học cho game thủ",
         "Dây USB dài 1.83m chắc chắn"
       ],
-      "warranty": "24 tháng chính hãng",
+      "store": [
+        {
+          "storeId": 1,
+          "city": "Ninh Kiều",
+          "province": "Cần Thơ",
+          "address": "68 Nguyễn Trãi, Quận Ninh Kiều, TP. Cần Thơ",
+          "phone": "02923884444",
+          "hours": "T2-CN: 8:00 - 21:00",
+          "status": "Chính hãng"
+        }
+      ],
+      "warranty": {
+        "exchange_policy": "Hư gì đổi nấy bảo hành 12 tháng"
+      },
       "promotion": {
         "shockSale": true,
         "studentDiscount": true,
@@ -621,14 +894,29 @@
         "Kết nối 3 chế độ linh hoạt",
         "RGB Razer Chroma đẹp mắt"
       ],
-      "warranty": "24 tháng chính hãng",
+
+      "store": [
+        {
+          "storeId": 3,
+          "city": "Mỹ Tho",
+          "province": "Tiền Giang",
+          "address": "12 Lý Thường Kiệt, TP. Mỹ Tho, Tiền Giang",
+          "phone": "02733889999",
+          "hours": "T2-T7: 7:30 - 17:00",
+          "status": "Chính hãng"
+        }
+      ],
+      "warranty": {
+        "exchange_policy": "Bảo hành 24 tháng, 1 đổi 1"
+      },
+
       "promotion": {
-        "shockSale": true,
+        "shockSale": false,
         "studentDiscount": true,
         "gift": "Lót chuột Razer"
       },
       "badge": {
-        "bestSeller": true,
+        "bestSeller": false,
         "newArrival": true
       },
       "inStock": true
@@ -676,7 +964,23 @@
         "Giá rẻ dễ tiếp cận",
         "Sử dụng pin AA dễ thay"
       ],
-      "warranty": "12 tháng chính hãng",
+
+      "store": [
+        {
+          "storeId": 3,
+          "city": "Mỹ Tho",
+          "province": "Tiền Giang",
+          "address": "12 Lý Thường Kiệt, TP. Mỹ Tho, Tiền Giang",
+          "phone": "02733889999",
+          "hours": "T2-T7: 7:30 - 17:00",
+          "status": "Chính hãng"
+        }
+      ],
+
+      "warranty": {
+        "exchange_policy": "Bảo hành 2 tháng"
+      },
+
       "promotion": {
         "featured": true,
         "shockSale": true,
@@ -691,7 +995,74 @@
     },
 
     {
-      "id": 15,
+      "id": 12,
+      "name": "Chuột Có Dây Gaming Asus TUF M3 Gen II",
+      "brand": "ASUS",
+      "category": "Mouse",
+      "price": "590000",
+      "old_price": null,
+      "discount": null,
+      "tag": "Gaming",
+      "image": {
+        "img0": "Chuot-co-day-Gaming-Asus-TUFM3.webp",
+        "img1": "Chuot-detail-41.webp"
+      },
+      "description": "Asus TUF M3 Gen II là chuột gaming có dây siêu nhẹ chỉ 59g, cảm biến quang học 8000 DPI, thiết kế công thái học cho game thủ.",
+      "productInfo": "Chuột có dây gaming Asus TUF M3 Gen II là lựa chọn phù hợp cho game thủ yêu thích sự chính xác và thoải mái khi sử dụng lâu dài. Chuột sở hữu thiết kế công thái học dành cho người thuận tay phải cùng trọng lượng siêu nhẹ chỉ 59 g, giúp giảm mỏi tay khi chơi game liên tục. Logo và đường viền trên thân chuột được tích hợp đèn RGB tạo điểm nhấn mạnh mẽ cho góc gaming.\n\nAsus TUF M3 Gen II được trang bị cảm biến quang học có độ phân giải lên đến 8000 DPI, mang lại khả năng tracking chính xác và phản hồi nhanh. Sáu nút bấm gồm click trái, click phải, hai nút bên hông, bánh xe cuộn có thể nhấn và nút DPI cho phép tùy chỉnh linh hoạt theo nhiều phong cách chơi khác nhau. Người dùng có thể sử dụng phần mềm Armoury Crate để thiết lập nút bấm, điều chỉnh hiệu năng và tùy chỉnh hiệu ứng RGB theo nhu cầu sử dụng.",
+      "specifications": {
+        "mouse_type": "Có dây",
+        "connection": "USB Type-A",
+        "dpi": "8000 DPI",
+        "sensor": "Optical Sensor",
+        "polling_rate": "1000 Hz",
+        "buttons": "6",
+        "led": "RGB",
+        "software": "Armoury Crate",
+        "weight": "59 g",
+        "compatibility": ["Windows"],
+        "ergonomic": "Thuận tay phải",
+        "cable_length": "2 m",
+        "origin_brand": "Mỹ",
+        "manufactured": "Trung Quốc"
+      },
+      "features": [
+        "Thiết kế siêu nhẹ 59g",
+        "Cảm biến 8000 DPI chính xác",
+        "6 nút bấm tùy chỉnh",
+        "Hỗ trợ Armoury Crate",
+        "Đèn RGB gaming"
+      ],
+
+      "store": [
+        {
+          "storeId": 1,
+          "city": "Bình Thủy",
+          "province": "Cần Thơ",
+          "address": "120 Lê Hồng Phong, Quận Bình Thủy, TP. Cần Thơ",
+          "phone": "02923883333",
+          "hours": "T2-T7: 8:00 - 18:00",
+          "status": "Chính hãng"
+        }
+      ],
+
+      "warranty": {
+        "exchange_policy": "Bảo hành chính hãng chuột 2 năm"
+      },
+      "promotion": {
+        "featured": false,
+        "shockSale": false,
+        "studentDiscount": false,
+        "gift": null
+      },
+      "badge": {
+        "bestSeller": false,
+        "newArrival": false
+      },
+      "inStock": true
+    },
+
+    {
+      "id": 13,
       "name": "Bàn Phím Cơ Bluetooth Akko 5075B Plus Black & Gold",
       "brand": "Akko",
       "category": "Keyboard",
@@ -730,9 +1101,24 @@
         "Kết nối 3 chế độ",
         "RGB đẹp mắt"
       ],
-      "warranty": "12 tháng chính hãng",
+
+      "store": [
+        {
+          "storeId": 1,
+          "city": "TP. Hồ Chí Minh",
+          "province": "TP. Hồ Chí Minh",
+          "address": "105 Trần Hưng Đạo, Quận 1, TP. Hồ Chí Minh",
+          "phone": "02876543210",
+          "hours": "T2-CN: 8:00 - 21:00",
+          "status": "Chính hãng"
+        }
+      ],
+
+      "warranty": {
+        "exchange_policy": "Bảo hành 12 tháng"
+      },
       "promotion": {
-        "shockSale": true,
+        "shockSale": false,
         "studentDiscount": true,
         "gift": "Pin AA"
       },
@@ -744,7 +1130,7 @@
     },
 
     {
-      "id": 16,
+      "id": 14,
       "name": "Bàn Phím Bluetooth DareU LK160D",
       "brand": "DareU",
       "category": "Keyboard",
@@ -782,7 +1168,31 @@
         "Kết nối Bluetooth ổn định",
         "Giá dễ tiếp cận"
       ],
-      "warranty": "12 tháng chính hãng",
+
+      "store": [
+        {
+          "storeId": 1,
+          "city": "TP. Hồ Chí Minh",
+          "province": "TP. Hồ Chí Minh",
+          "address": "222 Nguyễn Thị Minh Khai, Quận 3, TP. Hồ Chí Minh",
+          "phone": "02878901234",
+          "hours": "T2-T7: 8:00 - 17:30",
+          "status": "Chính hãng"
+        },
+        {
+          "storeId": 1,
+          "city": "TP. Hồ Chí Minh",
+          "province": "TP. Hồ Chí Minh",
+          "address": "105 Trần Hưng Đạo, Quận 1, TP. Hồ Chí Minh",
+          "phone": "02876543210",
+          "hours": "T2-CN: 8:00 - 21:00",
+          "status": "Chính hãng"
+        }
+      ],
+
+      "warranty": {
+        "exchange_policy": "Bảo hành chính hãng bàn phím 2 năm tại các trung tâm bảo hành hãng"
+      },
       "promotion": {
         "shockSale": true,
         "studentDiscount": false,
@@ -790,20 +1200,20 @@
       },
       "badge": {
         "bestSeller": true,
-        "newArrival": true
+        "newArrival": false
       },
       "inStock": true
     },
 
     {
-      "id": 203,
+      "id": 15,
       "name": "Bàn Phím Cơ Bluetooth Rapoo V700DIY 75",
       "brand": "Rapoo",
       "category": "Keyboard",
       "price": "1990000",
       "old_price": "2290000",
       "discount": "-13%",
-      "tag": "DIY",
+      "tag": "Giảm 13%",
       "image": {
         "img0": "Ban-phim-Rapoo-V700DIY.webp",
         "img1": "Ban-phim-detail-31.webp"
@@ -835,7 +1245,22 @@
         "Keycaps PBT bền",
         "Kết nối đa chế độ"
       ],
-      "warranty": "12 tháng chính hãng",
+
+      "store": [
+        {
+          "storeId": 1,
+          "city": "Cao Lãnh",
+          "province": "Đồng Tháp",
+          "address": "45 Nguyễn Huệ, TP. Cao Lãnh, Đồng Tháp",
+          "phone": "02773886666",
+          "hours": "T2-T7: 7:30 - 17:00",
+          "status": "Chính hãng"
+        }
+      ],
+
+      "warranty": {
+        "exchange_policy": "Bảo hành chính hãng bàn phím 1 năm tại các trung tâm bảo hành hãng"
+      },
       "promotion": {
         "shockSale": true,
         "studentDiscount": false,
@@ -843,13 +1268,80 @@
       },
       "badge": {
         "bestSeller": true,
-        "newArrival": true
+        "newArrival": false
       },
       "inStock": true
     },
 
     {
-      "id": 21,
+      "id": 16,
+      "name": "Bàn Phím Cơ Có Dây Gaming Razer BlackWidow V4 75% Phantom Green Edition",
+      "brand": "Razer",
+      "category": "Keyboard",
+      "price": "4450000",
+      "old_price": "5390000",
+      "discount": "-17%",
+      "tag": "Gaming",
+      "image": {
+        "img0": "Ban-phim-Razer-BlackWidow.webp",
+        "img1": "Ban-phim-detail-41.webp"
+      },
+      "description": "Razer BlackWidow V4 75% Phantom Green Edition là bàn phím cơ gaming cao cấp với switch tactile, Razer Chroma RGB và thiết kế nhỏ gọn, tối ưu cho game thủ.",
+      "specifications": {
+        "keyboard_type": "Bàn phím cơ",
+        "layout": "75%",
+        "keys": "81 phím",
+        "switch": "Razer Mechanical Switches (Tactile)",
+        "keycaps": "ABS Doubleshot",
+        "connection": ["Dây USB Type-C"],
+        "wireless_range": "N/A",
+        "led": "Razer Chroma RGB",
+        "special_keys": ["Nút điều chỉnh âm lượng", "Con lăn đa chức năng"],
+        "software": "Razer Synapse",
+        "charging_port": "N/A",
+        "charge_time": "N/A",
+        "battery_life": "N/A",
+        "compatibility": ["Windows", "macOS", "Linux"],
+        "size_weight": "32.1 x 15.55 x 2.4 cm - 815 g",
+        "origin_brand": "Mỹ",
+        "manufactured": "Trung Quốc"
+      },
+      "features": [
+        "Layout 75% gọn gàng",
+        "Switch Razer Tactile phản hồi tốt",
+        "Razer Chroma RGB tùy chỉnh",
+        "Keycaps ABS Doubleshot bền",
+        "Núm xoay & con lăn đa chức năng"
+      ],
+
+      "store": [
+        {
+          "storeId": 1,
+          "city": "Mỹ Tho",
+          "province": "Tiền Giang",
+          "address": "12 Lý Thường Kiệt, TP. Mỹ Tho, Tiền Giang",
+          "phone": "02733889999",
+          "hours": "T2-T7: 7:30 - 17:00",
+          "status": "Chính hãng"
+        }
+      ],
+
+      "warranty": {
+        "exchange_policy": "Bảo hành chính hãng bàn phím 2 năm tại các trung tâm bảo hành hãng"
+      },
+      "promotion": {
+        "shockSale": false,
+        "studentDiscount": false,
+        "gift": null
+      },
+      "badge": {
+        "bestSeller": false,
+        "newArrival": false
+      },
+      "inStock": true
+    },
+    {
+      "id": 17,
       "name": "Tai nghe Bluetooth Chụp Tai JBL Tune 520BT",
       "brand": "JBL",
       "category": "HeadPhone",
@@ -886,7 +1378,22 @@
         "Kết nối 2 thiết bị",
         "Hỗ trợ trợ lý ảo"
       ],
-      "warranty": "12 tháng chính hãng",
+
+      "store": [
+        {
+          "storeId": 1,
+          "city": "Ninh Kiều",
+          "province": "Cần Thơ",
+          "address": "68 Nguyễn Trãi, Quận Ninh Kiều, TP. Cần Thơ",
+          "phone": "02923884444",
+          "hours": "T2-CN: 8:00 - 21:00",
+          "status": "Chính hãng"
+        }
+      ],
+
+      "warranty": {
+        "exchange_policy": "Bảo hành 12 tháng"
+      },
       "promotion": {
         "shockSale": true,
         "studentDiscount": false,
@@ -900,7 +1407,7 @@
     },
 
     {
-      "id": 22,
+      "id": 18,
       "name": "Tai nghe Bluetooth Chụp Tai Sony WH-CH520",
       "brand": "Sony",
       "category": "HeadPhone",
@@ -943,7 +1450,22 @@
         "Kết nối đa điểm",
         "Nhẹ, đeo thoải mái"
       ],
-      "warranty": "12 tháng chính hãng",
+
+      "store": [
+        {
+          "storeId": 1,
+          "city": "Bình Thủy",
+          "province": "Cần Thơ",
+          "address": "120 Lê Hồng Phong, Quận Bình Thủy, TP. Cần Thơ",
+          "phone": "02923883333",
+          "hours": "T2-T7: 8:00 - 18:00",
+          "status": "Chính hãng"
+        }
+      ],
+
+      "warranty": {
+        "exchange_policy": "Bảo hành 12 tháng, 1 đổi 1"
+      },
       "promotion": {
         "featured": true,
         "shockSale": true,
@@ -958,7 +1480,7 @@
     },
 
     {
-      "id": 23,
+      "id": 19,
       "name": "Tai nghe Bluetooth Chụp Tai Soundcore Space One Pro A3062",
       "brand": "Soundcore",
       "category": "HeadPhone",
@@ -994,7 +1516,22 @@
         "Kết nối đa điểm",
         "Tùy chỉnh EQ qua app"
       ],
-      "warranty": "12 tháng chính hãng",
+
+      "store": [
+        {
+          "storeId": 1,
+          "city": "Ninh Kiều",
+          "province": "Cần Thơ",
+          "address": "68 Nguyễn Trãi, Quận Ninh Kiều, TP. Cần Thơ",
+          "phone": "02923884444",
+          "hours": "T2-CN: 8:00 - 21:00",
+          "status": "Chính hãng"
+        }
+      ],
+
+      "warranty": {
+        "exchange_policy": "Bảo hành 2 năm, 1 đổi 1"
+      },
       "promotion": {
         "shockSale": true,
         "studentDiscount": true,
@@ -1006,9 +1543,89 @@
       },
       "inStock": true
     },
+    {
+      "id": 20,
+      "name": "Tai nghe Chụp Tai Gaming HP HyperX Cloud Stinger Core II",
+      "brand": "HP HyperX",
+      "category": "HeadPhone",
+      "price": "1190000",
+      "old_price": null,
+      "discount": null,
+      "tag": "Gaming",
+      "image": {
+        "img0": "Tai-nghe-HyperX-Cloud-Stinger.webp",
+        "img1": "Tai-nghe-detail-41.webp"
+      },
+      "description": "HyperX Cloud Stinger Core II là tai nghe gaming có dây với âm thanh DTS Headphone X, driver 40 mm, mic lọc ồn và thiết kế thoải mái cho game thủ.",
+      "productInfo": "Tai nghe có dây gaming HP HyperX Cloud Stinger Core II là lựa chọn lý tưởng cho game thủ mới bắt đầu hoặc người dùng tìm kiếm một chiếc tai nghe gaming chất lượng với mức giá hợp lý. Sản phẩm mang đến trải nghiệm âm thanh sống động nhờ công nghệ DTS Headphone X và Spatial Audio, giúp tái tạo không gian âm thanh chân thực, hỗ trợ người chơi nhận biết rõ từng chi tiết trong game.\n\nTai nghe được trang bị driver 40 mm cho âm thanh mạnh mẽ, đặc biệt là dải bass rõ ràng, phù hợp với các tựa game hành động và bắn súng. Thiết kế chụp tai over-ear với đệm tai mềm mại, thoáng khí giúp đeo thoải mái trong thời gian dài. Micro tích hợp có khả năng lọc ồn tốt, cho chất lượng đàm thoại rõ ràng và có thể tắt nhanh bằng thao tác lật mic. Bánh xe điều chỉnh âm lượng được bố trí trực tiếp trên tai nghe, giúp thao tác nhanh chóng mà không cần thoát khỏi trò chơi.",
+      "specifications": {
+        "headphone_type": "Chụp tai",
+        "connection": "Jack 3.5 mm",
+        "driver": "40 mm",
+        "audio_technology": ["DTS Headphone X", "Spatial Audio"],
+        "microphone": "Có mic thoại, lật để tắt",
+        "controls": ["Tăng/Giảm âm lượng", "Bật/Tắt mic"],
+        "cable_length": "1.3 m",
+        "weight": "272 g",
+        "compatibility": ["Windows", "macOS", "Android", "iOS"],
+        "origin_brand": "Mỹ",
+        "manufactured": "Trung Quốc"
+      },
+      "features": [
+        "Âm thanh DTS Headphone X",
+        "Driver 40 mm mạnh mẽ",
+        "Mic lọc ồn, lật để tắt",
+        "Đeo thoải mái lâu dài",
+        "Jack 3.5 mm phổ biến"
+      ],
+
+      "store": [
+        {
+          "storeId": 1,
+          "city": "Mỹ Tho",
+          "province": "Tiền Giang",
+          "address": "12 Lý Thường Kiệt, TP. Mỹ Tho, Tiền Giang",
+          "phone": "02733889999",
+          "hours": "T2-T7: 7:30 - 17:00",
+          "status": "Chính hãng"
+        },
+        {
+          "storeId": 1,
+          "city": "TP. Hồ Chí Minh",
+          "province": "TP. Hồ Chí Minh",
+          "address": "222 Nguyễn Thị Minh Khai, Quận 3, TP. Hồ Chí Minh",
+          "phone": "02878901234",
+          "hours": "T2-T7: 8:00 - 17:30",
+          "status": "Chính hãng"
+        },
+        {
+          "storeId": 2,
+          "city": "TP. Hồ Chí Minh",
+          "province": "TP. Hồ Chí Minh",
+          "address": "105 Trần Hưng Đạo, Quận 1, TP. Hồ Chí Minh",
+          "phone": "02876543210",
+          "hours": "T2-CN: 8:00 - 21:00",
+          "status": "Chính hãng"
+        }
+      ],
+
+      "warranty": {
+        "exchange_policy": "Bảo hành chính hãng tai nghe 2 năm"
+      },
+      "promotion": {
+        "shockSale": false,
+        "studentDiscount": false,
+        "gift": null
+      },
+      "badge": {
+        "bestSeller": false,
+        "newArrival": false
+      },
+      "inStock": true
+    },
 
     {
-      "id": 91,
+      "id": 21,
       "name": "Túi chống sốc Laptop 14 inch Tomtoc A45",
       "brand": "Tomtoc",
       "category": "Bag",
@@ -1049,7 +1666,7 @@
     },
 
     {
-      "id": 92,
+      "id": 22,
       "name": "Túi xách chống sốc Laptop 14 inch Tomtoc Briefcase Premium A11D3P1",
       "brand": "Tomtoc",
       "category": "Bag",
@@ -1091,7 +1708,7 @@
     },
 
     {
-      "id": 93,
+      "id": 23,
       "name": "Balo Laptop 16 inch Tomtoc PREMIUM COMMUTING & TRAVEL T71L1D1",
       "brand": "Tomtoc",
       "category": "Bag",
@@ -1137,9 +1754,51 @@
       },
       "inStock": true
     },
-
     {
-      "id": 94,
+      "id": 24,
+      "name": "Túi xách chống sốc Laptop 14 inch Togo TCSN14",
+      "brand": "Togo",
+      "category": "Bag",
+      "price": "199000",
+      "old_price": null,
+      "discount": null,
+      "tag": "Chống sốc",
+      "image": {
+        "img0": "Tui-chong-soc-14inch-Togo.webp",
+        "img1": "Tui-chong-soc-detail-41.webp"
+      },
+      "description": "Túi xách chống sốc Laptop 14 inch Togo TCSN14 có thiết kế gọn nhẹ, chất liệu vải cao cấp giúp bảo vệ laptop an toàn trước va đập và trầy xước.",
+      "productInfo": "Túi chống sốc Laptop 14 inch Togo TCSN14 là phụ kiện tiện lợi dành cho người dùng thường xuyên mang theo laptop khi đi học hoặc đi làm. Sản phẩm được làm từ vải cao cấp với độ bền cao, giúp hạn chế tác động từ va chạm và bảo vệ máy tính xách tay hiệu quả.\n\nVới kích thước vừa vặn cho laptop 14 inch, túi mang lại sự gọn gàng và an toàn khi sử dụng. Trọng lượng nhẹ giúp người dùng dễ dàng mang theo mà không gây cảm giác cồng kềnh. Tông màu xanh đen tinh tế tạo nên phong cách hiện đại, phù hợp cho cả sinh viên và dân văn phòng.",
+      "specifications": {
+        "compatible_size": "Laptop 14 inch",
+        "material": "Vải cao cấp chống trầy xước",
+        "protection": "Chống sốc, hạn chế va đập",
+        "weight": "Nhẹ",
+        "color": "Xanh đen",
+        "origin": "Việt Nam"
+      },
+      "features": [
+        "Chống sốc, bảo vệ laptop an toàn",
+        "Thiết kế gọn nhẹ, dễ mang theo",
+        "Phù hợp laptop 14 inch",
+        "Chất liệu bền bỉ",
+        "Phong cách đơn giản, chuyên nghiệp"
+      ],
+      "warranty": {
+        "policy": "Sản phẩm mới, chính hãng",
+        "exchange_policy": "Không đổi trả, không bảo hành"
+      },
+      "promotion": {
+        "featured": false
+      },
+      "badge": {
+        "bestSeller": false,
+        "newArrival": false
+      },
+      "inStock": true
+    },
+    {
+      "id": 25,
       "name": "Đế Laptop Xoay 360 Havit ST7411",
       "brand": "Havit",
       "category": "Rack",
@@ -1184,7 +1843,7 @@
     },
 
     {
-      "id": 95,
+      "id": 26,
       "name": "Đế Laptop Havit ST7400",
       "brand": "Havit",
       "category": "Rack",
@@ -1226,9 +1885,93 @@
       },
       "inStock": true
     },
+    {
+      "id": 27,
+      "name": "Đế Laptop Orico PFB-A24",
+      "brand": "Orico",
+      "category": "Rack",
+      "price": "199000",
+      "old_price": null,
+      "discount": null,
+      "tag": "Phụ kiện",
+      "image": {
+        "img0": "De-laptop-Orico-PFBA24.webp",
+        "img1": "De-laptop-detail-31.webp"
+      },
+      "description": "Đế Laptop Orico PFB-A24 có thiết kế tối giản, gấp gọn tiện lợi, chất liệu nhựa POM cao cấp kết hợp silicon chống trượt, hỗ trợ điều chỉnh độ cao và phù hợp laptop dưới 17 inch.",
+      "productInfo": "Đế Laptop Orico PFB-A24 là phụ kiện hỗ trợ làm việc hiệu quả với thiết kế tối giản, phù hợp nhiều không gian học tập và làm việc khác nhau. Sản phẩm được làm từ nhựa POM cao cấp kết hợp các miếng silicon chống trượt, giúp cố định laptop chắc chắn trong quá trình sử dụng.\n\nĐế hỗ trợ điều chỉnh góc nhìn và độ cao linh hoạt, giúp cải thiện tư thế ngồi, hạn chế tình trạng đau cổ và vai gáy khi làm việc lâu dài. Thiết kế gấp gọn giúp người dùng dễ dàng mang theo hoặc cất giữ khi không sử dụng.\n\nOrico PFB-A24 tương thích với hầu hết các dòng laptop phổ biến có kích thước dưới 17 inch, đáp ứng tốt nhu cầu sử dụng hàng ngày.",
+      "specifications": {
+        "compatible_size": "Laptop dưới 17 inch",
+        "material": "Nhựa POM + Silicon chống trượt",
+        "adjustment": "Điều chỉnh độ cao, góc nhìn",
+        "design": "Gấp gọn",
+        "dimensions": "26.3 x 19 x 15 cm",
+        "weight": "200 g",
+        "origin": "Trung Quốc",
+        "brand_origin": "Trung Quốc"
+      },
+      "features": [
+        "Thiết kế tối giản, gọn nhẹ",
+        "Chống trượt an toàn",
+        "Điều chỉnh độ cao linh hoạt",
+        "Gấp gọn tiện lợi",
+        "Phù hợp nhiều dòng laptop"
+      ],
+      "warranty": {
+        "policy": "Sản phẩm mới, chính hãng",
+        "exchange_policy": "Không đổi trả, không bảo hành"
+      },
+      "badge": {
+        "bestSeller": false,
+        "newArrival": false
+      },
+      "inStock": true
+    },
+    {
+      "id": 28,
+      "name": "Đế Laptop JCPAL JCP6257",
+      "brand": "JCPAL",
+      "category": "Rack",
+      "price": "349000",
+      "old_price": null,
+      "discount": null,
+      "tag": "Cao cấp",
+      "image": {
+        "img0": "De-laptop-JCPAL-JCP6257.webp",
+        "img1": "De-laptop-detail-41.webp"
+      },
+      "description": "Đế Laptop JCPAL JCP6257 được làm từ nhôm cao cấp, thiết kế gấp gọn, hỗ trợ điều chỉnh độ cao linh hoạt và tương thích với laptop dưới 17 inch.",
+      "productInfo": "Đế Laptop JCPAL JCP6257 là phụ kiện cao cấp giúp nâng cao trải nghiệm làm việc với laptop. Sản phẩm được gia công từ chất liệu nhôm chắc chắn, mang lại độ bền cao và khả năng chịu lực tốt trong quá trình sử dụng.\n\nThiết kế gấp gọn thông minh giúp người dùng dễ dàng mang theo khi di chuyển. Đế hỗ trợ điều chỉnh độ cao linh hoạt, góp phần cải thiện tư thế ngồi và giảm mỏi cổ, vai gáy khi làm việc trong thời gian dài.\n\nJCPAL JCP6257 phù hợp với các dòng laptop có kích thước dưới 17 inch, tương thích tốt với nhiều nhu cầu học tập và làm việc hiện nay.",
+      "specifications": {
+        "compatible_size": "Laptop dưới 17 inch",
+        "material": "Nhôm",
+        "adjustment": "Điều chỉnh độ cao",
+        "design": "Gấp gọn",
+        "dimensions": "25 x 5 x 2.5 cm",
+        "weight": "300 g",
+        "origin": "Trung Quốc",
+        "brand_origin": "Canada"
+      },
+      "features": [
+        "Chất liệu nhôm bền bỉ",
+        "Thiết kế gấp gọn tiện lợi",
+        "Điều chỉnh độ cao linh hoạt",
+        "Gọn nhẹ, dễ mang theo",
+        "Phù hợp nhiều dòng laptop"
+      ],
+      "warranty": {
+        "policy": "Sản phẩm mới, chính hãng",
+        "exchange_policy": "Không đổi trả, không bảo hành"
+      },
+      "badge": {
+        "bestSeller": false,
+        "newArrival": false
+      },
+      "inStock": true
+    },
 
     {
-      "id": 96,
+      "id": 29,
       "name": "Bộ Vệ Sinh Laptop JRC 5in1 Multi-Functional Nano",
       "brand": "JRC",
       "category": "Cleaning",
@@ -1286,7 +2029,7 @@
     },
 
     {
-      "id": 97,
+      "id": 30,
       "name": "Bộ Vệ Sinh Laptop Đa Năng 7 in 1",
       "brand": "OEM",
       "category": "Cleaning",

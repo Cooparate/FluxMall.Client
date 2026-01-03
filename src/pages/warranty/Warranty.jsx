@@ -18,8 +18,7 @@ const productCategories = [
 ];
 
 const vietnameseProvinces = [
-  'TP. Hồ Chí Minh', 'Bình Dương', 'Bình Phước', 'Bà Rịa – Vũng Tàu', 'Cần Thơ',
-  'Long An', 'Tiền Giang', 'Bến Tre', 'Trà Vinh', 'Vĩnh Long', 'Đồng Tháp', 'Cà Mau'
+  'TP. Hồ Chí Minh', 'Cần Thơ', 'Long An', 'Tiền Giang', 'Bến Tre', 'Đồng Tháp'
 ];
 
 const Warranty = () => {

@@ -98,7 +98,7 @@ export default function Category() {
           <div className="layout">
             {/* Banner trên đầu */}
             <div className="top-banner">
-              KEYBOARD MECHANICAL - NÂNG TẦM TRẢI NGHIỆM GAMING
+              KEYBOARD MECHANICAL - NÂNG TẦM TRẢI
             </div>
 
             <div className="main-wrapper">
@@ -132,23 +132,8 @@ export default function Category() {
 
                 {/* Banner dưới menu */}
                 <div className="sidebar-banner">
-                  <h4>Hot Swap</h4>
-                  <p>Tùy chỉnh switch</p>
-                </div>
-
-                <div className="sidebar-banner">
-                  <h4>Hot Swap</h4>
-                  <p>Tùy chỉnh switch</p>
-                </div>
-
-                <div className="sidebar-banner">
-                  <h4>Hot Swap</h4>
-                  <p>Tùy chỉnh switch</p>
-                </div>
-
-                <div className="sidebar-banner">
-                  <h4>Hot Swap</h4>
-                  <p>Tùy chỉnh switch</p>
+                  {/* <h4>Hot Swap</h4> */}
+                  <p>MUA KEYBOARD <br /> TẶNG NGAY KEYCAP</p>
                 </div>
               </aside>
 
@@ -162,34 +147,24 @@ export default function Category() {
                     ))}
                 </div>
 
-                <div className="bottom-banner">
-                  MUA KEYBOARD TẶNG KEYCAP - FREESHIP TOÀN QUỐC
-                </div>
               </main>
 
               {/* Right banners */}
               <aside className="right-banners">
                 <div className="banner banner-above">
-                  <h3 className="banner-title">RGB Lighting</h3>
-                  <p className="banner-text">
-                    16.8 triệu màu
-                    <br />
-                    Tùy chỉnh theo ý
-                  </p>
                   <button className="banner-btn">Khám phá</button>
                 </div>
 
-                <div className="banner banner-below">
-                  <h3 className="banner-title">Wireless</h3>
-                  <p className="banner-text">
-                    Kết nối không dây
-                    <br />
-                    Pin lâu dài
-                  </p>
+                {/* <div className="banner banner-below">
                   <button className="banner-btn">Xem thêm</button>
-                </div>
+                </div> */}
               </aside>
             </div>
+                <div className="bottom-banner">
+                  {/* <p>MUA KEYBOARD TẶNG KEYCAP - FREESHIP TOÀN QUỐC</p> */}
+                  <img src="/src/assets/images/banner-ban-phim-01.webp" alt="img" />
+                  <img src="/src/assets/images/banner-ban-phim-02.webp" alt="img" />
+                </div>
           </div>
         );
 
@@ -198,7 +173,7 @@ export default function Category() {
         return (
           <div className="layout">
             <div className="top-banner">
-              GAMING MOUSE - CHÍNH XÁC TUYỆT ĐỐI - CHIẾN THẮNG MỌI TRẬN ĐẤU
+              MOUSE - CHÍNH XÁC TUYỆT ĐỐI - CHIẾN THẮNG MỌI TRẬN ĐẤU
             </div>
             <div className="main-wrapper">
               <aside className="sidebar">
@@ -208,9 +183,8 @@ export default function Category() {
                     {[
                       "Logitech",
                       "Razer",
-                      "SteelSeries",
-                      "Corsair",
-                      "HyperX",
+                      "Asus",
+                      "DareU",
                     ].map((brand) => (
                       <li key={brand} className="brand-item">
                         <a href="#" className="brand-link">
@@ -221,8 +195,8 @@ export default function Category() {
                   </ul>
                 </div>
                 <div className="sidebar-banner">
-                  <h4>High DPI</h4>
-                  <p>Lên đến 25,600</p>
+                  {/* <h4>Hot Swap</h4> */}
+                  <p>SENSOR QUANG HỌC <br /> PHẢN HỒI CỰC NHANH</p>
                 </div>
               </aside>
               <main className="main-content">
@@ -233,31 +207,21 @@ export default function Category() {
                       <ProductCard key={item.id} item={item} />
                     ))}
                 </div>
-                <div className="bottom-banner">
-                  CHUỘT GAMING PRO - SENSOR QUANG HỌC - PHẢN HỒI CỰC NHANH
-                </div>
               </main>
               <aside className="right-banners">
                 <div className="banner banner-above">
-                  <h3 className="banner-title">Siêu nhẹ</h3>
-                  <p className="banner-text">
-                    Dưới 60g
-                    <br />
-                    Di chuyển linh hoạt
-                  </p>
                   <button className="banner-btn">Xem ngay</button>
                 </div>
-                <div className="banner banner-below">
-                  <h3 className="banner-title">Không dây</h3>
-                  <p className="banner-text">
-                    Độ trễ thấp
-                    <br />
-                    Pin 100+ giờ
-                  </p>
+                {/* <div className="banner banner-below">
                   <button className="banner-btn">Tìm hiểu</button>
-                </div>
+                </div> */}
               </aside>
             </div>
+                <div className="bottom-banner">
+                  {/* <p>MUA KEYBOARD TẶNG KEYCAP - FREESHIP TOÀN QUỐC</p> */}
+                  <img src="/src/assets/images/Banner-mouse-03.webp" alt="img" />
+                  <img src="/src/assets/images/Banner-mouse-01.webp" alt="img" />
+                </div>
           </div>
         );
 
@@ -273,7 +237,7 @@ export default function Category() {
                 <div className="sidebar-content">
                   <h3 className="sidebar-title">Thương hiệu</h3>
                   <ul className="brand-list">
-                    {["Sony", "Razer", "SteelSeries", "Corsair", "HyperX"].map(
+                    {["Sony", "JBL", "Soundcore", "HyperX"].map(
                       (brand) => (
                         <li key={brand} className="brand-item">
                           <a href="#" className="brand-link">
@@ -285,8 +249,7 @@ export default function Category() {
                   </ul>
                 </div>
                 <div className="sidebar-banner">
-                  <h4>Chống ồn chủ động</h4>
-                  <p>Âm thanh trong trẻo</p>
+                  <p>HÀNG CHÍNH HÃNG <br /> GIẢM GIÁ ĐẶC BIỆT</p>
                 </div>
               </aside>
               <main className="main-content">
@@ -297,29 +260,14 @@ export default function Category() {
                       <ProductCard key={item.id} item={item} />
                     ))}
                 </div>
-                <div className="bottom-banner">
-                  HEADPHONE CHÍNH HÃNG - GIẢM GIÁ ĐẶC BIỆT
-                </div>
               </main>
               <aside className="right-banners">
                 <div className="banner banner-above">
-                  <h3 className="banner-title">Âm thanh vòm</h3>
-                  <p className="banner-text">
-                    Trải nghiệm 7.1
-                    <br />
-                    Chìm đắm trong game
-                  </p>
                   <button className="banner-btn">Khám phá</button>
                 </div>
-                <div className="banner banner-below">
-                  <h3 className="banner-title">Không dây</h3>
-                  <p className="banner-text">
-                    Đàm thoại rõ nét
-                    <br />
-                    Pin lâu dài
-                  </p>
+                {/* <div className="banner banner-below">
                   <button className="banner-btn">Tìm hiểu</button>
-                </div>
+                </div> */}
               </aside>
             </div>
           </div>
