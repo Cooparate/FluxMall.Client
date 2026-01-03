@@ -1,4 +1,3 @@
-import { useParams, useNavigate } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { useCart } from "../../contexts/CartContext";
 import data from "../../assets/data/data.json";
@@ -6,9 +5,12 @@ import ProductOptionsModal from "../../components/product/ProductOptionsModal";
 import LoginAlertModal from "../../components/auth/LoginAlerModal";
 import "./ProductDetail.scss";
 import { AiOutlineLeft } from "react-icons/ai";
+import { useParams, useNavigate } from "react-router-dom";
 
 export default function ProductDetail() {
   const { id } = useParams();
+  const product = data.products.find((p) => p.id === parseInt(id));
+
   const navigate = useNavigate();
   const { addToCart } = useCart();
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -31,7 +33,7 @@ export default function ProductDetail() {
   };
 
   const product = data.products.find((p) => p.id === parseInt(id));
-
+  
   // Tự động phát hiện options từ specifications
   const getProductOptions = () => {
     if (!product)
@@ -79,6 +81,9 @@ export default function ProductDetail() {
   };
 
   const productOptions = getProductOptions();
+
+  // useEffect để xử lý thay đổi productId từ URL
+  // Reset state khi chuyển sang sản phẩm khác và scroll to top
 
   useEffect(() => {
     setCurrentImageIndex(0);

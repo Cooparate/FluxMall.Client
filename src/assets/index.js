@@ -9,52 +9,26 @@ import slide2 from "./images/Lapai_msi_prestige_Desk.webp";
 import slide3 from "./images/Lapai_msi_prestige_ukiyoe_Desk.webp";
 import slide4 from "./images/Lapai_vivobookS_Desk.webp";
 
-// Product images
-import Img1 from "./images/Acer-detail-11.webp";
-import Img2 from "./images/Acer-detail-11.webp";
-import Img3 from "./images/Acer-detail-11.webp";
-import Img4 from "./images/Acer-detail-11.webp";
-import Img5 from "./images/Acer-detail-11.webp";
-
-
 // Team member images
 import backendDevImg from "./images/consauhayngu.webp";
 import frontendDevImg from "./images/rian_pham.webp";
 
 // Laptop marquee images
-import acerAspireImg from "./images/Acer-Gaming-Nitro-v15.webp";
-import acerNitroImg from "./images/Acer-Gaming-Nitro-v15.webp";
-import acerNitro5Img from "./images/Acer-Gaming-Nitro-v15.webp";
-import lenovoLoqImg from "./images/Acer-Gaming-Nitro-v15.webp";
-import lenovoIdeapadImg from "./images/Acer-Gaming-Nitro-v15.webp";
-
-// Featured product banner
-import featuredProductBanner from "./images/san-pham-noi-bat-20-03-2024.gif";
-
-// For Student
-import forStudentBanner from "./images/Danh-cho-sinh-vien.webp";
+import Img1 from "./images/Asus-Vivobook-15-X1504VA.webp";
+import Img2 from "./images/Ban-phim-co-Akko-5075Plus.webp";
+import Img3 from "./images/Tai-nghe-Sony-WH-CH520.webp";
+import Img4 from "./images/Lenovo-ThinkBook-14-G8.webp";
+import Img5 from "./images/Ve-Sinh-Laptop-7in1.webp";
+import Img6 from "./images/Lenovo-ThinkBook-14-G8.webp";
+import Img7 from "./images/Ve-Sinh-Laptop-7in1.webp";
+import Img8 from "./images/Lenovo-ThinkBook-14-G8.webp";
 
 //Export all images
 export {
   banner,
-  slide1,
-  slide2,
-  slide3,
-  slide4,
-  Img1,
-  Img2,
-  Img3,
-  Img4,
-  Img5,
-  backendDevImg,
-  frontendDevImg,
-  acerAspireImg,
-  acerNitroImg,
-  acerNitro5Img,
-  lenovoLoqImg,
-  lenovoIdeapadImg,
-  featuredProductBanner,
-  forStudentBanner
+  slide1, slide2, slide3, slide4,
+  Img1, Img2, Img3, Img4, Img5, Img6, Img7, Img8,
+  backendDevImg, frontendDevImg,
 };
 
 
