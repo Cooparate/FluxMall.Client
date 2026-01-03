@@ -18,7 +18,7 @@ const Intro = () => {
             Khám phá hàng ngàn sản phẩm với quy trình thanh toán liền mạch và giao hàng nhanh chóng.
           </p>
           <div className="hero-buttons">
-            <Link to="/register" className="btn-primary">Bắt đầu miễn phí</Link>
+            {/* <Link to="/register" className="btn-primary">Bắt đầu miễn phí</Link> */}
             <Link to="/home" className="btn-secondary">Khám phá sản phẩm →</Link>
           </div>
         </div>

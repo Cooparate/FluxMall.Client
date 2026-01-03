@@ -8,9 +8,16 @@
 
 /* Phần Hero - Banner chính */
 .hero-section {
-  padding: 100px 32px 60px;
+  padding: 100px 32px 100px;
   text-align: center;
   background: linear-gradient(135deg, #ffb8ba72 0%, #ffd5ad 100%);
+  
+  background-image:
+    linear-gradient(rgba(255,255,255,0.6), rgba(255,255,255,0.6)),
+    url("../../assets/images/Banner-Intro.webp");
+  background-size: contain;
+  background-position: center;
+  background-repeat: repeat;
 }
 
 .hero-container {
