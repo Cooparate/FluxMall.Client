@@ -21,9 +21,9 @@ import Img2 from "./images/Ban-phim-co-Akko-5075Plus.webp";
 import Img3 from "./images/Tai-nghe-Sony-WH-CH520.webp";
 import Img4 from "./images/Lenovo-ThinkBook-14-G8.webp";
 import Img5 from "./images/Ve-Sinh-Laptop-7in1.webp";
-import Img6 from "./images/Lenovo-ThinkBook-14-G8.webp";
-import Img7 from "./images/Ve-Sinh-Laptop-7in1.webp";
-import Img8 from "./images/Lenovo-ThinkBook-14-G8.webp";
+import Img6 from "./images/Acer-Gaming-Nitro-v15.webp";
+import Img7 from "./images/De-laptop-Havit-ST7400.webp";
+import Img8 from "./images/Tui-chong-soc-14inch-Togo.webp";
 
 //Export all images
 export {

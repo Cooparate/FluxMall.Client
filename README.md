@@ -16,7 +16,6 @@
 - [Quản Lý State](#quản-lý-state)
 - [Tối Ưu Hiệu Suất](#tối-ưu-hiệu-suất)
 - [Đóng Góp](#đóng-góp)
-- [Giấy Phép](#giấy-phép)
 
 ## ✨ Tính Năng
 
