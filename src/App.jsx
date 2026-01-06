@@ -40,7 +40,7 @@ import './App.scss';
 function App() {
   return (
     <CartProvider>
-      <BrowserRouter>
+      <BrowserRouter basename="/FluxMall.Client">
         <Suspense fallback={<LoadingFallback />}>
           <Routes>
             <Route path="/" element={<Intro />} />

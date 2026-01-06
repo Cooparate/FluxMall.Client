@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import data from "../../assets/data/data.json";
 import ProductCard from "../../components/product/ProductCard";
 import "./category.scss";
+import { bannerKeyboard01, bannerKeyboard02, bannerMouse01, bannerMouse03 } from "../../assets";
 
 export default function Category() {
   const { type } = useParams();
@@ -183,8 +184,8 @@ export default function Category() {
             </div>
                 <div className="bottom-banner">
                   {/* <p>MUA KEYBOARD TẶNG KEYCAP - FREESHIP TOÀN QUỐC</p> */}
-                  <img src="/src/assets/images/banner-ban-phim-01.webp" alt="img" />
-                  <img src="/src/assets/images/banner-ban-phim-02.webp" alt="img" />
+                  <img src={bannerKeyboard01} alt="img" />
+                  <img src={bannerKeyboard02} alt="img" />
                 </div>
           </div>
         );
@@ -244,8 +245,8 @@ export default function Category() {
             </div>
                 <div className="bottom-banner">
                   {/* <p>MUA KEYBOARD TẶNG KEYCAP - FREESHIP TOÀN QUỐC</p> */}
-                  <img src="/src/assets/images/Banner-mouse-03.webp" alt="img" />
-                  <img src="/src/assets/images/Banner-mouse-01.webp" alt="img" />
+                  <img src={bannerMouse03} alt="img" />
+                  <img src={bannerMouse01} alt="img" />
                 </div>
           </div>
         );

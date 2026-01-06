@@ -5,6 +5,11 @@ import banner from "./images/BannerHome.gif";
 import sanPhamNoiBat from "./images/san-pham-noi-bat-20-03-2024.gif";
 import danhChoSinhVien from "./images/Danh-cho-sinh-vien.webp";
 
+import bannerKeyboard01 from "./images/banner-ban-phim-01.webp";
+import bannerKeyboard02 from "./images/banner-ban-phim-02.webp";
+import bannerMouse01 from "./images/Banner-mouse-01.webp";
+import bannerMouse03 from "./images/Banner-mouse-03.webp";
+
 // Slide carousel images
 import slide1 from "./images/Lapai_lenovo_yoga_Desk_1_.webp";
 import slide2 from "./images/Lapai_msi_prestige_Desk.webp";
@@ -28,6 +33,7 @@ import Img8 from "./images/Tui-chong-soc-14inch-Togo.webp";
 //Export all images
 export {
   banner,sanPhamNoiBat, danhChoSinhVien,
+  bannerKeyboard01, bannerKeyboard02, bannerMouse01, bannerMouse03,
   slide1, slide2, slide3, slide4,
   Img1, Img2, Img3, Img4, Img5, Img6, Img7, Img8,
   backendDevImg, frontendDevImg,
