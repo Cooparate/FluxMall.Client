@@ -17,7 +17,7 @@ import slide3 from "./images/Lapai_msi_prestige_ukiyoe_Desk.webp";
 import slide4 from "./images/Lapai_vivobookS_Desk.webp";
 
 // Team member images
-import backendDevImg from "./images/consauhayngu.webp";
+import backendDevImg from "./images/jin.webp";
 import frontendDevImg from "./images/rian_pham.webp";
 
 // Laptop marquee images
@@ -38,10 +38,3 @@ export {
   Img1, Img2, Img3, Img4, Img5, Img6, Img7, Img8,
   backendDevImg, frontendDevImg,
 };
-
-
-
-
-
-
-
