@@ -15,7 +15,7 @@
 - [Components](#components)
 - [Quản Lý State](#quản-lý-state)
 - [Tối Ưu Hiệu Suất](#tối-ưu-hiệu-suất)
-- [Đóng Góp](#đóng-góp)
+- [Giấy phép bản quyền](#bản-quyền)
 
 ## ✨ Tính Năng
 
@@ -207,22 +207,37 @@ function MyComponent() {
 3. **Pre-warming** - Các trang quan trọng được pre-transform để khởi động nhanh hơn
 4. **Quản lý kích thước Chunk** - Tối ưu kích thước bundle với manual chunking
 
-## 🤝 Đóng Góp
-
-Chúng tôi hoan nghênh mọi đóng góp! Vui lòng làm theo các bước sau:
-
-1. Fork repository
-2. Tạo feature branch (`git checkout -b feature/TinhNangMoi`)
-3. Commit thay đổi (`git commit -m 'Thêm tính năng mới'`)
-4. Push lên branch (`git push origin feature/TinhNangMoi`)
-5. Mở Pull Request
-
 ### Tiêu Chuẩn Code
 - Tuân thủ các quy tắc ESLint
 - Sử dụng tên component và biến có ý nghĩa
 - Viết code sạch, dễ đọc
 - Thêm comments cho logic phức tạp
 - Giữ components nhỏ và tập trung
+
+## Giấy phép bản quyền
+MIT License
+
+Copyright (c) 2026 FluxMall
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+--------
 
 **Được xây dựng với ❤️ bởi FluxMall Team**
 
