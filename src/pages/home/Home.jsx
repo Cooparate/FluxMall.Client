@@ -19,22 +19,10 @@ import {
 } from "../../components/icons";
 
 const bannerSlides = [
-  {
-    id: 1,
-    image: slide2,
-  },
-  {
-    id: 2,
-    image: slide1,
-  },
-  {
-    id: 3,
-    image: slide3,
-  },
-  {
-    id: 4,
-    image: slide4,
-  },
+  { id: 1, image: slide2, },
+  { id: 2, image: slide1, },
+  { id: 3, image: slide3, },
+  { id: 4, image: slide4, },
 ];
 
 export default function Home() {
@@ -244,7 +232,6 @@ export default function Home() {
         onClose={() => setShowLoginAlert(false)}
       />
 
-      {/* MODAL CHỌN OPTIONS - Component riêng */}
       {selectedProduct && (
         <ProductOptionsModal
           show={showModal}

@@ -1,11 +1,7 @@
-import React from 'react';
-import { AiOutlineClose, AiOutlinePlus, AiOutlineMinus } from '../icons';
-import './AddToCartModal.scss';
+import React from "react";
+import { AiOutlineClose, AiOutlinePlus, AiOutlineMinus } from "../icons";
+import "./AddToCartModal.scss";
 
-/**
- * Shared modal component for adding products to cart
- * Used across multiple pages (Home, Sale, etc.)
- */
 export default function AddToCartModal({
   show,
   product,
@@ -24,7 +20,7 @@ export default function AddToCartModal({
 
   const handleQuantityInput = (e) => {
     const val = parseInt(e.target.value) || 1;
-    onOptionsChange(prev => ({ ...prev, quantity: Math.max(1, val) }));
+    onOptionsChange((prev) => ({ ...prev, quantity: Math.max(1, val) }));
   };
 
   return (
@@ -56,8 +52,12 @@ export default function AddToCartModal({
                   {product.colors.map((color) => (
                     <button
                       key={color}
-                      className={`option-btn ${options.color === color ? 'active' : ''}`}
-                      onClick={() => onOptionsChange(prev => ({ ...prev, color }))}
+                      className={`option-btn ${
+                        options.color === color ? "active" : ""
+                      }`}
+                      onClick={() =>
+                        onOptionsChange((prev) => ({ ...prev, color }))
+                      }
                     >
                       {color}
                     </button>
@@ -74,8 +74,12 @@ export default function AddToCartModal({
                   {product.sizes.map((size) => (
                     <button
                       key={size}
-                      className={`option-btn ${options.size === size ? 'active' : ''}`}
-                      onClick={() => onOptionsChange(prev => ({ ...prev, size }))}
+                      className={`option-btn ${
+                        options.size === size ? "active" : ""
+                      }`}
+                      onClick={() =>
+                        onOptionsChange((prev) => ({ ...prev, size }))
+                      }
                     >
                       {size}
                     </button>
@@ -88,20 +92,20 @@ export default function AddToCartModal({
             <div className="modal-option">
               <label>Số lượng:</label>
               <div className="quantity-control">
-                <button 
+                <button
                   className="quantity-btn"
                   onClick={() => handleQuantityChange(-1)}
                   disabled={options.quantity <= 1}
                 >
                   <AiOutlineMinus />
                 </button>
-                <input 
-                  type="number" 
+                <input
+                  type="number"
                   value={options.quantity}
                   onChange={handleQuantityInput}
                   min="1"
                 />
-                <button 
+                <button
                   className="quantity-btn"
                   onClick={() => handleQuantityChange(1)}
                 >

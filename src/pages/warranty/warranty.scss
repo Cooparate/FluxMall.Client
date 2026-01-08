@@ -1,36 +1,32 @@
 @use "../../App.scss" as *;
 
 .warranty-container {
-  // max-width: 1400px;
   margin: 0 auto;
   padding: 0 20px;
-  // background-color: #f5f5f5;
-  // min-height: 100vh;
 }
 
-.warranty-search{
+.warranty-search {
   width: 100%;
 }
 
-img{
+img {
   width: 150px;
   height: 100px;
 }
 
-  .top-banner {
-    width: 100%;
-    height: 40px;
-    background: black;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-size: 22px;
-    font-weight: bold;
-    margin-bottom: 20px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-
-  }
+.top-banner {
+  width: 100%;
+  height: 40px;
+  background: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
 
 .warranty-form-section {
   margin-bottom: 30px;
@@ -63,12 +59,12 @@ img{
   background-color: #fff;
 
   &:hover {
-    border-color:  $color-red;
+    border-color: $color-red;
     transform: translateY(-2px);
   }
 
   &.active {
-    border-color:  $color-red;
+    border-color: $color-red;
   }
 
   .warranty-option-icon {
@@ -103,13 +99,13 @@ img{
   transition: all 0.3s ease;
 
   &:hover {
-    border-color:  $color-red;
-    color:  $color-red; 
+    border-color: $color-red;
+    color: $color-red;
   }
 
   &.active {
     background-color: $color-red;
-    border-color:  $color-red;
+    border-color: $color-red;
     color: white;
   }
 }
@@ -127,12 +123,12 @@ img{
   transition: border-color 0.3s ease;
 
   &:hover {
-    border-color:  $color-red;
+    border-color: $color-red;
   }
 
   &:focus {
     outline: none;
-    border-color:  $color-red;
+    border-color: $color-red;
   }
 
   option {
@@ -143,7 +139,6 @@ img{
 // Error Messages
 .warranty-errors {
   background-color: rgb(255, 222, 222);
-  // border-left: 4px solid  $color-red;
   padding: 15px;
   border-radius: 6px;
   margin-bottom: 20px;
@@ -281,7 +276,7 @@ img{
 .warranty-no-results {
   text-align: center;
   padding: 50px 20px;
-  background-color:  #f5f5f5;
+  background-color: #f5f5f5;
   border-radius: 12px;
 
   p {

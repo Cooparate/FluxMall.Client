@@ -11,9 +11,11 @@
   padding: 100px 32px 150px;
   text-align: center;
   background: linear-gradient(135deg, #ffb8ba72 0%, #ffd5ad 100%);
-  
-  background-image:
-    linear-gradient(rgba(255,255,255,0.6), rgba(255,255,255,0.6)),
+
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.6),
+      rgba(255, 255, 255, 0.6)
+    ),
     url("../../assets/images/Banner-Intro.webp");
   background-size: contain;
   background-position: center;
@@ -62,7 +64,7 @@
 /* Nút chính */
 .btn-primary {
   padding: 13px 32px;
-  background: linear-gradient(135deg, #ff5e61eb 0%, #ffaa5b 100%);;
+  background: linear-gradient(135deg, #ff5e61eb 0%, #ffaa5b 100%);
   color: #fff;
   border-radius: 8px;
   font-size: 15px;

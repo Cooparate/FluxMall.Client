@@ -24,7 +24,6 @@ export default function ProductOptionsModal({
   if (!show) return null;
 
   const handleConfirm = () => {
-    // Validate
     if (productOptions.hasColors && !modalOptions.color) {
       alert("Vui lòng chọn màu sắc");
       return;

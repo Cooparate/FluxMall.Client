@@ -1,5 +1,4 @@
 // New Arrivals Page Styles
-
 .newarrivals-page {
   background: #f5f5f5;
   padding: 2px 20px;
@@ -44,11 +43,6 @@
 
 // Container
 .newarrivals-container {
-  // background: #00c853;
-  // display: grid;
-  // grid-template-columns: 250px 1fr;
-  // gap: 30px;
-  //max-width: 1400px;
   margin: 20px auto;
   padding: 0 100px;
 
@@ -67,7 +61,6 @@
 .newarrivals-sidebar {
   background: white;
   padding: 20px;
-  // border-radius: 8px;
   height: fit-content;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
   margin-bottom: 20px;
@@ -78,29 +71,18 @@
   }
 
   .filter-section {
-    // background: #007bff;
     margin-bottom: 10px;
-    // padding-bottom: 10px;
     border-bottom: 1px solid #eee;
 
     .filter-buttons {
       display: flex;
       gap: 12px;
-      overflow-x: auto; // ❗ quá dài thì kéo ngang
+      overflow-x: auto;
       padding-bottom: 6px;
     }
 
-    // .filter-buttons::-webkit-scrollbar {
-    //   height: 4px;
-    // }
-
-    // .filter-buttons::-webkit-scrollbar-thumb {
-    //   background: #ccc;
-    //   border-radius: 10px;
-    // }
-
     .filter-btn {
-      white-space: nowrap; // ❗ chữ không xuống dòng
+      white-space: nowrap;
       padding: 8px 16px;
       border-radius: 5px;
       border: 1px solid #ddd;
@@ -119,50 +101,6 @@
     &:last-of-type {
       border-bottom: none;
     }
-
-    // h3 {
-    //   font-size: 14px;
-    //   font-weight: 700;
-    //   color: #333;
-    //   margin-bottom: 12px;
-    //   text-transform: uppercase;
-    //   letter-spacing: 0.5px;
-    // }
-
-    // .category-filter,
-    // // .sort-filter {
-    // //   display: flex;
-    // //   flex-direction: column;
-    // //   gap: 10px;
-    // // }
-
-    // .filter-option {
-    //   display: flex;
-    //   align-items: center;
-    //   gap: 8px;
-    //   cursor: pointer;
-    //   padding: 6px 8px;
-    //   border-radius: 4px;
-    //   transition: all 0.2s ease;
-
-    //   &:hover {
-    //     background: #f5f5f5;
-    //   }
-
-    //   input {
-    //     cursor: pointer;
-    //     width: 16px;
-    //     height: 16px;
-    //     accent-color: #1976d2;
-    //   }
-
-    //   .filter-label {
-    //     font-size: 13px;
-    //     color: #555;
-    //     user-select: none;
-    //     cursor: pointer;
-    //   }
-    // }
   }
 
   .filter-stats {
@@ -186,10 +124,6 @@
 
 // Main Content
 .newarrivals-main {
-  // display: flex;
-  // justify-content: center; // căn giữa toàn bộ grid
-  // margin-left: 40px;
-
   .products-grid {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -204,26 +138,6 @@
     @media (max-width: 480px) {
       grid-template-columns: 1fr;
     }
-
-    // .product-wrapper {
-
-    //   position: relative;
-
-    //   .newarrivals-badge {
-    //     position: absolute;
-    //     top: 10px;
-    //     right: 10px;
-    //     background: linear-gradient(135deg, #00c853, #64dd17);
-    //     color: white;
-    //     padding: 6px 12px;
-    //     border-radius: 4px;
-    //     font-size: 11px;
-    //     font-weight: 700;
-    //     text-align: center;
-    //     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-    //     animation: shimmer 2s infinite;
-    //   }
-    // }
   }
 
   .no-products {

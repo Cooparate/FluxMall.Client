@@ -367,14 +367,7 @@
       }
     }
 
-    /* Show dropdown on hover */
-    // .has-dropdown:hover .dropdown-menu {
-    //   opacity: 1;
-    //   visibility: visible;
-    //   transform: translateY(0);
-    // }
-
-    /* Show dropdown on click (for mobile/toggle) */
+    /* Show dropdown on click */
     .has-dropdown.open .dropdown-menu {
       opacity: 1;
       visibility: visible;
@@ -392,7 +385,6 @@
         }
       }
 
-      /* QUAN TRỌNG: selector phải match đúng */
       .has-dropdown.open > .dropdown-trigger::after {
         transform: rotate(180deg);
       }

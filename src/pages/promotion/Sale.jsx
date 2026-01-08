@@ -7,7 +7,7 @@ import "./sale.scss";
 export default function Sale() {
   const [tab, setTab] = useState("flash");
   const [t, setT] = useState(45 * 60);
-  const [searchQuery, setSearchQuery] = useState('');
+  const [searchQuery, setSearchQuery] = useState("");
 
   useEffect(() => {
     const i = setInterval(() => setT((t) => t - 1), 1000);
@@ -16,18 +16,18 @@ export default function Sale() {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      const query = localStorage.getItem('fluxmall_search') || '';
+      const query = localStorage.getItem("fluxmall_search") || "";
       setSearchQuery(query);
     }, 300);
     return () => clearInterval(interval);
   }, []);
 
-  // 👉 Lọc sản phẩm Flash Sale
-
   const saleProducts = useMemo(() => {
     let result = data.products.filter((p) => p.promotion?.shockSale === true);
     if (searchQuery) {
-      result = result.filter((p) => p.name.toLowerCase().includes(searchQuery.toLowerCase()));
+      result = result.filter((p) =>
+        p.name.toLowerCase().includes(searchQuery.toLowerCase())
+      );
     }
     return result;
   }, [searchQuery]);

@@ -6,11 +6,11 @@ import "./NewArrivals.scss";
 export default function NewArrivals() {
   const [sortBy, setSortBy] = useState("newest");
   const [category, setCategory] = useState("all");
-  const [searchQuery, setSearchQuery] = useState('');
+  const [searchQuery, setSearchQuery] = useState("");
 
   useEffect(() => {
     const interval = setInterval(() => {
-      const query = localStorage.getItem('fluxmall_search') || '';
+      const query = localStorage.getItem("fluxmall_search") || "";
       setSearchQuery(query);
     }, 300);
     return () => clearInterval(interval);
@@ -32,7 +32,9 @@ export default function NewArrivals() {
 
     // Lọc theo tìm kiếm
     if (searchQuery) {
-      result = result.filter((p) => p.name.toLowerCase().includes(searchQuery.toLowerCase()));
+      result = result.filter((p) =>
+        p.name.toLowerCase().includes(searchQuery.toLowerCase())
+      );
     }
 
     // Sắp xếp
@@ -82,7 +84,6 @@ export default function NewArrivals() {
 
         {/* ===== SẮP XẾP ===== */}
         <div className="filter-section">
-          {/* <h3>Sắp xếp</h3> */}
           <div className="filter-buttons">
             {[
               { value: "newest", label: "Mới nhất" },
@@ -99,18 +100,10 @@ export default function NewArrivals() {
             ))}
           </div>
         </div>
-
-        {/* ===== THỐNG KÊ ===== */}
-        {/* <div className="filter-stats">
-            <p>
-              <strong>{filteredProducts.length}</strong> sản phẩm được tìm thấy
-            </p>
-          </div> */}
       </aside>
 
       {/* Main Content */}
       <div className="newarrivals-container">
-        {/* Sidebar Filters */}
 
         {/* Products Grid */}
         <main className="newarrivals-main">
@@ -119,11 +112,6 @@ export default function NewArrivals() {
               {filteredProducts.map((product) => (
                 <div key={product.id} className="product-wrapper">
                   <ProductCard item={product} />
-                  {/* {product.badge?.newArrival && (
-                    <div className="newarrivals-badge">
-                      ✨ Mới
-                    </div>
-                  )} */}
                 </div>
               ))}
             </div>

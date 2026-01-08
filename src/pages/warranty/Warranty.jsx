@@ -66,7 +66,7 @@ const Warranty = () => {
     }
 
     setErrors([]);
-    setSearchResults([]); // chưa có store thì cho rỗng
+    setSearchResults([]);
     setHasSearched(true);
 
     const results = data.products.filter(

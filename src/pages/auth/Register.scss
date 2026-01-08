@@ -258,7 +258,6 @@
   background: #0048acd5;
 }
 
-/* OAuth divider */
 .oauth-divider {
   margin: 14px 0;
   text-align: center;
@@ -270,7 +269,7 @@
 
 .oauth-divider::before,
 .oauth-divider::after {
-  content: '';
+  content: "";
   flex: 1;
   height: 1px;
   background: #e5e7eb;
@@ -282,7 +281,6 @@
   white-space: nowrap;
 }
 
-/* OAuth buttons */
 .oauth-buttons {
   display: grid;
   grid-template-columns: 1fr 1fr;

@@ -9,11 +9,11 @@ export default function Accessories() {
   const { products } = data;
 
   // Chức năng tìm kiếm
-  const [searchQuery, setSearchQuery] = useState('');
+  const [searchQuery, setSearchQuery] = useState("");
 
   useEffect(() => {
     const interval = setInterval(() => {
-      const query = localStorage.getItem('fluxmall_search') || '';
+      const query = localStorage.getItem("fluxmall_search") || "";
       setSearchQuery(query);
     }, 300);
     return () => clearInterval(interval);
@@ -38,7 +38,10 @@ export default function Accessories() {
                     .filter((p) => {
                       const matchCategory = p.category.toLowerCase() === "bag";
                       if (!searchQuery) return matchCategory;
-                      return matchCategory && p.name.toLowerCase().includes(searchQuery.toLowerCase());
+                      return (
+                        matchCategory &&
+                        p.name.toLowerCase().includes(searchQuery.toLowerCase())
+                      );
                     })
                     .map((item) => (
                       <ProductCard key={item.id} item={item} />
@@ -58,14 +61,17 @@ export default function Accessories() {
               <aside className="left-banners">
                 <div className="banner banner-left"></div>
               </aside>
-              
+
               <main className="main-content">
                 <div className="product-grid">
                   {products
                     .filter((p) => {
                       const matchCategory = p.category.toLowerCase() === "rack";
                       if (!searchQuery) return matchCategory;
-                      return matchCategory && p.name.toLowerCase().includes(searchQuery.toLowerCase());
+                      return (
+                        matchCategory &&
+                        p.name.toLowerCase().includes(searchQuery.toLowerCase())
+                      );
                     })
                     .map((item) => (
                       <ProductCard key={item.id} item={item} />
@@ -82,17 +88,20 @@ export default function Accessories() {
             <div className="top-banner top-banner-cleaning"></div>
             <div className="main-wrapper">
               <aside className="left-banners">
-                <div className="banner banner-left">
-                </div>
+                <div className="banner banner-left"></div>
               </aside>
 
               <main className="main-content">
                 <div className="product-grid">
                   {products
                     .filter((p) => {
-                      const matchCategory = p.category.toLowerCase() === "cleaning";
+                      const matchCategory =
+                        p.category.toLowerCase() === "cleaning";
                       if (!searchQuery) return matchCategory;
-                      return matchCategory && p.name.toLowerCase().includes(searchQuery.toLowerCase());
+                      return (
+                        matchCategory &&
+                        p.name.toLowerCase().includes(searchQuery.toLowerCase())
+                      );
                     })
                     .map((item) => (
                       <ProductCard key={item.id} item={item} />

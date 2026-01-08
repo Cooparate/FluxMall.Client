@@ -1,7 +1,7 @@
-import { Link } from 'react-router-dom';
-import LayoutIntro from '../../layouts/LayoutIntro';
-import { backendDevImg, frontendDevImg } from '../../assets';
-import './Intro.scss';
+import { Link } from "react-router-dom";
+import LayoutIntro from "../../layouts/LayoutIntro";
+import { backendDevImg, frontendDevImg } from "../../assets";
+import "./Intro.scss";
 
 const Intro = () => {
   return (
@@ -14,12 +14,15 @@ const Intro = () => {
             Nơi mua sắm gặp gỡ <span className="text-gradient">sự đổi mới</span>
           </h1>
           <p className="hero-subtitle">
-            FluxMall là nền tảng thương mại điện tử hiện đại mang đến trải nghiệm mua sắm tốt nhất ngay trong tầm tay bạn.
-            Khám phá hàng ngàn sản phẩm với quy trình thanh toán liền mạch và giao hàng nhanh chóng.
+            FluxMall là nền tảng thương mại điện tử hiện đại mang đến trải
+            nghiệm mua sắm tốt nhất ngay trong tầm tay bạn. Khám phá hàng ngàn
+            sản phẩm với quy trình thanh toán liền mạch và giao hàng nhanh
+            chóng.
           </p>
           <div className="hero-buttons">
-            {/* <Link to="/register" className="btn-primary">Bắt đầu miễn phí</Link> */}
-            <Link to="/home" className="btn-secondary">Khám phá sản phẩm →</Link>
+            <Link to="/home" className="btn-secondary">
+              Khám phá sản phẩm →
+            </Link>
           </div>
         </div>
       </section>
@@ -27,32 +30,49 @@ const Intro = () => {
       <section id="features" className="features-section">
         <div className="features-container">
           <h2 className="section-title">Tại sao lựa chọn FluxMall?</h2>
-          <p className="section-subtitle">Mọi thứ bạn cần cho trải nghiệm mua sắm hoàn hảo</p>
+          <p className="section-subtitle">
+            Mọi thứ bạn cần cho trải nghiệm mua sắm hoàn hảo
+          </p>
           <div className="features-grid">
             <div className="feature-card">
               <div className="feature-icon">🛒</div>
               <h3>Mua sắm dễ dàng</h3>
-              <p>Duyệt qua hàng ngàn sản phẩm với chức năng tìm kiếm và lọc trực quan.</p>
+              <p>
+                Duyệt qua hàng ngàn sản phẩm với chức năng tìm kiếm và lọc trực
+                quan.
+              </p>
             </div>
             <div className="feature-card">
               <div className="feature-icon">⚡</div>
               <h3>Nhanh như chớp</h3>
-              <p>Trải nghiệm hiệu suất cực nhanh với nền tảng được tối ưu hóa của chúng tôi.</p>
+              <p>
+                Trải nghiệm hiệu suất cực nhanh với nền tảng được tối ưu hóa của
+                chúng tôi.
+              </p>
             </div>
             <div className="feature-card">
               <div className="feature-icon">🔒</div>
               <h3>Thanh toán an toàn</h3>
-              <p>Mua sắm an toàn bằng hệ thống xử lý thanh toán an toàn của chúng tôi.</p>
+              <p>
+                Mua sắm an toàn bằng hệ thống xử lý thanh toán an toàn của chúng
+                tôi.
+              </p>
             </div>
             <div className="feature-card">
               <div className="feature-icon">📦</div>
               <h3>Giao hàng nhanh chóng</h3>
-              <p>Nhận đơn hàng của bạn được giao nhanh chóng với đối tác vận chuyển đáng tin cậy của chúng tôi.</p>
+              <p>
+                Nhận đơn hàng của bạn được giao nhanh chóng với đối tác vận
+                chuyển đáng tin cậy của chúng tôi.
+              </p>
             </div>
             <div className="feature-card">
               <div className="feature-icon">💰</div>
               <h3>Giá cả tốt nhất</h3>
-              <p>Tận hưởng mức giá cạnh tranh và ưu đãi độc quyền từ các thương hiệu hàng đầu.</p>
+              <p>
+                Tận hưởng mức giá cạnh tranh và ưu đãi độc quyền từ các thương
+                hiệu hàng đầu.
+              </p>
             </div>
             <div className="feature-card">
               <div className="feature-icon">🎯</div>
@@ -69,18 +89,30 @@ const Intro = () => {
           <p className="section-subtitle">Những người đúng sau FluxMall</p>
           <div className="team-grid">
             <div className="team-card">
-              <img src={backendDevImg} alt="Backend Developer" className="team-image" loading="lazy" />
-              {/* <div className="team-placeholder">👨‍💻</div> */}
+              <img
+                src={backendDevImg}
+                alt="Backend Developer"
+                className="team-image"
+                loading="lazy"
+              />
               <h3>Backend Developer</h3>
               <p className="team-role">Architecture & API</p>
-              <p className="team-description">Xây dựng các hệ thống phụ trợ mạnh mẽ và có khả năng mở rộng</p>
+              <p className="team-description">
+                Xây dựng các hệ thống phụ trợ mạnh mẽ và có khả năng mở rộng
+              </p>
             </div>
             <div className="team-card">
-              <img src={frontendDevImg} alt="Frontend Developer" className="team-image" loading="lazy" />
-              {/* <div className="team-placeholder">👩‍💻</div> */}
+              <img
+                src={frontendDevImg}
+                alt="Frontend Developer"
+                className="team-image"
+                loading="lazy"
+              />
               <h3>Frontend Developer</h3>
               <p className="team-role">UI/UX & Design</p>
-              <p className="team-description">Tạo ra trải nghiệm người dùng đẹp và trực quan</p>
+              <p className="team-description">
+                Tạo ra trải nghiệm người dùng đẹp và trực quan
+              </p>
             </div>
           </div>
         </div>

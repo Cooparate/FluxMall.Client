@@ -1,34 +1,25 @@
-/* 
- * ============================================
- *  CENTRALIZED ICONS - Loại bỏ 25.5MB duplicate
- * ============================================
- * Export tất cả icons từ file duy nhất này
- * Vite sẽ bundle 1 lần thay vì duplicate
- */
-
 // Font Awesome
-export { 
-  FaFacebookSquare, 
-  FaChevronLeft, 
-  FaChevronRight, 
-  FaInstagramSquare, 
-  FaYoutube 
+export {
+  FaFacebookSquare,
+  FaChevronLeft,
+  FaChevronRight,
+  FaInstagramSquare,
+  FaYoutube,
 } from "react-icons/fa";
 
 // Ionicons
 export { IoLogoGithub } from "react-icons/io";
 
-// Ant Design Icons  
-export { 
-  AiOutlinePlus, 
-  AiOutlineMinus, 
+export {
+  AiOutlinePlus,
+  AiOutlineMinus,
   AiOutlineClose,
   AiOutlineDelete,
-  AiOutlineShoppingCart 
+  AiOutlineShoppingCart,
 } from "react-icons/ai";
 
 // Feather Icons
-export { 
+export {
   FiShoppingBag,
   FiEye,
   FiEyeOff,
@@ -37,7 +28,7 @@ export {
   FiClock,
   FiPercent,
   FiTag,
-  FiGift
+  FiGift,
 } from "react-icons/fi";
 
 // Hero Icons 2

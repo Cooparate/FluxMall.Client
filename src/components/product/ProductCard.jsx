@@ -11,7 +11,13 @@ export default function ProductCard({ item, onAdd, onBuy }) {
         style={{ textDecoration: "none", color: "inherit" }}
       >
         <div className="card-image">
-          <img src={new URL(`../../assets/images/${item.image.img0}`, import.meta.url).href} alt={item.name} />
+          <img
+            src={
+              new URL(`../../assets/images/${item.image.img0}`, import.meta.url)
+                .href
+            }
+            alt={item.name}
+          />
         </div>
 
         <div className="card-content">
@@ -29,22 +35,14 @@ export default function ProductCard({ item, onAdd, onBuy }) {
             )}
           </div>
 
-          {/* <p style={{ color: "gray", fontSize: 13 }}>
-          {item.tag}
-        </p> */}
-
           <div className="card-actions">
             <button
-              className="btn-add"
-              // onClick={() => onAdd?.(item)}
-            >
+              className="btn-add">
               Thêm vào giỏ
             </button>
 
             <button
-              className="btn-buy"
-              // onClick={() => onBuy?.(item)}
-            >
+              className="btn-buy">
               Mua
             </button>
           </div>

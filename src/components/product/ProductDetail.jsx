@@ -31,7 +31,7 @@ export default function ProductDetail() {
     }
     return true;
   };
-  
+
   // Tự động phát hiện options từ specifications
   const getProductOptions = () => {
     if (!product)

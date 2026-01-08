@@ -1,43 +1,48 @@
-import { useState } from 'react';
-import './Contact.scss';
-import { MdLocationOn, MdEmail, MdPhone } from 'react-icons/md';
+import { useState } from "react";
+import "./Contact.scss";
+import { MdLocationOn, MdEmail, MdPhone } from "react-icons/md";
 
 export default function Contact() {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    phone: '',
-    message: ''
+    name: "",
+    email: "",
+    phone: "",
+    message: "",
   });
 
   const [submitted, setSubmitted] = useState(false);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setFormData(prev => ({
+    setFormData((prev) => ({
       ...prev,
-      [name]: value
+      [name]: value,
     }));
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    
+
     // Validate form
-    if (!formData.name || !formData.email || !formData.phone || !formData.message) {
-      alert('Vui lòng điền đầy đủ thông tin!');
+    if (
+      !formData.name ||
+      !formData.email ||
+      !formData.phone ||
+      !formData.message
+    ) {
+      alert("Vui lòng điền đầy đủ thông tin!");
       return;
     }
 
     // Show success message
     setSubmitted(true);
     setTimeout(() => {
-      setFormData({ name: '', email: '', phone: '', message: '' });
+      setFormData({ name: "", email: "", phone: "", message: "" });
       setSubmitted(false);
     }, 3000);
 
     // Bạn có thể gửi dữ liệu tới API ở đây
-    console.log('Form data:', formData);
+    console.log("Form data:", formData);
   };
 
   return (
@@ -45,7 +50,10 @@ export default function Contact() {
       {/* Header Section */}
       <div className="contact-header">
         <h1>Thông tin liên hệ</h1>
-        <p>Chúng tôi vinh hạnh vì đã có cơ hội làm việc với hơn 10.000 khách hàng trên khắp thế giới.</p>
+        <p>
+          Chúng tôi vinh hạnh vì đã có cơ hội làm việc với khách hàng trên khắp
+          thế giới.
+        </p>
       </div>
 
       {/* Info Cards Section */}
@@ -83,7 +91,7 @@ export default function Contact() {
             src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d20713.99003316092!2d106.34905546462645!3d10.37647936566056!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1svi!2s!4v1766808947160!5m2!1svi!2s"
             width="100%"
             height="500"
-            style={{ border: 0, borderRadius: '8px' }}
+            style={{ border: 0, borderRadius: "8px" }}
             allowFullScreen=""
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
@@ -94,7 +102,7 @@ export default function Contact() {
         {/* Form Section */}
         <div className="contact-form-wrapper">
           <h2>Liên hệ với chúng tôi</h2>
-          
+
           {submitted && (
             <div className="success-message">
               Cảm ơn bạn! Chúng tôi sẽ phản hồi trong sớm nhất.
@@ -140,14 +148,14 @@ export default function Contact() {
 
             <div className="form-group">
               <label htmlFor="message">Nội dung</label>
-                <textarea
-                  id="message"
-                  name="message"
-                  rows={3}
-                  placeholder="Nhập nội dung tin nhắn"
-                  value={formData.message}
-                  onChange={handleChange}
-                />
+              <textarea
+                id="message"
+                name="message"
+                rows={3}
+                placeholder="Nhập nội dung tin nhắn"
+                value={formData.message}
+                onChange={handleChange}
+              />
             </div>
 
             <button type="submit" className="btn-submit">

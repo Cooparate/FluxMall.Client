@@ -29,14 +29,14 @@
   display: inline-block;
   margin-bottom: 8px;
 
-  h1{
-  font-size: 32px;
-  font-weight: 700;
-  margin: 0;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text
+  h1 {
+    font-size: 32px;
+    font-weight: 700;
+    margin: 0;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
   }
 }
 
@@ -215,7 +215,6 @@
   background: #0048acd5;
 }
 
-/* OAuth divider */
 .oauth-divider {
   margin: 14px 0;
   text-align: center;
@@ -227,7 +226,7 @@
 
 .oauth-divider::before,
 .oauth-divider::after {
-  content: '';
+  content: "";
   flex: 1;
   height: 1px;
   background: #e5e7eb;
@@ -239,7 +238,6 @@
   white-space: nowrap;
 }
 
-/* OAuth buttons */
 .oauth-buttons {
   display: grid;
   grid-template-columns: 1fr 1fr;

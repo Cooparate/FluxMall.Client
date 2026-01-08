@@ -1,47 +1,50 @@
-import React, { useState } from 'react';
-import { useCart } from '../../contexts/CartContext';
-import { 
-  AiOutlinePlus, AiOutlineMinus, AiOutlineDelete, AiOutlineShoppingCart,
-  MdClose, RiCouponLine 
-} from '../../components/icons';
-import './Cart.scss';
+import React, { useState } from "react";
+import { useCart } from "../../contexts/CartContext";
+import {
+  AiOutlinePlus,
+  AiOutlineMinus,
+  AiOutlineDelete,
+  AiOutlineShoppingCart,
+  MdClose,
+  RiCouponLine,
+} from "../../components/icons";
+import "./Cart.scss";
 
-// Mock data cho vouchers (sau này sẽ fetch từ API)
 const mockVouchers = [
   {
-    id: 'VC001',
-    code: 'GIAM10',
-    name: 'Giảm 10%',
-    description: 'Giảm 10% tối đa 50.000đ',
-    type: 'percent',
+    id: "VC001",
+    code: "GIAM10",
+    name: "Giảm 10%",
+    description: "Giảm 10% tối đa 50.000đ",
+    type: "percent",
     value: 10,
     maxDiscount: 50000,
     minOrder: 0,
   },
   {
-    id: 'VC002',
-    code: 'GIAM50K',
-    name: 'Giảm 50K',
-    description: 'Giảm 50.000đ cho đơn từ 500.000đ',
-    type: 'fixed',
+    id: "VC002",
+    code: "GIAM50K",
+    name: "Giảm 50K",
+    description: "Giảm 50.000đ cho đơn từ 500.000đ",
+    type: "fixed",
     value: 50000,
     minOrder: 500000,
   },
   {
-    id: 'VC003',
-    code: 'FREESHIP',
-    name: 'Miễn phí vận chuyển',
-    description: 'Miễn phí ship cho đơn từ 200.000đ',
-    type: 'fixed',
+    id: "VC003",
+    code: "FREESHIP",
+    name: "Miễn phí vận chuyển",
+    description: "Miễn phí ship cho đơn từ 200.000đ",
+    type: "fixed",
     value: 30000,
     minOrder: 200000,
   },
   {
-    id: 'VC004',
-    code: 'GIAM20',
-    name: 'Giảm 20%',
-    description: 'Giảm 20% tối đa 100.000đ',
-    type: 'percent',
+    id: "VC004",
+    code: "GIAM20",
+    name: "Giảm 20%",
+    description: "Giảm 20% tối đa 100.000đ",
+    type: "percent",
     value: 20,
     maxDiscount: 100000,
     minOrder: 300000,
@@ -68,7 +71,8 @@ export default function Cart() {
   const [selectedItemForVoucher, setSelectedItemForVoucher] = useState(null);
 
   // Kiểm tra tất cả items có được chọn không
-  const allSelected = cartItems.length > 0 && cartItems.every(item => item.selected);
+  const allSelected =
+    cartItems.length > 0 && cartItems.every((item) => item.selected);
 
   // Mở modal chọn voucher
   const openVoucherModal = (item) => {
@@ -85,11 +89,17 @@ export default function Cart() {
   // Áp dụng voucher
   const handleApplyVoucher = (voucher) => {
     if (selectedItemForVoucher) {
-      const itemPrice = parseFloat(selectedItemForVoucher.price.replace(/\./g, '')) * selectedItemForVoucher.quantity;
-      
+      const itemPrice =
+        parseFloat(selectedItemForVoucher.price.replace(/\./g, "")) *
+        selectedItemForVoucher.quantity;
+
       // Kiểm tra điều kiện áp dụng voucher
       if (itemPrice < voucher.minOrder) {
-        alert(`Voucher này yêu cầu đơn hàng tối thiểu ${voucher.minOrder.toLocaleString('vi-VN')}đ`);
+        alert(
+          `Voucher này yêu cầu đơn hàng tối thiểu ${voucher.minOrder.toLocaleString(
+            "vi-VN"
+          )}đ`
+        );
         return;
       }
 
@@ -100,36 +110,21 @@ export default function Cart() {
 
   // Format giá tiền
   const formatPrice = (price) => {
-    return price.toLocaleString('vi-VN');
+    return price.toLocaleString("vi-VN");
   };
 
   // Xử lý thanh toán
   const handleCheckout = () => {
     if (getSelectedCount() === 0) {
-      alert('Vui lòng chọn ít nhất 1 sản phẩm để thanh toán!');
+      alert("Vui lòng chọn ít nhất 1 sản phẩm để thanh toán!");
       return;
     }
 
-    // TODO: API - Gửi request thanh toán
-    // const selectedItems = cartItems.filter(item => item.selected);
-    // fetch('/api/checkout', {
-    //   method: 'POST',
-    //   headers: { 'Content-Type': 'application/json' },
-    //   body: JSON.stringify({
-    //     items: selectedItems,
-    //     total: calculateSelectedTotal()
-    //   })
-    // })
-    // .then(res => res.json())
-    // .then(data => {
-    //   if (data.success) {
-    //     removeSelectedItems();
-    //     alert('Đặt hàng thành công!');
-    //     // Redirect to order confirmation page
-    //   }
-    // });
-
-    alert(`Thanh toán ${getSelectedCount()} sản phẩm - Tổng: ${formatPrice(calculateSelectedTotal())}đ`);
+    alert(
+      `Thanh toán ${getSelectedCount()} sản phẩm - Tổng: ${formatPrice(
+        calculateSelectedTotal()
+      )}đ`
+    );
     removeSelectedItems();
   };
 
@@ -174,10 +169,14 @@ export default function Cart() {
         <div className="cart-items">
           {cartItems.map((item) => {
             const itemTotal = calculateItemTotal(item);
-            const originalTotal = parseFloat(item.price.replace(/\./g, '')) * item.quantity;
+            const originalTotal =
+              parseFloat(item.price.replace(/\./g, "")) * item.quantity;
 
             return (
-              <div key={item.itemId} className={`cart-item ${item.selected ? 'selected' : ''}`}>
+              <div
+                key={item.itemId}
+                className={`cart-item ${item.selected ? "selected" : ""}`}
+              >
                 {/* Checkbox chọn sản phẩm */}
                 <div className="item-checkbox">
                   <input
@@ -189,9 +188,18 @@ export default function Cart() {
 
                 {/* Thông tin sản phẩm */}
                 <div className="item-info">
-                  <img 
-                    src={new URL(`../../assets/images/${typeof item.image === 'string' ? item.image : item.image?.img0}`, import.meta.url).href}
-                    alt={item.name} 
+                  <img
+                    src={
+                      new URL(
+                        `../../assets/images/${
+                          typeof item.image === "string"
+                            ? item.image
+                            : item.image?.img0
+                        }`,
+                        import.meta.url
+                      ).href
+                    }
+                    alt={item.name}
                     className="item-image"
                   />
                   <div className="item-details">
@@ -210,7 +218,9 @@ export default function Cart() {
                 <div className="item-quantity">
                   <button
                     className="quantity-btn"
-                    onClick={() => updateQuantity(item.itemId, item.quantity - 1)}
+                    onClick={() =>
+                      updateQuantity(item.itemId, item.quantity - 1)
+                    }
                     disabled={item.quantity <= 1}
                   >
                     <AiOutlineMinus />
@@ -226,7 +236,9 @@ export default function Cart() {
                   />
                   <button
                     className="quantity-btn"
-                    onClick={() => updateQuantity(item.itemId, item.quantity + 1)}
+                    onClick={() =>
+                      updateQuantity(item.itemId, item.quantity + 1)
+                    }
                   >
                     <AiOutlinePlus />
                   </button>
@@ -235,9 +247,13 @@ export default function Cart() {
                 {/* Thành tiền */}
                 <div className="item-total">
                   {item.voucher && originalTotal !== itemTotal && (
-                    <span className="original-total">{formatPrice(originalTotal)} ₫</span>
+                    <span className="original-total">
+                      {formatPrice(originalTotal)} ₫
+                    </span>
                   )}
-                  <span className="total-price">{formatPrice(itemTotal)} ₫</span>
+                  <span className="total-price">
+                    {formatPrice(itemTotal)} ₫
+                  </span>
                 </div>
 
                 {/* Nút xóa */}
@@ -257,8 +273,12 @@ export default function Cart() {
                     {item.voucher ? (
                       <div className="voucher-applied">
                         <RiCouponLine className="voucher-icon" />
-                        <span className="voucher-name">{item.voucher.name}</span>
-                        <span className="voucher-desc">{item.voucher.description}</span>
+                        <span className="voucher-name">
+                          {item.voucher.name}
+                        </span>
+                        <span className="voucher-desc">
+                          {item.voucher.description}
+                        </span>
                         <button
                           className="btn-remove-voucher"
                           onClick={() => removeVoucher(item.itemId)}
@@ -287,7 +307,9 @@ export default function Cart() {
           <div className="summary-info">
             <div className="summary-row">
               <span>Tổng thanh toán ({getSelectedCount()} sản phẩm):</span>
-              <span className="summary-total">{formatPrice(calculateSelectedTotal())} ₫</span>
+              <span className="summary-total">
+                {formatPrice(calculateSelectedTotal())} ₫
+              </span>
             </div>
           </div>
           <button className="btn-checkout" onClick={handleCheckout}>
@@ -308,19 +330,16 @@ export default function Cart() {
             </div>
 
             <div className="voucher-modal-body">
-              {/* TODO: API - Fetch vouchers from backend
-                fetch('/api/vouchers')
-                  .then(res => res.json())
-                  .then(data => setVouchers(data))
-              */}
               {mockVouchers.map((voucher) => {
-                const itemPrice = parseFloat(selectedItemForVoucher.price.replace(/\./g, '')) * selectedItemForVoucher.quantity;
+                const itemPrice =
+                  parseFloat(selectedItemForVoucher.price.replace(/\./g, "")) *
+                  selectedItemForVoucher.quantity;
                 const canApply = itemPrice >= voucher.minOrder;
 
                 return (
                   <div
                     key={voucher.id}
-                    className={`voucher-card ${!canApply ? 'disabled' : ''}`}
+                    className={`voucher-card ${!canApply ? "disabled" : ""}`}
                   >
                     <div className="voucher-info">
                       <RiCouponLine className="voucher-icon" />
@@ -339,7 +358,7 @@ export default function Cart() {
                       onClick={() => handleApplyVoucher(voucher)}
                       disabled={!canApply}
                     >
-                      {canApply ? 'Áp dụng' : 'Không đủ điều kiện'}
+                      {canApply ? "Áp dụng" : "Không đủ điều kiện"}
                     </button>
                   </div>
                 );
