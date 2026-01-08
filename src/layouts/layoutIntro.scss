@@ -113,7 +113,6 @@
     gap: 8px;
   }
 
-  /* Ẩn các link menu, chỉ giữ nút */
   .nav-links a:not(.btn-login):not(.btn-register) {
     display: flex;
   }

@@ -15,6 +15,7 @@ import {
   FaYoutube,
   IoLogoGithub,
 } from "../components/icons";
+import { HiMenu } from "react-icons/hi";
 
 import { Outlet, useNavigate } from "react-router-dom";
 
@@ -23,6 +24,7 @@ export default function layoutHome() {
   const [userDropdown, setUserDropdown] = useState(false);
   const [currentUser, setCurrentUser] = useState(null);
   const [showLoginAlert, setShowLoginAlert] = useState(false);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const navigate = useNavigate();
   const { getCartCount } = useCart();
 
@@ -57,6 +59,15 @@ export default function layoutHome() {
         </div>
         <div className="header-main">
           <div className="container">
+            {/* Hamburger Menu - Only on Mobile */}
+            <button 
+              className="hamburger-menu"
+              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+              aria-label="Toggle menu"
+            >
+              <HiMenu />
+            </button>
+
             <div className="logo">
               <h1>FluxMall</h1>
             </div>
@@ -103,7 +114,7 @@ export default function layoutHome() {
               )}
 
               {/* Cart icon */}
-              <div
+              <button
                 className="cart-link"
                 onClick={(e) => {
                   if (!checkLoginBeforeAction()) {
@@ -118,7 +129,7 @@ export default function layoutHome() {
                 {getCartCount() > 0 && (
                   <span className="cart-badge">{getCartCount()}</span>
                 )}
-              </div>
+              </button>
             </div>
           </div>
         </div>
@@ -205,7 +216,131 @@ export default function layoutHome() {
           </div>
         )}
 
-        <nav className="nav">
+        {/* Mobile Sidebar Menu */}
+        {mobileMenuOpen && (
+          <>
+            <div 
+              className="mobile-menu-overlay"
+              onClick={() => setMobileMenuOpen(false)}
+            />
+            <div className="mobile-sidebar">
+              <div className="mobile-sidebar-header">
+                <h3>Menu</h3>
+                <button 
+                  className="close-btn"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  <AiOutlineClose />
+                </button>
+              </div>
+              
+              <nav className="mobile-nav">
+                <Link 
+                  to="/home" 
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  Trang chủ
+                </Link>
+
+                <div className="mobile-menu-group">
+                  <span className="menu-group-title">Sản phẩm</span>
+                  <Link 
+                    to="/category/laptop"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    Laptop
+                  </Link>
+                  <Link 
+                    to="/category/keyboard"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    Bàn phím
+                  </Link>
+                  <Link 
+                    to="/category/mouse"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    Chuột
+                  </Link>
+                  <Link 
+                    to="/category/headphone"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    Tai nghe
+                  </Link>
+                </div>
+
+                <div className="mobile-menu-group">
+                  <span className="menu-group-title">Sản phẩm bán chạy</span>
+                  <Link 
+                    to="/bestseller"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    Bán chạy nhất
+                  </Link>
+                  <Link 
+                    to="/newarrivals"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    Mới ra mắt
+                  </Link>
+                </div>
+
+                <Link 
+                  to="/sale"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  Giảm giá sốc
+                </Link>
+
+                <Link 
+                  to="/student"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  Ưu đãi sinh viên
+                </Link>
+
+                <div className="mobile-menu-group">
+                  <span className="menu-group-title">Phụ kiện</span>
+                  <Link 
+                    to="/accessories/bag"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    Túi chống sốc
+                  </Link>
+                  <Link 
+                    to="/accessories/cleaning"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    Bộ vệ sinh laptop
+                  </Link>
+                  <Link 
+                    to="/accessories/rack"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    Đế tản nhiệt
+                  </Link>
+                </div>
+
+                <Link 
+                  to="/warranty"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  Trung tâm bảo hành
+                </Link>
+
+                <Link 
+                  to="/contact"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  Liên hệ
+                </Link>
+              </nav>
+            </div>
+          </>
+        )}
+
+        <nav className="nav desktop-nav">
           <div className="container">
             <ul className="nav-menu">
               <li>

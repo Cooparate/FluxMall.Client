@@ -121,6 +121,7 @@
         min-height: 420px;
         position: relative;
         overflow: hidden;
+        z-index: 1;
 
         .carousel-slide {
           width: 100%;
@@ -391,3 +392,202 @@
     }
   }
 }
+
+/* --------------RESPONSIVE MOBILE-------------- */
+@media (max-width: 768px) {
+  .home {
+    .banner-carousel {
+      margin: 10px 0;
+      padding: 0 10px;
+
+      .container {
+        .carousel-wrapper {
+          min-height: 250px;
+
+          .carousel-slide {
+            .slide-item {
+              min-height: 250px;
+            }
+          }
+
+          .carousel-btn {
+            width: 35px;
+            height: 35px;
+            font-size: 16px;
+
+            &.prev {
+              left: 10px;
+            }
+
+            &.next {
+              right: 10px;
+            }
+          }
+        }
+
+        .carousel-dots {
+          gap: 5px;
+          margin-top: 8px;
+
+          .dot {
+            width: 5px;
+            height: 5px;
+
+            &.active {
+              width: 18px;
+            }
+          }
+        }
+      }
+    }
+
+    .marquee-container {
+      display: none;
+    }
+
+    .sale-banner {
+      padding: 8px 0;
+
+      .sale-content {
+        flex-direction: column;
+        gap: 8px;
+        text-align: center;
+
+        h3 {
+          font-size: 16px;
+        }
+
+        .timer {
+          font-size: 14px;
+        }
+      }
+    }
+
+    .category-filters {
+      padding: 8px 0;
+
+      .container {
+        gap: 8px;
+        padding: 0 10px;
+      }
+
+      .filter-btn {
+        padding: 8px 12px;
+        font-size: 12px;
+      }
+    }
+
+    .products {
+      padding: 10px;
+
+      #student {
+        width: 100%;
+        height: 35px;
+        margin-top: 20px;
+        margin-bottom: 15px;
+      }
+
+      .sort-options {
+        gap: 8px;
+        margin-bottom: 15px;
+        font-size: 12px;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+
+        .sort-btn {
+          padding: 6px 10px;
+          white-space: nowrap;
+        }
+      }
+
+      .grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        margin-bottom: 20px;
+      }
+
+      .load-more {
+        .btn-load {
+          padding: 10px 30px;
+          font-size: 14px;
+
+          a {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .home {
+    .banner-carousel {
+      .container {
+        .carousel-wrapper {
+          min-height: 180px;
+
+          .carousel-slide {
+            .slide-item {
+              min-height: 180px;
+            }
+          }
+
+          .carousel-btn {
+            width: 30px;
+            height: 30px;
+            font-size: 14px;
+
+            &.prev {
+              left: 5px;
+            }
+
+            &.next {
+              right: 5px;
+            }
+          }
+        }
+      }
+    }
+
+    .sale-banner {
+      .sale-content {
+        h3 {
+          font-size: 14px;
+        }
+
+        .timer {
+          font-size: 13px;
+        }
+      }
+    }
+
+    .category-filters {
+      .filter-btn {
+        padding: 6px 10px;
+        font-size: 11px;
+      }
+    }
+
+    .products {
+      .grid {
+        gap: 8px;
+      }
+
+      .sort-options {
+        .sort-btn {
+          padding: 5px 8px;
+          font-size: 11px;
+        }
+      }
+
+      .load-more {
+        .btn-load {
+          padding: 8px 24px;
+          font-size: 13px;
+        }
+      }
+    }
+  }
+}
+

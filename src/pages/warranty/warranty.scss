@@ -12,6 +12,18 @@
 img {
   width: 150px;
   height: 100px;
+
+  @media (max-width: 768px) {
+    width: 80px;
+    height: 60px;
+    object-fit: contain;
+  }
+
+  @media (max-width: 480px) {
+    width: 60px;
+    height: 45px;
+    object-fit: contain;
+  }
 }
 
 .top-banner {
@@ -78,6 +90,32 @@ img {
     font-weight: 500;
     color: #333;
   }
+
+  @media (max-width: 768px) {
+    padding: 12px;
+
+    .warranty-option-icon {
+      font-size: 28px;
+      margin-bottom: 6px;
+    }
+
+    .warranty-option-label {
+      font-size: 13px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    padding: 10px;
+
+    .warranty-option-icon {
+      font-size: 24px;
+      margin-bottom: 5px;
+    }
+
+    .warranty-option-label {
+      font-size: 12px;
+    }
+  }
 }
 
 // Brand Section
@@ -107,6 +145,16 @@ img {
     background-color: $color-red;
     border-color: $color-red;
     color: white;
+  }
+
+  @media (max-width: 768px) {
+    padding: 10px 12px;
+    font-size: 13px;
+  }
+
+  @media (max-width: 480px) {
+    padding: 8px 10px;
+    font-size: 12px;
   }
 }
 
@@ -288,27 +336,50 @@ img {
 // Responsive Design
 @media (max-width: 768px) {
   .warranty-container {
-    padding: 20px;
+    padding: 0 10px;
   }
 
   .warranty-search {
-    padding: 20px;
+    padding: 15px 10px;
   }
 
   .warranty-search h1 {
-    font-size: 22px;
+    font-size: 20px;
+  }
+
+  .top-banner {
+    height: 35px;
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+
+  .warranty-form-section {
+    margin-bottom: 20px;
+  }
+
+  .warranty-label {
+    font-size: 14px;
+    margin-bottom: 10px;
   }
 
   .warranty-options {
     grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
   }
 
   .warranty-brands {
     grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+  }
+
+  .warranty-select {
+    padding: 10px 12px;
+    font-size: 14px;
   }
 
   .warranty-cards-container {
     grid-template-columns: 1fr;
+    gap: 16px;
   }
 
   .warranty-card {
@@ -322,16 +393,28 @@ img {
 }
 
 @media (max-width: 480px) {
+  .warranty-container {
+    padding: 0 5px;
+  }
+
+  .top-banner {
+    height: 30px;
+    font-size: 16px;
+  }
+
   .warranty-options {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
   }
 
   .warranty-brands {
     grid-template-columns: repeat(2, 1fr);
+    gap: 6px;
   }
 
   .warranty-select {
-    font-size: 16px;
+    font-size: 14px;
+    padding: 8px 10px;
   }
 
   .warranty-search-btn {

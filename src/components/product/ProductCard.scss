@@ -130,3 +130,94 @@
     }
   }
 }
+
+/* Responsive for mobile */
+@media (max-width: 768px) {
+  .card {
+    .card-image {
+      height: 150px;
+    }
+
+    .card-content {
+      padding: 10px;
+
+      h3 {
+        font-size: 13px;
+        height: calc(1.4em * 2);
+      }
+
+      .price-section {
+        gap: 6px;
+        margin-bottom: 8px;
+
+        .price {
+          font-size: 14px;
+        }
+
+        .old-price {
+          font-size: 11px;
+        }
+      }
+
+      .card-actions {
+        gap: 8px;
+
+        .btn-add {
+          padding: 6px;
+          font-size: 12px;
+        }
+
+        .btn-buy {
+          width: 50px;
+          padding: 6px;
+          font-size: 14px;
+        }
+      }
+    }
+
+    .tag {
+      padding: 3px 8px;
+      font-size: 10px;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    .card-image {
+      height: 120px;
+    }
+
+    .card-content {
+      padding: 8px;
+
+      h3 {
+        font-size: 12px;
+      }
+
+      .price-section {
+        .price {
+          font-size: 13px;
+        }
+
+        .old-price {
+          font-size: 10px;
+        }
+      }
+
+      .card-actions {
+        .btn-add {
+          font-size: 11px;
+          padding: 5px;
+        }
+
+        .btn-buy {
+          width: 45px;
+          padding: 5px;
+          font-size: 13px;
+        }
+      }
+    }
+  }
+}
+

@@ -97,12 +97,16 @@
     }
 
     @media (max-width: 768px) {
+      display: none; // Ẩn banner bên trái trên mobile
+
       .banner-left {
         min-height: 250px;
       }
     }
 
     @media (max-width: 480px) {
+      display: none; // Ẩn banner bên trái trên mobile
+
       .banner-left {
         min-height: 200px;
       }
@@ -157,11 +161,11 @@
         gap: 8px;
       }
 
-      // Mobile nhỏ (<480px): 1 cột
+      // Mobile nhỏ (<480px): 2 cột
       @media (max-width: 480px) {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
         padding: 0;
-        gap: 10px;
+        gap: 8px;
       }
     }
   }
@@ -255,6 +259,8 @@
     }
 
     @media (max-width: 768px) {
+      display: none; // Ẩn banner bên phải trên mobile
+
       flex-direction: column;
 
       .banner {
