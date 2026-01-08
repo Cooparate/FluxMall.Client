@@ -1,5 +1,5 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { lazy, Suspense } from 'react';
+import { BrowserRouter, Routes, Route, useNavigate } from 'react-router-dom';
+import { lazy, Suspense, useEffect } from 'react';
 import { CartProvider } from './contexts/CartContext';
 
 // Lazy load components cho performance tốt hơn
@@ -36,11 +36,26 @@ const LoadingFallback = () => (
 
 import './App.scss';
 
+// Component xử lý redirect từ 404
+function RedirectHandler() {
+  const navigate = useNavigate();
+  
+  useEffect(() => {
+    const redirect = sessionStorage.getItem('redirect');
+    if (redirect) {
+      sessionStorage.removeItem('redirect');
+      navigate(redirect, { replace: true });
+    }
+  }, [navigate]);
+  
+  return null;
+}
 
 function App() {
   return (
     <CartProvider>
       <BrowserRouter basename="/">
+        <RedirectHandler />
         <Suspense fallback={<LoadingFallback />}>
           <Routes>
             <Route path="/" element={<Intro />} />
