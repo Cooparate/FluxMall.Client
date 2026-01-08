@@ -53,7 +53,6 @@
 .nav-auth {
   display: flex;
   gap: 12px;
-  margin-left: 12px;
 }
 
 /* Nút Sign in */
@@ -111,10 +110,6 @@
 
   .nav-links {
     gap: 8px;
-  }
-
-  .nav-links a:not(.btn-login):not(.btn-register) {
-    display: flex;
   }
 
   .btn-login,
