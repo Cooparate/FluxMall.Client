@@ -28,7 +28,7 @@ export default function Category() {
         return (
           <div className="layout">
             {/* Banner trên đầu */}
-            <div className="top-banner">
+            <div className="top-banner-text">
               LAPTOP GAMING & VĂN PHÒNG - ƯU ĐÃI LÊN ĐẾN 30%
             </div>
 
@@ -115,7 +115,7 @@ export default function Category() {
         return (
           <div className="layout">
             {/* Banner trên đầu */}
-            <div className="top-banner">
+            <div className="top-banner-text">
               KEYBOARD MECHANICAL - NÂNG TẦM TRẢI
             </div>
 
@@ -194,7 +194,7 @@ export default function Category() {
       case "mouse":
         return (
           <div className="layout">
-            <div className="top-banner">
+            <div className="top-banner-text">
               MOUSE - CHÍNH XÁC TUYỆT ĐỐI - CHIẾN THẮNG MỌI TRẬN ĐẤU
             </div>
             <div className="main-wrapper">
@@ -255,7 +255,7 @@ export default function Category() {
       case "headphone":
         return (
           <div className="layout">
-            <div className="top-banner">
+            <div className="top-banner-text">
               HEADPHONE GAMING - ÂM THANH SỐNG ĐỘNG - ĐÀM THOẠI RÕ NÉT
             </div>
             <div className="main-wrapper">

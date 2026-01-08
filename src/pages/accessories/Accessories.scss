@@ -1,5 +1,8 @@
 @use "../../App.scss" as *;
 
+// ========== ACCESSORIES PAGE WRAPPER (Tránh conflict với category) ==========
+.accessories {
+
 // ========= Layout ========
 .layout {
   padding: 20px 20px;
@@ -261,3 +264,5 @@
     }
   }
 }
+
+} // End .accessories wrapper

@@ -55,7 +55,7 @@ export default function Contact() {
             <MdLocationOn />
           </div>
           <h3>Địa chỉ</h3>
-          <p>266 Đội Cấn, Ba Đình, Hà Nội</p>
+          <p>Ấp Bắc, TP.Mỹ Tho, Tiền Giang</p>
         </div>
 
         <div className="info-card">
@@ -71,7 +71,7 @@ export default function Contact() {
             <MdPhone />
           </div>
           <h3>Hotline</h3>
-          <p>1900 6750</p>
+          <p>0723 2120 5926</p>
         </div>
       </div>
 

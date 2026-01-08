@@ -19,7 +19,7 @@ import {
 import { Outlet, useNavigate } from "react-router-dom";
 
 export default function layoutHome() {
-  const [open, setOpen] = useState(false);
+  const [openMenu, setOpenMenu] = useState(null);
   const [userDropdown, setUserDropdown] = useState(false);
   const [currentUser, setCurrentUser] = useState(null);
   const [showLoginAlert, setShowLoginAlert] = useState(false);
@@ -42,7 +42,7 @@ export default function layoutHome() {
   const goAccessories = (type) => {
     navigate(`/accessories/${type}`);
     setOpen(false);
-  }
+  };
 
   const handleLogout = () => {
     localStorage.removeItem("fluxmall_current_user");
@@ -71,10 +71,12 @@ export default function layoutHome() {
               <h1>FluxMall</h1>
             </div>
             <div className="search-bar">
-              <input 
-                type="text" 
-                placeholder="Tìm kiếm sản phẩm..." 
-                onChange={(e) => localStorage.setItem('fluxmall_search', e.target.value)}
+              <input
+                type="text"
+                placeholder="Tìm kiếm sản phẩm..."
+                onChange={(e) =>
+                  localStorage.setItem("fluxmall_search", e.target.value)
+                }
               />
               <HiMagnifyingGlass className="icon" />
             </div>
@@ -221,49 +223,85 @@ export default function layoutHome() {
               </li>
 
               {/* --Sản phẩm-- */}
-              <li className={`has-dropdown ${open ? "open" : ""}`}>
+              <li
+                className={`has-dropdown ${
+                  openMenu === "category" ? "open" : ""
+                }`}
+              >
                 <a
                   href="#"
+                  className="dropdown-trigger"
                   onClick={(e) => {
                     e.preventDefault();
-                    setOpen(!open);
+                    setOpenMenu(openMenu === "category" ? null : "category");
                   }}
                 >
-                  Sản phẩm
+                  Sản phẩm ▼
                 </a>
                 <ul className="dropdown-menu">
                   <li>
-                    <a href="" onClick={() => goCategory("laptop")}>
+                    <Link
+                      to="/category/laptop"
+                      onClick={() => setOpenMenu(null)}
+                    >
                       Laptop
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="" onClick={() => goCategory("keyboard")}>
+                    <Link
+                      to="/category/keyboard"
+                      onClick={() => setOpenMenu(null)}
+                    >
                       Bàn phím
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="" onClick={() => goCategory("mouse")}>
+                    <Link
+                      to="/category/mouse"
+                      onClick={() => setOpenMenu(null)}
+                    >
                       Chuột
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="" onClick={() => goCategory("headphone")}>
+                    <Link
+                      to="/category/headphone"
+                      onClick={() => setOpenMenu(null)}
+                    >
                       Tai nghe
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </li>
 
               {/* --Sản phẩm bán chạy-- */}
-              <li className="has-dropdown">
-                <a href="#">Sản phẩm bán chạy</a>
+              <li
+                className={`has-dropdown ${
+                  openMenu === "bestseller" ? "open" : ""
+                }`}
+              >
+                <a
+                  href="#"
+                  className="dropdown-trigger"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    setOpenMenu(
+                      openMenu === "bestseller" ? null : "bestseller"
+                    );
+                  }}
+                >
+                  Sản phẩm bán chạy ▼
+                </a>
                 <ul className="dropdown-menu">
                   <li>
-                    <Link to="/bestseller">Bán chạy nhất</Link>
+                    <Link to="/bestseller" onClick={() => setOpenMenu(null)}>
+                      Bán chạy nhất
+                    </Link>
                   </li>
                   <li>
-                    <Link to="/newarrivals">Mới ra mắt</Link>
+                    <Link to="/newarrivals" onClick={() => setOpenMenu(null)}>
+                      Mới ra mắt
+                    </Link>
                   </li>
                 </ul>
               </li>
@@ -276,23 +314,47 @@ export default function layoutHome() {
               </li>
 
               {/* -- Phụ kiện -- */}
-              <li className="has-dropdown">
-                <a href="#">Phụ kiện</a>
+              <li
+                className={`has-dropdown ${
+                  openMenu === "accessories" ? "open" : ""
+                }`}
+              >
+                <a
+                  href="#"
+                  className="dropdown-trigger"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    setOpenMenu(
+                      openMenu === "accessories" ? null : "accessories"
+                    );
+                  }}
+                >
+                  Phụ kiện ▼
+                </a>
                 <ul className="dropdown-menu">
                   <li>
-                    <a href="" onClick={() => goAccessories("bag")}>
+                    <Link
+                      to="/accessories/bag"
+                      onClick={() => setOpenMenu(null)}
+                    >
                       Túi chống sốc
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="" onClick={() => goAccessories("cleaning")}>
+                    <Link
+                      to="/accessories/cleaning"
+                      onClick={() => setOpenMenu(null)}
+                    >
                       Bộ vệ sinh laptop
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="" onClick={() => goAccessories("rack")}>
+                    <Link
+                      to="/accessories/rack"
+                      onClick={() => setOpenMenu(null)}
+                    >
                       Đế tản nhiệt
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </li>
